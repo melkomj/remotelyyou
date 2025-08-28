@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Contact";
+---
+<BaseLayout {title}>
+  <h2>Contact</h2>
+  <form action="https://formspree.io/f/your_form_id" method="POST" class="card">
+    <label>Name<br/><input type="text" name="name" required style="padding:8px;width:100%;max-width:320px"/></label><br/>
+    <label>Email<br/><input type="email" name="email" required style="padding:8px;width:100%;max-width:320px"/></label><br/>
+    <label>Message<br/><textarea name="message" rows="5" style="padding:8px;width:100%;max-width:520px"></textarea></label><br/>
+    <button class="btn" type="submit">Send</button>
+  </form>
+</BaseLayout>

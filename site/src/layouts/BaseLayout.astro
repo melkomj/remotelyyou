@@ -1,0 +1,50 @@
+---
+/**
+ * SAFER LAYOUT:
+ * Always defines a local pageTitle/description even if props are missing.
+ */
+const pageTitle =
+  (Astro.props && typeof Astro.props.title === 'string' && Astro.props.title.trim()) ||
+  'Work From Anywhere';
+
+const pageDescription =
+  (Astro.props && typeof Astro.props.description === 'string' && Astro.props.description.trim()) ||
+  '';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{pageTitle}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {pageDescription && <meta name="description" content={pageDescription} />}
+    <style>
+      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;max-width:960px;margin:40px auto;padding:0 16px}
+      header,footer{margin:24px 0}
+      nav a{margin-right:14px;text-decoration:none;color:#1b73e8}
+      nav a:hover{text-decoration:underline}
+      .btn{display:inline-block;background:#1b73e8;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+      .card{border:1px solid #eee;border-radius:12px;padding:16px;margin-bottom:12px}
+      .muted{color:#666}
+      .badge{background:#eef;border:1px solid #dde;padding:2px 8px;border-radius:999px;font-size:12px;margin-left:8px}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Work From Anywhere</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/course">Course</a>
+        <a href="/jobs">Jobs</a>
+        <a href="/blog">Blog</a>
+        <a href="/resources">Resources</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="muted">
+      <p>© {new Date().getFullYear()} Work From Anywhere. If you own a posting and want it removed, contact us.</p>
+    </footer>
+  </body>
+</html>

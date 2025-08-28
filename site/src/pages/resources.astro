@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Resources: Job Boards, Tools, Courses";
+---
+<BaseLayout {title}>
+  <h2>Resources</h2>
+
+  <div class="card">
+    <h3>Job Boards</h3>
+    <ul>
+      <li><a href="https://www.flexjobs.com/remote-jobs" target="_blank" rel="noopener">FlexJobs</a> (curated, paywall)</li>
+      <li><a href="https://remote.co/remote-jobs/" target="_blank" rel="noopener">Remote.co</a></li>
+      <li><a href="https://remotehub.com/jobs" target="_blank" rel="noopener">RemoteHub</a></li>
+      <li><a href="/jobs">Our Beginner-Friendly Feed</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Tools</h3>
+    <ul>
+      <li>Notion / ClickUp for organization</li>
+      <li>Grammarly for writing</li>
+      <li>VPN for safe travel work</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Downloads</h3>
+    <ul>
+      <li><a href="/section1_welcome_and_mindset.pdf">Section 1 PDF</a></li>
+      <li><a href="/section2_lessons.pdf">Section 2 Lessons PDF</a></li>
+      <!-- Drop files into site/public and link here -->
+    </ul>
+  </div>
+</BaseLayout>

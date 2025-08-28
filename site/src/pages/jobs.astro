@@ -1,0 +1,12 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import JobList from "../components/JobList.astro";
+import data from "../../public/jobs.json";
+const { jobs = [], updated_at } = data;
+const title = "Beginner-Friendly Remote Jobs";
+---
+<BaseLayout {title}>
+  <h2>Beginner-Friendly Remote Jobs <span class="badge">Updated {updated_at}</span></h2>
+  <p class="muted">Curated from sources that allow republication with attribution. Always apply on the original listing.</p>
+  <JobList jobs={jobs} />
+</BaseLayout>

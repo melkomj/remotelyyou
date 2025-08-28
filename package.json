@@ -1,0 +1,8 @@
+{
+  "name": "remote-jobs-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-jobs.mjs"
+  }
+}
