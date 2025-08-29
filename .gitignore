@@ -1,9 +1,7 @@
-# root
 node_modules
 .env
 .DS_Store
 
-# site app
 site/node_modules
 site/.astro
 site/dist
