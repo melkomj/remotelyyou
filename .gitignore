@@ -1,7 +1,4 @@
 node_modules
-.env
-.DS_Store
-
 site/node_modules
 site/.astro
 site/dist
