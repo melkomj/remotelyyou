@@ -1,0 +1,30 @@
+name: Fetch jobs
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch: {}
+  push:
+    branches: [ main ]
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install root deps
+        run: npm ci || npm i
+      - name: Fetch jobs (write site/public/jobs.json)
+        run: npm run fetch
+      - name: Commit updated jobs.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add site/public/jobs.json
+          git commit -m "chore: update jobs.json" || echo "No changes"
+          git push || echo "No push"
