@@ -1,26 +1,99 @@
+﻿---
+// src/pages/course.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-const title = "Work From Anywhere Roadmap";
-const description = "Beginner’s guide to landing your first remote job — hosted on Podia.";
----
-<BaseLayout {title} {description}>
-  <section class="card">
-    <h2>Work From Anywhere Roadmap</h2>
-    <p>
-      A beginner-friendly, step-by-step course to land your first remote job.
-      Hosted on Podia — instant access, downloadable resources, and updates.
-    </p>
 
-    <p style="margin:16px 0">
-      <a class="btn"
-         href="https://melk.podia.com/work-from-anywhere-roadmap-beginner-s-guide-to-remote-jobs"
-         target="_blank" rel="noopener">
-        Get the course free on Podia
+<BaseLayout title="Work From Anywhere Roadmap - Free Course">
+  <main class="container">
+    <section class="hero">
+      <h1>Work From Anywhere Roadmap</h1>
+      <p class="lead">Beginner's Guide to Remote Jobs - Get started today, completely free!</p>
+      
+      <!-- Podia Button - Opens in New Tab -->
+      <a 
+        href="https://melk.podia.com/work-from-anywhere-roadmap-beginner-s-guide-to-remote-jobs?utm_source=site&utm_campaign=course_cta"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary btn-lg"
+      >
+        Get the Course Free
       </a>
-    </p>
+    </section>
 
-    <p class="muted">
-      You’ll be taken to Podia for the full course experience (email access, lessons, downloads).
-    </p>
-  </section>
+    <section class="course-details">
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>How to find legitimate remote job opportunities</li>
+        <li>Essential skills for remote work success</li>
+        <li>Building your remote work portfolio</li>
+        <li>Networking strategies for remote professionals</li>
+      </ul>
+    </section>
+  </main>
 </BaseLayout>
+
+<style>
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .btn:hover {
+    background: #0056b3;
+  }
+
+  .btn-lg {
+    font-size: 1.1rem;
+    padding: 1.2rem 2.5rem;
+  }
+
+  .course-details {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  .course-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .course-details li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .course-details li::before {
+    content: "✓ ";
+    color: #28a745;
+    font-weight: bold;
+  }
+</style>

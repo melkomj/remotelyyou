@@ -1,12 +1,568 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import JobList from "../components/JobList.astro";
 import data from "../../public/jobs.json";
 const { jobs = [], updated_at } = data;
-const title = "Beginner-Friendly Remote Jobs";
+const title = "Beginner-friendly Remote Jobs";
 ---
+
 <BaseLayout {title}>
-  <h2>Beginner-Friendly Remote Jobs <span class="badge">Updated {updated_at}</span></h2>
+  <h2>Beginner-friendly Remote Jobs <span class="badge">Updated {updated_at}</span></h2>
   <p class="muted">Curated from sources that allow republication with attribution. Always apply on the original listing.</p>
-  <JobList jobs={jobs} />
+
+  <!-- Experience Level Tabs -->
+  <div class="tabs">
+    <button class="tab-button active" data-tab="all">All Jobs</button>
+    <button class="tab-button" data-tab="entry">Entry Level</button>
+    <button class="tab-button" data-tab="experienced">Experienced</button>
+  </div>
+
+  <!-- Filter Controls -->
+  <div class="filters">
+    <div class="filter-group">
+      <label>Search Jobs:</label>
+      <input type="text" id="searchJobs" placeholder="Search by title, company, or keywords..." />
+    </div>
+
+    <div class="filter-group">
+      <label>Location:</label>
+      <select id="locationFilter">
+        <option value="">All Locations</option>
+      </select>
+    </div>
+
+    <div class="filter-actions">
+      <button id="clearFilters">Clear All Filters</button>
+      <span id="resultCount" class="result-count">Showing all jobs</span>
+    </div>
+  </div>
+
+  <!-- Jobs Container -->
+  <div id="jobsContainer">
+    {jobs.map(job => (
+      <div class="job-card"
+           data-title={job.title?.toLowerCase() || ''}
+           data-company={job.company?.toLowerCase() || ''}
+           data-location={job.location || ''}
+           data-description={job.description?.toLowerCase() || ''}
+           data-tags={job.tags?.join(' ').toLowerCase() || ''}>
+        <h3>{job.title}</h3>
+        <p><strong>{job.company}</strong></p>
+        
+        {job.location && <span class="location-tag">{job.location}</span>}
+        {job.salary && <span class="salary-tag">{job.salary}</span>}
+        
+        {job.tags && job.tags.length > 0 && (
+          <div class="tags">
+            {job.tags.map(tag => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        )}
+        
+        {job.description && <p class="description">{job.description}</p>}
+        
+        <div class="job-footer">
+          {job.posted_at && <span class="posted-date">Posted: {job.posted_at}</span>}
+          {job.source_url && (
+            <a href={job.source_url} target="_blank" rel="noopener noreferrer" class="apply-btn">
+              Apply Now
+            </a>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Affiliate Tools Section -->
+  <div class="affiliate-section">
+    <h2>Job Search Tools & Resources</h2>
+    <div class="tools-grid">
+      
+      <!-- Huntr Job Tracker (30% recurring commission) -->
+      <div class="tool-card">
+        <h3>Track Your Applications</h3>
+        <p>Organize your job search, track applications, and never miss a follow-up with Huntr's job tracker.</p>
+        <a href="https://huntr.co/?utm_source=remote-jobs-site&utm_campaign=job_tools" target="_blank" rel="noopener noreferrer" class="tool-btn">
+          Start Free Trial
+        </a>
+      </div>
+
+      <!-- Resume Builder Tool -->
+      <div class="tool-card">
+        <h3>Professional Resume Builder</h3>
+        <p>Create ATS-friendly resumes that get noticed by employers. AI-powered suggestions included.</p>
+        <a href="https://zety.com/?utm_source=remote-jobs-site&utm_campaign=resume_tools" target="_blank" rel="noopener noreferrer" class="tool-btn">
+          Build Resume
+        </a>
+      </div>
+
+      <!-- Interview Prep -->
+      <div class="tool-card">
+        <h3>Upskill for Remote Work</h3>
+        <p>Learn in-demand skills with Coursera courses. Get certificates that employers recognize.</p>
+        <a href="https://www.coursera.org/?utm_source=remote-jobs-site&utm_campaign=skill_building" target="_blank" rel="noopener noreferrer" class="tool-btn">
+          Browse Courses
+        </a>
+      </div>
+
+    </div>
+  </div>
+
 </BaseLayout>
+
+<script>
+  // Get all job elements and controls
+  const jobs = document.querySelectorAll('.job-card');
+  const searchInput = document.getElementById('searchJobs');
+  const locationFilter = document.getElementById('locationFilter');
+  const clearButton = document.getElementById('clearFilters');
+  const resultCount = document.getElementById('resultCount');
+  const tabButtons = document.querySelectorAll('.tab-button');
+  
+  let currentTab = 'all';
+
+  // Function to split locations and populate filter
+  function populateLocationFilter() {
+    const locations = new Set();
+    
+    jobs.forEach(job => {
+      const location = job.dataset.location;
+      if (location && location.trim()) {
+        // Split combined locations like "Argentina, Mexico" into individual countries
+        const splitLocations = location.split(',').map(loc => loc.trim());
+        splitLocations.forEach(loc => {
+          if (loc) {
+            locations.add(loc);
+          }
+        });
+      }
+    });
+
+    // Sort locations alphabetically and add to dropdown
+    Array.from(locations).sort().forEach(location => {
+      const option = document.createElement('option');
+      option.value = location;
+      option.textContent = location;
+      locationFilter.appendChild(option);
+    });
+  }
+
+  // Function to check if job matches location
+  function matchesLocation(job, selectedLocation) {
+    if (!selectedLocation) return true;
+    
+    const jobLocation = job.dataset.location;
+    if (!jobLocation) return false;
+    
+    return jobLocation.toLowerCase().includes(selectedLocation.toLowerCase());
+  }
+
+  // Function to determine job experience level
+  function getJobLevel(job) {
+    const title = job.dataset.title;
+    const description = job.dataset.description;
+    const tags = job.dataset.tags;
+
+    const entryKeywords = [
+      'junior', 'entry', 'entry-level', 'intern', 'trainee',
+      'associate', 'assistant', 'beginner', 'new grad',
+      'recent graduate', 'no experience', '0-2 years', '0-1 years'
+    ];
+
+    const seniorKeywords = [
+      'senior', 'lead', 'principal', 'manager', 'director',
+      'architect', 'expert', '5+ years', '4+ years', '3+ years', 
+      'experienced', 'head of', 'chief'
+    ];
+
+    const text = title + ' ' + description + ' ' + tags;
+
+    const hasEntryKeywords = entryKeywords.some(keyword =>
+      text.includes(keyword)
+    );
+
+    const hasSeniorKeywords = seniorKeywords.some(keyword =>
+      text.includes(keyword)
+    );
+
+    if (hasEntryKeywords && !hasSeniorKeywords) return 'entry';
+    if (hasSeniorKeywords) return 'experienced';
+    return 'neutral';
+  }
+
+  // Main filter function
+  function filterJobs() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedLocation = locationFilter.value;
+
+    let visibleCount = 0;
+
+    jobs.forEach(job => {
+      const title = job.dataset.title;
+      const company = job.dataset.company;
+      const description = job.dataset.description;
+      const tags = job.dataset.tags;
+
+      const matchesSearch = !searchTerm ||
+        title.includes(searchTerm) ||
+        company.includes(searchTerm) ||
+        description.includes(searchTerm) ||
+        tags.includes(searchTerm);
+
+      const jobLevel = getJobLevel(job);
+      const matchesTab = currentTab === 'all' ||
+        currentTab === jobLevel ||
+        (jobLevel === 'neutral');
+
+      const matchesLocationFilter = matchesLocation(job, selectedLocation);
+
+      const shouldShow = matchesSearch && matchesTab && matchesLocationFilter;
+      job.style.display = shouldShow ? 'block' : 'none';
+
+      if (shouldShow) visibleCount++;
+    });
+
+    updateResultCount(visibleCount);
+  }
+
+  // Tab functionality
+  function switchTab(tabName) {
+    currentTab = tabName;
+    
+    tabButtons.forEach(btn => {
+      btn.classList.remove('active');
+      if (btn.dataset.tab === tabName) {
+        btn.classList.add('active');
+      }
+    });
+    
+    filterJobs();
+  }
+
+  function updateResultCount(visible) {
+    const total = jobs.length;
+    const tabText = currentTab === 'all' ? 'jobs' : currentTab + ' level jobs';
+    
+    if (visible === total) {
+      resultCount.textContent = 'Showing all ' + total + ' ' + tabText;
+    } else {
+      resultCount.textContent = 'Showing ' + visible + ' of ' + total + ' ' + tabText;
+    }
+  }
+
+  function clearFilters() {
+    searchInput.value = '';
+    locationFilter.value = '';
+    filterJobs();
+  }
+
+  // Event listeners
+  searchInput.addEventListener('input', filterJobs);
+  locationFilter.addEventListener('change', filterJobs);
+  clearButton.addEventListener('click', clearFilters);
+  
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      switchTab(button.dataset.tab);
+    });
+  });
+
+  // Initialize
+  populateLocationFilter();
+  updateResultCount(jobs.length);
+</script>
+
+<style>
+  .badge {
+    background: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .muted {
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e9ecef;
+  }
+
+  .tab-button {
+    background: none;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c757d;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+
+  .tab-button:hover {
+    color: #007bff;
+    background: #f8f9fa;
+  }
+
+  .tab-button.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+    font-weight: 600;
+  }
+
+  .filters {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #e9ecef;
+  }
+
+  .filter-group {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    vertical-align: top;
+  }
+
+  .filter-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #495057;
+    font-size: 14px;
+  }
+
+  .filters input, .filters select {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    background: white;
+    min-width: 200px;
+  }
+
+  .filters input:focus, .filters select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+  }
+
+  .filter-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #clearFilters {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+  }
+
+  #clearFilters:hover {
+    background: #5a6268;
+  }
+
+  .result-count {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+  }
+
+  #jobsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+  }
+
+  .job-card {
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .job-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .job-card h3 {
+    margin: 0 0 10px 0;
+    color: #212529;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .location-tag, .salary-tag {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+  }
+
+  .salary-tag {
+    background: #28a745;
+  }
+
+  .tags {
+    margin: 10px 0;
+  }
+
+  .tag {
+    display: inline-block;
+    background: #6c757d;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .description {
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+
+  .job-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+  }
+
+  .posted-date {
+    font-size: 12px;
+    color: #868e96;
+    margin: 0;
+  }
+
+  .apply-btn {
+    background: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+
+  .apply-btn:hover {
+    background: #218838;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .tabs {
+      flex-wrap: wrap;
+    }
+    
+    .tab-button {
+      flex: 1;
+      min-width: 100px;
+    }
+
+    .filter-group {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    .filter-actions {
+      flex-direction: column;
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .job-footer {
+      flex-direction: column;
+      gap: 10px;
+      align-items: stretch;
+    }
+  }
+
+  /* Affiliate Tools Section */
+  .affiliate-section {
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    color: white;
+  }
+
+  .affiliate-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .tool-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .tool-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .tool-card p {
+    margin-bottom: 20px;
+    opacity: 0.9;
+    line-height: 1.5;
+  }
+
+  .tool-btn {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+
+  .tool-btn:hover {
+    background: #218838;
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+
+</style>

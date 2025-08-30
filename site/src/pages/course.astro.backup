@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Work From Anywhere Roadmap";
+const description = "Beginner’s guide to landing your first remote job — hosted on Podia.";
+---
+<BaseLayout {title} {description}>
+  <section class="card">
+    <h2>Work From Anywhere Roadmap</h2>
+    <p>
+      A beginner-friendly, step-by-step course to land your first remote job.
+      Hosted on Podia — instant access, downloadable resources, and updates.
+    </p>
+
+    <p style="margin:16px 0">
+      <a class="btn"
+         href="https://melk.podia.com/work-from-anywhere-roadmap-beginner-s-guide-to-remote-jobs"
+         target="_blank" rel="noopener">
+        Get the course free on Podia
+      </a>
+    </p>
+
+    <p class="muted">
+      You’ll be taken to Podia for the full course experience (email access, lessons, downloads).
+    </p>
+  </section>
+</BaseLayout>
