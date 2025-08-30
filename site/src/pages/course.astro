@@ -1,18 +1,26 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const title = "Free Course: Work From Anywhere Roadmap";
+const title = "Work From Anywhere Roadmap";
+const description = "Beginner’s guide to landing your first remote job — hosted on Podia.";
 ---
-<BaseLayout {title}>
-  <h2>Free Course: Work From Anywhere Roadmap</h2>
-  <p>Beginner-friendly, step-by-step lessons to land your first remote job. Downloadable PDFs included.</p>
+<BaseLayout {title} {description}>
+  <section class="card">
+    <h2>Work From Anywhere Roadmap</h2>
+    <p>
+      A beginner-friendly, step-by-step course to land your first remote job.
+      Hosted on Podia — instant access, downloadable resources, and updates.
+    </p>
 
-  <!-- Replace with your real provider (Formspree/Beehiiv/ConvertKit) -->
-  <form action="https://formspree.io/f/your_form_id" method="POST" class="card">
-    <label>Email<br/><input type="email" name="email" required style="padding:8px;width:100%;max-width:320px"/></label>
-    <div style="margin-top:8px">
-      <button class="btn" type="submit">Get instant access</button>
-    </div>
-  </form>
+    <p style="margin:16px 0">
+      <a class="btn"
+         href="https://melk.podia.com/work-from-anywhere-roadmap-beginner-s-guide-to-remote-jobs"
+         target="_blank" rel="noopener">
+        Get the course free on Podia
+      </a>
+    </p>
 
-  <p class="muted">We’ll send the course link and updates. Unsubscribe anytime.</p>
+    <p class="muted">
+      You’ll be taken to Podia for the full course experience (email access, lessons, downloads).
+    </p>
+  </section>
 </BaseLayout>
