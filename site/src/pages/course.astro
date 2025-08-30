@@ -1,4 +1,4 @@
-﻿---
+---
 // src/pages/course.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
@@ -29,6 +29,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <li>Networking strategies for remote professionals</li>
       </ul>
     </section>
+  
+    <!-- Course Affiliate Section -->
+    <section class="course-affiliate">
+      <h2>Essential Tools for Remote Job Success</h2>
+      <div class="course-tools-grid">
+        <div class="course-tool-card">
+          <h3>Job Application Tracker</h3>
+          <p>Keep track of every application, interview, and follow-up with Huntr.</p>
+          <a href="https://huntr.co/?utm_source=remote-jobs-site&utm_campaign=course_page" target="_blank" rel="noopener noreferrer" class="course-tool-btn">
+            Start Tracking
+          </a>
+        </div>
+        
+        <div class="course-tool-card">
+          <h3>Professional Resume</h3>
+          <p>Create ATS-friendly resumes that get past automated screening.</p>
+          <a href="https://zety.com/?utm_source=remote-jobs-site&utm_campaign=course_page" target="_blank" rel="noopener noreferrer" class="course-tool-btn">
+            Build Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 </BaseLayout>
 
@@ -92,8 +115,59 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   .course-details li::before {
-    content: "✓ ";
+    content: "? ";
     color: #28a745;
     font-weight: bold;
   }
+
+  /* Course Affiliate Section */
+  .course-affiliate {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .course-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .course-tool-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .course-tool-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .course-tool-card h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .course-tool-btn {
+    display: inline-block;
+    background: #6c757d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+
+  .course-tool-btn:hover {
+    background: #5a6268;
+    text-decoration: none;
+  }
+
 </style>
