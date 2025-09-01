@@ -1,6 +1,393 @@
 {
-  "updated_at": "2025-08-31T18:45:55.310Z",
+  "updated_at": "2025-09-01T03:45:02.671Z",
   "jobs": [
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/project-management/regional-maintenance-manager-2054172",
+      "title": "Regional Maintenance Manager",
+      "company": "Highlandfleets 2",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "project management",
+        "microsoft office",
+        "infrastructure",
+        "insurance"
+      ],
+      "salary": "competitive base salary and performance-based bonus",
+      "posted_at": "2025-08-31T00:51:54",
+      "hash": "9b647612ab39c1dc9ccd30c14e7070d5458e45e4"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/marketing/community-content-associate-2054156",
+      "title": "Community & Content Associate",
+      "company": "Runware",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "analytics",
+        "video editing",
+        "Social / Content"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-31T00:51:49",
+      "hash": "b1183e2118684f2e2d7cbebbc33a1f1b13e89fa6"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/design/senior-design-engineer-2054088",
+      "title": "Senior Design Engineer",
+      "company": "Envato 2",
+      "location": "Australia",
+      "remote_type": "remote",
+      "tags": [
+        "react",
+        "Figma"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-31T00:51:42",
+      "hash": "6930c52bb3356661622a623f5d4ffe2140991f6d"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/customer-support/call-center-representative-2054268",
+      "title": "Call Center Representative",
+      "company": "Lap of Love",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "go",
+        "Five9",
+        "insurance"
+      ],
+      "salary": "$16.00 per hour",
+      "posted_at": "2025-08-31T00:51:34",
+      "hash": "91b3793d9971761d990b4d78e579a1f6f76df110"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/gis-applications-developer-2054060",
+      "title": "GIS Applications Developer",
+      "company": "Omegahires",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "javascript",
+        "python",
+        "tableau"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-31T00:51:26",
+      "hash": "7812a916c28f9519373e651b3a91084ffb80676f"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/full-stack-developer-2054061",
+      "title": "Full Stack Developer",
+      "company": "Getwingapp",
+      "location": "India",
+      "remote_type": "remote",
+      "tags": [
+        "javascript",
+        "node.js",
+        "python",
+        "react"
+      ],
+      "salary": "inr 15 lpa - 25 lpa",
+      "posted_at": "2025-08-31T00:51:25",
+      "hash": "cf8abf8c29ec4ac00742e57777e406678037f614"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/product/sr-product-manager-2053990",
+      "title": "Sr. Product Manager",
+      "company": "Vicar Operating, Inc. dba VCA",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "product management"
+      ],
+      "salary": "$120,000-$155,000",
+      "posted_at": "2025-08-30T22:50:31",
+      "hash": "6dc70fc8e81c5c9bda7518a6c1def0d122913138"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/data/senior-director-analytics-2054202",
+      "title": "Senior Director, Analytics",
+      "company": "Experian",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "python",
+        "sql",
+        "tableau"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-30T20:51:01",
+      "hash": "1c5948e68b36b364d6768fb5169eeed0090343b7"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/project-management/project-engineer-2054175",
+      "title": "Project Engineer",
+      "company": "Enercon Services, Inc.",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "mechanical engineering"
+      ],
+      "salary": "usd 90,000 - 175,000 per year",
+      "posted_at": "2025-08-30T20:50:55",
+      "hash": "676b89b34dc62357cf8bfd97cc9e6e3c3ef6aef4"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/project-management/implementation-project-specialist-ai-solutions-2054176",
+      "title": "Implementation & Project Specialist – AI Solutions",
+      "company": "PuroClean Corporate",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "api",
+        "AWS",
+        "azure",
+        "data science",
+        "saas"
+      ],
+      "salary": "competitive salary",
+      "posted_at": "2025-08-30T20:50:54",
+      "hash": "8fc5e75d27b70d38f456743c561ad523c7aa31b4"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/sales-business/sales-development-representative-2054165",
+      "title": "Sales Development Representative",
+      "company": "NikoHealth",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "saas",
+        "salesforce",
+        "social media",
+        "research",
+        "CRM"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-30T20:50:47",
+      "hash": "265d0e7b407b9031091fb15454ce1b5050b2e6ad"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/marketing/strategist-landing-pages-2054157",
+      "title": "Strategist, Landing Pages",
+      "company": "Power Digital",
+      "location": "Brazil",
+      "remote_type": "remote",
+      "tags": [
+        "CRO",
+        "digital marketing",
+        "A/B Testing"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-30T20:50:41",
+      "hash": "be62eff33901fcae7d2faa5d57d510d228a903cb"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/design/illustrator-2054151",
+      "title": "Illustrator",
+      "company": "Storygrounds",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "photoshop"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-30T20:50:36",
+      "hash": "fdb57ffae70f6f3367a1c776a50863da42ce5d2d"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/customer-support/customer-solutions-specialist-2054270",
+      "title": "Customer Solutions Specialist",
+      "company": "transcosmos (TCIS)",
+      "location": "Hungary",
+      "remote_type": "remote",
+      "tags": [
+        "microsoft office",
+        "Customer Support"
+      ],
+      "salary": "competitive salary with monthly performance bonuses",
+      "posted_at": "2025-08-30T20:50:30",
+      "hash": "5b0c657bbad3ad45a04cdee7973bb0da2f37b6a7"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/senior-kotlin-java-software-engineer-client-technology-2054063",
+      "title": "(Senior) Kotlin / Java Software Engineer - Client Technology",
+      "company": "Scalable",
+      "location": "Germany",
+      "remote_type": "remote",
+      "tags": [
+        "AWS",
+        "docker",
+        "java",
+        "kotlin",
+        "spring",
+        "Virtual Assistant"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-30T20:50:23",
+      "hash": "ed4fb34d8c7f673c2c48c26364caaa12e1227c75"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/operations-engineer-ii-2054065",
+      "title": "Operations Engineer II",
+      "company": "Brightspeed",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "troubleshooting"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-30T20:50:22",
+      "hash": "4648dfb9ccc3f5b94cd13e898b319f74ea5e9bfd"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/all-others/operations-administrative-assistant-2054557",
+      "title": "Operations & Administrative Assistant",
+      "company": "omniscient",
+      "location": "Brazil, South Africa, Colombia, Argentina, Chile, Mexico",
+      "remote_type": "remote",
+      "tags": [
+        "automation",
+        "Virtual Assistant"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-30T16:52:38",
+      "hash": "bec8bd83f8757e09f254bebccd85bf5699c9b1c8"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/all-others/manager-external-audit-2054559",
+      "title": "Manager - External Audit",
+      "company": "Government Employees Health Association, Inc.",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "excel",
+        "sql",
+        "research",
+        "analytics",
+        "microsoft office"
+      ],
+      "salary": "$112,963 - $159,237 usd",
+      "posted_at": "2025-08-30T16:52:36",
+      "hash": "3cf667e5251579a790e886380274ed60c80b7ec8"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/writing/interim-editor-in-chief-of-the-banner-2054554",
+      "title": "Interim Editor in Chief of The Banner",
+      "company": "Crcna",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "CAD",
+        "editing",
+        "web content",
+        "diversity"
+      ],
+      "salary": "$47.91/hour usd or $48.75/hour cad",
+      "posted_at": "2025-08-30T16:52:29",
+      "hash": "e959831063fa57ca172619a8d345133c5232ae35"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/finance-legal/manager-client-rebate-management-2052957",
+      "title": "Manager, Client Rebate Management",
+      "company": "Capital Rx",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "excel",
+        "sql",
+        "data visualization"
+      ],
+      "salary": "$119,000 - $147,000 usd",
+      "posted_at": "2025-08-30T16:52:24",
+      "hash": "b6e5ccc4472d81fb3300b6b00b466c93c8fbafd0"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/devops/senior-devops-engineer-2052947",
+      "title": "Senior DevOps Engineer",
+      "company": "Omnissa, LLC",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "AWS",
+        "python",
+        "terraform",
+        "ansible"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-30T16:52:17",
+      "hash": "4dae10b3cde249967786d0929b88b6411ca24757"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/data/senior-data-scientist-crypto-products-2054203",
+      "title": "Senior Data Scientist, Crypto Products",
+      "company": "Wealthsimple",
+      "location": "Canada",
+      "remote_type": "remote",
+      "tags": [
+        "python",
+        "sql",
+        "statistics"
+      ],
+      "salary": "competitive salary with top-tier health benefits",
+      "posted_at": "2025-08-30T16:51:44",
+      "hash": "bf37f85a3388d120a30fbe60e4b2c2ddd34673bd"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/project-management/sr-project-manager-2054178",
+      "title": "Sr. Project Manager",
+      "company": "Syner-G BioPharma Group",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "project management",
+        "documentation",
+        "product development",
+        "warehouse",
+        "team management",
+        "Project Coord/PM (Jr)"
+      ],
+      "salary": "competitive base salary and annual incentive plan",
+      "posted_at": "2025-08-30T16:51:09",
+      "hash": "afba6eca8562013fac3b5169c1fa1c9bf86449b1"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/marketing/enterprise-marketing-manager-2054158",
+      "title": "Enterprise Marketing Manager",
+      "company": "Snowflake",
+      "location": "Thailand",
+      "remote_type": "remote",
+      "tags": [
+        "campaign development"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-30T16:50:55",
+      "hash": "d48b376c57279c88b32c562cb678b5eeeac73047"
+    },
     {
       "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/all-others/quantitative-fieldwork-coordinator-2054560",
@@ -252,6 +639,20 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/sales-business/sales-development-representative-2054168",
+      "title": "Sales Development Representative",
+      "company": "Environment Bank",
+      "location": "UK",
+      "remote_type": "remote",
+      "tags": [
+        "lead generation"
+      ],
+      "salary": "performance-based annual bonus up to 10% of salary",
+      "posted_at": "2025-08-30T02:51:57",
+      "hash": "ad11eece113e82590bfd44e704d89872ee5598e2"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/sales-business/account-director-senior-wholesale-2054167",
       "title": "Account Director Senior- Wholesale",
       "company": "Lumen",
@@ -267,20 +668,6 @@
       "salary": "usd 124,037 - 181,913 per year",
       "posted_at": "2025-08-30T02:51:57",
       "hash": "82ef08119a4806ba70aef95551af1bc69c1c58d0"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/sales-business/sales-development-representative-2054168",
-      "title": "Sales Development Representative",
-      "company": "Environment Bank",
-      "location": "UK",
-      "remote_type": "remote",
-      "tags": [
-        "lead generation"
-      ],
-      "salary": "performance-based annual bonus up to 10% of salary",
-      "posted_at": "2025-08-30T02:51:57",
-      "hash": "ad11eece113e82590bfd44e704d89872ee5598e2"
     },
     {
       "source": "Remotive - API",
@@ -1106,21 +1493,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/sales-business/sr-sales-engineer-2053559",
-      "title": "Sr. Sales Engineer",
-      "company": "Illumio",
-      "location": "France",
-      "remote_type": "remote",
-      "tags": [
-        "cybersecurity",
-        "scripting"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-29T00:51:36",
-      "hash": "9fdb5f6a302b08a2ec9bd32d5dfb23c623150bb3"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/sales-business/senior-relationship-manager-2053489",
       "title": "Senior Relationship Manager",
       "company": "OKX",
@@ -1135,6 +1507,21 @@
       "salary": "",
       "posted_at": "2025-08-29T00:51:36",
       "hash": "cd0600438b5a16bc29c17b08372bb90c9a5bf12f"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/sales-business/sr-sales-engineer-2053559",
+      "title": "Sr. Sales Engineer",
+      "company": "Illumio",
+      "location": "France",
+      "remote_type": "remote",
+      "tags": [
+        "cybersecurity",
+        "scripting"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-29T00:51:36",
+      "hash": "9fdb5f6a302b08a2ec9bd32d5dfb23c623150bb3"
     },
     {
       "source": "Remotive - API",
@@ -1832,20 +2219,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/writing/editor-fiction-non-fiction-2052991",
-      "title": "Editor - Fiction & Non-Fiction",
-      "company": "VIZ Media",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "editing"
-      ],
-      "salary": "$75,000 - $95,000 annually",
-      "posted_at": "2025-08-27T22:52:13",
-      "hash": "cb3b1ef87c26c7c0ec4752dbeb7660ce7ce35fbd"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/writing/center-right-conservative-political-journalist-intern-2052992",
       "title": "Center-Right Conservative Political Journalist Intern",
       "company": "A.N. Publishing ",
@@ -1858,6 +2231,20 @@
       "salary": "",
       "posted_at": "2025-08-27T22:52:13",
       "hash": "95a8ab5c9d3d9087359cbbf1152e9416664ccbdb"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/writing/editor-fiction-non-fiction-2052991",
+      "title": "Editor - Fiction & Non-Fiction",
+      "company": "VIZ Media",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "editing"
+      ],
+      "salary": "$75,000 - $95,000 annually",
+      "posted_at": "2025-08-27T22:52:13",
+      "hash": "cb3b1ef87c26c7c0ec4752dbeb7660ce7ce35fbd"
     },
     {
       "source": "Remotive - API",
@@ -2005,6 +2392,22 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/internal-tooling-engineer-lead-2052625",
+      "title": "Internal Tooling Engineer Lead",
+      "company": "Protex%20AI",
+      "location": "Hungary",
+      "remote_type": "remote",
+      "tags": [
+        "javascript",
+        "python",
+        "sql"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-27T22:50:54",
+      "hash": "f37b90185408cc5994b83eeabd6d44fafb538df0"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/software-dev/tech-lead-2052192",
       "title": "Tech Lead",
       "company": "Recare Deutschland GmbH",
@@ -2020,19 +2423,18 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/internal-tooling-engineer-lead-2052625",
-      "title": "Internal Tooling Engineer Lead",
-      "company": "Protex%20AI",
-      "location": "Hungary",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/senior-fullstack-engineer-2052631",
+      "title": "Senior Fullstack Engineer",
+      "company": "Ciklum",
+      "location": "Poland",
       "remote_type": "remote",
       "tags": [
-        "javascript",
-        "python",
-        "sql"
+        "node.js",
+        "react"
       ],
       "salary": "",
-      "posted_at": "2025-08-27T22:50:54",
-      "hash": "f37b90185408cc5994b83eeabd6d44fafb538df0"
+      "posted_at": "2025-08-27T22:50:53",
+      "hash": "35755f8a52ccb51740aa72734f6ad5bed8d33d0d"
     },
     {
       "source": "Remotive - API",
@@ -2052,18 +2454,17 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/senior-fullstack-engineer-2052631",
-      "title": "Senior Fullstack Engineer",
-      "company": "Ciklum",
-      "location": "Poland",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/senior-engineering-manager-2052632",
+      "title": "Senior Engineering Manager",
+      "company": "LifeStance Health",
+      "location": "USA",
       "remote_type": "remote",
       "tags": [
-        "node.js",
-        "react"
+        "node.js"
       ],
       "salary": "",
-      "posted_at": "2025-08-27T22:50:53",
-      "hash": "35755f8a52ccb51740aa72734f6ad5bed8d33d0d"
+      "posted_at": "2025-08-27T22:50:52",
+      "hash": "843b38f11e764af019a2d2c22c192fd50f4dd832"
     },
     {
       "source": "Remotive - API",
@@ -2079,20 +2480,6 @@
       "salary": "usd 141,000 - 159,000 per year",
       "posted_at": "2025-08-27T22:50:52",
       "hash": "139ff9330428affefa4928e78252937ce937499d"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/senior-engineering-manager-2052632",
-      "title": "Senior Engineering Manager",
-      "company": "LifeStance Health",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "node.js"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-27T22:50:52",
-      "hash": "843b38f11e764af019a2d2c22c192fd50f4dd832"
     },
     {
       "source": "Remotive - API",
@@ -2681,22 +3068,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/back-end-developer-2052197",
-      "title": "Back End Developer",
-      "company": "Loginsoft Consulting LLC",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "go",
-        "python",
-        "rust"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-26T20:51:11",
-      "hash": "06eec75202319158930883541e949adb26eba5a2"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/software-dev/senior-front-end-web-developer-2052198",
       "title": "Senior Front-End Web Developer",
       "company": "Aequilibrium Software Inc.",
@@ -2710,6 +3081,22 @@
       "salary": "",
       "posted_at": "2025-08-26T20:51:11",
       "hash": "7adc6641690f04558dc5ece544fa6a1923214972"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/back-end-developer-2052197",
+      "title": "Back End Developer",
+      "company": "Loginsoft Consulting LLC",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "go",
+        "python",
+        "rust"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-26T20:51:11",
+      "hash": "06eec75202319158930883541e949adb26eba5a2"
     },
     {
       "source": "Remotive - API",
@@ -2850,21 +3237,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/devops/junior-site-reliability-engineer-2051730",
-      "title": "Junior Site Reliability Engineer",
-      "company": "Century Interactive Company Lc",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "git",
-        "kubernetes"
-      ],
-      "salary": "competitive salary package",
-      "posted_at": "2025-08-26T18:50:45",
-      "hash": "453cb0119a3d59d2e50c59cb05b815b14f4e9738"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/devops/principal-devsecops-engineer-2052505",
       "title": "Principal DevSecOps Engineer",
       "company": "Heartbeat Health",
@@ -2879,6 +3251,21 @@
       "salary": "",
       "posted_at": "2025-08-26T18:50:45",
       "hash": "295f396627ccc047cef0079c0c6bde82391269b5"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/devops/junior-site-reliability-engineer-2051730",
+      "title": "Junior Site Reliability Engineer",
+      "company": "Century Interactive Company Lc",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "git",
+        "kubernetes"
+      ],
+      "salary": "competitive salary package",
+      "posted_at": "2025-08-26T18:50:45",
+      "hash": "453cb0119a3d59d2e50c59cb05b815b14f4e9738"
     },
     {
       "source": "Remotive - API",
@@ -3381,6 +3768,22 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/senior-c-developer-2052434",
+      "title": "Senior C# Developer",
+      "company": "Varicent",
+      "location": "Mexico",
+      "remote_type": "remote",
+      "tags": [
+        "AWS",
+        "C#",
+        "ETL"
+      ],
+      "salary": "market leading compensation package",
+      "posted_at": "2025-08-25T20:50:11",
+      "hash": "3834991f3c477ff1eeaf48c3ee21371a7f239ff9"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/software-dev/senior-software-development-test-engineer-2052435",
       "title": "Senior Software Development Test Engineer",
       "company": "LifeStance Health",
@@ -3395,22 +3798,6 @@
       "salary": "",
       "posted_at": "2025-08-25T20:50:11",
       "hash": "e88b793c7ccaddf558f37a63fa2102be7d5ae10b"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/senior-c-developer-2052434",
-      "title": "Senior C# Developer",
-      "company": "Varicent",
-      "location": "Mexico",
-      "remote_type": "remote",
-      "tags": [
-        "AWS",
-        "C#",
-        "ETL"
-      ],
-      "salary": "market leading compensation package",
-      "posted_at": "2025-08-25T20:50:11",
-      "hash": "3834991f3c477ff1eeaf48c3ee21371a7f239ff9"
     },
     {
       "source": "Remotive - API",
@@ -3632,6 +4019,22 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/devops/infrastructure-administrator-2052025",
+      "title": "Infrastructure Administrator",
+      "company": "DeepHealth",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "kubernetes",
+        "system administration",
+        "virtualization"
+      ],
+      "salary": "$90,000 - $102,000 per year",
+      "posted_at": "2025-08-25T16:51:36",
+      "hash": "9c8c3fba570450ab4983bb5838d4bde8f05c9e08"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/devops/devops-engineer-2052124",
       "title": "DevOps Engineer",
       "company": "Soum",
@@ -3646,22 +4049,6 @@
       "salary": "",
       "posted_at": "2025-08-25T16:51:36",
       "hash": "381167014b259f4adba847cf1e075e48012a3bcf"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/devops/infrastructure-administrator-2052025",
-      "title": "Infrastructure Administrator",
-      "company": "DeepHealth",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "kubernetes",
-        "system administration",
-        "virtualization"
-      ],
-      "salary": "$90,000 - $102,000 per year",
-      "posted_at": "2025-08-25T16:51:36",
-      "hash": "9c8c3fba570450ab4983bb5838d4bde8f05c9e08"
     },
     {
       "source": "Remotive - API",
@@ -3969,21 +4356,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/marketing/senior-marketing-production-consultant-2051888",
-      "title": "Senior Marketing Production Consultant",
-      "company": "Cineverse",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "after effects",
-        "video editing"
-      ],
-      "salary": "$8,000/month depending on experience",
-      "posted_at": "2025-08-24T18:50:58",
-      "hash": "5807177a5bf3623ab0890b78e41d5568d55e2a73"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/design/contract-designer-product-launch-support-2051794",
       "title": "Contract Designer - Product Launch Support",
       "company": "Mento",
@@ -4121,6 +4493,20 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/acumatica-functional-consultant-2051486",
+      "title": "Acumatica Functional Consultant",
+      "company": "TRAILD PTY LTD",
+      "location": "Canada",
+      "remote_type": "remote",
+      "tags": [
+        "technical support"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-24T18:50:07",
+      "hash": "dcdd9ecd36f8190b1d4db4f5a10378bb80461b2a"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/software-dev/senior-servicenow-consultant-2051489",
       "title": "Senior ServiceNow Consultant",
       "company": "ConWare",
@@ -4133,20 +4519,6 @@
       "salary": "",
       "posted_at": "2025-08-24T18:50:07",
       "hash": "d505d2ed03638957af40a0cfae5b2e2669aec835"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/acumatica-functional-consultant-2051486",
-      "title": "Acumatica Functional Consultant",
-      "company": "TRAILD PTY LTD",
-      "location": "Canada",
-      "remote_type": "remote",
-      "tags": [
-        "technical support"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-24T18:50:07",
-      "hash": "dcdd9ecd36f8190b1d4db4f5a10378bb80461b2a"
     },
     {
       "source": "Remotive - API",
@@ -4338,6 +4710,22 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/devops/site-reliability-engineer-2052265",
+      "title": "Site Reliability Engineer",
+      "company": "Virtasant",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "AWS",
+        "python",
+        "terraform"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-24T14:50:43",
+      "hash": "83bb627af1f2f0f8baa4b717ecd82d4a2a46823e"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/devops/senior-site-reliability-engineer-2052268",
       "title": "Senior Site Reliability Engineer",
       "company": "Tilt",
@@ -4352,22 +4740,6 @@
       "salary": "$165,000 - $175,000 usd plus stock options",
       "posted_at": "2025-08-24T14:50:43",
       "hash": "0ec4886df66590aa91175684ed1a9fd11dbb6979"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/devops/site-reliability-engineer-2052265",
-      "title": "Site Reliability Engineer",
-      "company": "Virtasant",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "AWS",
-        "python",
-        "terraform"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-24T14:50:43",
-      "hash": "83bb627af1f2f0f8baa4b717ecd82d4a2a46823e"
     },
     {
       "source": "Remotive - API",
@@ -4432,6 +4804,20 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/product/senior-product-manager-2049373",
+      "title": "Senior Product Manager",
+      "company": "Bitpay",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "product management"
+      ],
+      "salary": "competitive salary package",
+      "posted_at": "2025-08-24T00:51:04",
+      "hash": "97c4ccd708844890f72bb8957182c659e854e5c7"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/product/sr-product-manager-2051698",
       "title": "Sr Product Manager",
       "company": "NIUM",
@@ -4444,20 +4830,6 @@
       "salary": "",
       "posted_at": "2025-08-24T00:51:04",
       "hash": "d619c6b21bb3308aca3f49374f8088269899939a"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/product/senior-product-manager-2049373",
-      "title": "Senior Product Manager",
-      "company": "Bitpay",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "product management"
-      ],
-      "salary": "competitive salary package",
-      "posted_at": "2025-08-24T00:51:04",
-      "hash": "97c4ccd708844890f72bb8957182c659e854e5c7"
     },
     {
       "source": "Remotive - API",
@@ -4605,22 +4977,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/customer-support/regional-customer-manager-2051996",
-      "title": "Regional Customer Manager",
-      "company": "JOOR",
-      "location": "UK",
-      "remote_type": "remote",
-      "tags": [
-        "saas",
-        "account management",
-        "Customer Support"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-23T16:51:18",
-      "hash": "ae07d4d5b4f8b3ab3a34c647f2ef5bb22f4cefe2"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/customer-support/technical-customer-success-manager-2051995",
       "title": "Technical Customer Success Manager",
       "company": "Acuity Insights",
@@ -4637,6 +4993,22 @@
       "salary": "$85,000 - $95,000 cad",
       "posted_at": "2025-08-23T16:51:18",
       "hash": "34dd82695d5113f9f3e7f5fce5b3c0e0a6af85eb"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/customer-support/regional-customer-manager-2051996",
+      "title": "Regional Customer Manager",
+      "company": "JOOR",
+      "location": "UK",
+      "remote_type": "remote",
+      "tags": [
+        "saas",
+        "account management",
+        "Customer Support"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-23T16:51:18",
+      "hash": "ae07d4d5b4f8b3ab3a34c647f2ef5bb22f4cefe2"
     },
     {
       "source": "Remotive - API",
@@ -4693,23 +5065,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/principal-programmer-2051642",
-      "title": "Principal Programmer",
-      "company": "Underground Administration",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "C#",
-        "git",
-        "unity3D",
-        "performance optimization"
-      ],
-      "salary": "$120k–$150k plus bene’s",
-      "posted_at": "2025-08-23T16:50:46",
-      "hash": "5f660aa9f6ea0afbe7f41ab135e3adbc14cfbe6d"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/software-dev/senior-data-scientist-2051555",
       "title": "Senior Data Scientist",
       "company": "Plain Concepts",
@@ -4725,6 +5080,23 @@
       "salary": "salary determined by market and experience",
       "posted_at": "2025-08-23T16:50:46",
       "hash": "626a3a029d79d8f4d43299e5cdd3eeb71d42b982"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/principal-programmer-2051642",
+      "title": "Principal Programmer",
+      "company": "Underground Administration",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "C#",
+        "git",
+        "unity3D",
+        "performance optimization"
+      ],
+      "salary": "$120k–$150k plus bene’s",
+      "posted_at": "2025-08-23T16:50:46",
+      "hash": "5f660aa9f6ea0afbe7f41ab135e3adbc14cfbe6d"
     },
     {
       "source": "Remotive - API",
@@ -4746,22 +5118,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/data-engineer-2051651",
-      "title": "Data Engineer",
-      "company": "Thaloz",
-      "location": "Brazil",
-      "remote_type": "remote",
-      "tags": [
-        "python",
-        "sql",
-        "ETL"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-23T16:50:44",
-      "hash": "c854284d0ff1c7eaa979dc2a03c07a875e9b9253"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/software-dev/engineering-manager-2051644",
       "title": "Engineering Manager",
       "company": "Stellar Health",
@@ -4777,6 +5133,22 @@
       "salary": "$220,000 - $260,000",
       "posted_at": "2025-08-23T16:50:44",
       "hash": "d9cc4fa768cd744feaf50acc6fed6cd7f4e1f930"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/data-engineer-2051651",
+      "title": "Data Engineer",
+      "company": "Thaloz",
+      "location": "Brazil",
+      "remote_type": "remote",
+      "tags": [
+        "python",
+        "sql",
+        "ETL"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-23T16:50:44",
+      "hash": "c854284d0ff1c7eaa979dc2a03c07a875e9b9253"
     },
     {
       "source": "Remotive - API",
@@ -5584,20 +5956,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/sales-business/strategic-account-manager-2051071",
-      "title": "Strategic Account Manager",
-      "company": "Palo Alto Networks",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "time management"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-21T20:51:00",
-      "hash": "feb2df1eae4cd21feab365f02ba851e361b8eafd"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/customer-support/healthcare-agent-2050049",
       "title": "Healthcare Agent",
       "company": "Alorica",
@@ -6125,6 +6483,20 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/devops/it-administrator-2049904",
+      "title": "IT Administrator",
+      "company": "Phil",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "IT management"
+      ],
+      "salary": "competitive compensation (commensurate with experience)",
+      "posted_at": "2025-08-20T22:51:13",
+      "hash": "60918a18954c0be342fee4c50ac5822660039c01"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/devops/site-reliability-engineer-2049745",
       "title": "Site Reliability Engineer",
       "company": "Procurement Sciences",
@@ -6138,20 +6510,6 @@
       "salary": "competitive salary and performance-based incentives, including stock options.",
       "posted_at": "2025-08-20T22:51:13",
       "hash": "fe60567e8bcce2f1199c246c3c4a2f46cbac6d30"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/devops/it-administrator-2049904",
-      "title": "IT Administrator",
-      "company": "Phil",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "IT management"
-      ],
-      "salary": "competitive compensation (commensurate with experience)",
-      "posted_at": "2025-08-20T22:51:13",
-      "hash": "60918a18954c0be342fee4c50ac5822660039c01"
     },
     {
       "source": "Remotive - API",
@@ -6241,21 +6599,6 @@
       "salary": "",
       "posted_at": "2025-08-20T18:51:07",
       "hash": "f9b92db8aceb317c4263e98e4d47892a6de3b674"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/finance-legal/urgent-financial-control-audit-support-2049918",
-      "title": "URGENT: Financial Control & Audit Support",
-      "company": "Workstaff360",
-      "location": "Worldwide",
-      "remote_type": "remote",
-      "tags": [
-        "excel",
-        "Customer Support"
-      ],
-      "salary": "$6-$7usd/hour",
-      "posted_at": "2025-08-20T18:51:00",
-      "hash": "97a18c3645edb7e5f0b4e5812c994de1f320e02e"
     },
     {
       "source": "Remotive - API",
@@ -6782,20 +7125,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/finance-legal/accounting-finance-senior-associate-2049923",
-      "title": "Accounting & Finance Senior Associate",
-      "company": "Career Connect",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "excel"
-      ],
-      "salary": "above average remuneration",
-      "posted_at": "2025-08-19T18:51:51",
-      "hash": "b39fa0eb8207fa54d779a7b54b17029a2aa6bda8"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/finance-legal/senior-accountant-2049922",
       "title": "Senior Accountant",
       "company": "Children's Mercy KC",
@@ -6808,6 +7137,20 @@
       "salary": "usd 31.02 per hour",
       "posted_at": "2025-08-19T18:51:51",
       "hash": "4f3de975ff4dc792984d3668b260fdacec8d4010"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/finance-legal/accounting-finance-senior-associate-2049923",
+      "title": "Accounting & Finance Senior Associate",
+      "company": "Career Connect",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "excel"
+      ],
+      "salary": "above average remuneration",
+      "posted_at": "2025-08-19T18:51:51",
+      "hash": "b39fa0eb8207fa54d779a7b54b17029a2aa6bda8"
     },
     {
       "source": "Remotive - API",
@@ -11631,20 +11974,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/qa/internal-process-auditor-2045533",
-      "title": "Internal Process Auditor",
-      "company": "Kaizen",
-      "location": "India, Egypt, Philippines",
-      "remote_type": "remote",
-      "tags": [
-        "risk management"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-10T12:52:42",
-      "hash": "462f1c070dc4e4b7112bfac7282fde3162da8ced"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/qa/lead-qa-engineer-2045529",
       "title": "Lead QA Engineer",
       "company": "ApprovalMax Limited",
@@ -11657,6 +11986,20 @@
       "salary": "",
       "posted_at": "2025-08-10T12:52:42",
       "hash": "4fda33fb0397a3ae9c2e94fb5a69c678b2374242"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/qa/internal-process-auditor-2045533",
+      "title": "Internal Process Auditor",
+      "company": "Kaizen",
+      "location": "India, Egypt, Philippines",
+      "remote_type": "remote",
+      "tags": [
+        "risk management"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-10T12:52:42",
+      "hash": "462f1c070dc4e4b7112bfac7282fde3162da8ced"
     },
     {
       "source": "Remotive - API",
@@ -12068,21 +12411,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/all-others/transaction-manager-2045579",
-      "title": "Transaction Manager",
-      "company": "Maxwell",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "agile",
-        "insurance"
-      ],
-      "salary": "competitive salary",
-      "posted_at": "2025-08-09T10:53:28",
-      "hash": "93adc3bcf701ccb8d43ebcde57bd602d6f470a7f"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/all-others/knowledge-base-manager-2045428",
       "title": "Knowledge Base Manager",
       "company": "Coinme",
@@ -12095,6 +12423,21 @@
       "salary": "",
       "posted_at": "2025-08-09T10:53:28",
       "hash": "e54c2ded308f83ee77e73f1d9ab2b4540f0e26a0"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/all-others/transaction-manager-2045579",
+      "title": "Transaction Manager",
+      "company": "Maxwell",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "agile",
+        "insurance"
+      ],
+      "salary": "competitive salary",
+      "posted_at": "2025-08-09T10:53:28",
+      "hash": "93adc3bcf701ccb8d43ebcde57bd602d6f470a7f"
     },
     {
       "source": "Remotive - API",
@@ -12170,22 +12513,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/devops/cloud-operations-engineer-2045145",
-      "title": "Cloud Operations Engineer",
-      "company": "Darwoft",
-      "location": "LATAM",
-      "remote_type": "remote",
-      "tags": [
-        "AWS",
-        "docker",
-        "kubernetes"
-      ],
-      "salary": "payment in usd",
-      "posted_at": "2025-08-09T10:52:17",
-      "hash": "7d374a7fb17ebdf178d6a27e471ff3fef8465619"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/devops/distributed-cloud-aws-devops-engineer-2045144",
       "title": "Distributed Cloud | AWS DevOps Engineer",
       "company": "Devoteam",
@@ -12201,6 +12528,22 @@
       "salary": "",
       "posted_at": "2025-08-09T10:52:17",
       "hash": "d714af02bd926556ecaef244ff00d461c060de68"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/devops/cloud-operations-engineer-2045145",
+      "title": "Cloud Operations Engineer",
+      "company": "Darwoft",
+      "location": "LATAM",
+      "remote_type": "remote",
+      "tags": [
+        "AWS",
+        "docker",
+        "kubernetes"
+      ],
+      "salary": "payment in usd",
+      "posted_at": "2025-08-09T10:52:17",
+      "hash": "7d374a7fb17ebdf178d6a27e471ff3fef8465619"
     },
     {
       "source": "Remotive - API",
@@ -12232,6 +12575,20 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/design/creative-artworker-2045476",
+      "title": "Creative Artworker",
+      "company": "Admgroup",
+      "location": "Spain",
+      "remote_type": "remote",
+      "tags": [
+        "adobe creative suite"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-09T10:51:45",
+      "hash": "abd460ca5c894e82fdb92c951ee99c406096ffd8"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/design/communication-associate-2045477",
       "title": "Communication Associate",
       "company": "Reliance Health",
@@ -12244,20 +12601,6 @@
       "salary": "competitive salary and benefits",
       "posted_at": "2025-08-09T10:51:45",
       "hash": "260f899f3c38be8d641b5559c3caf21753517c6f"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/design/creative-artworker-2045476",
-      "title": "Creative Artworker",
-      "company": "Admgroup",
-      "location": "Spain",
-      "remote_type": "remote",
-      "tags": [
-        "adobe creative suite"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-09T10:51:45",
-      "hash": "abd460ca5c894e82fdb92c951ee99c406096ffd8"
     },
     {
       "source": "Remotive - API",
@@ -14007,21 +14350,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/marketing/director-of-marketing-2042808",
-      "title": "Director of Marketing",
-      "company": "Do Not Use",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "analytics",
-        "digital marketing"
-      ],
-      "salary": "$120k-$145k (ote = salary + 10% bonus)",
-      "posted_at": "2025-08-04T04:50:37",
-      "hash": "8b7cbe6c72fc5db043126c48e1579be462f1b057"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/marketing/email-lifecycle-manager-2042807",
       "title": "Email Lifecycle Manager",
       "company": "CoVet",
@@ -14037,6 +14365,21 @@
       "salary": "",
       "posted_at": "2025-08-04T04:50:37",
       "hash": "2dcd0ef21fdb752c3c3797ebb53166c1df773283"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/marketing/director-of-marketing-2042808",
+      "title": "Director of Marketing",
+      "company": "Do Not Use",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "analytics",
+        "digital marketing"
+      ],
+      "salary": "$120k-$145k (ote = salary + 10% bonus)",
+      "posted_at": "2025-08-04T04:50:37",
+      "hash": "8b7cbe6c72fc5db043126c48e1579be462f1b057"
     },
     {
       "source": "Remotive - API",
@@ -14501,6 +14844,21 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/customer-support/customer-success-engineer-2042964",
+      "title": "Customer Success Engineer",
+      "company": "Jumio",
+      "location": "India",
+      "remote_type": "remote",
+      "tags": [
+        "technical support",
+        "Customer Support"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-03T02:51:16",
+      "hash": "48504ccc7001468e0924195151315f846430b6ec"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/customer-support/it-help-desk-technician-2042966",
       "title": "IT Help Desk Technician",
       "company": "Global Academy of Technology",
@@ -14514,21 +14872,6 @@
       "salary": "",
       "posted_at": "2025-08-03T02:51:16",
       "hash": "591d715b16a7d79d8c9bb405e960e29cebf19132"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/customer-support/customer-success-engineer-2042964",
-      "title": "Customer Success Engineer",
-      "company": "Jumio",
-      "location": "India",
-      "remote_type": "remote",
-      "tags": [
-        "technical support",
-        "Customer Support"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-03T02:51:16",
-      "hash": "48504ccc7001468e0924195151315f846430b6ec"
     },
     {
       "source": "Remotive - API",
@@ -15028,6 +15371,20 @@
     },
     {
       "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/devops/senior-site-reliability-engineer-2042845",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Stack AV",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "kubernetes"
+      ],
+      "salary": "",
+      "posted_at": "2025-08-01T16:51:35",
+      "hash": "4827b234aa3757853288027a5cf31041dd97df88"
+    },
+    {
+      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/devops/senior-cloud-engineer-2042712",
       "title": "Senior Cloud Engineer",
       "company": "Valtech",
@@ -15042,20 +15399,6 @@
       "salary": "",
       "posted_at": "2025-08-01T16:51:35",
       "hash": "68ce4b8426d0095545fbb1ab58f4f760b30b400b"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/devops/senior-site-reliability-engineer-2042845",
-      "title": "Senior Site Reliability Engineer",
-      "company": "Stack AV",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "kubernetes"
-      ],
-      "salary": "",
-      "posted_at": "2025-08-01T16:51:35",
-      "hash": "4827b234aa3757853288027a5cf31041dd97df88"
     },
     {
       "source": "Remotive - API",
@@ -15598,20 +15941,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/product/senior-product-manager-2041538",
-      "title": "Senior Product Manager",
-      "company": "Careers at Drata",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "product management"
-      ],
-      "salary": "$125,700 - $194,000",
-      "posted_at": "2025-07-30T16:50:52",
-      "hash": "318f54a41c2152e4cead28d5be54c8b6e7d1cc57"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/product/senior-product-manager-platform-integrations-2041536",
       "title": "Senior Product Manager, Platform & Integrations",
       "company": "Checkmate",
@@ -15623,6 +15952,20 @@
       "salary": "",
       "posted_at": "2025-07-30T16:50:52",
       "hash": "2d5c28a546383a32302eb45af1d99e4bde9be26e"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/product/senior-product-manager-2041538",
+      "title": "Senior Product Manager",
+      "company": "Careers at Drata",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "product management"
+      ],
+      "salary": "$125,700 - $194,000",
+      "posted_at": "2025-07-30T16:50:52",
+      "hash": "318f54a41c2152e4cead28d5be54c8b6e7d1cc57"
     },
     {
       "source": "Remotive - API",
@@ -15805,21 +16148,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/senior-software-engineer-2041678",
-      "title": "Senior Software Engineer",
-      "company": "Kraken123",
-      "location": "France",
-      "remote_type": "remote",
-      "tags": [
-        "django",
-        "python"
-      ],
-      "salary": "",
-      "posted_at": "2025-07-30T00:50:43",
-      "hash": "2acabc021843402451846a8f1d4d8ccc7f2fb393"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/software-dev/it-data-platform-architect-2041550",
       "title": "IT Data Platform Architect",
       "company": "Brightspeed",
@@ -15835,6 +16163,21 @@
       "salary": "",
       "posted_at": "2025-07-30T00:50:43",
       "hash": "5ad99064db41ad9762ee54d6679e208c994a0b6d"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/senior-software-engineer-2041678",
+      "title": "Senior Software Engineer",
+      "company": "Kraken123",
+      "location": "France",
+      "remote_type": "remote",
+      "tags": [
+        "django",
+        "python"
+      ],
+      "salary": "",
+      "posted_at": "2025-07-30T00:50:43",
+      "hash": "2acabc021843402451846a8f1d4d8ccc7f2fb393"
     },
     {
       "source": "Remotive - API",
@@ -17942,20 +18285,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/sr-engineering-manager-data-infrastructure-2036265",
-      "title": "Sr. Engineering Manager, Data Infrastructure",
-      "company": "Serve Robotics",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "data engineering"
-      ],
-      "salary": "",
-      "posted_at": "2025-07-19T22:51:08",
-      "hash": "8dfeaf29571005c2044236cbfc3b7899f1b6d06d"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/software-dev/senior-full-stack-developer-2036402",
       "title": "Senior Full Stack Developer",
       "company": "CoLab Software",
@@ -17970,6 +18299,20 @@
       "salary": "attractive compensation package including stock options",
       "posted_at": "2025-07-19T22:51:08",
       "hash": "b8ded155e1c746af177ff39195fee4c6e0f9d079"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/sr-engineering-manager-data-infrastructure-2036265",
+      "title": "Sr. Engineering Manager, Data Infrastructure",
+      "company": "Serve Robotics",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "data engineering"
+      ],
+      "salary": "",
+      "posted_at": "2025-07-19T22:51:08",
+      "hash": "8dfeaf29571005c2044236cbfc3b7899f1b6d06d"
     },
     {
       "source": "Remotive - API",
@@ -19273,20 +19616,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/marketing/director-brand-product-management-2033438",
-      "title": "Director Brand & Product Management",
-      "company": "The Quality Group GmbH",
-      "location": "Germany",
-      "remote_type": "remote",
-      "tags": [
-        "product marketing"
-      ],
-      "salary": "",
-      "posted_at": "2025-07-12T08:51:36",
-      "hash": "8808aeaf46d2b68f5886042bd3a33e355c52f6a0"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/marketing/sea-manager-2033437",
       "title": "SEA Manager",
       "company": "Compado",
@@ -19302,6 +19631,20 @@
       "salary": "",
       "posted_at": "2025-07-12T08:51:36",
       "hash": "e3f19b7bb99efb2fcf860527b8cace7f35739610"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/marketing/director-brand-product-management-2033438",
+      "title": "Director Brand & Product Management",
+      "company": "The Quality Group GmbH",
+      "location": "Germany",
+      "remote_type": "remote",
+      "tags": [
+        "product marketing"
+      ],
+      "salary": "",
+      "posted_at": "2025-07-12T08:51:36",
+      "hash": "8808aeaf46d2b68f5886042bd3a33e355c52f6a0"
     },
     {
       "source": "Remotive - API",
@@ -22554,20 +22897,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/project-management/delivery-operations-manager-2023443",
-      "title": "Delivery Operations Manager",
-      "company": "Infinity Constellation",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "team management"
-      ],
-      "salary": "",
-      "posted_at": "2025-06-20T10:51:23",
-      "hash": "1a8eaf9da678516fdb87aa6da57f6758b6d09b12"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/project-management/project-manager-team-lead-2023444",
       "title": "Project Manager Team Lead",
       "company": "Harbor",
@@ -22580,6 +22909,20 @@
       "salary": "",
       "posted_at": "2025-06-20T10:51:23",
       "hash": "b452c112d894297438a4a2fb4d20ff9a2e63ab3f"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/project-management/delivery-operations-manager-2023443",
+      "title": "Delivery Operations Manager",
+      "company": "Infinity Constellation",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "team management"
+      ],
+      "salary": "",
+      "posted_at": "2025-06-20T10:51:23",
+      "hash": "1a8eaf9da678516fdb87aa6da57f6758b6d09b12"
     },
     {
       "source": "Remotive - API",
@@ -22786,21 +23129,6 @@
     },
     {
       "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/tech-lead-manager-2019477",
-      "title": "Tech Lead Manager",
-      "company": "Motional",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "C++",
-        "robotics"
-      ],
-      "salary": "$212,000 - $270,000 usd",
-      "posted_at": "2025-06-15T16:50:30",
-      "hash": "5a4a7737b6f867b4c9108e871ff57a7a36a22f20"
-    },
-    {
-      "source": "Remotive - API",
       "source_url": "https://remotive.com/remote-jobs/software-dev/aix-developer-2019479",
       "title": "AIX Developer",
       "company": "RE/SPEC Inc.",
@@ -22813,6 +23141,21 @@
       "salary": "",
       "posted_at": "2025-06-15T16:50:30",
       "hash": "0b02b8132730eee8f6f7f01f511d7c6b10a9bece"
+    },
+    {
+      "source": "Remotive - API",
+      "source_url": "https://remotive.com/remote-jobs/software-dev/tech-lead-manager-2019477",
+      "title": "Tech Lead Manager",
+      "company": "Motional",
+      "location": "USA",
+      "remote_type": "remote",
+      "tags": [
+        "C++",
+        "robotics"
+      ],
+      "salary": "$212,000 - $270,000 usd",
+      "posted_at": "2025-06-15T16:50:30",
+      "hash": "5a4a7737b6f867b4c9108e871ff57a7a36a22f20"
     },
     {
       "source": "Remotive - API",
@@ -23755,21 +24098,6 @@
       "salary": "",
       "posted_at": "2025-06-04T00:50:43",
       "hash": "df5e9d252e55fef65a0c73b16d6753a578735b95"
-    },
-    {
-      "source": "Remotive - API",
-      "source_url": "https://remotive.com/remote-jobs/software-dev/director-of-data-science-2016060",
-      "title": "Director of Data Science",
-      "company": "Machinify",
-      "location": "USA",
-      "remote_type": "remote",
-      "tags": [
-        "data science",
-        "team management"
-      ],
-      "salary": "competitive salary and equity",
-      "posted_at": "2025-06-03T00:50:52",
-      "hash": "81be42862abb8922d0890b9640cfffd4ff4c98ff"
     },
     {
       "source": "We Work Remotely - Customer Support",
