@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "contact";
+const description = "questions, collaborations, or just say hi.";
+---
+<BaseLayout {title} {description}>
+  <section class="card">
+    <h2>let's talk</h2>
+    <p class="muted">questions, partnerships, feedback, media — drop me a note below.</p>
+
+    <!-- Formspree form with your endpoint -->
+    <form action="https://formspree.io/f/xqadpvrk" method="POST" style="display:grid;gap:12px;max-width:520px">
+      <label>name<br /><input name="name" required style="padding:10px;width:100%;border:1px solid #e8e8e8;border-radius:10px" /></label>
+      <label>email<br /><input type="email" name="email" required style="padding:10px;width:100%;border:1px solid #e8e8e8;border-radius:10px" /></label>
+      <label>message<br /><textarea name="message" rows="6" required style="padding:10px;width:100%;border:1px solid #e8e8e8;border-radius:10px"></textarea></label>
+      <button class="btn" type="submit">send message</button>
+    </form>
+
+    <p class="muted" style="margin-top:10px">prefer email? hello@remotelyyou.co</p>
+  </section>
+</BaseLayout>
