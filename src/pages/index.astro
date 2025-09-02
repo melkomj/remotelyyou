@@ -1,8 +1,6 @@
 ﻿---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import NewsletterEmbed from "../components/NewsletterEmbed.astro";
 const title = "work anywhere. live everywhere.";
-
 ---
 
 <BaseLayout title="RemotelyYou - Work From Anywhere">
@@ -15,7 +13,7 @@ const title = "work anywhere. live everywhere.";
           <p class="hero-subtitle">Discover the freedom of remote work. Find your next remote job, access valuable resources, and learn how to lead a fulfilling location-independent lifestyle.</p>
           <div class="hero-actions">
             <a href="/jobs" class="btn btn-primary">Browse Jobs</a>
-            <a href="/course" class="btn btn-secondary">Free Course</a>
+            <a href="/course" class="btn btn--secondary">Free Course</a>
           </div>
         </div>
       </div>
@@ -25,37 +23,37 @@ const title = "work anywhere. live everywhere.";
     <section class="features">
       <div class="container">
         <div class="features-grid">
-          <div class="feature-card">
+          <div class="feature-card card">
             <div class="feature-header">
-              <span class="feature-badge">Free Course</span>
+              <span class="pill accent">Free Course</span>
               <h2>Roadmap to Remote Work</h2>
             </div>
             <p>Sign up for the beginner's guide to landing your first remote job.</p>
-            <a href="/course" class="feature-link">Get Access →</a>
+            <a href="/course" class="btn btn--outline btn-small">Get Access →</a>
           </div>
 
-          <div class="feature-card">
+          <div class="feature-card card">
             <div class="feature-header">
               <h2>Remote Job Board</h2>
             </div>
             <p>Explore the latest remote job opportunities in various industries.</p>
-            <a href="/jobs" class="feature-link">View Jobs →</a>
+            <a href="/jobs" class="btn btn--outline btn-small">View Jobs →</a>
           </div>
 
-          <div class="feature-card">
+          <div class="feature-card card">
             <div class="feature-header">
               <h2>Resources & Guides</h2>
             </div>
             <p>Tools, tips, and strategies for remote work success.</p>
-            <a href="/blog" class="feature-link">Read Blog →</a>
+            <a href="/blog" class="btn btn--outline btn-small">Read Blog →</a>
           </div>
 
-          <div class="feature-card">
+          <div class="feature-card card">
             <div class="feature-header">
               <h2>Get Support</h2>
             </div>
             <p>Have questions? Need personalized guidance for your remote work journey?</p>
-            <a href="/contact" class="feature-link">Contact Me →</a>
+            <a href="/contact" class="btn btn--outline btn-small">Contact Me →</a>
           </div>
         </div>
       </div>
@@ -80,111 +78,168 @@ const title = "work anywhere. live everywhere.";
         </div>
       </div>
     </section>
-
-    <!-- Tools Section -->
-    <section class="tools">
-      <div class="container">
-        <h2>Essential Tools for Remote Success</h2>
-        <div class="tools-grid">
-          <a href="https://huntr.co/?utm_source=remote-jobs-site&utm_campaign=homepage" target="_blank" rel="noopener noreferrer" class="tool-card">
-            <h3>Application Tracker</h3>
-            <p>Organize your job search and never miss a follow-up</p>
-          </a>
-          <a href="https://zety.com/?utm_source=remote-jobs-site&utm_campaign=homepage" target="_blank" rel="noopener noreferrer" class="tool-card">
-            <h3>Resume Builder</h3>
-            <p>Create ATS-friendly resumes that get noticed</p>
-          </a>
-          <a href="https://www.coursera.org/?utm_source=remote-jobs-site&utm_campaign=homepage" target="_blank" rel="noopener noreferrer" class="tool-card">
-            <h3>Skill Building</h3>
-            <p>Learn in-demand skills with recognized certifications</p>
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
 </BaseLayout>
 
 <style>
-  :root {
-    --color-primary: #2563eb;
-    --color-teal: #14b8a6;
-    --color-coral: #f97316;
-    --color-sand: #fbbf24;
-    --color-text: #1e293b;
-    --color-text-light: #475569;
-    --color-bg: #ffffff;
-    --color-bg-light: #f8fafc;
-    --color-border: #e2e8f0;
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-    --radius: 0.5rem;
-    --radius-lg: 1rem;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-5);
   }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--color-text); }
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-
-  /* Hero */
-  .hero { background: linear-gradient(135deg, var(--color-bg-light) 0%, #ffffff 100%); padding: 5rem 0 3rem; text-align: center; }
-  .hero-content { max-width: 800px; margin: 0 auto; }
-  .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; line-height: 1.1; color: var(--color-text); margin-bottom: 1.5rem; letter-spacing: -0.025em; }
-  .hero-subtitle { font-size: 1.25rem; color: var(--color-text-light); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
-  .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-  /* Buttons */
-  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.875rem 2rem; border-radius: var(--radius); font-weight: 600; text-decoration: none; transition: all 0.2s ease; border: 2px solid transparent; font-size: 1rem; }
-  .btn-primary { background: var(--color-primary); color: white; box-shadow: var(--shadow-md); }
-  .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); box-shadow: var(--shadow-lg); text-decoration: none; }
-  .btn-secondary { background: transparent; color: var(--color-primary); border-color: var(--color-primary); }
-  .btn-secondary:hover { background: var(--color-primary); color: white; text-decoration: none; }
-
-  /* Features */
-  .features { padding: 4rem 0; background: var(--color-bg); }
-  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-  .feature-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 2rem; transition: all 0.3s ease; position: relative; overflow: hidden; }
-  .feature-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--color-teal), var(--color-coral)); opacity: 0; transition: opacity 0.3s ease; }
-  .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--color-teal); }
-  .feature-card:hover::before { opacity: 1; }
-  .feature-badge { display: inline-block; background: var(--color-teal); color: white; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
-  .feature-card h2 { font-size: 1.5rem; font-weight: 700; color: var(--color-text); margin-bottom: 1rem; line-height: 1.3; }
-  .feature-card p { color: var(--color-text-light); margin-bottom: 1.5rem; line-height: 1.6; }
-  .feature-link { color: var(--color-primary); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.2s ease; }
-  .feature-link:hover { color: var(--color-coral); text-decoration: none; }
-
-  /* Stats */
-  .stats { background: var(--color-bg-light); padding: 3rem 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
-  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center; }
-  .stat-number { font-size: 2.5rem; font-weight: 800; color: var(--color-primary); line-height: 1; margin-bottom: 0.5rem; }
-  .stat-label { font-size: 0.95rem; color: var(--color-text-light); font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
-
-  /* Tools */
-  .tools { padding: 4rem 0; background: var(--color-bg); }
-  .tools h2 { text-align: center; font-size: 2.25rem; font-weight: 700; color: var(--color-text); margin-bottom: 3rem; }
-  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-  .tool-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 2rem; text-decoration: none; color: inherit; transition: all 0.3s ease; text-align: center; position: relative; overflow: hidden; }
-  .tool-card::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transition: left 0.5s ease; }
-  .tool-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--color-teal); text-decoration: none; color: inherit; }
-  .tool-card:hover::before { left: 100%; }
-  .tool-card h3 { font-size: 1.25rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.75rem; }
-  .tool-card p { color: var(--color-text-light); font-size: 0.95rem; line-height: 1.5; }
-
-  /* Responsive */
-  @media (max-width: 768px) { 
-    .hero { padding: 3rem 0 2rem; } 
-    .hero-actions { flex-direction: column; align-items: center; gap: 0.75rem; } 
-    .btn { width: 100%; max-width: 280px; } 
-    .features-grid { grid-template-columns: 1fr; gap: 1.5rem; } 
-    .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; } 
-    .stat-number { font-size: 2rem; } 
-    .tools-grid { grid-template-columns: 1fr; gap: 1rem; } 
+  .hero {
+    background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+    padding: var(--space-20) 0 var(--space-12);
+    text-align: center;
   }
-  
-  @media (max-width: 480px) { 
-    .container { padding: 0 1rem; } 
-    .hero h1 { font-size: 2.25rem; } 
-    .hero-subtitle { font-size: 1.1rem; } 
-    .feature-card, .tool-card { padding: 1.5rem; } 
-    .stats-grid { grid-template-columns: 1fr; gap: 1.5rem; } 
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--color-black);
+    margin-bottom: var(--space-6);
+    letter-spacing: -0.025em;
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-10);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .features {
+    padding: var(--space-16) 0;
+    background: var(--color-white);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-8);
+  }
+
+  .feature-card {
+    transition: all 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-secondary);
+  }
+
+  .feature-header {
+    margin-bottom: var(--space-4);
+  }
+
+  .feature-card h2 {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: var(--space-3);
+    line-height: 1.3;
+  }
+
+  .feature-card p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-6);
+    line-height: 1.6;
+  }
+
+  .stats {
+    background: var(--color-gray-50);
+    padding: var(--space-12) 0;
+    border-top: 1px solid var(--color-gray-200);
+    border-bottom: 1px solid var(--color-gray-200);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-8);
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: var(--font-size-4xl);
+    font-weight: 800;
+    color: var(--color-secondary);
+    line-height: 1;
+    margin-bottom: var(--space-2);
+  }
+
+  .stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: var(--space-12) 0 var(--space-8);
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-3);
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 280px;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+
+    .stat-number {
+      font-size: var(--font-size-3xl);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 var(--space-4);
+    }
+
+    .hero h1 {
+      font-size: var(--font-size-3xl);
+    }
+
+    .hero-subtitle {
+      font-size: var(--font-size-base);
+    }
+
+    .stats-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
   }
 </style>
