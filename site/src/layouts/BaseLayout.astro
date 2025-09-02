@@ -1,50 +1,57 @@
 ---
-/**
- * SAFER LAYOUT:
- * Always defines a local pageTitle/description even if props are missing.
- */
-const pageTitle =
-  (Astro.props && typeof Astro.props.title === 'string' && Astro.props.title.trim()) ||
-  'Work From Anywhere';
+// layouts/BaseLayout.astro
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 
-const pageDescription =
-  (Astro.props && typeof Astro.props.description === 'string' && Astro.props.description.trim()) ||
-  '';
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "find beginner-friendly remote jobs and build your location-independent career." } = Astro.props;
 ---
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>{pageTitle}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {pageDescription && <meta name="description" content={pageDescription} />}
-    <style>
-      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;max-width:960px;margin:40px auto;padding:0 16px}
-      header,footer{margin:24px 0}
-      nav a{margin-right:14px;text-decoration:none;color:#1b73e8}
-      nav a:hover{text-decoration:underline}
-      .btn{display:inline-block;background:#1b73e8;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
-      .card{border:1px solid #eee;border-radius:12px;padding:16px;margin-bottom:12px}
-      .muted{color:#666}
-      .badge{background:#eef;border:1px solid #dde;padding:2px 8px;border-radius:999px;font-size:12px;margin-left:8px}
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | remotelyyou</title>
+    
+    <!-- Preload Work Sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content={`${title} | remotelyyou`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | remotelyyou`} />
+    <meta name="twitter:description" content={description} />
   </head>
   <body>
-    <header>
-      <h1>Work From Anywhere</h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/course">Course</a>
-        <a href="/jobs">Jobs</a>
-        <a href="/blog">Blog</a>
-        <a href="/resources">Resources</a>
-        <a href="/contact">Contact</a>
-      </nav>
-    </header>
+    <nav>
+      <div class="nav-content">
+        <a href="/" class="logo">remotelyyou</a>
+        <div class="nav-links">
+          <a href="/">home</a>
+          <a href="/course">course</a>
+          <a href="/jobs">jobs</a>
+          <a href="/blog">blog</a>
+          <a href="/resources">resources</a>
+          <a href="/contact">contact</a>
+        </div>
+      </div>
+    </nav>
+
     <main>
       <slot />
     </main>
-    <footer class="muted">
-      <p>© {new Date().getFullYear()} Work From Anywhere. If you own a posting and want it removed, contact us.</p>
-    </footer>
+
+    <Footer />
   </body>
 </html>

@@ -1,0 +1,282 @@
+---
+// components/Footer.astro
+---
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <div class="newsletter-signup">
+        <h3>stay in the remote work loop</h3>
+        <p>get 5-10 hand-picked beginner-friendly remote jobs + actionable remote work tips delivered weekly</p>
+        
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/remotelyyou"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/remotelyyou', 'popupwindow')"
+          class="newsletter-form"
+        >
+          <div class="form-group">
+            <input 
+              type="email" 
+              name="email" 
+              id="newsletter-email" 
+              placeholder="your email address"
+              required 
+            />
+            <button type="submit" class="btn">subscribe free</button>
+          </div>
+          <p class="newsletter-note">no spam, unsubscribe anytime. join 2,000+ readers.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>explore</h4>
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/jobs">remote jobs</a></li>
+          <li><a href="/course">free course</a></li>
+          <li><a href="/resources">resources</a></li>
+          <li><a href="/blog">blog</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>connect</h4>
+        <ul>
+          <li><a href="/contact">contact us</a></li>
+          <li><a href="mailto:hello@remotelyyou.co">hello@remotelyyou.co</a></li>
+          <li><a href="https://twitter.com/remotelyyou" target="_blank" rel="noopener">twitter</a></li>
+          <li><a href="https://linkedin.com/company/remotelyyou" target="_blank" rel="noopener">linkedin</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>legal</h4>
+        <ul>
+          <li><a href="/privacy">privacy policy</a></li>
+          <li><a href="/terms">terms of service</a></li>
+          <li><a href="/disclaimer">disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-content">
+      <p>&copy; 2025 remotelyyou. helping you work from anywhere.</p>
+      <p class="powered-by">
+        <a href="https://buttondown.com/refer/remotelyyou" target="_blank" rel="noopener">newsletter by buttondown</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: #1a1a1a;
+    color: #e0e0e0;
+    margin-top: 60px;
+    padding: 50px 0 20px;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .newsletter-signup {
+    background: #2a2a2a;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .newsletter-signup h3 {
+    margin: 0 0 12px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .newsletter-signup p {
+    margin: 0 0 30px 0;
+    color: #b0b0b0;
+    font-size: 16px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .newsletter-form .form-group {
+    display: flex;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto 12px;
+  }
+
+  .newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 14px 16px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+  }
+
+  .newsletter-form input[type="email"]:focus {
+    outline: none;
+    border-color: #666;
+  }
+
+  .newsletter-form input[type="email"]::placeholder {
+    color: #888;
+  }
+
+  .newsletter-form .btn {
+    padding: 14px 24px;
+    background: #fff;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .newsletter-form .btn:hover {
+    background: #e0e0e0;
+    transform: translateY(-1px);
+  }
+
+  .newsletter-note {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-column h4 {
+    margin: 0 0 16px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-column li {
+    margin-bottom: 8px;
+  }
+
+  .footer-column a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+  }
+
+  .footer-column a:hover {
+    color: #fff;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+
+  .footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+  }
+
+  .powered-by a {
+    color: #888;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .powered-by a:hover {
+    color: #b0b0b0;
+  }
+
+  @media (max-width: 768px) {
+    .site-footer {
+      padding: 40px 0 20px;
+    }
+
+    .newsletter-signup {
+      padding: 30px 20px;
+      margin-bottom: 40px;
+    }
+
+    .newsletter-signup h3 {
+      font-size: 20px;
+    }
+
+    .newsletter-signup p {
+      font-size: 14px;
+    }
+
+    .newsletter-form .form-group {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    .newsletter-form .btn {
+      padding: 12px 20px;
+    }
+
+    .footer-links {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .footer-bottom-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-links {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+
+    .newsletter-signup {
+      padding: 25px 15px;
+    }
+  }
+</style>
