@@ -3,26 +3,26 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "beginner-friendly remote jobs";
 ---
 <BaseLayout {title}>
-  <section class="hero">
+  <section class="jobs-hero">
     <h1>beginner-friendly remote jobs</h1>
     <p class="lead">hand-curated remote opportunities you can actually land. updated regularly with entry-level and junior positions.</p>
   </section>
 
-  <section class="card">
+  <section class="card filters-section">
     <div class="filters-grid">
       <div class="search-group">
-        <label for="q" class="form-label">search</label>
+        <label for="q" class="filter-label">search</label>
         <input 
           id="q" 
           type="text"
           placeholder="job title, company, skills..." 
-          class="form-input search-input"
+          class="filter-input search-input"
         />
       </div>
 
       <div class="filter-group">
-        <label for="level" class="form-label">experience level</label>
-        <select id="level" class="form-select">
+        <label for="level" class="filter-label">experience level</label>
+        <select id="level" class="filter-select">
           <option value="">all levels</option>
           <option value="entry">entry level</option>
           <option value="junior">junior (1-2 years)</option>
@@ -31,8 +31,8 @@ const title = "beginner-friendly remote jobs";
       </div>
 
       <div class="filter-group">
-        <label for="jobType" class="form-label">job type</label>
-        <select id="jobType" class="form-select">
+        <label for="jobType" class="filter-label">job type</label>
+        <select id="jobType" class="filter-select">
           <option value="">all types</option>
           <option value="full-time">full-time</option>
           <option value="part-time">part-time</option>
@@ -42,8 +42,8 @@ const title = "beginner-friendly remote jobs";
       </div>
 
       <div class="filter-group">
-        <label for="category" class="form-label">category</label>
-        <select id="category" class="form-select">
+        <label for="category" class="filter-label">category</label>
+        <select id="category" class="filter-select">
           <option value="">all categories</option>
           <option value="customer-service">customer service</option>
           <option value="marketing">marketing</option>
@@ -58,8 +58,8 @@ const title = "beginner-friendly remote jobs";
       </div>
 
       <div class="filter-group">
-        <label for="country" class="form-label">location</label>
-        <select id="country" class="form-select">
+        <label for="country" class="filter-label">location</label>
+        <select id="country" class="filter-select">
           <option value="">all locations</option>
         </select>
       </div>
@@ -67,6 +67,7 @@ const title = "beginner-friendly remote jobs";
       <div class="filter-group checkbox-group">
         <label class="checkbox-label">
           <input id="globalOnly" type="checkbox" />
+          <span class="checkmark"></span>
           global remote only
         </label>
       </div>
@@ -81,7 +82,7 @@ const title = "beginner-friendly remote jobs";
   </section>
 
   <section class="jobs-section">
-    <ul id="list" class="list-none"></ul>
+    <ul id="list" class="jobs-list"></ul>
     
     <div id="loadingState" class="loading-state">
       <p>loading fresh remote opportunities...</p>
@@ -91,28 +92,34 @@ const title = "beginner-friendly remote jobs";
       <h3>no jobs match your filters</h3>
       <p>try adjusting your search criteria or <button id="clearFiltersInline" class="link-button">clear all filters</button></p>
     </div>
-
-    <!-- Pagination Controls -->
-    <div id="paginationControls" class="pagination-controls" style="display: none;">
-      <button id="prevPage" class="btn btn--outline btn-small">← previous</button>
-      <span id="pageInfo" class="page-info">page 1 of 1</span>
-      <button id="nextPage" class="btn btn--outline btn-small">next →</button>
-    </div>
   </section>
 
-  <section class="card cta">
+  <section class="card cta-section">
     <h2>want to land remote work faster?</h2>
     <p>get our free step-by-step roadmap that shows you exactly how to transition to remote work</p>
     <a href="/course" class="btn">get the free roadmap</a>
   </section>
 
   <style>
+    .jobs-hero {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .jobs-hero h1 {
+      margin-bottom: 12px;
+    }
+
+    .filters-section {
+      margin-bottom: 24px;
+    }
+
     .filters-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1.2fr 1fr auto;
-      gap: var(--space-4);
+      gap: 16px;
       align-items: end;
-      margin-bottom: var(--space-5);
+      margin-bottom: 20px;
     }
 
     .search-group {
@@ -129,30 +136,85 @@ const title = "beginner-friendly remote jobs";
       min-height: 44px;
     }
 
+    .filter-label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .filter-input,
+    .filter-select {
+      width: 100%;
+      padding: 10px 14px;
+      border: 2px solid #e8e8e8;
+      border-radius: 8px;
+      font-size: 14px;
+      background: #fff;
+      transition: border-color 0.2s ease;
+    }
+
+    .filter-input:focus,
+    .filter-select:focus {
+      outline: none;
+      border-color: #666;
+    }
+
+    .search-input {
+      font-size: 15px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 14px;
+      color: #555;
+      user-select: none;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+    }
+
     .filter-actions {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: var(--space-4);
-      border-top: 1px solid var(--color-gray-200);
+      padding-top: 16px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .btn-small {
+      padding: 8px 16px;
+      font-size: 13px;
     }
 
     .results-info {
-      font-size: var(--font-size-sm);
+      font-size: 14px;
+    }
+
+    .jobs-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
     .job-card {
-      background: var(--color-white);
-      border: 1px solid var(--color-gray-200);
-      border-radius: var(--radius-xl);
-      padding: var(--space-6);
-      margin-bottom: var(--space-4);
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
       transition: all 0.2s ease;
     }
 
     .job-card:hover {
-      border-color: var(--color-secondary);
-      box-shadow: var(--shadow-md);
+      border-color: #d0d0d0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transform: translateY(-1px);
     }
 
@@ -160,8 +222,8 @@ const title = "beginner-friendly remote jobs";
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: var(--space-4);
-      margin-bottom: var(--space-3);
+      gap: 16px;
+      margin-bottom: 12px;
     }
 
     .job-title {
@@ -170,20 +232,20 @@ const title = "beginner-friendly remote jobs";
     }
 
     .job-title a {
-      font-size: var(--font-size-lg);
+      font-size: 18px;
       font-weight: 600;
-      color: var(--color-black);
+      color: #000;
       text-decoration: none;
     }
 
     .job-title a:hover {
-      color: var(--color-secondary);
+      color: #0066cc;
     }
 
     .job-meta {
-      color: var(--color-gray-600);
-      font-size: var(--font-size-sm);
-      margin-top: var(--space-1);
+      color: #666;
+      font-size: 14px;
+      margin-top: 4px;
     }
 
     .job-actions {
@@ -192,55 +254,85 @@ const title = "beginner-friendly remote jobs";
     }
 
     .job-date {
-      font-size: var(--font-size-xs);
-      color: var(--color-gray-500);
-      margin-bottom: var(--space-2);
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .apply-btn {
+      padding: 8px 16px;
+      font-size: 14px;
     }
 
     .job-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: var(--space-2);
-      margin-top: var(--space-3);
+      gap: 6px;
+      margin-top: 12px;
     }
 
     .job-tag {
-      padding: var(--space-1) var(--space-2);
-      background: var(--color-gray-100);
-      color: var(--color-gray-700);
-      border-radius: var(--radius-sm);
-      font-size: var(--font-size-xs);
+      padding: 4px 8px;
+      background: #f8f9fa;
+      color: #495057;
+      border-radius: 6px;
+      font-size: 12px;
       font-weight: 500;
     }
 
     .job-tag.level {
-      background: var(--color-teal-100);
-      color: var(--color-teal-800);
+      background: #e3f2fd;
+      color: #1565c0;
     }
 
     .job-tag.remote {
-      background: var(--color-coral-100);
-      color: var(--color-coral-800);
+      background: #e8f5e8;
+      color: #2e7d32;
     }
 
-    .pagination-controls {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: var(--space-4);
-      margin-top: var(--space-8);
-      padding: var(--space-4);
+    .loading-state,
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #666;
     }
 
-    .page-info {
-      color: var(--color-gray-600);
-      font-size: var(--font-size-sm);
+    .empty-state h3 {
+      margin-bottom: 8px;
+    }
+
+    .link-button {
+      background: none;
+      border: none;
+      color: #0066cc;
+      cursor: pointer;
+      text-decoration: underline;
+      font-size: inherit;
+    }
+
+    .link-button:hover {
+      color: #0052a3;
+    }
+
+    .cta-section {
+      text-align: center;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      margin-top: 40px;
+    }
+
+    .cta-section h2 {
+      margin: 0 0 12px 0;
+    }
+
+    .cta-section p {
+      margin: 0 0 24px 0;
+      color: #666;
     }
 
     @media (max-width: 1024px) {
       .filters-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: var(--space-3);
+        gap: 12px;
       }
 
       .search-group {
@@ -256,13 +348,13 @@ const title = "beginner-friendly remote jobs";
     @media (max-width: 768px) {
       .filters-grid {
         grid-template-columns: 1fr;
-        gap: var(--space-4);
+        gap: 16px;
       }
 
       .job-header {
         flex-direction: column;
         align-items: stretch;
-        gap: var(--space-3);
+        gap: 12px;
       }
 
       .job-actions {
@@ -274,13 +366,8 @@ const title = "beginner-friendly remote jobs";
 
       .filter-actions {
         flex-direction: column;
-        gap: var(--space-3);
+        gap: 12px;
         text-align: center;
-      }
-
-      .pagination-controls {
-        flex-direction: column;
-        gap: var(--space-2);
       }
     }
   </style>
@@ -298,15 +385,8 @@ const title = "beginner-friendly remote jobs";
     const clearFiltersInline = document.getElementById('clearFiltersInline');
     const loadingState = document.getElementById('loadingState');
     const emptyState = document.getElementById('emptyState');
-    const paginationControls = document.getElementById('paginationControls');
-    const prevPage = document.getElementById('prevPage');
-    const nextPage = document.getElementById('nextPage');
-    const pageInfo = document.getElementById('pageInfo');
 
     let all = [];
-    let filtered = [];
-    let currentPage = 1;
-    const jobsPerPage = 20;
     let allCountries = new Set();
 
     // Country mapping
@@ -435,14 +515,14 @@ const title = "beginner-friendly remote jobs";
         addCountryOptions(allCountries);
 
         loadingState.style.display = 'none';
-        applyFilters();
+        render();
       } catch (error) {
         loadingState.style.display = 'none';
         list.innerHTML = '<li class="empty-state"><p>Unable to load jobs. Please try again later.</p></li>';
       }
     }
 
-    function applyFilters() {
+    function render() {
       const term = q.value.trim().toLowerCase();
       const lvl = level.value;
       const jType = jobType.value;
@@ -450,7 +530,7 @@ const title = "beginner-friendly remote jobs";
       const selCountry = countrySel.value;
       const wantGlobal = globalOnly.checked;
 
-      filtered = all.filter(j => {
+      const filtered = all.filter(j => {
         // Text search
         const text = (j.title + ' ' + (j.company || '') + ' ' + (j.tags || []).join(' ') + ' ' + (j.location || '')).toLowerCase();
         const passTerm = !term || text.includes(term);
@@ -481,25 +561,14 @@ const title = "beginner-friendly remote jobs";
         return passTerm && passLevel && passJobType && passCategory;
       });
 
-      currentPage = 1;
-      render();
-    }
-
-    function render() {
-      const totalPages = Math.ceil(filtered.length / jobsPerPage);
-      const startIndex = (currentPage - 1) * jobsPerPage;
-      const endIndex = startIndex + jobsPerPage;
-      const pageJobs = filtered.slice(startIndex, endIndex);
-
       if (filtered.length === 0) {
         list.style.display = 'none';
         emptyState.style.display = 'block';
-        paginationControls.style.display = 'none';
       } else {
         list.style.display = 'block';
         emptyState.style.display = 'none';
         
-        list.innerHTML = pageJobs.map(j => {
+        list.innerHTML = filtered.map(j => {
           const tags = (j.tags || []).map(t => {
             const tag = String(t).toLowerCase();
             let className = 'job-tag';
@@ -519,23 +588,13 @@ const title = "beginner-friendly remote jobs";
                 </div>
                 <div class="job-actions">
                   <div class="job-date">${j.posted_at ? new Date(j.posted_at).toLocaleDateString() : ''}</div>
-                  <a class="btn btn-small" href="${j.source_url}" target="_blank" rel="noopener">apply</a>
+                  <a class="btn apply-btn" href="${j.source_url}" target="_blank" rel="noopener">apply</a>
                 </div>
               </div>
               ${tags ? `<div class="job-tags">${tags}</div>` : ''}
             </li>
           `;
         }).join('');
-
-        // Update pagination
-        if (totalPages > 1) {
-          paginationControls.style.display = 'flex';
-          pageInfo.textContent = `page ${currentPage} of ${totalPages}`;
-          prevPage.disabled = currentPage === 1;
-          nextPage.disabled = currentPage === totalPages;
-        } else {
-          paginationControls.style.display = 'none';
-        }
       }
 
       count.textContent = `${filtered.length} job${filtered.length === 1 ? '' : 's'} found`;
@@ -548,35 +607,18 @@ const title = "beginner-friendly remote jobs";
       category.value = '';
       countrySel.value = '';
       globalOnly.checked = false;
-      applyFilters();
+      render();
     }
 
     // Event listeners
-    q.addEventListener('input', applyFilters);
-    level.addEventListener('change', applyFilters);
-    jobType.addEventListener('change', applyFilters);
-    category.addEventListener('change', applyFilters);
-    countrySel.addEventListener('change', applyFilters);
-    globalOnly.addEventListener('change', applyFilters);
+    q.addEventListener('input', render);
+    level.addEventListener('change', render);
+    jobType.addEventListener('change', render);
+    category.addEventListener('change', render);
+    countrySel.addEventListener('change', render);
+    globalOnly.addEventListener('change', render);
     clearFilters.addEventListener('click', clearAllFilters);
     clearFiltersInline.addEventListener('click', clearAllFilters);
-
-    prevPage.addEventListener('click', () => {
-      if (currentPage > 1) {
-        currentPage--;
-        render();
-        window.scrollTo(0, 0);
-      }
-    });
-
-    nextPage.addEventListener('click', () => {
-      const totalPages = Math.ceil(filtered.length / jobsPerPage);
-      if (currentPage < totalPages) {
-        currentPage++;
-        render();
-        window.scrollTo(0, 0);
-      }
-    });
 
     // Initialize
     load();

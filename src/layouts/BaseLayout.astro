@@ -1,0 +1,292 @@
+---
+// layouts/BaseLayout.astro
+import Footer from "../components/Footer.astro";
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "find beginner-friendly remote jobs and build your location-independent career." } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | remotelyyou</title>
+    
+    <!-- Preload Work Sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <a href="/" class="logo">remotelyyou</a>
+        <div class="nav-links">
+          <a href="/">home</a>
+          <a href="/course">course</a>
+          <a href="/jobs">jobs</a>
+          <a href="/blog">blog</a>
+          <a href="/resources">resources</a>
+          <a href="/contact">contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer />
+
+    <style is:global>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-family: 'Work Sans', system-ui, sans-serif;
+        line-height: 1.6;
+      }
+
+      body {
+        background: #fff;
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+      }
+
+      /* Navigation */
+      nav {
+        background: #fff;
+        border-bottom: 1px solid #e8e8e8;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+      }
+
+      .logo {
+        font-weight: 700;
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 28px;
+        align-items: center;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #666;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: #000;
+      }
+
+      /* Typography */
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.3;
+        margin-bottom: 12px;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      /* Utility classes */
+      .muted {
+        color: #888;
+        font-size: 0.95em;
+      }
+
+      .lead {
+        font-size: 1.2em;
+        color: #555;
+      }
+
+      /* Cards and sections */
+      .card {
+        background: #fff;
+        border: 1px solid #e8e8e8;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 24px;
+        transition: box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 14px;
+      }
+
+      .btn:hover {
+        background: #333;
+        transform: translateY(-1px);
+      }
+
+      .btn--outline {
+        background: transparent;
+        color: #000;
+        border: 2px solid #000;
+      }
+
+      .btn--outline:hover {
+        background: #000;
+        color: #fff;
+      }
+
+      /* Pills/tags */
+      .pill {
+        display: inline-block;
+        padding: 4px 10px;
+        background: #f0f0f0;
+        color: #666;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 2px 4px 2px 0;
+      }
+
+      /* Forms */
+      input, select, textarea {
+        font-family: inherit;
+      }
+
+      /* Links */
+      a {
+        color: #0066cc;
+      }
+
+      a:hover {
+        color: #0052a3;
+      }
+
+      /* Lists */
+      ul, ol {
+        padding-left: 20px;
+        margin-bottom: 16px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
+        main {
+          padding: 15px;
+        }
+
+        .nav-content {
+          padding: 0 15px;
+        }
+
+        .nav-links {
+          gap: 20px;
+        }
+
+        .nav-links a {
+          font-size: 14px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .card {
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav-links {
+          gap: 16px;
+        }
+
+        .nav-links a {
+          font-size: 13px;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        .card {
+          padding: 16px;
+        }
+      }
+    </style>
+  </body>
+</html>
