@@ -1,0 +1,1064 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "time-zone & availability tools";
+const description = "clear availability statements, overlap examples for americas/europe/asia, and scripts to confirm times.";
+---
+
+<BaseLayout {title} {description}>
+
+  <!-- Navigation -->
+  <nav class="kit-topnav" aria-label="availability navigation">
+    <div class="kit-topnav__inner">
+      <a href="/resources" class="kit-topnav__back">← back to resources</a>
+      <ul class="kit-topnav__list" role="tablist">
+        <li><a class="kit-topnav__link is-active" href="#overview">overview</a></li>
+        <li><a class="kit-topnav__link" href="#templates">statement templates</a></li>
+        <li><a class="kit-topnav__link" href="#overlap">overlap calculator</a></li>
+        <li><a class="kit-topnav__link" href="#scripts">confirmation scripts</a></li>
+      </ul>
+      <button class="btn btn--secondary kit-topnav__print" onclick="window.print()">print / save pdf</button>
+    </div>
+    <div class="kit-topnav__progress" aria-hidden="true"><div class="kit-topnav__bar"></div></div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>time-zone & availability tools</h1>
+    <p class="lead">sound professional across regions. state overlap clearly, avoid scheduling ping-pong, and keep work moving overnight.</p>
+    <div class="hero-cta">
+      <span class="pill accent">professional templates</span>
+      <span class="pill free">global coverage guide</span>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section id="overview" class="card quick-start">
+    <div class="section-header">
+      <h2>timezone mastery for remote workers</h2>
+      <p class="section-description">show you understand global collaboration from day one</p>
+    </div>
+    <div class="quick-start-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h4>know your overlap</h4>
+        <p class="muted">calculate realistic working hours overlap with target team timezone</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h4>write professional statements</h4>
+        <p class="muted">use our templates to communicate availability clearly in applications</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h4>confirm meetings properly</h4>
+        <p class="muted">propose options with both timezones to avoid confusion</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h4>enable async handoffs</h4>
+        <p class="muted">create systems so work continues when you're offline</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Reference -->
+  <section id="templates" class="card brief">
+    <div class="section-header">
+      <h2>⚡ quick availability templates</h2>
+      <p class="section-description">copy these lines directly into cover letters and applications</p>
+    </div>
+
+    <div class="templates-grid">
+      <div class="template-card">
+        <h3>basic availability</h3>
+        <div class="template-text">
+          <p>"based in [city, timezone]; guarantee [x-y] hours overlap with [team tz]."</p>
+        </div>
+        <div class="template-example">
+          <p class="muted">based in denver (mst); guarantee 5-6 hours overlap with pst.</p>
+        </div>
+      </div>
+
+      <div class="template-card">
+        <h3>with flexibility</h3>
+        <div class="template-text">
+          <p>"can extend to [extended window] during launches/incidents."</p>
+        </div>
+        <div class="template-example">
+          <p class="muted">can extend to 23:00 cet during launches/incidents.</p>
+        </div>
+      </div>
+
+      <div class="template-card">
+        <h3>communication style</h3>
+        <div class="template-text">
+          <p>"share eod hand-off so work continues across time zones."</p>
+        </div>
+        <div class="template-example">
+          <p class="muted">post detailed eod summaries so work continues overnight.</p>
+        </div>
+      </div>
+
+      <div class="template-card">
+        <h3>meeting coordination</h3>
+        <div class="template-text">
+          <p>"two time options for meetings this week: [opt1] / [opt2]."</p>
+        </div>
+        <div class="template-example">
+          <p class="muted">tuesday 9am pst / wednesday 2pm pst work for intro call?</p>
+        </div>
+      </div>
+
+      <div class="template-card">
+        <h3>technical setup</h3>
+        <div class="template-text">
+          <p>"internet: [speed] + hotspot backup."</p>
+        </div>
+        <div class="template-example">
+          <p class="muted">internet: 200/50 mbps + mobile hotspot backup.</p>
+        </div>
+      </div>
+
+      <div class="template-card">
+        <h3>complete statement</h3>
+        <div class="template-text">
+          <p>based in prague (cet); 3-4h overlap with est; can extend to 22:00 cet during launches. eod hand-off daily.</p>
+        </div>
+        <div class="template-example">
+          <p class="muted">combines location, overlap, flexibility, and communication in one professional sentence</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overlap Calculator -->
+  <section id="overlap" class="card brief">
+    <div class="section-header">
+      <h2>🌍 working hours overlap guide</h2>
+      <p class="section-description">realistic overlap estimates assuming 9am-6pm local working hours</p>
+    </div>
+
+    <div class="overlap-section">
+      <div class="overlap-intro">
+        <h3>how to use this table</h3>
+        <p>find your timezone in the left column, then read across to see typical overlap hours with different team locations. numbers show approximate weekday overlap.</p>
+      </div>
+
+      <div class="overlap-table-container">
+        <table class="overlap-table">
+          <thead>
+            <tr>
+              <th>your timezone</th>
+              <th>with pst<br><small>(us west)</small></th>
+              <th>with est<br><small>(us east)</small></th>
+              <th>with gmt<br><small>(uk/pt)</small></th>
+              <th>with cet<br><small>(eu)</small></th>
+              <th>with ist<br><small>(india)</small></th>
+              <th>with sgt<br><small>(singapore)</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>pst (-8)</strong></td>
+              <td class="self">—</td>
+              <td class="good">4-6h</td>
+              <td class="limited">0-1h early</td>
+              <td class="minimal">need early start</td>
+              <td class="none">—</td>
+              <td class="none">—</td>
+            </tr>
+            <tr>
+              <td><strong>est (-5)</strong></td>
+              <td class="good">4-6h</td>
+              <td class="self">—</td>
+              <td class="good">3-4h</td>
+              <td class="moderate">2-3h</td>
+              <td class="limited">0-1h early</td>
+              <td class="none">—</td>
+            </tr>
+            <tr>
+              <td><strong>gmt (±0)</strong></td>
+              <td class="limited">0-1h late</td>
+              <td class="good">3-4h</td>
+              <td class="self">—</td>
+              <td class="moderate">1-2h</td>
+              <td class="good">4-5h morning</td>
+              <td class="limited">0-1h morning</td>
+            </tr>
+            <tr>
+              <td><strong>cet (+1)</strong></td>
+              <td class="minimal">need late hours</td>
+              <td class="moderate">2-3h</td>
+              <td class="moderate">1-2h</td>
+              <td class="self">—</td>
+              <td class="good">3-4h morning</td>
+              <td class="limited">0-1h morning</td>
+            </tr>
+            <tr>
+              <td><strong>ist (+5:30)</strong></td>
+              <td class="none">—</td>
+              <td class="limited">0-1h evening</td>
+              <td class="good">4-5h evening</td>
+              <td class="good">3-4h evening</td>
+              <td class="self">—</td>
+              <td class="good">3-4h</td>
+            </tr>
+            <tr>
+              <td><strong>sgt (+8)</strong></td>
+              <td class="none">—</td>
+              <td class="none">—</td>
+              <td class="limited">0-1h evening</td>
+              <td class="limited">0-1h evening</td>
+              <td class="good">3-4h</td>
+              <td class="self">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="overlap-notes">
+        <h4>overlap quality guide</h4>
+        <div class="overlap-legend">
+          <div class="legend-item">
+            <span class="legend-color good"></span>
+            <span class="legend-text"><strong>4+ hours:</strong> excellent for daily collaboration</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color moderate"></span>
+            <span class="legend-text"><strong>2-3 hours:</strong> good for meetings + urgent items</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color limited"></span>
+            <span class="legend-text"><strong>0-1 hours:</strong> requires early/late flexibility</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color minimal"></span>
+            <span class="legend-text"><strong>minimal:</strong> mostly async, occasional calls</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flexibility-tips">
+      <h3>extending your overlap</h3>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <h4>start early</h4>
+          <p>shift your workday 1-2 hours earlier to catch more morning overlap with eastern teams</p>
+        </div>
+        <div class="tip-card">
+          <h4>stay late</h4>
+          <p>extend 2-3 evenings per week for critical meetings or launch support</p>
+        </div>
+        <div class="tip-card">
+          <h4>split shifts</h4>
+          <p>work morning block, break midday, return for evening overlap (4-day weeks)</p>
+        </div>
+        <div class="tip-card">
+          <h4>async first</h4>
+          <p>make most communication asynchronous, reserve overlap time for high-value interactions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confirmation Scripts -->
+  <section id="scripts" class="card brief">
+    <div class="section-header">
+      <h2>📧 meeting confirmation scripts</h2>
+      <p class="section-description">professional templates to avoid timezone confusion and scheduling back-and-forth</p>
+    </div>
+
+    <div class="scripts-grid">
+      <div class="script-section">
+        <h3>proposing meeting times</h3>
+        <div class="script-template">
+          <div class="script-header">
+            <h4>email/slack template</h4>
+          </div>
+          <div class="script-content">
+            <p class="script-text">hi [name] - i'm in [city, timezone]. this week i can offer:</p>
+            <ul class="script-text">
+              <li>[day] [time] [your tz] (=> [their tz])</li>
+              <li>[day] [time] [your tz] (=> [their tz])</li>
+            </ul>
+            <p class="script-text">does either work? happy to adjust ±1h.</p>
+          </div>
+          <div class="script-example">
+            <p><strong>example:</strong></p>
+            <p class="muted">hi sarah - i'm in lisbon (wet). this week i can offer:</p>
+            <ul class="muted">
+              <li>tuesday 15:00 wet (=> 10:00 est)</li>
+              <li>thursday 16:00 wet (=> 11:00 est)</li>
+            </ul>
+            <p class="muted">does either work? happy to adjust ±1h.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="script-section">
+        <h3>application availability statement</h3>
+        <div class="script-template">
+          <div class="script-header">
+            <h4>cover letter line</h4>
+          </div>
+          <div class="script-content">
+            <p class="script-text">i'm based in [city, tz] with consistent [x-y] hours overlap to [team tz]. for launches i can extend to [window]. i leave a short eod hand-off each day.</p>
+          </div>
+          <div class="script-example">
+            <p><strong>example:</strong></p>
+            <p class="muted">i'm based in barcelona (cet) with consistent 4-5 hours overlap to est. for launches i can extend to 23:00 cet. i leave a short eod hand-off each day.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="script-section">
+        <h3>daily handoff template</h3>
+        <div class="script-template">
+          <div class="script-header">
+            <h4>end-of-day summary</h4>
+          </div>
+          <div class="script-content">
+            <p class="script-text">eod hand-off - [date]</p>
+            <ul class="script-text">
+              <li>context: [what changed today]</li>
+              <li>status: [done / blocked]</li>
+              <li>next owner + due: [name] → [date]</li>
+              <li>notes/links: [urls]</li>
+            </ul>
+          </div>
+          <div class="script-example">
+            <p><strong>example:</strong></p>
+            <p class="muted">eod hand-off - march 15</p>
+            <ul class="muted">
+              <li>context: completed customer survey analysis, found 3 key themes</li>
+              <li>status: draft ready for review</li>
+              <li>next owner + due: sarah → march 16</li>
+              <li>notes/links: doc.link/survey-analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="script-section">
+        <h3>timezone clarification</h3>
+        <div class="script-template">
+          <div class="script-header">
+            <h4>when time zones aren't clear</h4>
+          </div>
+          <div class="script-content">
+            <p class="script-text">just to confirm timing: [meeting] at [time] [timezone] = [converted time] [your timezone]?</p>
+          </div>
+          <div class="script-example">
+            <p><strong>example:</strong></p>
+            <p class="muted">just to confirm timing: team standup at 10am est = 16:00 cet?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timezone-tools">
+      <h3>recommended timezone tools</h3>
+      <div class="tools-list">
+        <div class="tool-item">
+          <h4>timeanddate.com</h4>
+          <p>comprehensive timezone converter and meeting planner</p>
+        </div>
+        <div class="tool-item">
+          <h4>world clock pro (app)</h4>
+          <p>multiple timezone widgets for quick reference</p>
+        </div>
+        <div class="tool-item">
+          <h4>calendly</h4>
+          <p>automatic timezone detection for scheduling</p>
+        </div>
+        <div class="tool-item">
+          <h4>slack /remind</h4>
+          <p>set timezone-aware reminders for global teams</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Practices -->
+  <section class="card cta">
+    <h2>timezone professionalism checklist</h2>
+    <div class="best-practices">
+      <div class="practice-section">
+        <h3>in applications</h3>
+        <ul class="checklist">
+          <li>state your timezone clearly (city + abbreviation)</li>
+          <li>give realistic overlap hours (don't over-promise)</li>
+          <li>mention flexibility for launches/critical meetings</li>
+          <li>show you understand async communication</li>
+        </ul>
+      </div>
+      <div class="practice-section">
+        <h3>in scheduling</h3>
+        <ul class="checklist">
+          <li>always include both timezones in meeting invites</li>
+          <li>propose 2+ options to avoid back-and-forth</li>
+          <li>confirm times explicitly when in doubt</li>
+          <li>set calendar defaults to your local timezone</li>
+        </ul>
+      </div>
+      <div class="practice-section">
+        <h3>in daily work</h3>
+        <ul class="checklist">
+          <li>post eod summaries for context handoffs</li>
+          <li>include timezone in your slack/email signature</li>
+          <li>set clear "available" hours in communication tools</li>
+          <li>respond to urgent messages within overlap hours</li>
+        </ul>
+      </div>
+    </div>
+    <div class="final-cta">
+      <p>master timezone communication to stand out as a remote-ready candidate.</p>
+      <div class="cta-actions">
+        <a href="/resources/jumpstart-kit" class="btn btn--secondary">get the complete job guide</a>
+        <a href="/resources/cover-letter-generator" class="btn btn--outline">use our cover letter templates</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    :root { --nav-offset: 64px; }
+
+    /* Navigation - consistent with other files */
+    .kit-topnav{
+      position: sticky;
+      top: var(--nav-offset);
+      z-index: 500;
+      background: var(--color-white);
+      border: 2px solid var(--color-teal-200);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      margin: var(--space-4) 0 var(--space-6);
+    }
+    
+    .kit-topnav__inner{
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: var(--space-3) var(--space-5);
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: var(--space-3);
+      align-items: center;
+    }
+    
+    .kit-topnav__back{
+      color: var(--color-gray-600);
+      text-decoration: none;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+    }
+    
+    .kit-topnav__back:hover{ color: var(--color-secondary); }
+    
+    .kit-topnav__list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: var(--space-2);
+      overflow-x: auto;
+    }
+    
+    .kit-topnav__link{
+      display: inline-block;
+      padding: var(--space-2) var(--space-3);
+      color: var(--color-gray-600);
+      text-decoration: none;
+      font-size: var(--font-size-sm);
+      border-radius: var(--radius-md);
+      transition: all .2s ease;
+      white-space: nowrap;
+    }
+    
+    .kit-topnav__link:hover{
+      background: var(--color-teal-50);
+      color: var(--color-teal-700);
+    }
+    
+    .kit-topnav__link.is-active{
+      background: var(--color-teal-100);
+      color: var(--color-teal-800);
+      font-weight: 600;
+    }
+    
+    .kit-topnav__print{ justify-self: end; }
+    
+    .kit-topnav__progress{
+      height: 4px;
+      background: var(--color-gray-200);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    
+    .kit-topnav__bar{
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--color-teal-500), var(--color-coral-500));
+      transition: width .2s ease-out;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      margin-bottom: var(--space-10);
+      padding: var(--space-10) 0;
+      background: linear-gradient(135deg, var(--color-coral-50) 0%, var(--color-sand-50) 100%);
+      border-radius: var(--radius-xl);
+    }
+
+    .hero h1 {
+      margin-bottom: var(--space-4);
+      background: linear-gradient(135deg, var(--color-black) 0%, var(--color-coral-700) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero .lead {
+      max-width: 600px;
+      margin: 0 auto var(--space-6) auto;
+    }
+
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
+
+    /* Common styling */
+    .brief{ 
+      scroll-margin-top: calc(var(--nav-offset) + var(--space-4)); 
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: var(--space-8);
+    }
+
+    .section-description {
+      font-size: var(--font-size-lg);
+      color: var(--color-gray-600);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Quick Start */
+    .quick-start {
+      background: var(--color-teal-50);
+      border-left: 4px solid var(--color-teal-500);
+    }
+
+    .quick-start-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+
+    .step {
+      background: var(--color-white);
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      border-left: 3px solid var(--color-teal-400);
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: var(--color-teal-500);
+      color: white;
+      border-radius: 50%;
+      font-size: var(--font-size-xs);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+
+    .step h4 {
+      color: var(--color-teal-700);
+      margin-bottom: var(--space-2);
+    }
+
+    /* Templates Grid */
+    .templates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+
+    .template-card {
+      background: var(--color-white);
+      border: 2px solid var(--color-gray-200);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      transition: all 0.3s ease;
+    }
+
+    .template-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-coral-300);
+    }
+
+    .template-card h3 {
+      color: var(--color-coral-700);
+      margin-bottom: var(--space-3);
+      font-size: var(--font-size-lg);
+    }
+
+    .template-text {
+      background: var(--color-gray-50);
+      padding: var(--space-3);
+      border-radius: var(--radius-md);
+      font-family: monospace;
+      font-size: var(--font-size-sm);
+      margin-bottom: var(--space-3);
+      border-left: 3px solid var(--color-coral-400);
+    }
+
+    .template-example {
+      background: var(--color-coral-50);
+      padding: var(--space-3);
+      border-radius: var(--radius-md);
+      font-size: var(--font-size-sm);
+      color: var(--color-coral-800);
+    }
+
+    /* Overlap Table */
+    .overlap-section {
+      margin-top: var(--space-6);
+    }
+
+    .overlap-intro {
+      background: var(--color-sand-50);
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-sand-500);
+      margin-bottom: var(--space-6);
+      text-align: center;
+    }
+
+    .overlap-intro h3 {
+      color: var(--color-sand-700);
+      margin-bottom: var(--space-3);
+    }
+
+    .overlap-table-container {
+      overflow-x: auto;
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .overlap-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+    }
+
+    .overlap-table th,
+    .overlap-table td {
+      padding: var(--space-3) var(--space-2);
+      text-align: center;
+      border-bottom: 1px solid var(--color-gray-200);
+      font-size: var(--font-size-sm);
+    }
+
+    .overlap-table th {
+      background: var(--color-gray-100);
+      font-weight: 600;
+      color: var(--color-gray-800);
+    }
+
+    .overlap-table td:first-child {
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .overlap-table small {
+      display: block;
+      color: var(--color-gray-500);
+      font-weight: normal;
+    }
+
+    /* Overlap quality colors */
+    .overlap-table .self {
+      background: var(--color-gray-100);
+      color: var(--color-gray-500);
+    }
+
+    .overlap-table .good {
+      background: var(--color-teal-100);
+      color: var(--color-teal-800);
+      font-weight: 600;
+    }
+
+    .overlap-table .moderate {
+      background: var(--color-sand-100);
+      color: var(--color-sand-800);
+    }
+
+    .overlap-table .limited {
+      background: var(--color-coral-100);
+      color: var(--color-coral-800);
+    }
+
+    .overlap-table .minimal {
+      background: var(--color-gray-200);
+      color: var(--color-gray-700);
+      font-size: var(--font-size-xs);
+    }
+
+    .overlap-table .none {
+      background: var(--color-gray-100);
+      color: var(--color-gray-400);
+    }
+
+    .overlap-notes {
+      margin-top: var(--space-6);
+      text-align: center;
+    }
+
+    .overlap-notes h4 {
+      margin-bottom: var(--space-4);
+      color: var(--color-gray-800);
+    }
+
+    .overlap-legend {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-3);
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: var(--radius-sm);
+    }
+
+    .legend-color.good { background: var(--color-teal-300); }
+    .legend-color.moderate { background: var(--color-sand-300); }
+    .legend-color.limited { background: var(--color-coral-300); }
+    .legend-color.minimal { background: var(--color-gray-300); }
+
+    .legend-text {
+      font-size: var(--font-size-sm);
+      color: var(--color-gray-700);
+    }
+
+    /* Flexibility Tips */
+    .flexibility-tips {
+      background: var(--color-teal-50);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-teal-500);
+      margin-top: var(--space-8);
+    }
+
+    .flexibility-tips h3 {
+      color: var(--color-teal-700);
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-4);
+    }
+
+    .tip-card {
+      background: var(--color-white);
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+
+    .tip-card h4 {
+      color: var(--color-teal-700);
+      margin-bottom: var(--space-2);
+    }
+
+    .tip-card p {
+      color: var(--color-gray-700);
+      font-size: var(--font-size-sm);
+      margin: 0;
+    }
+
+    /* Scripts Grid */
+    .scripts-grid {
+      display: grid;
+      gap: var(--space-8);
+      margin-top: var(--space-6);
+    }
+
+    .script-section h3 {
+      color: var(--color-secondary);
+      text-align: center;
+      margin-bottom: var(--space-4);
+    }
+
+    .script-template {
+      background: var(--color-gray-50);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 2px solid var(--color-gray-200);
+    }
+
+    .script-header {
+      background: var(--color-secondary);
+      color: white;
+      padding: var(--space-3) var(--space-4);
+      text-align: center;
+    }
+
+    .script-header h4 {
+      margin: 0;
+      font-size: var(--font-size-base);
+    }
+
+    .script-content {
+      padding: var(--space-4);
+      background: var(--color-white);
+    }
+
+    .script-text {
+      font-family: monospace;
+      background: var(--color-gray-50);
+      padding: var(--space-3);
+      border-radius: var(--radius-sm);
+      margin-bottom: var(--space-2);
+      border-left: 3px solid var(--color-secondary);
+    }
+
+    .script-example {
+      background: var(--color-teal-50);
+      padding: var(--space-4);
+      border-top: 1px solid var(--color-teal-200);
+    }
+
+    .script-example strong {
+      color: var(--color-teal-700);
+    }
+
+    /* Timezone Tools */
+    .timezone-tools {
+      background: var(--color-sand-50);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-sand-500);
+      margin-top: var(--space-8);
+    }
+
+    .timezone-tools h3 {
+      color: var(--color-sand-700);
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
+
+    .tools-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-4);
+    }
+
+    .tool-item {
+      background: var(--color-white);
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+    }
+
+    .tool-item h4 {
+      color: var(--color-sand-700);
+      margin-bottom: var(--space-2);
+    }
+
+    .tool-item p {
+      color: var(--color-gray-700);
+      font-size: var(--font-size-sm);
+      margin: 0;
+    }
+
+    /* Best Practices */
+    .best-practices {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-6);
+      margin-bottom: var(--space-8);
+    }
+
+    .practice-section {
+      background: var(--color-gray-50);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-secondary);
+    }
+
+    .practice-section h3 {
+      color: var(--color-secondary);
+      text-align: center;
+      margin-bottom: var(--space-4);
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: var(--space-6);
+      margin-bottom: var(--space-2);
+      color: var(--color-gray-700);
+    }
+
+    .checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--color-secondary);
+      font-weight: 600;
+    }
+
+    .final-cta {
+      text-align: center;
+    }
+
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+      margin-top: var(--space-6);
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+      .kit-topnav__inner {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+          "list print"
+          "back back";
+        row-gap: var(--space-2);
+      }
+      .kit-topnav__back { grid-area: back; }
+      .kit-topnav__print { grid-area: print; }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: var(--space-8) var(--space-4);
+      }
+
+      .templates-grid,
+      .quick-start-steps,
+      .tips-grid,
+      .tools-list,
+      .best-practices {
+        grid-template-columns: 1fr;
+      }
+
+      .overlap-legend {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-cta,
+      .cta-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media print {
+      .kit-topnav,
+      .kit-topnav__print { 
+        display: none !important; 
+      }
+      
+      .card { 
+        box-shadow: none; 
+        border: 1px solid #ddd; 
+        page-break-inside: avoid;
+        margin-bottom: var(--space-6);
+      }
+      
+      .overlap-table-container {
+        overflow: visible;
+      }
+      
+      .script-template,
+      .template-card {
+        page-break-inside: avoid;
+        margin-bottom: var(--space-4);
+      }
+    }
+  </style>
+
+  <script>
+    // Dynamic header offset
+    (() => {
+      const header = document.querySelector('header, .site-header, nav[aria-label="primary"], nav[role="navigation"]');
+      const setOffset = () => {
+        const h = header ? header.getBoundingClientRect().height : 64;
+        document.documentElement.style.setProperty('--nav-offset', Math.round(h) + 'px');
+      };
+      setOffset();
+      window.addEventListener('resize', setOffset, { passive: true });
+    })();
+
+    // Smooth scroll navigation
+    document.querySelectorAll('.kit-topnav__link').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Navigation spy and progress bar
+    const links = [...document.querySelectorAll('.kit-topnav__link')];
+    const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+    
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          links.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + id));
+          history.replaceState(null, '', '#' + id);
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+    
+    targets.forEach(t => spy.observe(t));
+
+    // Progress bar
+    const bar = document.querySelector('.kit-topnav__bar');
+    const onScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = Math.min(100, Math.max(0, (window.pageYOffset / max) * 100));
+      if (bar) bar.style.width = pct + '%';
+    };
+    
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  </script>
+</BaseLayout>

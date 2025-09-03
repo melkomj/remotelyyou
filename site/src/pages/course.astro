@@ -1,173 +1,409 @@
 ---
-// src/pages/course.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
+const title = "Work From Anywhere Roadmap - Free Course";
+const description = "Beginner's Guide to Remote Jobs - Get started today, completely free!";
 ---
 
-<BaseLayout title="Work From Anywhere Roadmap - Free Course">
-  <main class="container">
-    <section class="hero">
-      <h1>Work From Anywhere Roadmap</h1>
-      <p class="lead">Beginner's Guide to Remote Jobs - Get started today, completely free!</p>
-      
-      <!-- Podia Button - Opens in New Tab -->
-      <a 
-        href="https://melk.podia.com/work-from-anywhere-roadmap-beginner-s-guide-to-remote-jobs?utm_source=site&utm_campaign=course_cta"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-primary btn-lg"
-      >
-        Get the Course Free
-      </a>
-    </section>
+<BaseLayout {title} {description}>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>work from anywhere roadmap</h1>
+    <p class="lead">beginner's guide to remote jobs - get started today, completely free!</p>
+    <div class="hero-cta">
+      <span class="pill accent">100% free course</span>
+      <span class="pill free">no email required</span>
+    </div>
+    <a 
+      href="https://melk.podia.com/work-from-anywhere-roadmap-beginner-s-guide-to-remote-jobs?utm_source=site&utm_campaign=course_cta"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn--secondary btn-large course-cta"
+    >
+      get the course free →
+    </a>
+  </section>
 
-    <section class="course-details">
-      <h2>What You'll Learn</h2>
-      <ul>
-        <li>How to find legitimate remote job opportunities</li>
-        <li>Essential skills for remote work success</li>
-        <li>Building your remote work portfolio</li>
-        <li>Networking strategies for remote professionals</li>
-      </ul>
-    </section>
-  
-    <!-- Course Affiliate Section -->
-    <section class="course-affiliate">
-      <h2>Essential Tools for Remote Job Success</h2>
-      <div class="course-tools-grid">
-        <div class="course-tool-card">
-          <h3>Job Application Tracker</h3>
-          <p>Keep track of every application, interview, and follow-up with Huntr.</p>
-          <a href="https://huntr.co/?utm_source=remote-jobs-site&utm_campaign=course_page" target="_blank" rel="noopener noreferrer" class="course-tool-btn">
-            Start Tracking
-          </a>
-        </div>
-        
-        <div class="course-tool-card">
-          <h3>Professional Resume</h3>
-          <p>Create ATS-friendly resumes that get past automated screening.</p>
-          <a href="https://zety.com/?utm_source=remote-jobs-site&utm_campaign=course_page" target="_blank" rel="noopener noreferrer" class="course-tool-btn">
-            Build Resume
-          </a>
-        </div>
+  <!-- What You'll Learn -->
+  <section class="card">
+    <div class="section-header">
+      <h2>what you'll learn</h2>
+      <p class="section-description">everything you need to go from job search beginner to remote work ready</p>
+    </div>
+    <div class="learning-grid">
+      <div class="learning-item">
+        <div class="learning-icon">🎯</div>
+        <h3>find legitimate opportunities</h3>
+        <p class="muted">skip the scams and fake postings. learn which job boards actually work for beginners.</p>
       </div>
-    </section>
+      <div class="learning-item">
+        <div class="learning-icon">⚡</div>
+        <h3>essential remote skills</h3>
+        <p class="muted">master the tools and communication styles that make remote workers successful.</p>
+      </div>
+      <div class="learning-item">
+        <div class="learning-icon">📁</div>
+        <h3>build your portfolio</h3>
+        <p class="muted">create proof of your capabilities even without traditional remote experience.</p>
+      </div>
+      <div class="learning-item">
+        <div class="learning-icon">🤝</div>
+        <h3>network like a pro</h3>
+        <p class="muted">connect with remote teams and hiring managers using proven outreach strategies.</p>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <!-- Course Preview -->
+  <section class="card course-preview">
+    <h2>course preview</h2>
+    <div class="preview-grid">
+      <div class="preview-module">
+        <h3>module 1: getting started</h3>
+        <ul class="module-list">
+          <li>remote work reality check</li>
+          <li>choosing your first role</li>
+          <li>setting up for success</li>
+        </ul>
+      </div>
+      <div class="preview-module">
+        <h3>module 2: job search strategy</h3>
+        <ul class="module-list">
+          <li>where to find real opportunities</li>
+          <li>application tracking systems</li>
+          <li>avoiding common mistakes</li>
+        </ul>
+      </div>
+      <div class="preview-module">
+        <h3>module 3: standing out</h3>
+        <ul class="module-list">
+          <li>resume optimization</li>
+          <li>portfolio development</li>
+          <li>interview preparation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="card">
+    <div class="section-header">
+      <h2>recommended tools</h2>
+      <p class="section-description">professional tools to accelerate your remote job search</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <h3>job application tracker</h3>
+        <p class="muted">keep track of every application, interview, and follow-up with organized spreadsheets and workflows.</p>
+        <a href="https://huntr.co/?utm_source=remote-jobs-site&utm_campaign=course_page" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+          start tracking
+        </a>
+      </div>
+      
+      <div class="tool-card">
+        <h3>professional resume builder</h3>
+        <p class="muted">create ats-friendly resumes that get past automated screening and impress hiring managers.</p>
+        <a href="https://zety.com/?utm_source=remote-jobs-site&utm_campaign=course_page" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+          build resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Resources Cross-sell -->
+  <section class="card cta">
+    <h2>want more free resources?</h2>
+    <p>combine this course with our step-by-step guides, templates, and tools for complete remote job search success.</p>
+    <div class="cta-actions">
+      <a href="/resources/jumpstart-kit" class="btn btn--secondary">get the jumpstart kit</a>
+      <a href="/resources" class="btn btn--outline">browse all resources</a>
+    </div>
+  </section>
+
+  <style>
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin-bottom: var(--space-12);
+      padding: var(--space-12) 0;
+      background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-coral-50) 100%);
+      border-radius: var(--radius-xl);
+    }
+
+    .hero h1 {
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      margin-bottom: var(--space-4);
+      background: linear-gradient(135deg, var(--color-black) 0%, var(--color-teal-700) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero .lead {
+      font-size: var(--font-size-lg);
+      color: var(--color-gray-600);
+      max-width: 600px;
+      margin: 0 auto var(--space-6) auto;
+    }
+
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-8);
+    }
+
+    .course-cta {
+      font-size: var(--font-size-lg);
+      padding: var(--space-5) var(--space-8);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .course-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      margin-bottom: var(--space-8);
+    }
+
+    .section-header h2 {
+      margin-bottom: var(--space-3);
+    }
+
+    .section-description {
+      font-size: var(--font-size-lg);
+      color: var(--color-gray-600);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Learning Grid */
+    .learning-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+
+    .learning-item {
+      background: var(--color-gray-50);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      transition: all 0.3s ease;
+      border-left: 4px solid var(--color-teal-500);
+    }
+
+    .learning-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .learning-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-4);
+      display: block;
+    }
+
+    .learning-item h3 {
+      color: var(--color-teal-700);
+      margin-bottom: var(--space-3);
+      font-size: var(--font-size-xl);
+    }
+
+    .learning-item p {
+      margin: 0;
+    }
+
+    /* Course Preview */
+    .course-preview {
+      background: var(--color-sand-50);
+      border-left: 4px solid var(--color-sand-500);
+    }
+
+    .course-preview h2 {
+      color: var(--color-sand-700);
+      text-align: center;
+      margin-bottom: var(--space-8);
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-6);
+    }
+
+    .preview-module {
+      background: var(--color-white);
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      border-left: 3px solid var(--color-sand-400);
+    }
+
+    .preview-module h3 {
+      color: var(--color-sand-700);
+      margin-bottom: var(--space-4);
+      font-size: var(--font-size-lg);
+    }
+
+    .module-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .module-list li {
+      padding: var(--space-2) 0;
+      color: var(--color-gray-700);
+      border-bottom: 1px solid var(--color-gray-200);
+      position: relative;
+      padding-left: var(--space-5);
+    }
+
+    .module-list li:before {
+      content: "▶";
+      position: absolute;
+      left: 0;
+      color: var(--color-sand-600);
+      font-size: var(--font-size-xs);
+    }
+
+    .module-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* Tools Grid */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+
+    .tool-card {
+      background: var(--color-white);
+      padding: var(--space-6);
+      border: 2px solid var(--color-gray-200);
+      border-radius: var(--radius-xl);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--color-coral-300);
+    }
+
+    .tool-card h3 {
+      color: var(--color-coral-700);
+      margin-bottom: var(--space-3);
+      font-size: var(--font-size-xl);
+    }
+
+    .tool-card p {
+      margin-bottom: var(--space-5);
+    }
+
+    /* CTA Actions */
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+      margin-top: var(--space-6);
+    }
+
+    /* Button Overrides - Fix Colors */
+    .btn,
+    .btn--primary,
+    .btn--secondary,
+    .btn--outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-3) var(--space-6);
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: var(--font-size-sm);
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-transform: lowercase;
+    }
+
+    .btn--primary,
+    .course-cta {
+      background: var(--color-black) !important;
+      color: var(--color-white) !important;
+    }
+
+    .btn--primary:hover,
+    .course-cta:hover {
+      background: var(--color-gray-800) !important;
+      color: var(--color-white) !important;
+    }
+
+    .btn--secondary {
+      background: var(--color-secondary) !important;
+      color: var(--color-white) !important;
+    }
+
+    .btn--secondary:hover {
+      background: var(--color-teal-700) !important;
+      color: var(--color-white) !important;
+    }
+
+    .btn--outline {
+      background: transparent !important;
+      color: var(--color-secondary) !important;
+      border: 2px solid var(--color-secondary) !important;
+    }
+
+    .btn--outline:hover {
+      background: var(--color-secondary) !important;
+      color: var(--color-white) !important;
+    }
+
+    /* Button Size Enhancement */
+    .btn-large {
+      padding: var(--space-5) var(--space-8);
+      font-size: var(--font-size-lg);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero {
+        padding: var(--space-8) var(--space-4);
+      }
+
+      .hero h1 {
+        font-size: var(--font-size-3xl);
+      }
+
+      .learning-grid,
+      .preview-grid,
+      .tools-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
+
+      .hero-cta,
+      .cta-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .course-cta {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
 </BaseLayout>
-
-<style>
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-
-  .hero {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .lead {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 2rem;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-
-  .btn:hover {
-    background: #0056b3;
-  }
-
-  .btn-lg {
-    font-size: 1.1rem;
-    padding: 1.2rem 2.5rem;
-  }
-
-  .course-details {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 8px;
-  }
-
-  .course-details ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .course-details li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #eee;
-  }
-
-  .course-details li::before {
-    content: "? ";
-    color: #28a745;
-    font-weight: bold;
-  }
-
-  /* Course Affiliate Section */
-  .course-affiliate {
-    margin-top: 3rem;
-    padding: 2rem;
-    background: #f8f9fa;
-    border-radius: 8px;
-    text-align: center;
-  }
-
-  .course-tools-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  .course-tool-card {
-    background: white;
-    border: 1px solid #e9ecef;
-    border-radius: 6px;
-    padding: 1.5rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .course-tool-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-
-  .course-tool-card h3 {
-    margin-top: 0;
-    color: #333;
-  }
-
-  .course-tool-btn {
-    display: inline-block;
-    background: #6c757d;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.2s;
-  }
-
-  .course-tool-btn:hover {
-    background: #5a6268;
-    text-decoration: none;
-  }
-
-</style>

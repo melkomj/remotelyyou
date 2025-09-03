@@ -1,0 +1,1094 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "portfolio mini-projects (proof without experience)";
+const description = "four one-pagers you can complete this weekend to create job-ready proof for customer support, admin/ops, project assistant, and marketing assistant roles.";
+---
+
+<BaseLayout {title} {description}>
+
+<!-- Navigation -->
+<nav class="kit-topnav" aria-label="mini-project navigation">
+  <div class="kit-topnav__inner">
+    <a href="/resources" class="kit-topnav__back">← back to resources</a>
+    <ul class="kit-topnav__list" role="tablist">
+      <li><a role="tab" class="kit-topnav__link is-active" href="#overview">overview</a></li>
+      <li><a role="tab" class="kit-topnav__link" href="#customer-support">customer support</a></li>
+      <li><a role="tab" class="kit-topnav__link" href="#admin-ops">admin / ops</a></li>
+      <li><a role="tab" class="kit-topnav__link" href="#project-assistant">project assistant</a></li>
+      <li><a role="tab" class="kit-topnav__link" href="#marketing-assistant">marketing assistant</a></li>
+    </ul>
+    <button class="btn btn--secondary kit-topnav__print" onclick="window.print()">print / save pdf</button>
+  </div>
+  <div class="kit-topnav__progress" aria-hidden="true">
+    <div class="kit-topnav__bar"></div>
+  </div>
+</nav>
+
+<!-- Header -->
+<section class="hero">
+  <h1>portfolio mini-projects</h1>
+  <p class="lead">zero experience? build proof in a weekend. complete one brief, export to pdf, and link it in your resume + linkedin.</p>
+  <div class="hero-cta">
+    <span class="pill accent">takes 2-3 hours each</span>
+    <span class="pill free">completely free</span>
+  </div>
+</section>
+
+<!-- Overview -->
+<section id="overview" class="card brief quick-start">
+  <div class="section-header">
+    <h2>how this works</h2>
+    <p class="section-description">pick one role, follow the template, create proof of your skills</p>
+  </div>
+  <div class="quick-start-steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h4>pick your role</h4>
+      <p class="muted">choose customer support, admin/ops, project assistant, or marketing assistant</p>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <h4>follow the brief</h4>
+      <p class="muted">copy templates, fill with your details, work through the scenario</p>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <h4>export & share</h4>
+      <p class="muted">save as pdf, add to resume, link in linkedin featured section</p>
+    </div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <h4>reference in interviews</h4>
+      <p class="muted">walk them through your process and show your thinking</p>
+    </div>
+  </div>
+</section>
+
+<!-- Customer Support Project -->
+<section id="customer-support" class="brief card">
+  <div class="role-header">
+    <span class="pill primary">customer support</span>
+    <h2>help-center article + bug report</h2>
+    <p class="role-description">turn a user problem into two assets: a clear help article and a precise bug report</p>
+  </div>
+
+  <div class="project-grid">
+    <div class="project-section">
+      <h3>the scenario</h3>
+      <div class="scenario-box">
+        <p><strong>user message:</strong> "i can't reset my password. it says 'invalid email' after i click the link."</p>
+        <p><strong>context:</strong> addresses containing "+" fail (e.g., alex+notes@mail.com)</p>
+        <p><strong>environment:</strong> web v1.4.2 • chrome 126 • windows 10 • time 14:23 cet</p>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h3>what you'll create</h3>
+      <ul class="deliverables">
+        <li><strong>help-center article</strong> with clear steps and workarounds</li>
+        <li><strong>bug report</strong> that developers can act on immediately</li>
+        <li><strong>customer reply</strong> template for similar issues</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="templates-section">
+    <h3>copy these templates</h3>
+    
+    <details class="template">
+      <summary>help-center article template</summary>
+      <div class="template-content">
+        <h4>reset your password (web)</h4>
+        <p><strong>when to use:</strong> if you can't log in and need a new password</p>
+        <ol class="template-steps">
+          <li>go to "forgot password" on the sign-in page</li>
+          <li>enter your email exactly as you use it to sign in</li>
+          <li>open the email "reset your password" (arrives in ~2 minutes)</li>
+          <li>click "reset password", set a new password (8+ characters)</li>
+        </ol>
+        <div class="workaround-box">
+          <p><strong>workaround:</strong> if your email includes a <strong>+</strong> (like name+notes@gmail.com), enter it without the +... part (name@gmail.com)</p>
+        </div>
+        <p><strong>still stuck?</strong> check spam folder. no email after 5 minutes? contact support with subject "password reset"</p>
+      </div>
+    </details>
+
+    <details class="template">
+      <summary>bug report template</summary>
+      <div class="template-content bug-report">
+        <h4>password reset fails for addresses containing '+'</h4>
+        <ul class="bug-details">
+          <li><strong>environment:</strong> web v1.4.2 • chrome 126 • windows 10</li>
+          <li><strong>severity:</strong> medium (subset blocked; workaround exists)</li>
+          <li><strong>steps to reproduce:</strong> 1) sign-in → "forgot password" 2) enter user+test@gmail.com 3) submit</li>
+          <li><strong>expected:</strong> request accepted; reset email sent</li>
+          <li><strong>actual:</strong> client validation rejects address as "invalid email"</li>
+          <li><strong>technical notes:</strong> POST /api/reset returns 400 EMAIL_INVALID</li>
+          <li><strong>suggested fix:</strong> update email regex to accept "+" per RFC 5322</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="template">
+      <summary>customer reply template</summary>
+      <div class="template-content customer-reply">
+        <p>hi &lt;first name&gt;,</p>
+        <p>thanks for flagging this. some emails with a <strong>+</strong> can show "invalid email". quick workaround: try the same address <strong>without</strong> the "+..." part.</p>
+        <p>we're shipping a fix for this - i'll update you once it's live. if it still doesn't work, reply here and i can reset it for you manually.</p>
+        <p>thanks for your patience!</p>
+        <p>&lt;your name&gt;</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="success-criteria">
+    <h3>success checklist</h3>
+    <ul class="checklist">
+      <li>article solves the issue without needing agent help</li>
+      <li>bug report has complete reproduction steps</li>
+      <li>customer reply is calm, clear, and helpful</li>
+      <li>workaround is clearly explained</li>
+      <li>technical details are accurate for developers</li>
+    </ul>
+  </div>
+
+  <div class="presentation-tip">
+    <h4>how to present this</h4>
+    <p class="muted">"authored a help-center article and dev-ready bug report that reduced repeat tickets on a password-reset flow; collaborated asynchronously to ship a fix"</p>
+  </div>
+</section>
+
+<!-- Admin/Ops Project -->
+<section id="admin-ops" class="brief card">
+  <div class="role-header">
+    <span class="pill primary">admin / ops</span>
+    <h2>clean messy data + weekly status report</h2>
+    <p class="role-description">transform chaotic spreadsheet data into a reliable system with clear reporting</p>
+  </div>
+
+  <div class="project-section">
+    <h3>the messy data</h3>
+    <div class="data-sample">
+      <pre><code>Task ID,Owner,Due,status,Priority,hours_est,hours_spent
+1, alex, 9/2/25, done, high, 3, 2.5
+2, , 2025-09-05, In progress, MED, 4,
+3, JAMIE, 09-04-2025, todo, low, 1, 0
+4, alex, 2025/09/01, ToDo, HIGH, 2, 3
+4, alex, 2025/09/01, ToDo, HIGH, 2, 3
+5, taylor, 2025-08-31, blocked, med, , 0.5</code></pre>
+    </div>
+  </div>
+
+  <div class="project-grid">
+    <div class="project-section">
+      <h3>what you'll create</h3>
+      <ul class="deliverables">
+        <li><strong>cleaned dataset</strong> with consistent formatting</li>
+        <li><strong>validation rules</strong> to prevent future errors</li>
+        <li><strong>status dashboard</strong> with key metrics</li>
+        <li><strong>weekly report template</strong> for stakeholders</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h3>cleanup steps</h3>
+      <ul class="cleanup-steps">
+        <li>remove duplicate entries (task ID 4)</li>
+        <li>standardize owner names (capitalize, handle blanks)</li>
+        <li>convert all dates to yyyy-mm-dd format</li>
+        <li>normalize status values and priority levels</li>
+        <li>add calculated fields for overdue and variance</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="templates-section">
+    <h3>formulas to add</h3>
+    
+    <details class="template">
+      <summary>calculated columns</summary>
+      <div class="template-content">
+        <div class="formula-box">
+          <p><strong>days overdue (column H):</strong></p>
+          <code>=IF(AND($D2&lt;&gt;"done",$C2&lt;&gt;""), TODAY()-DATEVALUE($C2), "")</code>
+        </div>
+        <div class="formula-box">
+          <p><strong>effort variance (column I):</strong></p>
+          <code>=IFERROR($G2-$F2,"")</code>
+        </div>
+        <div class="formula-box">
+          <p><strong>status summary pivot:</strong></p>
+          <p>create pivot table showing counts by status and owner</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="template">
+      <summary>weekly status report</summary>
+      <div class="template-content">
+        <div class="report-template">
+          <h4>weekly status report</h4>
+          <p><strong>week of:</strong> &lt;yyyy-mm-dd&gt;</p>
+          <p><strong>overview:</strong> 5 active tasks • 1 blocked on assets • average overdue: 1.3 days</p>
+          <p><strong>by status:</strong></p>
+          <ul>
+            <li>todo: &lt;count&gt;</li>
+            <li>in progress: &lt;count&gt;</li>
+            <li>blocked: &lt;count&gt;</li>
+            <li>done: &lt;count&gt;</li>
+          </ul>
+          <p><strong>risks & blockers:</strong></p>
+          <ul>
+            <li>&lt;task&gt; - waiting on &lt;dependency&gt; - due &lt;date&gt;</li>
+          </ul>
+          <p><strong>next week focus:</strong></p>
+          <ul>
+            <li>&lt;priority 1&gt;</li>
+            <li>&lt;priority 2&gt;</li>
+            <li>&lt;priority 3&gt;</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <div class="success-criteria">
+    <h3>success checklist</h3>
+    <ul class="checklist">
+      <li>all data is clean and consistently formatted</li>
+      <li>validation rules prevent future errors</li>
+      <li>formulas calculate useful metrics automatically</li>
+      <li>report clearly communicates status and risks</li>
+      <li>next steps are actionable and prioritized</li>
+    </ul>
+  </div>
+
+  <div class="presentation-tip">
+    <h4>how to present this</h4>
+    <p class="muted">"standardized operations sheet with validation rules and formulas; created weekly status template that improved team visibility and reduced status meeting time"</p>
+  </div>
+</section>
+
+<!-- Project Assistant -->
+<section id="project-assistant" class="brief card">
+  <div class="role-header">
+    <span class="pill primary">project assistant</span>
+    <h2>project plan: contact form feature</h2>
+    <p class="role-description">break down a feature request into tasks, timeline, and risk management</p>
+  </div>
+
+  <div class="project-section">
+    <h3>the feature request</h3>
+    <div class="scenario-box">
+      <p><strong>feature:</strong> "contact us" form (name, email, message fields)</p>
+      <p><strong>requirements:</strong> auto-reply confirmation, inbox copy to support, google sheets logging</p>
+      <p><strong>constraints:</strong> 7-day deadline, 1 developer (part-time), must be mobile-friendly</p>
+    </div>
+  </div>
+
+  <div class="templates-section">
+    <h3>project breakdown</h3>
+    
+    <details class="template">
+      <summary>work breakdown structure (wbs)</summary>
+      <div class="template-content">
+        <div class="wbs-section">
+          <h4>1. discovery & planning</h4>
+          <ul>
+            <li>confirm field requirements and validation rules</li>
+            <li>research spam prevention options (recaptcha)</li>
+            <li>define success criteria and acceptance tests</li>
+          </ul>
+        </div>
+        <div class="wbs-section">
+          <h4>2. design & setup</h4>
+          <ul>
+            <li>ui mockups for form and success/error states</li>
+            <li>email template design for auto-reply</li>
+            <li>google sheets structure for logging</li>
+          </ul>
+        </div>
+        <div class="wbs-section">
+          <h4>3. development</h4>
+          <ul>
+            <li>front-end form with validation</li>
+            <li>backend endpoint for form processing</li>
+            <li>email integration and templates</li>
+            <li>sheets api integration</li>
+          </ul>
+        </div>
+        <div class="wbs-section">
+          <h4>4. testing & launch</h4>
+          <ul>
+            <li>functionality testing (valid/invalid inputs)</li>
+            <li>mobile responsiveness check</li>
+            <li>email deliverability testing</li>
+            <li>deployment and monitoring setup</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="template">
+      <summary>7-day timeline</summary>
+      <div class="template-content">
+        <table class="timeline-table">
+          <thead>
+            <tr><th>day</th><th>task</th><th>owner</th><th>done when</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>confirm scope + create mockups</td><td>pm</td><td>stakeholder approval</td></tr>
+            <tr><td>2</td><td>form ui + validation logic</td><td>dev</td><td>basic form working</td></tr>
+            <tr><td>3</td><td>backend endpoint + email setup</td><td>dev</td><td>test email received</td></tr>
+            <tr><td>4</td><td>sheets integration + logging</td><td>dev</td><td>data appears in sheet</td></tr>
+            <tr><td>5</td><td>qa testing + mobile check</td><td>pm</td><td>all test cases pass</td></tr>
+            <tr><td>6</td><td>bug fixes + final polish</td><td>dev</td><td>ready for production</td></tr>
+            <tr><td>7</td><td>deploy + documentation</td><td>pm</td><td>live + handoff complete</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details class="template">
+      <summary>acceptance criteria</summary>
+      <div class="template-content">
+        <ul class="acceptance-list">
+          <li><strong>form submission:</strong> valid submit shows success message, sends auto-reply in &lt;2 minutes</li>
+          <li><strong>validation:</strong> invalid email shows inline error, no request sent to server</li>
+          <li><strong>logging:</strong> every submission creates timestamped row in google sheet</li>
+          <li><strong>notifications:</strong> support inbox receives formatted email with subject "new contact from &lt;name&gt;"</li>
+          <li><strong>mobile:</strong> form is fully functional and well-formatted on mobile devices</li>
+          <li><strong>spam protection:</strong> recaptcha prevents automated submissions</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="template">
+      <summary>risks & mitigations</summary>
+      <div class="template-content">
+        <div class="risk-item">
+          <p><strong>risk:</strong> spam floods support inbox</p>
+          <p><strong>mitigation:</strong> implement recaptcha + rate limiting (max 3 submissions per hour per ip)</p>
+        </div>
+        <div class="risk-item">
+          <p><strong>risk:</strong> email deliverability issues</p>
+          <p><strong>mitigation:</strong> use verified sender domain, test with gmail/outlook, include fallback notification</p>
+        </div>
+        <div class="risk-item">
+          <p><strong>risk:</strong> google sheets quota exceeded</p>
+          <p><strong>mitigation:</strong> implement error handling, set up monthly archiving of old entries</p>
+        </div>
+        <div class="risk-item">
+          <p><strong>risk:</strong> developer availability reduced</p>
+          <p><strong>mitigation:</strong> prioritize core functionality first, move nice-to-haves to phase 2</p>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <div class="success-criteria">
+    <h3>success checklist</h3>
+    <ul class="checklist">
+      <li>work breakdown is complete and logical</li>
+      <li>timeline is realistic given constraints</li>
+      <li>acceptance criteria are testable and specific</li>
+      <li>major risks identified with practical mitigations</li>
+      <li>handoff documentation planned</li>
+    </ul>
+  </div>
+
+  <div class="presentation-tip">
+    <h4>how to present this</h4>
+    <p class="muted">"created comprehensive project plan for contact form feature including wbs, 7-day timeline, acceptance criteria, and risk mitigation strategies; coordinated cross-functional delivery"</p>
+  </div>
+</section>
+
+<!-- Marketing Assistant -->
+<section id="marketing-assistant" class="brief card">
+  <div class="role-header">
+    <span class="pill primary">marketing assistant</span>
+    <h2>content repurposing + utm tracking</h2>
+    <p class="role-description">transform one piece of content into platform-native posts with measurable tracking</p>
+  </div>
+
+  <div class="project-section">
+    <h3>source content</h3>
+    <div class="content-box">
+      <blockquote>"getting a first remote job isn't about sending 100 resumes. it's about showing proof. create one small project per week, track your applications, and learn time-zone fluency so teams can rely on you."</blockquote>
+    </div>
+  </div>
+
+  <div class="templates-section">
+    <h3>platform adaptations</h3>
+    
+    <details class="template">
+      <summary>linkedin post</summary>
+      <div class="template-content platform-post">
+        <div class="post-structure">
+          <p><strong>hook:</strong> you don't need experience. you need <em>proof</em>.</p>
+          <p><strong>body:</strong></p>
+          <ul>
+            <li>one mini-project per week → learn fast</li>
+            <li>a simple application tracker → show you work systematically</li>
+            <li>time-zone fluency → teams can rely on you</li>
+          </ul>
+          <p><strong>call to action:</strong> grab the free jumpstart kit - simple steps, real results</p>
+          <p><strong>link:</strong> [site]/resources/jumpstart-kit?utm_source=linkedin&utm_medium=social&utm_campaign=jumpstart&utm_content=proof_post</p>
+        </div>
+        <div class="platform-notes">
+          <p><strong>why this works:</strong> linkedin prefers professional advice with actionable steps. bullet format scans well in feed.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="template">
+      <summary>instagram reel caption</summary>
+      <div class="template-content platform-post">
+        <div class="post-structure">
+          <p><strong>caption:</strong></p>
+          <p>first remote job in 30 days? start here 👇</p>
+          <p>• mini-projects → proof without experience<br>
+          • application tracker → stay organized<br>
+          • timezone statement → show reliability</p>
+          <p>save this post and tag a friend who's job searching</p>
+          <p>free starter kit in bio ✨</p>
+        </div>
+        <div class="platform-notes">
+          <p><strong>visual concept:</strong> split screen showing "100 applications" vs "1 project" with checkmarks and progress indicators</p>
+          <p><strong>alt text:</strong> "remote job tips - proof over volume"</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="template">
+      <summary>twitter thread</summary>
+      <div class="template-content platform-post">
+        <div class="post-structure">
+          <p><strong>thread:</strong></p>
+          <p>1/ you don't win remote jobs with 100 applications. you win with <strong>proof</strong>.</p>
+          <p>2/ do 1 mini-project per week (support article, ops spreadsheet, project plan)</p>
+          <p>3/ track applications in a simple sheet - follow up systematically</p>
+          <p>4/ write availability statements in their timezone - show you understand remote work</p>
+          <p>5/ free kit with templates → [site]/resources/jumpstart-kit?utm_source=twitter&utm_medium=social&utm_campaign=jumpstart&utm_content=thread</p>
+        </div>
+        <div class="platform-notes">
+          <p><strong>why this works:</strong> twitter threads perform well with numbered tips. each tweet can stand alone but builds to cta.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="template">
+      <summary>utm tracking plan</summary>
+      <div class="template-content">
+        <table class="utm-table">
+          <thead>
+            <tr><th>platform</th><th>utm_source</th><th>utm_medium</th><th>utm_campaign</th><th>utm_content</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>linkedin</td><td>linkedin</td><td>social</td><td>jumpstart</td><td>proof_post</td></tr>
+            <tr><td>instagram</td><td>instagram</td><td>social</td><td>jumpstart</td><td>reel_tips</td></tr>
+            <tr><td>twitter</td><td>twitter</td><td>social</td><td>jumpstart</td><td>thread_proof</td></tr>
+          </tbody>
+        </table>
+        <p><strong>tracking goal:</strong> measure which platform drives most kit downloads and identify highest-converting content themes</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="success-criteria">
+    <h3>success checklist</h3>
+    <ul class="checklist">
+      <li>each post fits the platform's native style and format</li>
+      <li>clear call-to-action with trackable utm links</li>
+      <li>content is scannable and actionable</li>
+      <li>utm parameters follow consistent naming convention</li>
+      <li>messaging consistent but platform-optimized</li>
+    </ul>
+  </div>
+
+  <div class="presentation-tip">
+    <h4>how to present this</h4>
+    <p class="muted">"repurposed long-form content into 3 platform-native posts with utm tracking; created content calendar system for measuring cross-platform performance and identifying top-converting themes"</p>
+  </div>
+</section>
+
+<!-- Next Steps -->
+<section class="card cta">
+  <h2>ready to create your proof?</h2>
+  <p>pick one project above, spend 2-3 hours this weekend, and you'll have job-ready portfolio pieces to show employers.</p>
+  <div class="cta-actions">
+    <a href="/resources/jumpstart-kit" class="btn btn--secondary">get the complete job search guide</a>
+    <a href="/resources/cover-letter-generator" class="btn btn--outline">use our cover letter templates</a>
+  </div>
+</section>
+
+<style>
+  :root { --nav-offset: 64px; }
+
+  /* Navigation */
+  .kit-topnav{
+    position: sticky;
+    top: var(--nav-offset);
+    z-index: 500;
+    background: var(--color-white);
+    border: 2px solid var(--color-teal-200);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin: var(--space-4) 0 var(--space-6);
+  }
+  
+  .kit-topnav__inner{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--space-3) var(--space-5);
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  
+  .kit-topnav__back{
+    color: var(--color-gray-600);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+  }
+  
+  .kit-topnav__back:hover{ color: var(--color-secondary); }
+  
+  .kit-topnav__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: var(--space-2);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .kit-topnav__link{
+    display: inline-block;
+    padding: var(--space-2) var(--space-3);
+    color: var(--color-gray-600);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    transition: all .2s ease;
+    white-space: nowrap;
+  }
+  
+  .kit-topnav__link:hover{
+    background: var(--color-teal-50);
+    color: var(--color-teal-700);
+  }
+  
+  .kit-topnav__link.is-active{
+    background: var(--color-teal-100);
+    color: var(--color-teal-800);
+    font-weight: 600;
+  }
+  
+  .kit-topnav__print{ justify-self: end; }
+  
+  .kit-topnav__progress{
+    height: 4px;
+    background: var(--color-gray-200);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .kit-topnav__bar{
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--color-teal-500), var(--color-coral-500));
+    transition: width .2s ease-out;
+  }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    margin-bottom: var(--space-10);
+    padding: var(--space-10) 0;
+    background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-coral-50) 100%);
+    border-radius: var(--radius-xl);
+  }
+
+  .hero h1 {
+    margin-bottom: var(--space-4);
+    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-coral-700) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero .lead {
+    max-width: 600px;
+    margin: 0 auto var(--space-6) auto;
+  }
+
+  .hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  /* Sections */
+  .brief{ 
+    scroll-margin-top: calc(var(--nav-offset) + var(--space-4)); 
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+  }
+
+  .section-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-600);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Quick Start */
+  .quick-start {
+    background: var(--color-teal-50);
+    border-left: 4px solid var(--color-teal-500);
+  }
+
+  .quick-start-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+  }
+
+  .step {
+    background: var(--color-white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    border-left: 3px solid var(--color-teal-400);
+  }
+
+  .step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--color-teal-500);
+    color: white;
+    border-radius: 50%;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+  }
+
+  .step h4 {
+    color: var(--color-teal-700);
+    margin-bottom: var(--space-2);
+  }
+
+  /* Role headers */
+  .role-header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+  }
+
+  .role-header h2 {
+    margin-bottom: var(--space-3);
+  }
+
+  .role-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-600);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Project sections */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+  }
+
+  .project-section h3 {
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-xl);
+  }
+
+  .scenario-box,
+  .data-sample,
+  .content-box {
+    background: var(--color-gray-50);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-coral-400);
+    margin-bottom: var(--space-4);
+  }
+
+  .data-sample pre {
+    background: var(--color-white);
+    padding: var(--space-3);
+    border-radius: var(--radius-sm);
+    overflow-x: auto;
+    font-size: var(--font-size-sm);
+    border: 1px solid var(--color-gray-200);
+  }
+
+  .deliverables,
+  .cleanup-steps,
+  .acceptance-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .deliverables li,
+  .cleanup-steps li,
+  .acceptance-list li {
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--color-gray-200);
+    color: var(--color-gray-700);
+  }
+
+  .deliverables li:last-child,
+  .cleanup-steps li:last-child,
+  .acceptance-list li:last-child {
+    border-bottom: none;
+  }
+
+  /* Templates */
+  .templates-section {
+    margin: var(--space-8) 0;
+  }
+
+  .templates-section h3 {
+    margin-bottom: var(--space-6);
+    text-align: center;
+  }
+
+  .template {
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-4);
+    overflow: hidden;
+  }
+
+  .template summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: var(--space-4) var(--space-6);
+    background: var(--color-gray-50);
+    border-bottom: 1px solid var(--color-gray-200);
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-800);
+  }
+
+  .template summary:hover {
+    background: var(--color-teal-50);
+    color: var(--color-teal-700);
+  }
+
+  .template-content {
+    padding: var(--space-6);
+  }
+
+  .template-content h4 {
+    color: var(--color-secondary);
+    margin-bottom: var(--space-3);
+  }
+
+  .template-steps {
+    background: var(--color-gray-50);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    margin: var(--space-3) 0;
+  }
+
+  .workaround-box {
+    background: var(--color-sand-50);
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-sand-400);
+    margin: var(--space-3) 0;
+  }
+
+  .bug-report .bug-details {
+    background: var(--color-gray-50);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    list-style: none;
+    margin: 0;
+  }
+
+  .bug-report .bug-details li {
+    padding: var(--space-1) 0;
+    font-family: monospace;
+    font-size: var(--font-size-sm);
+  }
+
+  .customer-reply {
+    background: var(--color-teal-50);
+    border-radius: var(--radius-md);
+    font-family: monospace;
+    line-height: 1.6;
+  }
+
+  .formula-box {
+    background: var(--color-gray-50);
+    padding: var(--space-3);
+    border-radius: var(--radius-sm);
+    margin: var(--space-2) 0;
+  }
+
+  .formula-box code {
+    background: var(--color-white);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    font-family: monospace;
+    display: block;
+    margin-top: var(--space-1);
+  }
+
+  .report-template {
+    background: var(--color-gray-50);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    font-family: system-ui;
+  }
+
+  .report-template h4 {
+    margin-bottom: var(--space-3);
+    text-align: center;
+  }
+
+  .wbs-section {
+    margin-bottom: var(--space-4);
+    background: var(--color-gray-50);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+  }
+
+  .wbs-section h4 {
+    color: var(--color-secondary);
+    margin-bottom: var(--space-2);
+  }
+
+  .timeline-table,
+  .utm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-4) 0;
+  }
+
+  .timeline-table th,
+  .timeline-table td,
+  .utm-table th,
+  .utm-table td {
+    border: 1px solid var(--color-gray-200);
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+  }
+
+  .timeline-table th,
+  .utm-table th {
+    background: var(--color-gray-100);
+    font-weight: 600;
+  }
+
+  .risk-item {
+    background: var(--color-coral-50);
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-3);
+    border-left: 3px solid var(--color-coral-400);
+  }
+
+  .platform-post .post-structure {
+    background: var(--color-gray-50);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-3);
+  }
+
+  .platform-notes {
+    background: var(--color-teal-50);
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    color: var(--color-teal-800);
+  }
+
+  /* Success criteria */
+  .success-criteria {
+    background: var(--color-teal-50);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-teal-500);
+    margin: var(--space-8) 0;
+  }
+
+  .success-criteria h3 {
+    color: var(--color-teal-700);
+    margin-bottom: var(--space-4);
+  }
+
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .checklist li {
+    position: relative;
+    padding-left: var(--space-6);
+    margin-bottom: var(--space-2);
+    color: var(--color-gray-700);
+  }
+
+  .checklist li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-teal-600);
+    font-weight: 600;
+  }
+
+  /* Presentation tips */
+  .presentation-tip {
+    background: var(--color-sand-50);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-sand-500);
+    margin-top: var(--space-6);
+    text-align: center;
+  }
+
+  .presentation-tip h4 {
+    color: var(--color-sand-700);
+    margin-bottom: var(--space-3);
+  }
+
+  /* CTA */
+  .cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    margin-top: var(--space-6);
+  }
+
+  /* Responsive */
+  @media (max-width: 968px) {
+    .kit-topnav__inner {
+      grid-template-columns: 1fr auto;
+      grid-template-areas:
+        "list print"
+        "back back";
+      row-gap: var(--space-2);
+    }
+    .kit-topnav__back { grid-area: back; }
+    .kit-topnav__print { grid-area: print; }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: var(--space-8) var(--space-4);
+    }
+
+    .project-grid,
+    .quick-start-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-cta {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media print {
+    .kit-topnav,
+    .kit-topnav__print { 
+      display: none !important; 
+    }
+    
+    .card { 
+      box-shadow: none; 
+      border: 1px solid #ddd; 
+      page-break-inside: avoid; 
+      margin-bottom: var(--space-6);
+    }
+    
+    .brief {
+      page-break-before: always;
+    }
+    
+    .brief:first-of-type {
+      page-break-before: auto;
+    }
+  }
+</style>
+
+<script>
+  // Dynamic header offset calculation
+  (() => {
+    const header = document.querySelector('header, .site-header, nav[aria-label="primary"], nav[role="navigation"]');
+    const setOffset = () => {
+      const h = header ? header.getBoundingClientRect().height : 64;
+      document.documentElement.style.setProperty('--nav-offset', Math.round(h) + 'px');
+    };
+    setOffset();
+    window.addEventListener('resize', setOffset, { passive: true });
+  })();
+
+  // Smooth scroll navigation
+  document.querySelectorAll('.kit-topnav__link').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const id = link.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Navigation spy and progress bar
+  const links = [...document.querySelectorAll('.kit-topnav__link')];
+  const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+  
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        links.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + id));
+        history.replaceState(null, '', '#' + id);
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+  
+  targets.forEach(t => spy.observe(t));
+
+  // Progress bar
+  const bar = document.querySelector('.kit-topnav__bar');
+  const onScroll = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = Math.min(100, Math.max(0, (window.pageYOffset / max) * 100));
+    if (bar) bar.style.width = pct + '%';
+  };
+  
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+</script>
+</BaseLayout>

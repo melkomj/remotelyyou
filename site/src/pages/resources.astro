@@ -2,94 +2,233 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Resources: Your Remote Work Toolkit";
 ---
+
 <BaseLayout {title}>
+  <!-- Hero Section -->
   <section class="hero">
     <h1>your remote work toolkit</h1>
-    <p class="lead">everything beginners need to land remote jobs and build location-independent careers</p>
+    <p class="lead">everything beginners need to land remote jobs and build location-independent careers. start here, get hired faster.</p>
+  </section>
+
+  <!-- Quick Start Guide -->
+  <section class="card quick-start">
+    <div class="section-header">
+      <h2>🚀 start here (complete in 1 hour)</h2>
+      <p class="section-description">new to remote work? follow these 4 steps to get started right now.</p>
+    </div>
+    <div class="quick-start-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h4>pick your lane</h4>
+        <p class="muted">choose customer support, admin/ops, or marketing assistant. focus on one to start.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h4>get the complete guide</h4>
+        <p class="muted">our 7-day jumpstart kit walks you through everything step-by-step.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h4>create your first proof</h4>
+        <p class="muted">use our mini-projects to show skills without experience (takes 2-3 hours).</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h4>apply smart</h4>
+        <p class="muted">use our templates and avoid scams with our verification checklist.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Featured Resource -->
   <section class="featured-resource card highlight">
     <div class="featured-content">
-      <span class="pill accent pulse">🚀 new</span>
-      <h2><a href="/resources/jumpstart-kit">Remote Job Jumpstart Kit</a></h2>
-      <p class="resource-description">Complete 7-day action plan to land your first remote job. From resume templates to interview prep - everything you need in one comprehensive guide.</p>
+      <span class="pill accent pulse">🚀 most popular</span>
+      <h2><a href="/resources/jumpstart-kit">remote job jumpstart kit</a></h2>
+      <p class="resource-description">complete 7-day action plan to land your first remote job. from resume templates to interview prep - everything you need in one comprehensive guide.</p>
       <div class="resource-features">
         <span class="feature">✅ 7-day action plan</span>
-        <span class="feature">📝 Resume templates</span>
-        <span class="feature">💬 Cold outreach scripts</span>
-        <span class="feature">🛡️ Scam prevention</span>
+        <span class="feature">📄 resume templates</span>
+        <span class="feature">💬 cold outreach scripts</span>
+        <span class="feature">🛡️ scam prevention</span>
       </div>
-      <a href="/resources/jumpstart-kit" class="btn btn--secondary featured-btn">Get Started →</a>
+      <a href="/resources/jumpstart-kit" class="btn btn--secondary featured-btn">get started free →</a>
     </div>
   </section>
 
+  <!-- Core Resources -->
   <section class="card">
-    <h2>🎯 job boards that actually work</h2>
+    <div class="section-header">
+      <h2>📚 step-by-step guides</h2>
+      <p class="section-description">everything you need to go from zero experience to hired, completely free.</p>
+    </div>
     <div class="resource-grid">
       <div class="resource-item">
-        <h3><a href="/jobs" class="internal-link">our beginner feed</a></h3>
-        <p class="muted">hand-curated entry-level remote jobs updated regularly</p>
+        <h3><a href="/resources/portfolio-mini-projects" class="internal-link">portfolio mini-projects</a></h3>
+        <p class="muted">four one-pagers to create job-ready proof this weekend. no experience needed.</p>
+        <span class="badge free">free</span>
+      </div>
+
+      <div class="resource-item">
+        <h3><a href="/resources/cover-letter-generator" class="internal-link">cover letter generator</a></h3>
+        <p class="muted">10 templates + examples, plus an availability statement builder.</p>
+        <span class="badge free">free</span>
+      </div>
+
+      <div class="resource-item">
+        <h3><a href="/resources/interview-kit" class="internal-link">interview prep kit</a></h3>
+        <p class="muted">star worksheet, 15 remote q&a, ask-the-interviewer questions, thank-you emails.</p>
+        <span class="badge free">free</span>
+      </div>
+
+      <div class="resource-item">
+        <h3><a href="/resources/timezone-availability" class="internal-link">time-zone & availability</a></h3>
+        <p class="muted">professional overlap statements + quick scripts to confirm meeting times.</p>
+        <span class="badge free">free</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Sheets Resources -->
+  <section class="card">
+    <div class="section-header">
+      <h2>📊 ready-to-use spreadsheets</h2>
+      <p class="section-description">professional templates you can copy and customize for your job search</p>
+    </div>
+    <div class="sheets-grid">
+      <div class="sheet-item">
+        <div class="sheet-header">
+          <h3>job application tracker</h3>
+          <span class="badge free">free</span>
+        </div>
+        <p class="muted">track every application, interview, and follow-up in one organized spreadsheet. includes status tracking, date reminders, and notes section.</p>
+        <div class="sheet-actions">
+          <a href="https://docs.google.com/spreadsheets/d/1IYNB274I-0KbH0QKwMlrI7tg95iDAj9CyGifYkATu84/edit?usp=sharing" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn--outline">
+            view template
+          </a>
+        </div>
+        <div class="copy-instructions">
+          <h4>how to copy:</h4>
+          <ol>
+            <li>click "view template" above</li>
+            <li>go to file → make a copy</li>
+            <li>rename and save to your google drive</li>
+            <li>start tracking your applications</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="sheet-item">
+        <div class="sheet-header">
+          <h3>resume templates</h3>
+          <span class="badge free">free</span>
+        </div>
+        <p class="muted">ats-friendly resume formats optimized for remote jobs. includes templates for different experience levels and roles.</p>
+        <div class="sheet-actions">
+          <a href="https://docs.google.com/spreadsheets/d/17qdafrC6fusoU4KjFLsu7_c3R6j35OJLrDq2E7IDQuE/edit?usp=sharing" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn--outline">
+            view templates
+          </a>
+        </div>
+        <div class="copy-instructions">
+          <h4>how to copy:</h4>
+          <ol>
+            <li>click "view templates" above</li>
+            <li>go to file → make a copy</li>
+            <li>choose the template that fits your experience</li>
+            <li>customize with your information</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Boards -->
+  <section class="card">
+    <div class="section-header">
+      <h2>🎯 job boards that actually work</h2>
+      <p class="section-description">skip the spam and fake postings. these boards focus on legitimate remote opportunities.</p>
+    </div>
+    <div class="job-boards-grid">
+      <div class="job-board featured">
+        <h4><a href="/jobs" class="internal-link">our beginner feed</a></h4>
+        <p class="muted">hand-curated entry-level remote jobs updated daily. perfect starting point.</p>
         <span class="badge free">free</span>
       </div>
       
-      <div class="resource-item">
-        <h3><a href="https://www.flexjobs.com/remote-jobs" target="_blank" rel="noopener">flexjobs</a></h3>
-        <p class="muted">high-quality curated positions, best for experienced applicants</p>
+      <div class="job-board">
+        <h4><a href="https://www.flexjobs.com/remote-jobs" target="_blank" rel="noopener">flexjobs</a></h4>
+        <p class="muted">high-quality curated positions. best for people with some experience.</p>
         <span class="badge paid">paid</span>
       </div>
       
-      <div class="resource-item">
-        <h3><a href="https://remote.co/remote-jobs/" target="_blank" rel="noopener">remote.co</a></h3>
-        <p class="muted">solid mix of roles across all experience levels</p>
+      <div class="job-board">
+        <h4><a href="https://remote.co/remote-jobs/" target="_blank" rel="noopener">remote.co</a></h4>
+        <p class="muted">solid mix of roles across all experience levels. good search filters.</p>
         <span class="badge free">free</span>
       </div>
       
-      <div class="resource-item">
-        <h3><a href="https://weworkremotely.com" target="_blank" rel="noopener">we work remotely</a></h3>
-        <p class="muted">largest remote work community with diverse opportunities</p>
+      <div class="job-board">
+        <h4><a href="https://weworkremotely.com" target="_blank" rel="noopener">we work remotely</a></h4>
+        <p class="muted">largest remote work community with diverse opportunities daily.</p>
         <span class="badge free">free</span>
       </div>
     </div>
   </section>
 
+  <!-- Essential Tools -->
   <section class="card">
-    <h2>💼 essential skills & courses</h2>
-    <div class="skill-categories">
-      <div class="skill-category">
-        <h3>communication</h3>
-        <ul>
+    <div class="section-header">
+      <h2>🛠️ essential tools to learn</h2>
+      <p class="section-description">master these tools to stand out as a remote candidate. most have free tiers to practice with.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-category">
+        <h4>communication</h4>
+        <ul class="tool-list">
           <li><strong>writing:</strong> grammarly, hemingway editor</li>
           <li><strong>video calls:</strong> zoom, google meet basics</li>
-          <li><strong>async communication:</strong> slack, discord etiquette</li>
+          <li><strong>team chat:</strong> slack, discord etiquette</li>
+          <li><strong>email:</strong> professional formatting, signatures</li>
         </ul>
       </div>
       
-      <div class="skill-category">
-        <h3>productivity</h3>
-        <ul>
+      <div class="tool-category">
+        <h4>productivity & organization</h4>
+        <ul class="tool-list">
           <li><strong>project management:</strong> notion, clickup, trello</li>
           <li><strong>time tracking:</strong> toggl, clockify</li>
-          <li><strong>focus:</strong> freedom, cold turkey blocker</li>
+          <li><strong>focus tools:</strong> freedom, cold turkey blocker</li>
+          <li><strong>calendar:</strong> google calendar, scheduling</li>
         </ul>
       </div>
       
-      <div class="skill-category">
-        <h3>tech basics</h3>
-        <ul>
+      <div class="tool-category">
+        <h4>technical basics</h4>
+        <ul class="tool-list">
           <li><strong>cloud storage:</strong> google drive, dropbox</li>
           <li><strong>security:</strong> 1password, nordvpn</li>
           <li><strong>collaboration:</strong> google workspace, microsoft 365</li>
+          <li><strong>customer support:</strong> zendesk, freshdesk</li>
         </ul>
       </div>
     </div>
   </section>
 
+  <!-- Digital Nomad Resources -->
   <section class="card">
-    <h2>🌍 digital nomad essentials</h2>
+    <div class="section-header">
+      <h2>🌍 digital nomad essentials</h2>
+      <p class="section-description">planning to work from anywhere? these tools will keep you connected and productive on the road.</p>
+    </div>
     <div class="nomad-grid">
       <div class="nomad-item">
-        <h3>📱 apps you need</h3>
+        <h3>📱 essential apps</h3>
         <ul>
           <li><strong>nomad list:</strong> city data & community</li>
           <li><strong>timeanddate.com:</strong> timezone coordination</li>
@@ -101,17 +240,17 @@ const title = "Resources: Your Remote Work Toolkit";
       <div class="nomad-item">
         <h3>🏠 accommodation</h3>
         <ul>
-          <li><strong>airbnb:</strong> monthly stays</li>
+          <li><strong>airbnb:</strong> monthly stays with workspace</li>
           <li><strong>booking.com:</strong> flexible cancellation</li>
           <li><strong>selina:</strong> nomad-focused hostels</li>
-          <li><strong>outsite:</strong> coliving spaces</li>
+          <li><strong>outsite:</strong> global coliving spaces</li>
         </ul>
       </div>
       
       <div class="nomad-item">
         <h3>💳 banking & money</h3>
         <ul>
-          <li><strong>wise:</strong> international transfers</li>
+          <li><strong>wise:</strong> international transfers, low fees</li>
           <li><strong>revolut:</strong> multi-currency card</li>
           <li><strong>charles schwab:</strong> no foreign fees</li>
           <li><strong>payoneer:</strong> freelancer payments</li>
@@ -124,42 +263,46 @@ const title = "Resources: Your Remote Work Toolkit";
           <li><strong>airalo:</strong> international esims</li>
           <li><strong>google fi:</strong> global phone plan</li>
           <li><strong>speedtest:</strong> check internet quality</li>
-          <li><strong>wifi map:</strong> find free wifi</li>
+          <li><strong>wifi map:</strong> find free wifi hotspots</li>
         </ul>
       </div>
     </div>
   </section>
 
+  <!-- Free Downloads -->
   <section class="card">
-    <h2>📚 free downloads & guides</h2>
+    <div class="section-header">
+      <h2>📄 free download library</h2>
+      <p class="section-description">printable guides, checklists, and templates you can use offline. no spam, just useful resources.</p>
+    </div>
     <div class="downloads-grid">
       <div class="download-item download-primary">
         <div class="download-icon">📋</div>
         <h3>remote work starter pack</h3>
-        <p class="muted">complete guide to landing your first remote role</p>
+        <p class="muted">complete beginner's guide to landing your first remote role with templates and checklists.</p>
         <div class="download-actions">
           <button class="btn btn--outline download-btn" onclick="requestDownload('starter-pack')">download pdf</button>
-          <p class="download-note">Get via email • No spam</p>
+          <p class="download-note">get via email • no spam</p>
         </div>
       </div>
       
       <div class="download-item download-secondary">
         <div class="download-icon">💰</div>
         <h3>salary negotiation templates</h3>
-        <p class="muted">email templates for remote salary discussions</p>
+        <p class="muted">professional email templates for remote salary discussions and job offer negotiations.</p>
         <div class="download-actions">
           <button class="btn btn--outline download-btn" onclick="requestDownload('salary-templates')">download pdf</button>
-          <p class="download-note">Get via email • No spam</p>
+          <p class="download-note">get via email • no spam</p>
         </div>
       </div>
       
       <div class="download-item download-accent">
         <div class="download-icon">🏠</div>
         <h3>home office setup checklist</h3>
-        <p class="muted">everything you need for productive remote work</p>
+        <p class="muted">everything you need for productive remote work, from desk setup to internet requirements.</p>
         <div class="download-actions">
           <button class="btn btn--outline download-btn" onclick="requestDownload('office-checklist')">download pdf</button>
-          <p class="download-note">Get via email • No spam</p>
+          <p class="download-note">get via email • no spam</p>
         </div>
       </div>
     </div>
@@ -169,41 +312,115 @@ const title = "Resources: Your Remote Work Toolkit";
   <div id="downloadModal" class="modal">
     <div class="modal-content card">
       <span class="modal-close" onclick="closeModal()">&times;</span>
-      <h3>Get Your Free Download</h3>
-      <p id="modalDescription">Enter your email to receive the download link plus weekly remote work tips.</p>
+      <h3>get your free download</h3>
+      <p id="modalDescription">enter your email to receive the download link plus weekly remote work tips.</p>
       <form class="download-form" onsubmit="handleDownload(event)">
         <input type="email" id="emailInput" placeholder="your email address" required class="form-input" />
         <input type="hidden" id="downloadType" />
-        <button type="submit" class="btn btn-primary">Send Download Link</button>
+        <button type="submit" class="btn btn-primary">send download link</button>
       </form>
-      <p class="privacy-note">No spam, unsubscribe anytime. Join 2,000+ readers.</p>
+      <p class="privacy-note">no spam, unsubscribe anytime. join 2,000+ readers.</p>
     </div>
   </div>
 
+  <!-- Call to Action -->
   <section class="card cta">
     <h2>🚀 ready to go remote?</h2>
-    <p>get our comprehensive step-by-step roadmap to landing your first remote job</p>
-    <a href="/resources/jumpstart-kit" class="btn btn-primary">get the complete guide</a>
+    <p>get our most popular guide - the complete step-by-step roadmap to landing your first remote job in 7 days.</p>
+    <a href="/resources/jumpstart-kit" class="btn btn-primary">get the complete jumpstart kit</a>
   </section>
 
   <style>
     .hero {
       text-align: center;
-      margin-bottom: var(--space-10);
+      margin-bottom: var(--space-12);
+      padding: var(--space-12) 0;
+      background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-teal-50) 100%);
+      border-radius: var(--radius-xl);
     }
 
-    .lead {
+    .hero h1 {
+      margin-bottom: var(--space-4);
+      background: linear-gradient(135deg, var(--color-black) 0%, var(--color-teal-700) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero .lead {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Quick Start Section */
+    .quick-start {
+      background: var(--color-teal-50);
+      border-left: 4px solid var(--color-teal-500);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: var(--space-8);
+    }
+
+    .section-header h2 {
+      margin-bottom: var(--space-3);
+    }
+
+    .section-description {
       font-size: var(--font-size-lg);
       color: var(--color-gray-600);
       max-width: 600px;
-      margin: var(--space-4) auto 0;
+      margin: 0 auto;
+    }
+
+    .quick-start-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+
+    .step {
+      background: var(--color-white);
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      border-left: 3px solid var(--color-teal-400);
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: var(--color-teal-500);
+      color: white;
+      border-radius: 50%;
+      font-size: var(--font-size-xs);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+
+    .step h4 {
+      color: var(--color-teal-700);
+      margin-bottom: var(--space-2);
     }
 
     /* Featured Resource */
     .featured-resource {
-      margin-bottom: var(--space-10);
-      background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-coral-50) 100%);
-      border: 2px solid var(--color-teal-200);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .featured-resource::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-teal-500), var(--color-coral-500));
     }
 
     .featured-content {
@@ -211,8 +428,8 @@ const title = "Resources: Your Remote Work Toolkit";
     }
 
     .featured-content h2 {
-      font-size: var(--font-size-2xl);
-      margin: var(--space-3) 0 var(--space-2) 0;
+      font-size: var(--font-size-3xl);
+      margin: var(--space-4) 0 var(--space-3) 0;
     }
 
     .featured-content h2 a {
@@ -225,39 +442,32 @@ const title = "Resources: Your Remote Work Toolkit";
     }
 
     .resource-description {
-      font-size: var(--font-size-base);
+      font-size: var(--font-size-lg);
       color: var(--color-gray-600);
-      margin-bottom: var(--space-4);
+      margin-bottom: var(--space-5);
       line-height: 1.6;
     }
 
     .resource-features {
       display: flex;
       flex-wrap: wrap;
-      gap: var(--space-3);
+      gap: var(--space-2);
       margin-bottom: var(--space-6);
     }
 
     .feature {
       background: var(--color-white);
-      padding: var(--space-1) var(--space-3);
+      padding: var(--space-2) var(--space-4);
       border-radius: var(--radius-xl);
       font-size: var(--font-size-sm);
       font-weight: 500;
       border: 1px solid var(--color-teal-200);
+      color: var(--color-teal-700);
     }
 
-    .featured-btn {
-      font-size: var(--font-size-lg);
-      padding: var(--space-4) var(--space-8);
-    }
-
-    .pulse {
-      animation: pulse 2s infinite;
-    }
-
-    /* Resource Grid */
+    /* Resource grids */
     .resource-grid,
+    .job-boards-grid,
     .downloads-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -265,31 +475,42 @@ const title = "Resources: Your Remote Work Toolkit";
       margin-top: var(--space-6);
     }
 
-    .resource-item {
+    .resource-item,
+    .job-board {
+      background: var(--color-white);
       padding: var(--space-6);
       border: 2px solid var(--color-gray-200);
       border-radius: var(--radius-xl);
       position: relative;
       transition: all 0.3s ease;
-      background: var(--color-white);
     }
 
-    .resource-item:hover {
+    .resource-item:hover,
+    .job-board:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-lg);
       border-color: var(--color-secondary);
     }
 
-    .resource-item h3 {
-      margin: 0 0 var(--space-2) 0;
+    .job-board.featured {
+      border-color: var(--color-teal-300);
+      background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-white) 100%);
     }
 
-    .resource-item h3 a {
+    .resource-item h3,
+    .job-board h4 {
+      margin: 0 0 var(--space-2) 0;
+      font-size: var(--font-size-xl);
+    }
+
+    .resource-item h3 a,
+    .job-board h4 a {
       text-decoration: none;
       color: var(--color-black);
     }
 
-    .resource-item h3 a:hover {
+    .resource-item h3 a:hover,
+    .job-board h4 a:hover {
       color: var(--color-secondary);
     }
 
@@ -299,11 +520,11 @@ const title = "Resources: Your Remote Work Toolkit";
 
     .badge {
       position: absolute;
-      top: var(--space-3);
-      right: var(--space-3);
-      padding: var(--space-1) var(--space-2);
+      top: var(--space-4);
+      right: var(--space-4);
+      padding: var(--space-1) var(--space-3);
       font-size: var(--font-size-xs);
-      border-radius: var(--radius-sm);
+      border-radius: var(--radius-md);
       font-weight: 600;
     }
 
@@ -317,64 +538,68 @@ const title = "Resources: Your Remote Work Toolkit";
       color: var(--color-sand-800);
     }
 
-    /* Skills & Nomad Sections */
-    .skill-categories,
+    /* Tools grid */
+    .tools-grid,
     .nomad-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: var(--space-8);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-6);
       margin-top: var(--space-6);
     }
 
-    .skill-category,
+    .tool-category,
     .nomad-item {
       background: var(--color-gray-50);
       padding: var(--space-6);
       border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-coral-400);
       transition: all 0.3s ease;
     }
 
-    .skill-category:hover,
+    .tool-category:hover,
     .nomad-item:hover {
       transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
+      box-shadow: var(--shadow-sm);
     }
 
-    .skill-category h3,
+    .tool-category h4,
     .nomad-item h3 {
-      margin: 0 0 var(--space-4) 0;
-      color: var(--color-black);
+      color: var(--color-coral-700);
+      margin-bottom: var(--space-4);
       font-size: var(--font-size-lg);
     }
 
-    .skill-category ul,
+    .tool-list,
     .nomad-item ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
-    .skill-category li,
+    .tool-list li,
     .nomad-item li {
       padding: var(--space-2) 0;
       border-bottom: 1px solid var(--color-gray-200);
       color: var(--color-gray-700);
-      line-height: 1.5;
     }
 
-    .skill-category li:last-child,
+    .tool-list li:last-child,
     .nomad-item li:last-child {
       border-bottom: none;
     }
 
-    /* Enhanced Download Items */
+    .tool-list strong {
+      color: var(--color-gray-800);
+    }
+
+    /* Download items */
     .download-item {
+      background: var(--color-white);
       padding: var(--space-8);
       border: 2px solid var(--color-gray-200);
       border-radius: var(--radius-xl);
       position: relative;
       transition: all 0.4s ease;
-      background: var(--color-white);
       text-align: center;
     }
 
@@ -426,7 +651,7 @@ const title = "Resources: Your Remote Work Toolkit";
       margin: 0;
     }
 
-    /* Modal Styles */
+    /* Modal */
     .modal {
       display: none;
       position: fixed;
@@ -490,19 +715,33 @@ const title = "Resources: Your Remote Work Toolkit";
       margin: 0;
     }
 
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+
     @keyframes pulse {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.7; }
     }
 
-    /* Responsive Design */
+    /* Responsive design */
     @media (max-width: 768px) {
+      .hero {
+        padding: var(--space-8) var(--space-4);
+      }
+
       .resource-grid,
+      .job-boards-grid,
       .downloads-grid,
-      .skill-categories,
-      .nomad-grid {
+      .tools-grid,
+      .nomad-grid,
+      .sheets-grid {
         grid-template-columns: 1fr;
         gap: var(--space-4);
+      }
+
+      .quick-start-steps {
+        grid-template-columns: 1fr;
       }
 
       .resource-features {
@@ -530,12 +769,12 @@ const title = "Resources: Your Remote Work Toolkit";
       downloadTypeInput.value = type;
       
       const descriptions = {
-        'starter-pack': 'Get the complete Remote Work Starter Pack with templates, checklists, and step-by-step guides.',
-        'salary-templates': 'Download professional email templates for salary negotiations and job offer discussions.',
-        'office-checklist': 'Get the complete home office setup checklist with equipment recommendations and budget tips.'
+        'starter-pack': 'get the complete remote work starter pack with templates, checklists, and step-by-step guides.',
+        'salary-templates': 'download professional email templates for salary negotiations and job offer discussions.',
+        'office-checklist': 'get the complete home office setup checklist with equipment recommendations and budget tips.'
       };
       
-      modalDescription.textContent = descriptions[type] || 'Enter your email to receive the download link plus weekly remote work tips.';
+      modalDescription.textContent = descriptions[type] || 'enter your email to receive the download link plus weekly remote work tips.';
       modal.style.display = 'block';
       
       // Focus email input
@@ -556,13 +795,13 @@ const title = "Resources: Your Remote Work Toolkit";
       const downloadType = document.getElementById('downloadType').value;
       
       if (!email) {
-        alert('Please enter your email address.');
+        alert('please enter your email address.');
         return;
       }
       
       // Here you would normally send the email to your backend
       // For now, we'll show a success message
-      alert(`Thanks! We've sent the download link to ${email}`);
+      alert(`thanks! we've sent the download link to ${email}`);
       closeModal();
       
       // Clear form

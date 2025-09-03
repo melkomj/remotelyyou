@@ -1,0 +1,1096 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "interview kit (printable)";
+const description = "star worksheet, 15 remote q&a with model answers, ask-the-interviewer, and thank-you emails.";
+---
+
+<BaseLayout {title} {description}>
+
+  <!-- Navigation -->
+  <nav class="kit-topnav" aria-label="interview navigation">
+    <div class="kit-topnav__inner">
+      <a href="/resources" class="kit-topnav__back">← back to resources</a>
+      <ul class="kit-topnav__list" role="tablist">
+        <li><a class="kit-topnav__link is-active" href="#overview">overview</a></li>
+        <li><a class="kit-topnav__link" href="#star">star method</a></li>
+        <li><a class="kit-topnav__link" href="#qa">remote q&a</a></li>
+        <li><a class="kit-topnav__link" href="#ask">your questions</a></li>
+        <li><a class="kit-topnav__link" href="#thanks">follow-up</a></li>
+      </ul>
+      <button class="btn btn--secondary kit-topnav__print" onclick="window.print()">print / save pdf</button>
+    </div>
+    <div class="kit-topnav__progress" aria-hidden="true"><div class="kit-topnav__bar"></div></div>
+  </nav>
+
+<!-- Hero -->
+  <section class="hero">
+    <h1>interview prep kit</h1>
+    <p class="lead">prepare fast, answer clearly, follow up with value. everything here is print-friendly for last-minute prep.</p>
+    <div class="hero-cta">
+      <span class="pill accent">15 common questions</span>
+      <span class="pill free">print-ready formats</span>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section id="overview" class="card quick-start">
+    <div class="section-header">
+      <h2>your interview game plan</h2>
+      <p class="section-description">remote interviews focus on communication, self-direction, and proof of capabilities</p>
+    </div>
+    <div class="quick-start-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h4>prepare 3 star stories</h4>
+        <p class="muted">use our worksheet to structure your best examples with clear outcomes</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h4>practice remote-specific answers</h4>
+        <p class="muted">review the 15 common questions and practice your responses out loud</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h4>prepare smart questions</h4>
+        <p class="muted">ask about processes, tools, success metrics - show you understand remote work</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h4>follow up with value</h4>
+        <p class="muted">send thank-you within 24 hours with something useful, not just gratitude</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAR Method -->
+  <section id="star" class="card brief">
+    <div class="section-header">
+      <h2>⭐ star method worksheet</h2>
+      <p class="section-description">structure your stories for maximum impact. keep each section to 2-3 bullets.</p>
+    </div>
+
+    <div class="star-worksheet">
+      <div class="worksheet-section">
+        <h3>situation</h3>
+        <div class="worksheet-content">
+          <p class="section-guide">set the scene - where were you? what changed?</p>
+          <div class="worksheet-box">
+            <p class="placeholder-text">example: "during my final semester, our team project coordinator dropped out 3 weeks before deadline..."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="worksheet-section">
+        <h3>task</h3>
+        <div class="worksheet-content">
+          <p class="section-guide">your specific responsibility - include constraints</p>
+          <div class="worksheet-box">
+            <p class="placeholder-text">example: "i needed to coordinate 5 team members across 3 time zones, with only email and shared docs..."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="worksheet-section">
+        <h3>action</h3>
+        <div class="worksheet-content">
+          <p class="section-guide">3-4 specific steps you took - use action verbs</p>
+          <div class="worksheet-box">
+            <p class="placeholder-text">example: "created shared calendar, established daily check-ins via slack, built task tracker in google sheets..."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="worksheet-section">
+        <h3>result</h3>
+        <div class="worksheet-content">
+          <p class="section-guide">measurable outcome - before vs after</p>
+          <div class="worksheet-box">
+            <p class="placeholder-text">example: "delivered project 2 days early, all 5 members contributed equally, professor used our process as example for next semester..."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="star-tips">
+      <h3>story ideas for remote roles</h3>
+      <div class="story-prompts">
+        <div class="prompt-category">
+          <h4>communication</h4>
+          <ul>
+            <li>resolved misunderstanding through clear written explanation</li>
+            <li>presented complex information to non-technical audience</li>
+            <li>coordinated project across multiple time zones</li>
+          </ul>
+        </div>
+        <div class="prompt-category">
+          <h4>self-direction</h4>
+          <ul>
+            <li>completed project with minimal guidance</li>
+            <li>identified and solved problem proactively</li>
+            <li>learned new tool/skill quickly under pressure</li>
+          </ul>
+        </div>
+        <div class="prompt-category">
+          <h4>problem-solving</h4>
+          <ul>
+            <li>found creative solution with limited resources</li>
+            <li>debugged technical issue systematically</li>
+            <li>improved inefficient process</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Remote Q&A -->
+  <section id="qa" class="card brief">
+    <div class="section-header">
+      <h2>💬 15 remote interview questions</h2>
+      <p class="section-description">common questions with proven answer frameworks. practice these out loud.</p>
+    </div>
+
+    <div class="qa-grid">
+      <div class="qa-item">
+        <h4>1. how do you structure your workday?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> planning + focus blocks + communication</p>
+          <p><strong>answer:</strong> "i plan in time blocks: 90-minute focus sessions followed by 15-minute communication checks. i start by reviewing priorities, tackle hardest work in morning focus block, then end with eod summary in notion."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>2. describe your home office setup</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> space + tech + professional environment</p>
+          <p><strong>answer:</strong> "dedicated workspace in my bedroom with proper desk, external monitor, and noise-canceling headset. internet is 200/50 mbps with hotspot backup. space has neutral background and good lighting for video calls."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>3. how do you handle different time zones?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> async-first + clear communication + flexibility</p>
+          <p><strong>answer:</strong> "default to async communication with clear context. when scheduling meetings, i propose two time options with both timezones listed. for urgent issues, i'm flexible extending my hours 2-3x per week."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>4. tell me about handling a difficult customer</h4>
+        <div class="answer-framework">
+          <p><strong>use star method here</strong></p>
+          <p><strong>answer:</strong> "customer's order was delayed, they were frustrated in chat. i acknowledged their concern, pulled order details, found shipping issue, sent tracking update with screenshot, and followed up next day. they left 5-star review."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>5. how do you prioritize when everything seems urgent?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> impact/effort matrix + stakeholder communication</p>
+          <p><strong>answer:</strong> "i use impact vs time matrix - handle blockers first, then deadlines, then quick wins. when conflicts arise, i communicate trade-offs to stakeholders and confirm priorities in writing."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>6. what tools are you comfortable with?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> current stack + learning approach + adaptability</p>
+          <p><strong>answer:</strong> "daily use: slack, google workspace, notion, zoom. for support: zendesk experience, freshdesk familiar. i learn new tools through built-in tutorials and youtube, usually proficient within a week."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>7. describe a time you found and reported a bug</h4>
+        <div class="answer-framework">
+          <p><strong>use star method - focus on systematic approach</strong></p>
+          <p><strong>answer:</strong> "noticed password reset failing for emails with '+'. reproduced with steps, documented environment details, attached screenshot, suggested regex fix. prevented 20+ weekly support tickets."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>8. how do you use templates without sounding robotic?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> structure + personalization + genuine help</p>
+          <p><strong>answer:</strong> "templates provide consistent structure, but i personalize opening/closing and add one specific detail about their situation. focus is solving their actual problem, not just filling template."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>9. what metrics do you think matter for this role?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> quality + efficiency + customer impact</p>
+          <p><strong>answer:</strong> "first response time under 2 hours, resolution rate above 85%, customer satisfaction 4.5+. also track repeat tickets - shows if solutions are complete and helpful."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>10. how do you work with minimal direction?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> clarify outcome + propose approach + check progress</p>
+          <p><strong>answer:</strong> "i confirm the desired outcome and any guardrails, propose 3-step approach, get approval, then share progress updates at agreed intervals. better to over-communicate than assume."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>11. what if your internet goes down?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> backup plan + communication + offline tasks</p>
+          <p><strong>answer:</strong> "hotspot backup for immediate needs, offline task list for longer outages. i'd notify team immediately with estimated fix time and hand off urgent items via phone if needed."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>12. describe a process improvement you made</h4>
+        <div class="answer-framework">
+          <p><strong>use star method - focus on measurable impact</strong></p>
+          <p><strong>answer:</strong> "noticed weekly reports took 3 hours due to manual data entry. added google sheets formulas and conditional formatting. now takes 45 minutes, 75% time savings, fewer errors."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>13. when do you say 'i don't know'?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> acknowledge + offer what you can + timeline</p>
+          <p><strong>answer:</strong> "immediately when i don't know something. i acknowledge it, share what i do know or can help with right now, and give timeline for when i'll have the answer."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>14. what's your availability with our team?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> location + overlap + flexibility + communication</p>
+          <p><strong>answer:</strong> "based in denver (mst). guarantee 5-6 hours overlap with pst team, can extend to 9pm for launches. post detailed eod handoffs so work continues across timezones."</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h4>15. why do you want to work remotely?</h4>
+        <div class="answer-framework">
+          <p><strong>framework:</strong> professional benefits + personal fit + company value</p>
+          <p><strong>answer:</strong> "prefer written communication for clarity, deep focus blocks for complex problems, outcome-based work over presence. remote structure makes productivity visible and lets me contribute to global teams."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions to Ask -->
+  <section id="ask" class="card brief">
+    <div class="section-header">
+      <h2>🤔 questions you should ask them</h2>
+      <p class="section-description">smart questions show you understand remote work dynamics and care about success</p>
+    </div>
+
+    <div class="questions-by-stage">
+      <div class="question-stage">
+        <h3>screening/hr round</h3>
+        <div class="question-list">
+          <div class="question-item">
+            <h4>"what are the top 2-3 outcomes you'd want to see in my first 90 days?"</h4>
+            <p class="question-why">shows goal orientation and helps you understand priorities</p>
+          </div>
+          <div class="question-item">
+            <h4>"how is success measured weekly and monthly for this role?"</h4>
+            <p class="question-why">demonstrates results focus and helps set expectations</p>
+          </div>
+          <div class="question-item">
+            <h4>"what's the core tech stack and daily tools i'd be using?"</h4>
+            <p class="question-why">practical question shows you're thinking about day-to-day work</p>
+          </div>
+          <div class="question-item">
+            <h4>"how does the team handle time zone coordination and handoffs?"</h4>
+            <p class="question-why">shows understanding of remote work challenges</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-stage">
+        <h3>team/manager round</h3>
+        <div class="question-list">
+          <div class="question-item">
+            <h4>"what's the current workflow and where do bottlenecks usually happen?"</h4>
+            <p class="question-why">shows systems thinking and process improvement mindset</p>
+          </div>
+          <div class="question-item">
+            <h4>"what docs or templates do you wish you had that would make the team more efficient?"</h4>
+            <p class="question-why">identifies opportunities to add immediate value</p>
+          </div>
+          <div class="question-item">
+            <h4>"how do you prefer to receive updates - daily standup, weekly summary, or as-needed?"</h4>
+            <p class="question-why">shows communication awareness and flexibility</p>
+          </div>
+          <div class="question-item">
+            <h4>"what would be one small win i could achieve in week 1?"</h4>
+            <p class="question-why">demonstrates urgency to contribute and quick-start mentality</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-stage">
+        <h3>final/decision round</h3>
+        <div class="question-list">
+          <div class="question-item">
+            <h4>"what would make you say 'this hire was a great success' at the 6-month mark?"</h4>
+            <p class="question-why">focuses on long-term value and helps you understand expectations</p>
+          </div>
+          <div class="question-item">
+            <h4>"do you have any concerns about my background that i can address?"</h4>
+            <p class="question-why">gives you chance to handle objections directly</p>
+          </div>
+          <div class="question-item">
+            <h4>"what's the onboarding process like for remote hires?"</h4>
+            <p class="question-why">practical question about integration and support systems</p>
+          </div>
+          <div class="question-item">
+            <h4>"how do people typically grow and advance from this role?"</h4>
+            <p class="question-why">shows long-term thinking and career development interest</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="role-specific">
+      <h3>role-specific questions</h3>
+      <div class="role-questions">
+        <div class="role-q">
+          <h4>customer support</h4>
+          <p>channels + volume? escalation process? most common repeat issues? sla targets?</p>
+        </div>
+        <div class="role-q">
+          <h4>admin/operations</h4>
+          <p>critical dashboards? data validation rules? cross-team dependencies? reporting schedule?</p>
+        </div>
+        <div class="role-q">
+          <h4>marketing assistant</h4>
+          <p>content approval process? primary channels? utm tracking system? campaign measurement?</p>
+        </div>
+        <div class="role-q">
+          <h4>project coordination</h4>
+          <p>planning methodology? stakeholder communication? change management? definition of done?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Follow-up Templates -->
+  <section id="thanks" class="card brief">
+    <div class="section-header">
+      <h2>✉️ post-interview follow-up</h2>
+      <p class="section-description">send within 24 hours. add value, don't just say thanks.</p>
+    </div>
+
+    <div class="followup-templates">
+      <div class="template-option">
+        <h3>concise + professional</h3>
+        <div class="email-template">
+          <div class="email-header">
+            <p><strong>subject:</strong> thank you - [your name] for [role]</p>
+          </div>
+          <div class="email-body">
+            <p>hi [name],</p>
+            <p>thanks for today - the focus on [specific insight] matches my experience with [relevant skill/tool].</p>
+            <p>here's the [work sample] we discussed: [link]</p>
+            <p>i'm available [overlap hours] and can start [date].</p>
+            <p>best,<br>[your name]</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="template-option">
+        <h3>value-added follow-up</h3>
+        <div class="email-template">
+          <div class="email-header">
+            <p><strong>subject:</strong> quick follow-up + useful resource</p>
+          </div>
+          <div class="email-body">
+            <p>hi [name],</p>
+            <p>appreciated our discussion about [challenge they mentioned]. i put together a quick [relevant resource]: [link]</p>
+            <p>includes [two specific value points]. if useful, i can expand this into a starter template this week.</p>
+            <p>thanks again,<br>[your name]</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="template-option">
+        <h3>proof of capability</h3>
+        <div class="email-template">
+          <div class="email-header">
+            <p><strong>subject:</strong> [role] follow-up - sample work attached</p>
+          </div>
+          <div class="email-body">
+            <p>hi [name],</p>
+            <p>after learning about [specific challenge], i created a sample [deliverable type]: [link]</p>
+            <p>shows how i'd approach [task mentioned] using [tools discussed]. took about 2 hours to create.</p>
+            <p>available [overlap] starting [date].</p>
+            <p>[your name]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="followup-tips">
+      <h3>follow-up best practices</h3>
+      <div class="tips-grid">
+        <div class="tip-item">
+          <h4>timing</h4>
+          <p>send within 24 hours, ideally same day if interview was in morning</p>
+        </div>
+        <div class="tip-item">
+          <h4>content</h4>
+          <p>reference specific conversation point, attach relevant work sample if possible</p>
+        </div>
+        <div class="tip-item">
+          <h4>length</h4>
+          <p>keep under 100 words - they're busy and you've already made your case</p>
+        </div>
+        <div class="tip-item">
+          <h4>value</h4>
+          <p>include something useful: work sample, resource, or solution to problem they mentioned</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Prep Checklist -->
+  <section class="card cta">
+    <h2>final prep checklist</h2>
+    <div class="prep-checklist">
+      <div class="checklist-section">
+        <h3>24 hours before</h3>
+        <ul class="checklist">
+          <li>fill star worksheet with 3 strong stories</li>
+          <li>practice "tell me about yourself" (60 seconds max)</li>
+          <li>write availability statement for this specific role</li>
+          <li>prepare 3 smart questions for each interview round</li>
+          <li>test video setup - lighting, audio, background</li>
+        </ul>
+      </div>
+      <div class="checklist-section">
+        <h3>day of interview</h3>
+        <ul class="checklist">
+          <li>join 5 minutes early to test tech</li>
+          <li>have water nearby, notepad ready</li>
+          <li>pull up job description and your resume</li>
+          <li>practice confident posture and eye contact</li>
+          <li>prepare follow-up email draft (customize after)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="final-cta">
+      <p>ready to nail your remote interviews? combine this with our other resources for complete job search success.</p>
+      <div class="cta-actions">
+        <a href="/resources/jumpstart-kit" class="btn btn--secondary">get the complete job guide</a>
+        <a href="/resources/cover-letter-generator" class="btn btn--outline">create cover letters</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    :root { --nav-offset: 64px; }
+
+    /* Navigation - same as other files */
+    .kit-topnav{
+      position: sticky;
+      top: var(--nav-offset);
+      z-index: 500;
+      background: var(--color-white);
+      border: 2px solid var(--color-teal-200);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      margin: var(--space-4) 0 var(--space-6);
+    }
+    
+    .kit-topnav__inner{
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: var(--space-3) var(--space-5);
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: var(--space-3);
+      align-items: center;
+    }
+    
+    .kit-topnav__back{
+      color: var(--color-gray-600);
+      text-decoration: none;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+    }
+    
+    .kit-topnav__back:hover{ color: var(--color-secondary); }
+    
+    .kit-topnav__list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: var(--space-2);
+      overflow-x: auto;
+    }
+    
+    .kit-topnav__link{
+      display: inline-block;
+      padding: var(--space-2) var(--space-3);
+      color: var(--color-gray-600);
+      text-decoration: none;
+      font-size: var(--font-size-sm);
+      border-radius: var(--radius-md);
+      transition: all .2s ease;
+      white-space: nowrap;
+    }
+    
+    .kit-topnav__link:hover{
+      background: var(--color-teal-50);
+      color: var(--color-teal-700);
+    }
+    
+    .kit-topnav__link.is-active{
+      background: var(--color-teal-100);
+      color: var(--color-teal-800);
+      font-weight: 600;
+    }
+    
+    .kit-topnav__print{ justify-self: end; }
+    
+    .kit-topnav__progress{
+      height: 4px;
+      background: var(--color-gray-200);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    
+    .kit-topnav__bar{
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--color-teal-500), var(--color-coral-500));
+      transition: width .2s ease-out;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      margin-bottom: var(--space-10);
+      padding: var(--space-10) 0;
+      background: linear-gradient(135deg, var(--color-sand-50) 0%, var(--color-teal-50) 100%);
+      border-radius: var(--radius-xl);
+    }
+
+    .hero h1 {
+      margin-bottom: var(--space-4);
+      background: linear-gradient(135deg, var(--color-black) 0%, var(--color-teal-700) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero .lead {
+      max-width: 600px;
+      margin: 0 auto var(--space-6) auto;
+    }
+
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
+
+    /* Common section styling */
+    .brief{ 
+      scroll-margin-top: calc(var(--nav-offset) + var(--space-4)); 
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: var(--space-8);
+    }
+
+    .section-description {
+      font-size: var(--font-size-lg);
+      color: var(--color-gray-600);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Quick Start */
+    .quick-start {
+      background: var(--color-teal-50);
+      border-left: 4px solid var(--color-teal-500);
+    }
+
+    .quick-start-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+
+    .step {
+      background: var(--color-white);
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      border-left: 3px solid var(--color-teal-400);
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: var(--color-teal-500);
+      color: white;
+      border-radius: 50%;
+      font-size: var(--font-size-xs);
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+
+    .step h4 {
+      color: var(--color-teal-700);
+      margin-bottom: var(--space-2);
+    }
+
+    /* STAR Worksheet */
+    .star-worksheet {
+      display: grid;
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+
+    .worksheet-section h3 {
+      color: var(--color-sand-700);
+      margin-bottom: var(--space-3);
+      font-size: var(--font-size-xl);
+      text-align: center;
+    }
+
+    .section-guide {
+      color: var(--color-gray-600);
+      font-style: italic;
+      text-align: center;
+      margin-bottom: var(--space-3);
+    }
+
+    .worksheet-box {
+      background: var(--color-sand-50);
+      border: 2px dashed var(--color-sand-300);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      min-height: 80px;
+    }
+
+    .placeholder-text {
+      color: var(--color-sand-700);
+      font-style: italic;
+      margin: 0;
+    }
+
+    .star-tips {
+      background: var(--color-gray-50);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-secondary);
+      margin-top: var(--space-8);
+    }
+
+    .star-tips h3 {
+      color: var(--color-secondary);
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
+
+    .story-prompts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-6);
+    }
+
+    .prompt-category h4 {
+      color: var(--color-secondary);
+      margin-bottom: var(--space-3);
+    }
+
+    .prompt-category ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .prompt-category li {
+      padding: var(--space-2) 0;
+      color: var(--color-gray-700);
+      border-bottom: 1px solid var(--color-gray-200);
+    }
+
+    .prompt-category li:last-child {
+      border-bottom: none;
+    }
+
+    /* Q&A Grid */
+    .qa-grid {
+      display: grid;
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+
+    .qa-item {
+      background: var(--color-white);
+      border: 2px solid var(--color-gray-200);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      transition: all 0.3s ease;
+    }
+
+    .qa-item:hover {
+      border-color: var(--color-coral-300);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .qa-item h4 {
+      color: var(--color-coral-700);
+      margin-bottom: var(--space-3);
+      font-size: var(--font-size-lg);
+    }
+
+    .answer-framework {
+      background: var(--color-coral-50);
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--color-coral-400);
+    }
+
+    .answer-framework p:first-child {
+      font-weight: 600;
+      color: var(--color-coral-800);
+      margin-bottom: var(--space-2);
+    }
+
+    .answer-framework p:last-child {
+      margin-bottom: 0;
+      font-style: italic;
+    }
+
+    /* Questions by Stage */
+    .questions-by-stage {
+      display: grid;
+      gap: var(--space-8);
+      margin-top: var(--space-6);
+    }
+
+    .question-stage h3 {
+      color: var(--color-secondary);
+      text-align: center;
+      margin-bottom: var(--space-6);
+      font-size: var(--font-size-xl);
+    }
+
+    .question-list {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .question-item {
+      background: var(--color-gray-50);
+      padding: var(--space-4);
+      border-radius: var(--radius-lg);
+      border-left: 3px solid var(--color-secondary);
+    }
+
+    .question-item h4 {
+      color: var(--color-secondary);
+      margin-bottom: var(--space-2);
+      font-size: var(--font-size-base);
+    }
+
+    .question-why {
+      color: var(--color-gray-600);
+      font-style: italic;
+      font-size: var(--font-size-sm);
+      margin: 0;
+    }
+
+    .role-specific {
+      background: var(--color-sand-50);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-sand-500);
+      margin-top: var(--space-8);
+    }
+
+    .role-specific h3 {
+      color: var(--color-sand-700);
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
+
+    .role-questions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-4);
+    }
+
+    .role-q {
+      background: var(--color-white);
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+    }
+
+    .role-q h4 {
+      color: var(--color-sand-700);
+      margin-bottom: var(--space-2);
+    }
+
+    .role-q p {
+      color: var(--color-gray-700);
+      font-size: var(--font-size-sm);
+      margin: 0;
+    }
+
+    /* Follow-up Templates */
+    .followup-templates {
+      display: grid;
+      gap: var(--space-8);
+      margin-top: var(--space-6);
+    }
+
+    .template-option h3 {
+      color: var(--color-teal-700);
+      text-align: center;
+      margin-bottom: var(--space-4);
+    }
+
+    .email-template {
+      background: var(--color-gray-50);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 2px solid var(--color-gray-200);
+    }
+
+    .email-header {
+      background: var(--color-teal-50);
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--color-teal-200);
+    }
+
+    .email-header p {
+      margin: 0;
+      font-family: monospace;
+      font-size: var(--font-size-sm);
+      color: var(--color-teal-800);
+    }
+
+    .email-body {
+      padding: var(--space-4);
+      font-family: system-ui;
+      line-height: 1.6;
+    }
+
+    .email-body p {
+      margin-bottom: var(--space-3);
+      color: var(--color-gray-700);
+    }
+
+    .email-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .followup-tips {
+      background: var(--color-coral-50);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-coral-500);
+      margin-top: var(--space-8);
+    }
+
+    .followup-tips h3 {
+      color: var(--color-coral-700);
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-4);
+    }
+
+    .tip-item {
+      background: var(--color-white);
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+
+    .tip-item h4 {
+      color: var(--color-coral-700);
+      margin-bottom: var(--space-2);
+    }
+
+    .tip-item p {
+      color: var(--color-gray-700);
+      font-size: var(--font-size-sm);
+      margin: 0;
+    }
+
+    /* Final Prep Checklist */
+    .prep-checklist {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-6);
+      margin-bottom: var(--space-8);
+    }
+
+    .checklist-section {
+      background: var(--color-gray-50);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-secondary);
+    }
+
+    .checklist-section h3 {
+      color: var(--color-secondary);
+      text-align: center;
+      margin-bottom: var(--space-4);
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: var(--space-6);
+      margin-bottom: var(--space-2);
+      color: var(--color-gray-700);
+    }
+
+    .checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--color-secondary);
+      font-weight: 600;
+    }
+
+    .final-cta {
+      text-align: center;
+    }
+
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+      margin-top: var(--space-6);
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+      .kit-topnav__inner {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+          "list print"
+          "back back";
+        row-gap: var(--space-2);
+      }
+      .kit-topnav__back { grid-area: back; }
+      .kit-topnav__print { grid-area: print; }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: var(--space-8) var(--space-4);
+      }
+
+      .quick-start-steps,
+      .story-prompts,
+      .role-questions,
+      .tips-grid,
+      .prep-checklist {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-cta,
+      .cta-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media print {
+      .kit-topnav,
+      .kit-topnav__print { 
+        display: none !important; 
+      }
+      
+      .card { 
+        box-shadow: none; 
+        border: 1px solid #ddd; 
+        page-break-inside: avoid;
+        margin-bottom: var(--space-6);
+      }
+      
+      .qa-item,
+      .question-item,
+      .template-option {
+        page-break-inside: avoid;
+        margin-bottom: var(--space-3);
+      }
+    }
+  </style>
+
+  <script>
+    // Dynamic header offset
+    (() => {
+      const header = document.querySelector('header, .site-header, nav[aria-label="primary"], nav[role="navigation"]');
+      const setOffset = () => {
+        const h = header ? header.getBoundingClientRect().height : 64;
+        document.documentElement.style.setProperty('--nav-offset', Math.round(h) + 'px');
+      };
+      setOffset();
+      window.addEventListener('resize', setOffset, { passive: true });
+    })();
+
+    // Smooth scroll navigation
+    document.querySelectorAll('.kit-topnav__link').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Navigation spy and progress bar
+    const links = [...document.querySelectorAll('.kit-topnav__link')];
+    const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+    
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          links.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + id));
+          history.replaceState(null, '', '#' + id);
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+    
+    targets.forEach(t => spy.observe(t));
+
+    // Progress bar
+    const bar = document.querySelector('.kit-topnav__bar');
+    const onScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = Math.min(100, Math.max(0, (window.pageYOffset / max) * 100));
+      if (bar) bar.style.width = pct + '%';
+    };
+    
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  </script>
+</BaseLayout>---
+
+
