@@ -3,9 +3,25 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Resources: Your Remote Work Toolkit";
 ---
 <BaseLayout {title}>
-  <section class="hero-section">
+  <section class="hero">
     <h1>your remote work toolkit</h1>
     <p class="lead">everything beginners need to land remote jobs and build location-independent careers</p>
+  </section>
+
+  <!-- Featured Resource -->
+  <section class="featured-resource card highlight">
+    <div class="featured-content">
+      <span class="pill accent pulse">🚀 new</span>
+      <h2><a href="/resources/jumpstart-kit">Remote Job Jumpstart Kit</a></h2>
+      <p class="resource-description">Complete 7-day action plan to land your first remote job. From resume templates to interview prep - everything you need in one comprehensive guide.</p>
+      <div class="resource-features">
+        <span class="feature">✅ 7-day action plan</span>
+        <span class="feature">📝 Resume templates</span>
+        <span class="feature">💬 Cold outreach scripts</span>
+        <span class="feature">🛡️ Scam prevention</span>
+      </div>
+      <a href="/resources/jumpstart-kit" class="btn btn--secondary featured-btn">Get Started →</a>
+    </div>
   </section>
 
   <section class="card">
@@ -117,176 +133,448 @@ const title = "Resources: Your Remote Work Toolkit";
   <section class="card">
     <h2>📚 free downloads & guides</h2>
     <div class="downloads-grid">
-      <div class="download-item">
+      <div class="download-item download-primary">
+        <div class="download-icon">📋</div>
         <h3>remote work starter pack</h3>
         <p class="muted">complete guide to landing your first remote role</p>
-        <a href="/remote-work-starter-pack.pdf" class="btn btn--outline" target="_blank">download pdf</a>
+        <div class="download-actions">
+          <button class="btn btn--outline download-btn" onclick="requestDownload('starter-pack')">download pdf</button>
+          <p class="download-note">Get via email • No spam</p>
+        </div>
       </div>
       
-      <div class="download-item">
+      <div class="download-item download-secondary">
+        <div class="download-icon">💰</div>
         <h3>salary negotiation templates</h3>
         <p class="muted">email templates for remote salary discussions</p>
-        <a href="/salary-negotiation-templates.pdf" class="btn btn--outline" target="_blank">download pdf</a>
+        <div class="download-actions">
+          <button class="btn btn--outline download-btn" onclick="requestDownload('salary-templates')">download pdf</button>
+          <p class="download-note">Get via email • No spam</p>
+        </div>
       </div>
       
-      <div class="download-item">
+      <div class="download-item download-accent">
+        <div class="download-icon">🏠</div>
         <h3>home office setup checklist</h3>
         <p class="muted">everything you need for productive remote work</p>
-        <a href="/home-office-checklist.pdf" class="btn btn--outline" target="_blank">download pdf</a>
+        <div class="download-actions">
+          <button class="btn btn--outline download-btn" onclick="requestDownload('office-checklist')">download pdf</button>
+          <p class="download-note">Get via email • No spam</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="card cta-section">
+  <!-- Email Signup Modal -->
+  <div id="downloadModal" class="modal">
+    <div class="modal-content card">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <h3>Get Your Free Download</h3>
+      <p id="modalDescription">Enter your email to receive the download link plus weekly remote work tips.</p>
+      <form class="download-form" onsubmit="handleDownload(event)">
+        <input type="email" id="emailInput" placeholder="your email address" required class="form-input" />
+        <input type="hidden" id="downloadType" />
+        <button type="submit" class="btn btn-primary">Send Download Link</button>
+      </form>
+      <p class="privacy-note">No spam, unsubscribe anytime. Join 2,000+ readers.</p>
+    </div>
+  </div>
+
+  <section class="card cta">
     <h2>🚀 ready to go remote?</h2>
-    <p>get our free step-by-step roadmap to landing your first remote job</p>
-    <a href="/course" class="btn">get the free roadmap</a>
+    <p>get our comprehensive step-by-step roadmap to landing your first remote job</p>
+    <a href="/resources/jumpstart-kit" class="btn btn-primary">get the complete guide</a>
   </section>
 
   <style>
-    .hero-section {
+    .hero {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: var(--space-10);
     }
 
     .lead {
-      font-size: 18px;
-      color: #666;
+      font-size: var(--font-size-lg);
+      color: var(--color-gray-600);
       max-width: 600px;
-      margin: 16px auto 0;
+      margin: var(--space-4) auto 0;
     }
 
-    .resource-grid,
-    .downloads-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+    /* Featured Resource */
+    .featured-resource {
+      margin-bottom: var(--space-10);
+      background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-coral-50) 100%);
+      border: 2px solid var(--color-teal-200);
     }
 
-    .resource-item,
-    .download-item {
-      padding: 20px;
-      border: 1px solid #e8e8e8;
-      border-radius: 12px;
+    .featured-content {
       position: relative;
     }
 
-    .resource-item h3,
-    .download-item h3 {
-      margin: 0 0 8px 0;
+    .featured-content h2 {
+      font-size: var(--font-size-2xl);
+      margin: var(--space-3) 0 var(--space-2) 0;
+    }
+
+    .featured-content h2 a {
+      color: var(--color-black);
+      text-decoration: none;
+    }
+
+    .featured-content h2 a:hover {
+      color: var(--color-secondary);
+    }
+
+    .resource-description {
+      font-size: var(--font-size-base);
+      color: var(--color-gray-600);
+      margin-bottom: var(--space-4);
+      line-height: 1.6;
+    }
+
+    .resource-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+
+    .feature {
+      background: var(--color-white);
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-xl);
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      border: 1px solid var(--color-teal-200);
+    }
+
+    .featured-btn {
+      font-size: var(--font-size-lg);
+      padding: var(--space-4) var(--space-8);
+    }
+
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+
+    /* Resource Grid */
+    .resource-grid,
+    .downloads-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+
+    .resource-item {
+      padding: var(--space-6);
+      border: 2px solid var(--color-gray-200);
+      border-radius: var(--radius-xl);
+      position: relative;
+      transition: all 0.3s ease;
+      background: var(--color-white);
+    }
+
+    .resource-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--color-secondary);
+    }
+
+    .resource-item h3 {
+      margin: 0 0 var(--space-2) 0;
     }
 
     .resource-item h3 a {
       text-decoration: none;
-      color: #000;
+      color: var(--color-black);
     }
 
     .resource-item h3 a:hover {
-      color: #666;
+      color: var(--color-secondary);
     }
 
     .internal-link {
-      color: #0066cc !important;
+      color: var(--color-secondary) !important;
     }
 
     .badge {
       position: absolute;
-      top: 12px;
-      right: 12px;
-      padding: 4px 8px;
-      font-size: 12px;
-      border-radius: 6px;
+      top: var(--space-3);
+      right: var(--space-3);
+      padding: var(--space-1) var(--space-2);
+      font-size: var(--font-size-xs);
+      border-radius: var(--radius-sm);
       font-weight: 600;
     }
 
     .badge.free {
-      background: #e8f5e8;
-      color: #2d5a2d;
+      background: var(--color-teal-100);
+      color: var(--color-teal-800);
     }
 
     .badge.paid {
-      background: #fff3cd;
-      color: #856404;
+      background: var(--color-sand-100);
+      color: var(--color-sand-800);
     }
 
-    .skill-categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 20px;
-    }
-
-    .skill-category h3 {
-      margin: 0 0 12px 0;
-      color: #333;
-    }
-
-    .skill-category ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .skill-category li {
-      padding: 6px 0;
-      border-bottom: 1px solid #f0f0f0;
-    }
-
-    .skill-category li:last-child {
-      border-bottom: none;
-    }
-
+    /* Skills & Nomad Sections */
+    .skill-categories,
     .nomad-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-8);
+      margin-top: var(--space-6);
     }
 
+    .skill-category,
+    .nomad-item {
+      background: var(--color-gray-50);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      transition: all 0.3s ease;
+    }
+
+    .skill-category:hover,
+    .nomad-item:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .skill-category h3,
     .nomad-item h3 {
-      margin: 0 0 12px 0;
-      font-size: 16px;
+      margin: 0 0 var(--space-4) 0;
+      color: var(--color-black);
+      font-size: var(--font-size-lg);
     }
 
+    .skill-category ul,
     .nomad-item ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
+    .skill-category li,
     .nomad-item li {
-      padding: 4px 0;
-      font-size: 14px;
+      padding: var(--space-2) 0;
+      border-bottom: 1px solid var(--color-gray-200);
+      color: var(--color-gray-700);
+      line-height: 1.5;
     }
 
-    .cta-section {
+    .skill-category li:last-child,
+    .nomad-item li:last-child {
+      border-bottom: none;
+    }
+
+    /* Enhanced Download Items */
+    .download-item {
+      padding: var(--space-8);
+      border: 2px solid var(--color-gray-200);
+      border-radius: var(--radius-xl);
+      position: relative;
+      transition: all 0.4s ease;
+      background: var(--color-white);
       text-align: center;
-      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-      margin-top: 40px;
     }
 
-    .cta-section h2 {
-      margin: 0 0 12px 0;
+    .download-item:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
     }
 
-    .cta-section p {
-      margin: 0 0 24px 0;
-      color: #666;
-      font-size: 16px;
+    .download-primary:hover {
+      border-color: var(--color-teal-300);
+      box-shadow: 0 10px 30px rgba(20, 184, 166, 0.2);
     }
 
+    .download-secondary:hover {
+      border-color: var(--color-coral-300);
+      box-shadow: 0 10px 30px rgba(249, 115, 22, 0.2);
+    }
+
+    .download-accent:hover {
+      border-color: var(--color-sand-300);
+      box-shadow: 0 10px 30px rgba(251, 191, 36, 0.2);
+    }
+
+    .download-icon {
+      font-size: 3rem;
+      margin-bottom: var(--space-4);
+      display: block;
+    }
+
+    .download-item h3 {
+      margin: 0 0 var(--space-2) 0;
+      font-size: var(--font-size-xl);
+    }
+
+    .download-actions {
+      margin-top: var(--space-6);
+    }
+
+    .download-btn {
+      margin-bottom: var(--space-2);
+      cursor: pointer;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .download-note {
+      font-size: var(--font-size-xs);
+      color: var(--color-gray-500);
+      margin: 0;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-content {
+      position: relative;
+      background-color: var(--color-white);
+      margin: 10% auto;
+      padding: var(--space-8);
+      width: 90%;
+      max-width: 500px;
+      border-radius: var(--radius-xl);
+      animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .modal-close {
+      color: var(--color-gray-400);
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .modal-close:hover {
+      color: var(--color-black);
+    }
+
+    .modal-content h3 {
+      margin: 0 0 var(--space-3) 0;
+      color: var(--color-black);
+    }
+
+    .download-form {
+      display: flex;
+      gap: var(--space-3);
+      margin: var(--space-6) 0;
+    }
+
+    .download-form .form-input {
+      flex: 1;
+    }
+
+    .privacy-note {
+      font-size: var(--font-size-sm);
+      color: var(--color-gray-500);
+      text-align: center;
+      margin: 0;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    /* Responsive Design */
     @media (max-width: 768px) {
       .resource-grid,
       .downloads-grid,
       .skill-categories,
       .nomad-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-4);
       }
-      
-      .lead {
-        font-size: 16px;
+
+      .resource-features {
+        justify-content: center;
+      }
+
+      .download-form {
+        flex-direction: column;
+      }
+
+      .modal-content {
+        margin: 20% auto;
+        width: 95%;
+        padding: var(--space-6);
       }
     }
   </style>
+
+  <script>
+    function requestDownload(type) {
+      const modal = document.getElementById('downloadModal');
+      const modalDescription = document.getElementById('modalDescription');
+      const downloadTypeInput = document.getElementById('downloadType');
+      
+      downloadTypeInput.value = type;
+      
+      const descriptions = {
+        'starter-pack': 'Get the complete Remote Work Starter Pack with templates, checklists, and step-by-step guides.',
+        'salary-templates': 'Download professional email templates for salary negotiations and job offer discussions.',
+        'office-checklist': 'Get the complete home office setup checklist with equipment recommendations and budget tips.'
+      };
+      
+      modalDescription.textContent = descriptions[type] || 'Enter your email to receive the download link plus weekly remote work tips.';
+      modal.style.display = 'block';
+      
+      // Focus email input
+      setTimeout(() => {
+        document.getElementById('emailInput').focus();
+      }, 100);
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('downloadModal');
+      modal.style.display = 'none';
+    }
+
+    function handleDownload(event) {
+      event.preventDefault();
+      
+      const email = document.getElementById('emailInput').value;
+      const downloadType = document.getElementById('downloadType').value;
+      
+      if (!email) {
+        alert('Please enter your email address.');
+        return;
+      }
+      
+      // Here you would normally send the email to your backend
+      // For now, we'll show a success message
+      alert(`Thanks! We've sent the download link to ${email}`);
+      closeModal();
+      
+      // Clear form
+      document.getElementById('emailInput').value = '';
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('downloadModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
 </BaseLayout>
