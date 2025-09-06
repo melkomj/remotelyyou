@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "portfolio mini-projects (proof without experience)";
 const description = "four one-pagers you can complete this weekend to create job-ready proof for customer support, admin/ops, project assistant, and marketing assistant roles.";
@@ -9,7 +9,7 @@ const description = "four one-pagers you can complete this weekend to create job
 <!-- Navigation -->
 <nav class="kit-topnav" aria-label="mini-project navigation">
   <div class="kit-topnav__inner">
-    <a href="/resources" class="kit-topnav__back">← back to resources</a>
+    <a href="/resources" class="kit-topnav__back">â† back to resources</a>
     <ul class="kit-topnav__list" role="tablist">
       <li><a role="tab" class="kit-topnav__link is-active" href="#overview">overview</a></li>
       <li><a role="tab" class="kit-topnav__link" href="#customer-support">customer support</a></li>
@@ -78,7 +78,7 @@ const description = "four one-pagers you can complete this weekend to create job
       <div class="scenario-box">
         <p><strong>user message:</strong> "i can't reset my password. it says 'invalid email' after i click the link."</p>
         <p><strong>context:</strong> addresses containing "+" fail (e.g., alex+notes@mail.com)</p>
-        <p><strong>environment:</strong> web v1.4.2 • chrome 126 • windows 10 • time 14:23 cet</p>
+        <p><strong>environment:</strong> web v1.4.2 â€¢ chrome 126 â€¢ windows 10 â€¢ time 14:23 cet</p>
       </div>
     </div>
 
@@ -118,9 +118,9 @@ const description = "four one-pagers you can complete this weekend to create job
       <div class="template-content bug-report">
         <h4>password reset fails for addresses containing '+'</h4>
         <ul class="bug-details">
-          <li><strong>environment:</strong> web v1.4.2 • chrome 126 • windows 10</li>
+          <li><strong>environment:</strong> web v1.4.2 â€¢ chrome 126 â€¢ windows 10</li>
           <li><strong>severity:</strong> medium (subset blocked; workaround exists)</li>
-          <li><strong>steps to reproduce:</strong> 1) sign-in → "forgot password" 2) enter user+test@gmail.com 3) submit</li>
+          <li><strong>steps to reproduce:</strong> 1) sign-in â†’ "forgot password" 2) enter user+test@gmail.com 3) submit</li>
           <li><strong>expected:</strong> request accepted; reset email sent</li>
           <li><strong>actual:</strong> client validation rejects address as "invalid email"</li>
           <li><strong>technical notes:</strong> POST /api/reset returns 400 EMAIL_INVALID</li>
@@ -229,7 +229,7 @@ const description = "four one-pagers you can complete this weekend to create job
         <div class="report-template">
           <h4>weekly status report</h4>
           <p><strong>week of:</strong> &lt;yyyy-mm-dd&gt;</p>
-          <p><strong>overview:</strong> 5 active tasks • 1 blocked on assets • average overdue: 1.3 days</p>
+          <p><strong>overview:</strong> 5 active tasks â€¢ 1 blocked on assets â€¢ average overdue: 1.3 days</p>
           <p><strong>by status:</strong></p>
           <ul>
             <li>todo: &lt;count&gt;</li>
@@ -428,9 +428,9 @@ const description = "four one-pagers you can complete this weekend to create job
           <p><strong>hook:</strong> you don't need experience. you need <em>proof</em>.</p>
           <p><strong>body:</strong></p>
           <ul>
-            <li>one mini-project per week → learn fast</li>
-            <li>a simple application tracker → show you work systematically</li>
-            <li>time-zone fluency → teams can rely on you</li>
+            <li>one mini-project per week â†’ learn fast</li>
+            <li>a simple application tracker â†’ show you work systematically</li>
+            <li>time-zone fluency â†’ teams can rely on you</li>
           </ul>
           <p><strong>call to action:</strong> grab the free jumpstart kit - simple steps, real results</p>
           <p><strong>link:</strong> [site]/resources/jumpstart-kit?utm_source=linkedin&utm_medium=social&utm_campaign=jumpstart&utm_content=proof_post</p>
@@ -446,12 +446,12 @@ const description = "four one-pagers you can complete this weekend to create job
       <div class="template-content platform-post">
         <div class="post-structure">
           <p><strong>caption:</strong></p>
-          <p>first remote job in 30 days? start here 👇</p>
-          <p>• mini-projects → proof without experience<br>
-          • application tracker → stay organized<br>
-          • timezone statement → show reliability</p>
+          <p>first remote job in 30 days? start here ðŸ‘‡</p>
+          <p>â€¢ mini-projects â†’ proof without experience<br>
+          â€¢ application tracker â†’ stay organized<br>
+          â€¢ timezone statement â†’ show reliability</p>
           <p>save this post and tag a friend who's job searching</p>
-          <p>free starter kit in bio ✨</p>
+          <p>free starter kit in bio âœ¨</p>
         </div>
         <div class="platform-notes">
           <p><strong>visual concept:</strong> split screen showing "100 applications" vs "1 project" with checkmarks and progress indicators</p>
@@ -469,7 +469,7 @@ const description = "four one-pagers you can complete this weekend to create job
           <p>2/ do 1 mini-project per week (support article, ops spreadsheet, project plan)</p>
           <p>3/ track applications in a simple sheet - follow up systematically</p>
           <p>4/ write availability statements in their timezone - show you understand remote work</p>
-          <p>5/ free kit with templates → [site]/resources/jumpstart-kit?utm_source=twitter&utm_medium=social&utm_campaign=jumpstart&utm_content=thread</p>
+          <p>5/ free kit with templates â†’ [site]/resources/jumpstart-kit?utm_source=twitter&utm_medium=social&utm_campaign=jumpstart&utm_content=thread</p>
         </div>
         <div class="platform-notes">
           <p><strong>why this works:</strong> twitter threads perform well with numbered tips. each tweet can stand alone but builds to cta.</p>
@@ -952,7 +952,7 @@ const description = "four one-pagers you can complete this weekend to create job
   }
 
   .checklist li::before {
-    content: "✓";
+    content: "âœ“";
     position: absolute;
     left: 0;
     color: var(--color-teal-600);
@@ -1041,6 +1041,8 @@ const description = "four one-pagers you can complete this weekend to create job
 </style>
 
 <script>
+// @ts-nocheck
+
   // --- dynamic header offset (keeps sticky nav under your site header)
   (() => {
     const header = document.querySelector('header,.site-header,nav[aria-label="primary"],nav[role="navigation"]');
@@ -1098,3 +1100,4 @@ const description = "four one-pagers you can complete this weekend to create job
 </script>
 
 </BaseLayout>
+

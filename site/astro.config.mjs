@@ -1,14 +1,12 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
+  typescript: {
+    strictMode: false
+  },
   vite: {
-    build: {
-      rollupOptions: {
-        onwarn(warning, warn) {
-          if (warning.code === 'TYPESCRIPT_ERROR') return;
-          warn(warning);
-        }
-      }
+    esbuild: {
+      target: 'es2020'
     }
   }
 });
