@@ -1,83 +1,181 @@
 ﻿---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const title = "work anywhere. live everywhere.";
+const title = "Land Your First Remote Job - RemotelyYou";
 ---
 
-<BaseLayout title="RemotelyYou - Work From Anywhere">
+<BaseLayout title="RemotelyYou - Land Your First Remote Job">
   <main>
+    <!-- Newsletter Conversion Bar -->
+    <div class="conversion-bar">
+      <div class="container">
+        <span class="conversion-text">📬 Get the Remote Job Jumpstart Kit Free — Start Your First Interview in 7 Days</span>
+        <a href="/resources/jumpstart-kit" class="btn btn-conversion">Get Free Kit →</a>
+      </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>Work anywhere. Live everywhere.</h1>
-          <p class="hero-subtitle">Discover the freedom of remote work. Find your next remote job, access valuable resources, and learn how to lead a fulfilling location-independent lifestyle.</p>
+          <!-- Early Access Badge -->
+          <div class="hero-badge">
+            <span class="badge-icon">🚀</span>
+            <span>Be Among the First 100 — Early Access</span>
+          </div>
+          
+          <h1>Land Your First Remote Job<br><span class="gradient-text">Work anywhere. Live everywhere.</span></h1>
+          <p class="hero-subtitle">Beginner-friendly remote jobs, proven strategies, and a free 7-day jumpstart kit to get your first interview. Join the remote work revolution today.</p>
+          
+          <!-- Trust Indicators -->
+          <div class="trust-indicators">
+            <span class="trust-item">🌍 50+ countries</span>
+            <span class="trust-item">💼 1,400+ vetted jobs</span>
+            <span class="trust-item">📈 100% free resources</span>
+          </div>
+
           <div class="hero-actions">
-            <a href="/jobs" class="btn btn-primary">Browse Jobs</a>
-            <a href="/course" class="btn btn--secondary">Free Course</a>
+            <a href="/resources/jumpstart-kit" class="btn btn-primary">Get Free Jumpstart Kit</a>
+            <a href="/jobs" class="btn btn--secondary">Browse Jobs</a>
+          </div>
+
+          <!-- Early Success Stories -->
+          <div class="early-success">
+            <p class="success-title">Early Success Stories:</p>
+            <div class="success-avatars">
+              <div class="avatar">👩‍💻</div>
+              <div class="avatar">👨‍💼</div>
+              <div class="avatar">👩‍🎨</div>
+              <div class="avatar">👨‍🔬</div>
+            </div>
+            <p class="success-text">"Got my first interview in 5 days!" - Sarah M.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Features Grid -->
-    <section class="features">
+    <!-- Value Proposition Section -->
+    <section class="value-props">
       <div class="container">
+        <h2 class="section-title">Everything You Need to Go Remote</h2>
         <div class="features-grid">
-          <div class="feature-card card">
+          <div class="feature-card card featured">
             <div class="feature-header">
-              <span class="pill accent">Free Course</span>
-              <h2>Roadmap to Remote Work</h2>
+              <span class="pill accent pulse">Free Course</span>
+              <h3>7-Day Remote Job Jumpstart</h3>
             </div>
-            <p>Sign up for the beginner's guide to landing your first remote job.</p>
-            <a href="/course" class="btn btn--outline btn-small">Get Access →</a>
+            <p>Complete step-by-step system to land your first remote job. From resume optimization to interview prep.</p>
+            <!-- Inline Email Capture -->
+            <div class="inline-capture">
+              <p class="capture-text">📧 Want this as a PDF guide?</p>
+              <form 
+                action="https://buttondown.com/api/emails/embed-subscribe/remotelyyou"
+                method="post"
+                target="popupwindow"
+                onsubmit="window.open('https://buttondown.com/remotelyyou', 'popupwindow'); return handlePDFDownload();"
+                class="email-form"
+              >
+                <input type="email" name="email" placeholder="Enter your email" class="email-input" required>
+                <input type="hidden" name="tag" value="pdf-guide">
+                <input type="submit" value="Get PDF →" class="btn btn-small btn-primary">
+              </form>
+              <div class="form-message" id="pdfMessage"></div>
+            </div>
+            <a href="/resources/jumpstart-kit" class="btn btn--outline btn-small">View Full Guide →</a>
           </div>
 
           <div class="feature-card card">
             <div class="feature-header">
-              <h2>Remote Job Board</h2>
+              <h3>Beginner-Friendly Job Board</h3>
             </div>
-            <p>Explore the latest remote job opportunities in various industries.</p>
-            <a href="/jobs" class="btn btn--outline btn-small">View Jobs →</a>
+            <p>1,400+ remote jobs filtered for entry-level and career changers. Updated every 6 hours.</p>
+            <div class="job-stats">
+              <span class="stat">Entry-level: 40%</span>
+              <span class="stat">No experience: 25%</span>
+            </div>
+            <a href="/jobs" class="btn btn--outline btn-small">Find Jobs →</a>
           </div>
 
           <div class="feature-card card">
             <div class="feature-header">
-              <h2>Resources & Guides</h2>
+              <h3>Cover Letter Generator</h3>
             </div>
-            <p>Tools, tips, and strategies for remote work success.</p>
-            <a href="/blog" class="btn btn--outline btn-small">Read Blog →</a>
+            <p>Proven templates and angles that get responses. Never write from scratch again.</p>
+            <a href="/resources/cover-letter-generator" class="btn btn--outline btn-small">Create Letters →</a>
           </div>
 
           <div class="feature-card card">
             <div class="feature-header">
-              <h2>Get Support</h2>
+              <h3>Portfolio Mini Projects</h3>
             </div>
-            <p>Have questions? Need personalized guidance for your remote work journey?</p>
-            <a href="/contact" class="btn btn--outline btn-small">Contact Me →</a>
+            <p>Build work samples even with zero experience. Show your skills, not just tell.</p>
+            <a href="/resources/portfolio-mini-projects" class="btn btn--outline btn-small">Start Building →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
+    <!-- Social Proof Section -->
+    <section class="social-proof">
       <div class="container">
-        <div class="stats-grid">
-          <div class="stat">
+        <h2>Join Remote Workers Worldwide</h2>
+        <div class="proof-stats">
+          <div class="stat-large">
             <div class="stat-number">1,400+</div>
-            <div class="stat-label">Remote Jobs</div>
+            <div class="stat-label">Remote Jobs Available</div>
           </div>
-          <div class="stat">
+          <div class="stat-large">
             <div class="stat-number">50+</div>
-            <div class="stat-label">Countries</div>
+            <div class="stat-label">Countries Represented</div>
           </div>
-          <div class="stat">
+          <div class="stat-large">
             <div class="stat-number">100%</div>
             <div class="stat-label">Free Resources</div>
           </div>
         </div>
+        
+        <!-- Email Capture with Social Proof -->
+        <div class="newsletter-signup">
+          <h3>💬 Be Among the First 100 Remote Workers</h3>
+          <p>Get weekly hand-picked beginner-friendly jobs + actionable remote work tips.</p>
+          <form 
+            action="https://buttondown.com/api/emails/embed-subscribe/remotelyyou"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.com/remotelyyou', 'popupwindow'); return handleNewsletterSignup();"
+            class="signup-form"
+          >
+            <input type="email" name="email" placeholder="Enter your email address" class="email-input-large" required>
+            <input type="hidden" name="tag" value="newsletter">
+            <input type="submit" value="Join Early Access" class="btn btn-primary btn-large">
+          </form>
+          <div class="form-message" id="newsletterMessage"></div>
+          <p class="signup-note">No spam. Unsubscribe anytime. Join others building their remote careers.</p>
+        </div>
       </div>
     </section>
+
+    <!-- Quick Start Section -->
+    <section class="quick-start">
+      <div class="container">
+        <div class="quick-start-content">
+          <h2>Start Your Remote Journey Today</h2>
+          <p>Don't wait. Every day you delay is another day someone else gets the job you want.</p>
+          <div class="quick-actions">
+            <a href="/resources/jumpstart-kit" class="btn btn-primary btn-large">Get Free Jumpstart Kit</a>
+            <a href="/jobs" class="btn btn--secondary btn-large">Browse Jobs Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky Email Bar (appears after scroll) -->
+    <div class="sticky-email-bar" id="stickyBar">
+      <div class="container">
+        <span class="sticky-text">📬 Get your free Remote Job Jumpstart Kit</span>
+        <a href="/resources/jumpstart-kit" class="btn btn-small btn-primary">Get Free Kit</a>
+        <button class="close-sticky" id="closeSticky">×</button>
+      </div>
+    </div>
   </main>
 </BaseLayout>
 
@@ -88,15 +186,73 @@ const title = "work anywhere. live everywhere.";
     padding: 0 var(--space-5);
   }
 
+  /* Conversion Bar */
+  .conversion-bar {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+    color: white;
+    padding: var(--space-3) 0;
+    text-align: center;
+  }
+
+  .conversion-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .conversion-text {
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+  }
+
+  .btn-conversion {
+    background: white;
+    color: var(--color-secondary);
+    border: none;
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    padding: var(--space-2) var(--space-4);
+    transition: all 0.3s ease;
+  }
+
+  .btn-conversion:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Hero Section */
   .hero {
     background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-white) 100%);
-    padding: var(--space-20) 0 var(--space-12);
+    padding: var(--space-16) 0 var(--space-12);
     text-align: center;
+    position: relative;
+    overflow: hidden;
   }
 
   .hero-content {
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    background: rgba(var(--color-secondary-rgb), 0.1);
+    color: var(--color-secondary);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-6);
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
   }
 
   .hero h1 {
@@ -108,13 +264,52 @@ const title = "work anywhere. live everywhere.";
     letter-spacing: -0.025em;
   }
 
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+  }
+
+  .gradient-text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    animation: shimmer 3s infinite;
+  }
+
+  @keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+
   .hero-subtitle {
     font-size: var(--font-size-lg);
     color: var(--color-gray-600);
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-8);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .trust-indicators {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    font-weight: 500;
   }
 
   .hero-actions {
@@ -122,34 +317,91 @@ const title = "work anywhere. live everywhere.";
     gap: var(--space-4);
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: var(--space-12);
   }
 
-  .features {
-    padding: var(--space-16) 0;
+  .early-success {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .success-title {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-3);
+    font-weight: 600;
+  }
+
+  .success-avatars {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  .avatar:hover {
+    transform: scale(1.1);
+  }
+
+  .success-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    font-style: italic;
+  }
+
+  /* Value Props Section */
+  .value-props {
+    padding: var(--space-20) 0;
     background: var(--color-white);
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: var(--space-12);
   }
 
   .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-8);
   }
 
   .feature-card {
     transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .feature-card.featured {
+    border: 2px solid var(--color-secondary);
+    background: linear-gradient(135deg, rgba(var(--color-secondary-rgb), 0.05) 0%, var(--color-white) 100%);
   }
 
   .feature-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
-    border-color: var(--color-secondary);
   }
 
   .feature-header {
     margin-bottom: var(--space-4);
   }
 
-  .feature-card h2 {
+  .feature-card h3 {
     font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--color-black);
@@ -163,29 +415,115 @@ const title = "work anywhere. live everywhere.";
     line-height: 1.6;
   }
 
-  .stats {
-    background: var(--color-gray-50);
-    padding: var(--space-12) 0;
-    border-top: 1px solid var(--color-gray-200);
-    border-bottom: 1px solid var(--color-gray-200);
+  .pulse {
+    animation: pulse 2s infinite;
   }
 
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: var(--space-8);
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+
+  /* Inline Email Capture */
+  .inline-capture {
+    background: var(--color-gray-50);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    margin: var(--space-4) 0;
     text-align: center;
   }
 
-  .stat-number {
-    font-size: var(--font-size-4xl);
+  .capture-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-3);
+    font-weight: 600;
+  }
+
+  .email-form {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .email-input {
+    flex: 1;
+    min-width: 200px;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+  }
+
+  .job-stats {
+    display: flex;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+  }
+
+  .stat {
+    font-size: var(--font-size-xs);
+    color: var(--color-secondary);
+    background: rgba(var(--color-secondary-rgb), 0.1);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+  }
+
+  .form-message {
+    margin-top: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    text-align: center;
+    display: none;
+  }
+
+  .form-message.success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #10b981;
+    display: block;
+  }
+
+  .form-message.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #ef4444;
+    display: block;
+  }
+
+  /* Social Proof Section */
+  .social-proof {
+    background: var(--color-gray-50);
+    padding: var(--space-20) 0;
+    text-align: center;
+  }
+
+  .social-proof h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: var(--space-12);
+  }
+
+  .proof-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-16);
+  }
+
+  .stat-large .stat-number {
+    font-size: var(--font-size-5xl);
     font-weight: 800;
     color: var(--color-secondary);
     line-height: 1;
     margin-bottom: var(--space-2);
   }
 
-  .stat-label {
+  .stat-large .stat-label {
     font-size: var(--font-size-sm);
     color: var(--color-gray-600);
     font-weight: 500;
@@ -193,7 +531,153 @@ const title = "work anywhere. live everywhere.";
     letter-spacing: 0.05em;
   }
 
+  /* Newsletter Signup */
+  .newsletter-signup {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--color-white);
+    padding: var(--space-10);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .newsletter-signup h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: var(--space-4);
+  }
+
+  .newsletter-signup p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-6);
+    line-height: 1.6;
+  }
+
+  .signup-form {
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .email-input-large {
+    flex: 1;
+    min-width: 250px;
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid var(--color-gray-300);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-base);
+    transition: border-color 0.3s ease;
+  }
+
+  .email-input-large:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+  }
+
+  .btn-large {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-base);
+    font-weight: 700;
+  }
+
+  .signup-note {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-500);
+    margin: 0;
+  }
+
+  /* Quick Start Section */
+  .quick-start {
+    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-gray-900) 100%);
+    color: var(--color-white);
+    padding: var(--space-20) 0;
+    text-align: center;
+  }
+
+  .quick-start h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+  }
+
+  .quick-start p {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-300);
+    margin-bottom: var(--space-8);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quick-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Sticky Email Bar */
+  .sticky-email-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+    color: white;
+    padding: var(--space-3) 0;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sticky-email-bar.show {
+    transform: translateY(0);
+  }
+
+  .sticky-email-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    position: relative;
+  }
+
+  .sticky-text {
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+  }
+
+  .close-sticky {
+    position: absolute;
+    right: var(--space-4);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+
+  .close-sticky:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Mobile Responsiveness */
   @media (max-width: 768px) {
+    .conversion-bar .container {
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
     .hero {
       padding: var(--space-12) 0 var(--space-8);
     }
@@ -209,18 +693,43 @@ const title = "work anywhere. live everywhere.";
       max-width: 280px;
     }
 
+    .trust-indicators {
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
     .features-grid {
       grid-template-columns: 1fr;
       gap: var(--space-6);
     }
 
-    .stats-grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-4);
+    .proof-stats {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
     }
 
-    .stat-number {
-      font-size: var(--font-size-3xl);
+    .signup-form {
+      flex-direction: column;
+    }
+
+    .email-input-large {
+      min-width: auto;
+    }
+
+    .quick-actions {
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-3);
+    }
+
+    .sticky-email-bar .container {
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .close-sticky {
+      position: static;
+      align-self: flex-end;
     }
   }
 
@@ -237,9 +746,79 @@ const title = "work anywhere. live everywhere.";
       font-size: var(--font-size-base);
     }
 
-    .stats-grid {
-      grid-template-columns: 1fr;
-      gap: var(--space-6);
+    .section-title {
+      font-size: var(--font-size-2xl);
+    }
+
+    .newsletter-signup {
+      padding: var(--space-6);
+    }
+
+    .email-form {
+      flex-direction: column;
     }
   }
 </style>
+
+<script>
+  // PDF Download Handler
+  function handlePDFDownload() {
+    const messageEl = document.getElementById('pdfMessage');
+    if (messageEl) {
+      messageEl.textContent = '🎉 Success! Check your email and download your PDF guide below:';
+      messageEl.className = 'form-message success';
+    }
+    
+    setTimeout(() => {
+      window.open('/pdf/remote-job-jumpstart-kit.html', '_blank');
+    }, 1000);
+    
+    return true;
+  }
+
+  // Newsletter Signup Handler
+  function handleNewsletterSignup() {
+    const messageEl = document.getElementById('newsletterMessage');
+    if (messageEl) {
+      messageEl.textContent = '🎉 Welcome to early access! You\'ll receive weekly remote job updates.';
+      messageEl.className = 'form-message success';
+    }
+    
+    return true;
+  }
+
+  // Sticky email bar functionality
+  let stickyBar = document.getElementById('stickyBar');
+  let closeBtn = document.getElementById('closeSticky');
+  let scrollTimer = null;
+  let isBarDismissed = localStorage.getItem('emailBarDismissed') === 'true';
+
+  function showStickyBar() {
+    if (!isBarDismissed && window.scrollY > 500) {
+      stickyBar?.classList.add('show');
+    }
+  }
+
+  function hideStickyBar() {
+    stickyBar?.classList.remove('show');
+  }
+
+  window.addEventListener('scroll', () => {
+    if (scrollTimer) {
+      clearTimeout(scrollTimer);
+    }
+    scrollTimer = setTimeout(showStickyBar, 100);
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    hideStickyBar();
+    localStorage.setItem('emailBarDismissed', 'true');
+    isBarDismissed = true;
+  });
+
+  document.querySelectorAll('a[href*="jumpstart-kit"]').forEach(link => {
+    link.addEventListener('click', () => {
+      hideStickyBar();
+    });
+  });
+</script>
