@@ -1011,54 +1011,60 @@ const description = "clear availability statements, overlap examples for america
   </style>
 
   <script>
-    // Dynamic header offset
-    (() => {
-      const header = document.querySelector('header, .site-header, nav[aria-label="primary"], nav[role="navigation"]');
-      const setOffset = () => {
-        const h = header ? header.getBoundingClientRect().height : 64;
-        document.documentElement.style.setProperty('--nav-offset', Math.round(h) + 'px');
-      };
-      setOffset();
-      window.addEventListener('resize', setOffset, { passive: true });
-    })();
-
-    // Smooth scroll navigation
-    document.querySelectorAll('.kit-topnav__link').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const id = link.getAttribute('href').slice(1);
-        const el = document.getElementById(id);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-
-    // Navigation spy and progress bar
-    const links = [...document.querySelectorAll('.kit-topnav__link')];
-    const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
-    
-    const spy = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.id;
-          links.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + id));
-          history.replaceState(null, '', '#' + id);
-        }
-      });
-    }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
-    
-    targets.forEach(t => spy.observe(t));
-
-    // Progress bar
-    const bar = document.querySelector('.kit-topnav__bar');
-    const onScroll = () => {
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = Math.min(100, Math.max(0, (window.pageYOffset / max) * 100));
-      if (bar) bar.style.width = pct + '%';
+  // --- dynamic header offset (keeps sticky nav under your site header)
+  (() => {
+    const header = document.querySelector('header,.site-header,nav[aria-label="primary"],nav[role="navigation"]');
+    const set = () => {
+      const h = header ? header.getBoundingClientRect().height : 64;
+      document.documentElement.style.setProperty('--nav-offset', Math.round(h) + 'px');
     };
-    
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  </script>
+    set();
+    window.addEventListener('resize', set, { passive: true });
+  })();
+
+  // --- smooth scroll (respects scroll-margin-top)
+  /** @type {NodeListOf<HTMLAnchorElement>} */
+  const links = document.querySelectorAll('.kit-topnav__link, .nav-jump');
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = link.getAttribute('href')?.slice(1);
+      const el = id ? document.getElementById(id) : null;
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  // --- scroll spy (active chip)
+  const spyLinks = Array.from(document.querySelectorAll('.kit-topnav__link'));
+  const targets = spyLinks
+    .map((a) => {
+      const id = a.getAttribute('href')?.slice(1) || '';
+      return document.getElementById(id);
+    })
+    .filter(Boolean);
+
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (en.isIntersecting) {
+        const id = en.target.id;
+        spyLinks.forEach((l) => l.classList.toggle('is-active', l.getAttribute('href') === '#' + id));
+        history.replaceState(null, '', '#' + id);
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+  targets.forEach((t) => spy.observe(t));
+
+  // --- top progress bar
+  /** @type {HTMLElement | null} */
+  const bar = document.querySelector('.kit-topnav__bar');
+  const onScroll = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = Math.min(100, Math.max(0, (window.pageYOffset / max) * 100));
+    if (bar) bar.style.width = pct + '%';
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+</script>
+
 </BaseLayout>

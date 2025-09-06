@@ -1,819 +1,436 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const title = "Resources: Your Remote Work Toolkit";
+const title = "resources";
+const description = "free tools and guides to land your remote job";
 ---
 
-<BaseLayout {title}>
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>your remote work toolkit</h1>
-    <p class="lead">everything beginners need to land remote jobs and build location-independent careers. start here, get hired faster.</p>
-  </section>
+<BaseLayout {title} {description}>
+  <main class="resources">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>remote job resources</h1>
+        <p class="hero-subtitle">free tools, guides, and templates to land your dream remote job</p>
+      </div>
+    </section>
 
-  <!-- Quick Start Guide -->
-  <section class="card quick-start">
-    <div class="section-header">
-      <h2>🚀 start here (complete in 1 hour)</h2>
-      <p class="section-description">new to remote work? follow these 4 steps to get started right now.</p>
-    </div>
-    <div class="quick-start-steps">
-      <div class="step">
-        <div class="step-number">1</div>
-        <h4>pick your lane</h4>
-        <p class="muted">choose customer support, admin/ops, or marketing assistant. focus on one to start.</p>
-      </div>
-      <div class="step">
-        <div class="step-number">2</div>
-        <h4>get the complete guide</h4>
-        <p class="muted">our 7-day jumpstart kit walks you through everything step-by-step.</p>
-      </div>
-      <div class="step">
-        <div class="step-number">3</div>
-        <h4>create your first proof</h4>
-        <p class="muted">use our mini-projects to show skills without experience (takes 2-3 hours).</p>
-      </div>
-      <div class="step">
-        <div class="step-number">4</div>
-        <h4>apply smart</h4>
-        <p class="muted">use our templates and avoid scams with our verification checklist.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Resource -->
-  <section class="featured-resource card highlight">
-    <div class="featured-content">
-      <span class="pill accent pulse">🚀 most popular</span>
-      <h2><a href="/resources/jumpstart-kit">remote job jumpstart kit</a></h2>
-      <p class="resource-description">complete 7-day action plan to land your first remote job. from resume templates to interview prep - everything you need in one comprehensive guide.</p>
-      <div class="resource-features">
-        <span class="feature">✅ 7-day action plan</span>
-        <span class="feature">📄 resume templates</span>
-        <span class="feature">💬 cold outreach scripts</span>
-        <span class="feature">🛡️ scam prevention</span>
-      </div>
-      <a href="/resources/jumpstart-kit" class="btn btn--secondary featured-btn">get started free →</a>
-    </div>
-  </section>
-
-  <!-- Core Resources -->
-  <section class="card">
-    <div class="section-header">
-      <h2>📚 step-by-step guides</h2>
-      <p class="section-description">everything you need to go from zero experience to hired, completely free.</p>
-    </div>
-    <div class="resource-grid">
-      <div class="resource-item">
-        <h3><a href="/resources/portfolio-mini-projects" class="internal-link">portfolio mini-projects</a></h3>
-        <p class="muted">four one-pagers to create job-ready proof this weekend. no experience needed.</p>
-        <span class="badge free">free</span>
-      </div>
-
-      <div class="resource-item">
-        <h3><a href="/resources/cover-letter-generator" class="internal-link">cover letter generator</a></h3>
-        <p class="muted">10 templates + examples, plus an availability statement builder.</p>
-        <span class="badge free">free</span>
-      </div>
-
-      <div class="resource-item">
-        <h3><a href="/resources/interview-kit" class="internal-link">interview prep kit</a></h3>
-        <p class="muted">star worksheet, 15 remote q&a, ask-the-interviewer questions, thank-you emails.</p>
-        <span class="badge free">free</span>
-      </div>
-
-      <div class="resource-item">
-        <h3><a href="/resources/timezone-availability" class="internal-link">time-zone & availability</a></h3>
-        <p class="muted">professional overlap statements + quick scripts to confirm meeting times.</p>
-        <span class="badge free">free</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Google Sheets Resources -->
-  <section class="card">
-    <div class="section-header">
-      <h2>📊 ready-to-use spreadsheets</h2>
-      <p class="section-description">professional templates you can copy and customize for your job search</p>
-    </div>
-    <div class="sheets-grid">
-      <div class="sheet-item">
-        <div class="sheet-header">
-          <h3>job application tracker</h3>
-          <span class="badge free">free</span>
+    <!-- Featured Resource -->
+    <section class="featured-resource">
+      <div class="featured-card">
+        <div class="featured-content">
+          <div class="featured-badge">⭐ most popular</div>
+          <h2>remote job jumpstart kit</h2>
+          <p>complete 7-day action plan to land your first remote job. includes resume templates, interview prep, and scam prevention checklist.</p>
+          <div class="featured-highlights">
+            <span class="highlight">✓ 7-day action plan</span>
+            <span class="highlight">✓ ats-friendly resume templates</span>
+            <span class="highlight">✓ interview cheat cards</span>
+            <span class="highlight">✓ scam prevention guide</span>
+          </div>
+          <a href="/resources/jumpstart-kit" class="btn btn--primary">get the complete guide →</a>
         </div>
-        <p class="muted">track every application, interview, and follow-up in one organized spreadsheet. includes status tracking, date reminders, and notes section.</p>
-        <div class="sheet-actions">
-          <a href="https://docs.google.com/spreadsheets/d/1IYNB274I-0KbH0QKwMlrI7tg95iDAj9CyGifYkATu84/edit?usp=sharing" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="btn btn--outline">
-            view template
-          </a>
-        </div>
-        <div class="copy-instructions">
-          <h4>how to copy:</h4>
-          <ol>
-            <li>click "view template" above</li>
-            <li>go to file → make a copy</li>
-            <li>rename and save to your google drive</li>
-            <li>start tracking your applications</li>
-          </ol>
+        <div class="featured-visual">
+          <div class="preview-cards">
+            <div class="preview-card card-1">📋 action plan</div>
+            <div class="preview-card card-2">📄 resume templates</div>
+            <div class="preview-card card-3">💼 interview prep</div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="sheet-item">
-        <div class="sheet-header">
-          <h3>resume templates</h3>
-          <span class="badge free">free</span>
+    <!-- Resource Grid -->
+    <section class="resources-grid">
+      <h2 class="section-title">choose your tool</h2>
+      
+      <div class="grid">
+        <!-- Cover Letter Generator -->
+        <div class="resource-card card-teal">
+          <div class="card-icon">✍️</div>
+          <h3>cover letter generator</h3>
+          <p>create compelling cover letters with proven templates and strategies that get responses.</p>
+          <div class="card-features">
+            <span>• 3 proven angles</span>
+            <span>• copy-paste templates</span>
+            <span>• personalization tips</span>
+          </div>
+          <a href="/resources/cover-letter-generator" class="card-btn">create cover letters →</a>
         </div>
-        <p class="muted">ats-friendly resume formats optimized for remote jobs. includes templates for different experience levels and roles.</p>
-        <div class="sheet-actions">
-          <a href="https://docs.google.com/spreadsheets/d/17qdafrC6fusoU4KjFLsu7_c3R6j35OJLrDq2E7IDQuE/edit?usp=sharing" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="btn btn--outline">
-            view templates
-          </a>
+
+        <!-- Portfolio Mini Projects -->
+        <div class="resource-card card-coral">
+          <div class="card-icon">🎯</div>
+          <h3>portfolio mini projects</h3>
+          <p>build experience from zero with beginner-friendly projects that demonstrate remote work skills.</p>
+          <div class="card-features">
+            <span>• 3 career tracks</span>
+            <span>• step-by-step guides</span>
+            <span>• portfolio templates</span>
+          </div>
+          <a href="/resources/portfolio-mini-projects" class="card-btn">start building →</a>
         </div>
-        <div class="copy-instructions">
-          <h4>how to copy:</h4>
-          <ol>
-            <li>click "view templates" above</li>
-            <li>go to file → make a copy</li>
-            <li>choose the template that fits your experience</li>
-            <li>customize with your information</li>
-          </ol>
+
+        <!-- Timezone Availability -->
+        <div class="resource-card card-sand">
+          <div class="card-icon">🌍</div>
+          <h3>timezone availability guide</h3>
+          <p>master timezone communication and show you're ready for global remote collaboration.</p>
+          <div class="card-features">
+            <span>• overlap calculators</span>
+            <span>• professional examples</span>
+            <span>• communication tips</span>
+          </div>
+          <a href="/resources/timezone-availability" class="card-btn">master timezones →</a>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Job Boards -->
-  <section class="card">
-    <div class="section-header">
-      <h2>🎯 job boards that actually work</h2>
-      <p class="section-description">skip the spam and fake postings. these boards focus on legitimate remote opportunities.</p>
-    </div>
-    <div class="job-boards-grid">
-      <div class="job-board featured">
-        <h4><a href="/jobs" class="internal-link">our beginner feed</a></h4>
-        <p class="muted">hand-curated entry-level remote jobs updated daily. perfect starting point.</p>
-        <span class="badge free">free</span>
-      </div>
-      
-      <div class="job-board">
-        <h4><a href="https://www.flexjobs.com/remote-jobs" target="_blank" rel="noopener">flexjobs</a></h4>
-        <p class="muted">high-quality curated positions. best for people with some experience.</p>
-        <span class="badge paid">paid</span>
-      </div>
-      
-      <div class="job-board">
-        <h4><a href="https://remote.co/remote-jobs/" target="_blank" rel="noopener">remote.co</a></h4>
-        <p class="muted">solid mix of roles across all experience levels. good search filters.</p>
-        <span class="badge free">free</span>
-      </div>
-      
-      <div class="job-board">
-        <h4><a href="https://weworkremotely.com" target="_blank" rel="noopener">we work remotely</a></h4>
-        <p class="muted">largest remote work community with diverse opportunities daily.</p>
-        <span class="badge free">free</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Essential Tools -->
-  <section class="card">
-    <div class="section-header">
-      <h2>🛠️ essential tools to learn</h2>
-      <p class="section-description">master these tools to stand out as a remote candidate. most have free tiers to practice with.</p>
-    </div>
-    <div class="tools-grid">
-      <div class="tool-category">
-        <h4>communication</h4>
-        <ul class="tool-list">
-          <li><strong>writing:</strong> grammarly, hemingway editor</li>
-          <li><strong>video calls:</strong> zoom, google meet basics</li>
-          <li><strong>team chat:</strong> slack, discord etiquette</li>
-          <li><strong>email:</strong> professional formatting, signatures</li>
-        </ul>
-      </div>
-      
-      <div class="tool-category">
-        <h4>productivity & organization</h4>
-        <ul class="tool-list">
-          <li><strong>project management:</strong> notion, clickup, trello</li>
-          <li><strong>time tracking:</strong> toggl, clockify</li>
-          <li><strong>focus tools:</strong> freedom, cold turkey blocker</li>
-          <li><strong>calendar:</strong> google calendar, scheduling</li>
-        </ul>
-      </div>
-      
-      <div class="tool-category">
-        <h4>technical basics</h4>
-        <ul class="tool-list">
-          <li><strong>cloud storage:</strong> google drive, dropbox</li>
-          <li><strong>security:</strong> 1password, nordvpn</li>
-          <li><strong>collaboration:</strong> google workspace, microsoft 365</li>
-          <li><strong>customer support:</strong> zendesk, freshdesk</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Digital Nomad Resources -->
-  <section class="card">
-    <div class="section-header">
-      <h2>🌍 digital nomad essentials</h2>
-      <p class="section-description">planning to work from anywhere? these tools will keep you connected and productive on the road.</p>
-    </div>
-    <div class="nomad-grid">
-      <div class="nomad-item">
-        <h3>📱 essential apps</h3>
-        <ul>
-          <li><strong>nomad list:</strong> city data & community</li>
-          <li><strong>timeanddate.com:</strong> timezone coordination</li>
-          <li><strong>xe currency:</strong> exchange rates</li>
-          <li><strong>google translate:</strong> language barriers</li>
-        </ul>
-      </div>
-      
-      <div class="nomad-item">
-        <h3>🏠 accommodation</h3>
-        <ul>
-          <li><strong>airbnb:</strong> monthly stays with workspace</li>
-          <li><strong>booking.com:</strong> flexible cancellation</li>
-          <li><strong>selina:</strong> nomad-focused hostels</li>
-          <li><strong>outsite:</strong> global coliving spaces</li>
-        </ul>
-      </div>
-      
-      <div class="nomad-item">
-        <h3>💳 banking & money</h3>
-        <ul>
-          <li><strong>wise:</strong> international transfers, low fees</li>
-          <li><strong>revolut:</strong> multi-currency card</li>
-          <li><strong>charles schwab:</strong> no foreign fees</li>
-          <li><strong>payoneer:</strong> freelancer payments</li>
-        </ul>
-      </div>
-      
-      <div class="nomad-item">
-        <h3>📶 staying connected</h3>
-        <ul>
-          <li><strong>airalo:</strong> international esims</li>
-          <li><strong>google fi:</strong> global phone plan</li>
-          <li><strong>speedtest:</strong> check internet quality</li>
-          <li><strong>wifi map:</strong> find free wifi hotspots</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Free Downloads -->
-  <section class="card">
-    <div class="section-header">
-      <h2>📄 free download library</h2>
-      <p class="section-description">printable guides, checklists, and templates you can use offline. no spam, just useful resources.</p>
-    </div>
-    <div class="downloads-grid">
-      <div class="download-item download-primary">
-        <div class="download-icon">📋</div>
-        <h3>remote work starter pack</h3>
-        <p class="muted">complete beginner's guide to landing your first remote role with templates and checklists.</p>
-        <div class="download-actions">
-          <button class="btn btn--outline download-btn" onclick="requestDownload('starter-pack')">download pdf</button>
-          <p class="download-note">get via email • no spam</p>
+        <!-- Job Search Tracker (Future) -->
+        <div class="resource-card card-blue coming-soon">
+          <div class="card-icon">📊</div>
+          <h3>job search tracker</h3>
+          <p>organized spreadsheet to track applications, follow-ups, and interview progress.</p>
+          <div class="card-features">
+            <span>• application tracker</span>
+            <span>• follow-up reminders</span>
+            <span>• interview notes</span>
+          </div>
+          <div class="card-btn disabled">coming soon</div>
         </div>
       </div>
-      
-      <div class="download-item download-secondary">
-        <div class="download-icon">💰</div>
-        <h3>salary negotiation templates</h3>
-        <p class="muted">professional email templates for remote salary discussions and job offer negotiations.</p>
-        <div class="download-actions">
-          <button class="btn btn--outline download-btn" onclick="requestDownload('salary-templates')">download pdf</button>
-          <p class="download-note">get via email • no spam</p>
-        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bottom-cta">
+      <div class="cta-content">
+        <h2>ready to go remote?</h2>
+        <p>start with our most popular resource - the complete jumpstart kit has everything you need to land your first remote job in 7 days.</p>
+        <a href="/resources/jumpstart-kit" class="btn btn--primary btn--large">get the jumpstart kit →</a>
       </div>
-      
-      <div class="download-item download-accent">
-        <div class="download-icon">🏠</div>
-        <h3>home office setup checklist</h3>
-        <p class="muted">everything you need for productive remote work, from desk setup to internet requirements.</p>
-        <div class="download-actions">
-          <button class="btn btn--outline download-btn" onclick="requestDownload('office-checklist')">download pdf</button>
-          <p class="download-note">get via email • no spam</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
+</BaseLayout>
 
-  <!-- Email Signup Modal -->
-  <div id="downloadModal" class="modal">
-    <div class="modal-content card">
-      <span class="modal-close" onclick="closeModal()">&times;</span>
-      <h3>get your free download</h3>
-      <p id="modalDescription">enter your email to receive the download link plus weekly remote work tips.</p>
-      <form class="download-form" onsubmit="handleDownload(event)">
-        <input type="email" id="emailInput" placeholder="your email address" required class="form-input" />
-        <input type="hidden" id="downloadType" />
-        <button type="submit" class="btn btn-primary">send download link</button>
-      </form>
-      <p class="privacy-note">no spam, unsubscribe anytime. join 2,000+ readers.</p>
-    </div>
-  </div>
+<style>
+  .resources {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-5);
+  }
 
-  <!-- Call to Action -->
-  <section class="card cta">
-    <h2>🚀 ready to go remote?</h2>
-    <p>get our most popular guide - the complete step-by-step roadmap to landing your first remote job in 7 days.</p>
-    <a href="/resources/jumpstart-kit" class="btn btn-primary">get the complete jumpstart kit</a>
-  </section>
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: var(--space-16) 0 var(--space-12);
+    background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-coral-50) 100%);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--space-12);
+  }
 
-  <style>
-    .hero {
+  .hero h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: 900;
+    color: var(--color-black);
+    margin-bottom: var(--space-3);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-600);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Featured Resource */
+  .featured-resource {
+    margin-bottom: var(--space-16);
+  }
+
+  .featured-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+    background: var(--color-white);
+    border: 3px solid var(--color-teal-200);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .featured-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-teal-500), var(--color-coral-500));
+  }
+
+  .featured-badge {
+    display: inline-block;
+    background: var(--color-coral-100);
+    color: var(--color-coral-700);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .featured-card h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    color: var(--color-black);
+    margin-bottom: var(--space-3);
+  }
+
+  .featured-card p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-6);
+    line-height: 1.6;
+  }
+
+  .featured-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+  }
+
+  .highlight {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+    font-weight: 500;
+  }
+
+  /* Featured Visual */
+  .featured-visual {
+    position: relative;
+    height: 200px;
+  }
+
+  .preview-cards {
+    position: relative;
+    height: 100%;
+  }
+
+  .preview-card {
+    position: absolute;
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-gray-700);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .preview-card.card-1 {
+    top: 0;
+    left: 0;
+    transform: rotate(-5deg);
+    border-color: var(--color-teal-200);
+  }
+
+  .preview-card.card-2 {
+    top: 50px;
+    right: 20px;
+    transform: rotate(3deg);
+    border-color: var(--color-coral-200);
+  }
+
+  .preview-card.card-3 {
+    bottom: 0;
+    left: 30px;
+    transform: rotate(-2deg);
+    border-color: var(--color-sand-200);
+  }
+
+  /* Resources Grid */
+  .resources-grid {
+    margin-bottom: var(--space-16);
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    color: var(--color-black);
+    margin-bottom: var(--space-8);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+  }
+
+  /* Resource Cards */
+  .resource-card {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .card-teal {
+    border-color: var(--color-teal-200);
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-teal-25) 100%);
+  }
+
+  .card-teal:hover {
+    box-shadow: 0 20px 40px var(--color-teal-200);
+  }
+
+  .card-coral {
+    border-color: var(--color-coral-200);
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-coral-25) 100%);
+  }
+
+  .card-coral:hover {
+    box-shadow: 0 20px 40px var(--color-coral-200);
+  }
+
+  .card-sand {
+    border-color: var(--color-sand-200);
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-sand-25) 100%);
+  }
+
+  .card-sand:hover {
+    box-shadow: 0 20px 40px var(--color-sand-200);
+  }
+
+  .card-blue {
+    border-color: var(--color-primary-200);
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-primary-25) 100%);
+  }
+
+  .coming-soon {
+    opacity: 0.7;
+  }
+
+  .coming-soon:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .card-icon {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-4);
+    display: block;
+  }
+
+  .resource-card h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: var(--space-3);
+  }
+
+  .resource-card p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-4);
+    line-height: 1.5;
+  }
+
+  .card-features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin-bottom: var(--space-6);
+  }
+
+  .card-features span {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+  }
+
+  .card-btn {
+    display: inline-block;
+    color: var(--color-primary-600);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    transition: all 0.2s ease;
+  }
+
+  .card-btn:hover {
+    color: var(--color-primary-700);
+    transform: translateX(4px);
+  }
+
+  .card-btn.disabled {
+    color: var(--color-gray-400);
+    cursor: not-allowed;
+  }
+
+  .card-btn.disabled:hover {
+    transform: none;
+  }
+
+  /* Bottom CTA */
+  .bottom-cta {
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-secondary-600) 100%);
+    color: var(--color-white);
+    padding: var(--space-12);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--space-12);
+  }
+
+  .bottom-cta h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    margin-bottom: var(--space-4);
+  }
+
+  .bottom-cta p {
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto var(--space-6);
+  }
+
+  .btn--large {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-lg);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .featured-card {
+      grid-template-columns: 1fr;
       text-align: center;
-      margin-bottom: var(--space-12);
-      padding: var(--space-12) 0;
-      background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-teal-50) 100%);
-      border-radius: var(--radius-xl);
+    }
+
+    .featured-highlights {
+      grid-template-columns: 1fr;
+    }
+
+    .preview-cards {
+      height: 120px;
+    }
+
+    .preview-card {
+      font-size: var(--font-size-xs);
+      padding: var(--space-2) var(--space-3);
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
     }
 
     .hero h1 {
-      margin-bottom: var(--space-4);
-      background: linear-gradient(135deg, var(--color-black) 0%, var(--color-teal-700) 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: var(--font-size-2xl);
     }
-
-    .hero .lead {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* Quick Start Section */
-    .quick-start {
-      background: var(--color-teal-50);
-      border-left: 4px solid var(--color-teal-500);
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: var(--space-8);
-    }
-
-    .section-header h2 {
-      margin-bottom: var(--space-3);
-    }
-
-    .section-description {
-      font-size: var(--font-size-lg);
-      color: var(--color-gray-600);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .quick-start-steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: var(--space-4);
-      margin-top: var(--space-6);
-    }
-
-    .step {
-      background: var(--color-white);
-      padding: var(--space-5);
-      border-radius: var(--radius-lg);
-      border-left: 3px solid var(--color-teal-400);
-    }
-
-    .step-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 24px;
-      height: 24px;
-      background: var(--color-teal-500);
-      color: white;
-      border-radius: 50%;
-      font-size: var(--font-size-xs);
-      font-weight: 600;
-      margin-bottom: var(--space-2);
-    }
-
-    .step h4 {
-      color: var(--color-teal-700);
-      margin-bottom: var(--space-2);
-    }
-
-    /* Featured Resource */
-    .featured-resource {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .featured-resource::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--color-teal-500), var(--color-coral-500));
-    }
-
-    .featured-content {
-      position: relative;
-    }
-
-    .featured-content h2 {
-      font-size: var(--font-size-3xl);
-      margin: var(--space-4) 0 var(--space-3) 0;
-    }
-
-    .featured-content h2 a {
-      color: var(--color-black);
-      text-decoration: none;
-    }
-
-    .featured-content h2 a:hover {
-      color: var(--color-secondary);
-    }
-
-    .resource-description {
-      font-size: var(--font-size-lg);
-      color: var(--color-gray-600);
-      margin-bottom: var(--space-5);
-      line-height: 1.6;
-    }
-
-    .resource-features {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-2);
-      margin-bottom: var(--space-6);
-    }
-
-    .feature {
-      background: var(--color-white);
-      padding: var(--space-2) var(--space-4);
-      border-radius: var(--radius-xl);
-      font-size: var(--font-size-sm);
-      font-weight: 500;
-      border: 1px solid var(--color-teal-200);
-      color: var(--color-teal-700);
-    }
-
-    /* Resource grids */
-    .resource-grid,
-    .job-boards-grid,
-    .downloads-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: var(--space-6);
-      margin-top: var(--space-6);
-    }
-
-    .resource-item,
-    .job-board {
-      background: var(--color-white);
-      padding: var(--space-6);
-      border: 2px solid var(--color-gray-200);
-      border-radius: var(--radius-xl);
-      position: relative;
-      transition: all 0.3s ease;
-    }
-
-    .resource-item:hover,
-    .job-board:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
-      border-color: var(--color-secondary);
-    }
-
-    .job-board.featured {
-      border-color: var(--color-teal-300);
-      background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-white) 100%);
-    }
-
-    .resource-item h3,
-    .job-board h4 {
-      margin: 0 0 var(--space-2) 0;
-      font-size: var(--font-size-xl);
-    }
-
-    .resource-item h3 a,
-    .job-board h4 a {
-      text-decoration: none;
-      color: var(--color-black);
-    }
-
-    .resource-item h3 a:hover,
-    .job-board h4 a:hover {
-      color: var(--color-secondary);
-    }
-
-    .internal-link {
-      color: var(--color-secondary) !important;
-    }
-
-    .badge {
-      position: absolute;
-      top: var(--space-4);
-      right: var(--space-4);
-      padding: var(--space-1) var(--space-3);
-      font-size: var(--font-size-xs);
-      border-radius: var(--radius-md);
-      font-weight: 600;
-    }
-
-    .badge.free {
-      background: var(--color-teal-100);
-      color: var(--color-teal-800);
-    }
-
-    .badge.paid {
-      background: var(--color-sand-100);
-      color: var(--color-sand-800);
-    }
-
-    /* Tools grid */
-    .tools-grid,
-    .nomad-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: var(--space-6);
-      margin-top: var(--space-6);
-    }
-
-    .tool-category,
-    .nomad-item {
-      background: var(--color-gray-50);
-      padding: var(--space-6);
-      border-radius: var(--radius-lg);
-      border-left: 4px solid var(--color-coral-400);
-      transition: all 0.3s ease;
-    }
-
-    .tool-category:hover,
-    .nomad-item:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .tool-category h4,
-    .nomad-item h3 {
-      color: var(--color-coral-700);
-      margin-bottom: var(--space-4);
-      font-size: var(--font-size-lg);
-    }
-
-    .tool-list,
-    .nomad-item ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .tool-list li,
-    .nomad-item li {
-      padding: var(--space-2) 0;
-      border-bottom: 1px solid var(--color-gray-200);
-      color: var(--color-gray-700);
-    }
-
-    .tool-list li:last-child,
-    .nomad-item li:last-child {
-      border-bottom: none;
-    }
-
-    .tool-list strong {
-      color: var(--color-gray-800);
-    }
-
-    /* Download items */
-    .download-item {
-      background: var(--color-white);
-      padding: var(--space-8);
-      border: 2px solid var(--color-gray-200);
-      border-radius: var(--radius-xl);
-      position: relative;
-      transition: all 0.4s ease;
-      text-align: center;
-    }
-
-    .download-item:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .download-primary:hover {
-      border-color: var(--color-teal-300);
-      box-shadow: 0 10px 30px rgba(20, 184, 166, 0.2);
-    }
-
-    .download-secondary:hover {
-      border-color: var(--color-coral-300);
-      box-shadow: 0 10px 30px rgba(249, 115, 22, 0.2);
-    }
-
-    .download-accent:hover {
-      border-color: var(--color-sand-300);
-      box-shadow: 0 10px 30px rgba(251, 191, 36, 0.2);
-    }
-
-    .download-icon {
-      font-size: 3rem;
-      margin-bottom: var(--space-4);
-      display: block;
-    }
-
-    .download-item h3 {
-      margin: 0 0 var(--space-2) 0;
-      font-size: var(--font-size-xl);
-    }
-
-    .download-actions {
-      margin-top: var(--space-6);
-    }
-
-    .download-btn {
-      margin-bottom: var(--space-2);
-      cursor: pointer;
-      width: 100%;
-      max-width: 200px;
-    }
-
-    .download-note {
-      font-size: var(--font-size-xs);
-      color: var(--color-gray-500);
-      margin: 0;
-    }
-
-    /* Modal */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(4px);
-    }
-
-    .modal-content {
-      position: relative;
-      background-color: var(--color-white);
-      margin: 10% auto;
-      padding: var(--space-8);
-      width: 90%;
-      max-width: 500px;
-      border-radius: var(--radius-xl);
-      animation: slideIn 0.3s ease;
-    }
-
-    @keyframes slideIn {
-      from { transform: translateY(-50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    .modal-close {
-      color: var(--color-gray-400);
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-      line-height: 1;
-    }
-
-    .modal-close:hover {
-      color: var(--color-black);
-    }
-
-    .modal-content h3 {
-      margin: 0 0 var(--space-3) 0;
-      color: var(--color-black);
-    }
-
-    .download-form {
-      display: flex;
-      gap: var(--space-3);
-      margin: var(--space-6) 0;
-    }
-
-    .download-form .form-input {
-      flex: 1;
-    }
-
-    .privacy-note {
-      font-size: var(--font-size-sm);
-      color: var(--color-gray-500);
-      text-align: center;
-      margin: 0;
-    }
-
-    .pulse {
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
-    }
-
-    /* Responsive design */
-    @media (max-width: 768px) {
-      .hero {
-        padding: var(--space-8) var(--space-4);
-      }
-
-      .resource-grid,
-      .job-boards-grid,
-      .downloads-grid,
-      .tools-grid,
-      .nomad-grid,
-      .sheets-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-4);
-      }
-
-      .quick-start-steps {
-        grid-template-columns: 1fr;
-      }
-
-      .resource-features {
-        justify-content: center;
-      }
-
-      .download-form {
-        flex-direction: column;
-      }
-
-      .modal-content {
-        margin: 20% auto;
-        width: 95%;
-        padding: var(--space-6);
-      }
-    }
-  </style>
-
-  <script>
-    function requestDownload(type) {
-      const modal = document.getElementById('downloadModal');
-      const modalDescription = document.getElementById('modalDescription');
-      const downloadTypeInput = document.getElementById('downloadType');
-      
-      downloadTypeInput.value = type;
-      
-      const descriptions = {
-        'starter-pack': 'get the complete remote work starter pack with templates, checklists, and step-by-step guides.',
-        'salary-templates': 'download professional email templates for salary negotiations and job offer discussions.',
-        'office-checklist': 'get the complete home office setup checklist with equipment recommendations and budget tips.'
-      };
-      
-      modalDescription.textContent = descriptions[type] || 'enter your email to receive the download link plus weekly remote work tips.';
-      modal.style.display = 'block';
-      
-      // Focus email input
-      setTimeout(() => {
-        document.getElementById('emailInput').focus();
-      }, 100);
-    }
-
-    function closeModal() {
-      const modal = document.getElementById('downloadModal');
-      modal.style.display = 'none';
-    }
-
-    function handleDownload(event) {
-      event.preventDefault();
-      
-      const email = document.getElementById('emailInput').value;
-      const downloadType = document.getElementById('downloadType').value;
-      
-      if (!email) {
-        alert('please enter your email address.');
-        return;
-      }
-      
-      // Here you would normally send the email to your backend
-      // For now, we'll show a success message
-      alert(`thanks! we've sent the download link to ${email}`);
-      closeModal();
-      
-      // Clear form
-      document.getElementById('emailInput').value = '';
-    }
-
-    // Close modal when clicking outside
-    window.onclick = function(event) {
-      const modal = document.getElementById('downloadModal');
-      if (event.target === modal) {
-        closeModal();
-      }
-    }
-  </script>
-</BaseLayout>
+  }
+</style>
