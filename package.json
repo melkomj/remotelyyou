@@ -1,16 +1,15 @@
 {
-  "name": "remote-jobs-site",
+  "name": "remotelyyou",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "fetch": "node scripts/fetch-jobs.mjs"
+    "fetch": "node scripts/fetch-jobs.mjs",
+    "dev": "cd site && npm run dev",
+    "build": "cd site && npm run build", 
+    "preview": "cd site && npm run preview",
+    "start": "cd site && npm run start"
   },
-  "dependencies": {
-    "astro": "^4.0.0"
-  },
-  "devDependencies": {}
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
