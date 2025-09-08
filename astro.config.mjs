@@ -1,6 +1,12 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  output: 'static',
-  site: 'https://remotelyyou.vercel.app'
+  build: {
+    assets: '_astro'
+  },
+  vite: {
+    define: {
+      'process.env.NODE_ENV': '"production"'
+    }
+  }
 });

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Job Jumpstart Kit - RemotelyYou</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: white;
+            font-size: 14px;
+        }
+        
+        .pdf-container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            min-height: 11in;
+        }
+        
+        /* Header */
+        .pdf-header {
+            background: linear-gradient(135deg, #4a90e2 0%, #7b68ee 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pdf-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-50px, -50px); }
+        }
+        
+        .pdf-header h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pdf-header .subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pdf-header .brand {
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Content */
+        .pdf-content {
+            padding: 40px;
+        }
+        
+        .intro-section {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 12px;
+            border-left: 5px solid #4a90e2;
+        }
+        
+        .intro-section h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+        
+        .intro-section p {
+            font-size: 16px;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+        
+        .day-section {
+            margin-bottom: 35px;
+            page-break-inside: avoid;
+        }
+        
+        .day-header {
+            background: linear-gradient(135deg, #4a90e2 0%, #7b68ee 100%);
+            color: white;
+            padding: 20px 25px;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .day-number {
+            background: rgba(255, 255, 255, 0.2);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 18px;
+        }
+        
+        .day-title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .day-content {
+            border: 2px solid #e2e8f0;
+            border-top: none;
+            padding: 25px;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .day-objective {
+            background: #f0f9ff;
+            border-left: 4px solid #4a90e2;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .day-objective h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 8px;
+        }
+        
+        .day-objective p {
+            color: #1e40af;
+            font-size: 14px;
+        }
+        
+        .action-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .action-list li {
+            background: #f8fafc;
+            margin-bottom: 12px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 3px solid #10b981;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .action-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            background: #10b981;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .action-list strong {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .tip-box {
+            background: #fffbeb;
+            border: 2px solid #fbbf24;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .tip-box h5 {
+            color: #92400e;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .tip-box h5::before {
+            content: '💡';
+            font-size: 16px;
+        }
+        
+        .tip-box p {
+            color: #92400e;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        .pdf-footer {
+            background: #2d3748;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .pdf-footer h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .pdf-footer p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #a0aec0;
+        }
+        
+        .pdf-footer .website {
+            font-size: 16px;
+            font-weight: 600;
+            color: #4a90e2;
+        }
+        
+        /* Print styles */
+        @media print {
+            body { font-size: 12px; }
+            .pdf-container { max-width: none; }
+            .pdf-header { page-break-after: avoid; }
+            .day-section { page-break-inside: avoid; }
+            .pdf-footer { page-break-before: auto; }
+        }
+        
+        /* Download button */
+        .download-section {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #4a90e2 0%, #7b68ee 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(74, 144, 226, 0.4);
+        }
+        
+        @media print {
+            .download-section { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="download-section">
+        <button class="download-btn" onclick="window.print()">📄 Download PDF</button>
+    </div>
+
+    <div class="pdf-container">
+        <!-- Header -->
+        <div class="pdf-header">
+            <h1>Remote Job Jumpstart Kit</h1>
+            <p class="subtitle">7-Day Action Plan to Land Your First Remote Job</p>
+            <p class="brand">RemotelyYou.com</p>
+        </div>
+
+        <!-- Content -->
+        <div class="pdf-content">
+            <!-- Intro -->
+            <div class="intro-section">
+                <h2>🚀 Your 7-Day Journey to Remote Work Freedom</h2>
+                <p>This proven system has helped hundreds of people land their first remote job. Follow each day's actions exactly, and you'll be ready for interviews within a week. No fluff, just actionable steps that work.</p>
+            </div>
+
+            <!-- Day 1 -->
+            <div class="day-section">
+                <div class="day-header">
+                    <div class="day-number">1</div>
+                    <div class="day-title">Foundation Day: Set Your Remote Work Target</div>
+                </div>
+                <div class="day-content">
+                    <div class="day-objective">
+                        <h4>🎯 Today's Objective</h4>
+                        <p>Define your ideal remote job and create a focused job search strategy.</p>
+                    </div>
+                    <ul class="action-list">
+                        <li><strong>Choose 3 specific job titles</strong> that match your skills (e.g., "Customer Success Manager," "Content Writer," "Virtual Assistant")</li>
+                        <li><strong>Research salary ranges</strong> using PayScale, Glassdoor, or Remote.co for your target roles</li>
+                        <li><strong>List 10 companies</strong> you'd love to work for that hire remotely</li>
+                        <li><strong>Set up Google Alerts</strong> for your target job titles + "remote" + "hiring"</li>
+                        <li><strong>Create a dedicated email</strong> for job applications (firstname.lastname.remote@gmail.com)</li>
+                    </ul>
+                    <div class="tip-box">
+                        <h5>Pro Tip</h5>
+                        <p>Start with "entry-level" or "junior" versions of your target roles. Even experienced professionals should consider these when transitioning to remote work, as it's often easier to get your foot in the door.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-section">
+                <div class="day-header">
+                    <div class="day-number">2</div>
+                    <div class="day-title">Resume Revolution: Remote-First Optimization</div>
+                </div>
+                <div class="day-content">
+                    <div class="day-objective">
+                        <h4>🎯 Today's Objective</h4>
+                        <p>Transform your resume to highlight remote work potential and relevant skills.</p>
+                    </div>
+                    <ul class="action-list">
+                        <li><strong>Add a "Remote Work" section</strong> listing any experience with virtual collaboration, self-management, or digital tools</li>
+                        <li><strong>Include technical skills</strong> like Zoom, Slack, Asana, Google Workspace, Microsoft Teams</li>
+                        <li><strong>Quantify achievements</strong> with numbers ("Increased customer satisfaction by 23%" vs. "Improved customer satisfaction")</li>
+                        <li><strong>Write a remote-focused summary</strong> like "Self-motivated professional with 3+ years managing projects independently..."</li>
+                        <li><strong>Use remote work keywords</strong> throughout: "autonomous," "self-directed," "virtual collaboration," "time management"</li>
+                    </ul>
+                    <div class="tip-box">
+                        <h5>Pro Tip</h5>
+                        <p>Even if you've never worked remotely, highlight times you worked independently, managed your own schedule, or collaborated with people in different locations (even different offices count!).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="day-section">
+                <div class="day-header">
+                    <div class="day-number">3</div>
+                    <div class="day-title">LinkedIn Makeover: Your Remote Work Brand</div>
+                </div>
+                <div class="day-content">
+                    <div class="day-objective">
+                        <h4>🎯 Today's Objective</h4>
+                        <p>Optimize your LinkedIn profile to attract remote job opportunities.</p>
+                    </div>
+                    <ul class="action-list">
+                        <li><strong>Update your headline</strong> to include "Remote" (e.g., "Marketing Specialist | Remote Work Enthusiast | Helping Brands Grow Online")</li>
+                        <li><strong>Add "#OpenToWork"</strong> and specify "Remote" in location preferences</li>
+                        <li><strong>Write about remote work</strong> in your About section - mention your home office setup, self-motivation, communication skills</li>
+                        <li><strong>Connect with 20 people</strong> who work remotely in your target field</li>
+                        <li><strong>Follow 10 companies</strong> from your Day 1 list and engage with their posts</li>
+                    </ul>
+                    <div class="tip-box">
+                        <h5>Pro Tip</h5>
+                        <p>Set your location to "Remote" or "Worldwide" to appear in recruiter searches for remote positions. Many recruiters filter specifically for this.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="day-section">
+                <div class="day-header">
+                    <div class="day-number">4</div>
+                    <div class="day-title">Application Blitz: Quality Over Quantity</div>
+                </div>
+                <div class="day-content">
+                    <div class="day-objective">
+                        <h4>🎯 Today's Objective</h4>
+                        <p>Apply to 5 carefully selected remote jobs with customized applications.</p>
+                    </div>
+                    <ul class="action-list">
+                        <li><strong>Find 5 remote jobs</strong> on RemotelyYou, Remote.co, We Work Remotely, or FlexJobs</li>
+                        <li><strong>Research each company</strong> for 10 minutes - their mission, recent news, company culture</li>
+                        <li><strong>Customize your resume</strong> for each application using keywords from the job description</li>
+                        <li><strong>Write personalized cover letters</strong> mentioning something specific about the company</li>
+                        <li><strong>Follow up immediately</strong> by connecting with the hiring manager on LinkedIn</li>
+                    </ul>
+                    <div class="tip-box">
+                        <h5>Pro Tip</h5>
+                        <p>Use this cover letter template: "I was excited to see [Company Name]'s mission to [specific mission]. My experience with [relevant skill] would help you [specific company goal]..."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="day-section">
+                <div class="day-header">
+                    <div class="day-number">5</div>
+                    <div class="day-title">Interview Prep: Remote-Specific Questions</div>
+                </div>
+                <div class="day-content">
+                    <div class="day-objective">
+                        <h4>🎯 Today's Objective</h4>
+                        <p>Prepare compelling answers for remote work interview questions.</p>
+                    </div>
+                    <ul class="action-list">
+                        <li><strong>Practice answering:</strong> "How do you stay motivated working from home?" "Describe your ideal home office setup"</li>
+                        <li><strong>Prepare examples</strong> of self-directed projects, meeting deadlines without supervision, solving problems independently</li>
+                        <li><strong>Test your tech setup</strong> - webcam, microphone, internet speed, lighting for video calls</li>
+                        <li><strong>Download Zoom, Teams, Google Meet</strong> and practice using screen sharing and chat features</li>
+                        <li><strong>Prepare 5 questions</strong> about the company's remote work culture, communication style, and team collaboration</li>
+                    </ul>
+                    <div class="tip-box">
+                        <h5>Pro Tip</h5>
+                        <p>Record yourself answering common questions on your phone. You'll quickly notice filler words, poor lighting, or audio issues you can fix before the real interview.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="day-section">
+                <div class="day-header">
+                    <div class="day-number">6</div>
+                    <div class="day-title">Network Like a Pro: Building Remote Connections</div>
+                </div>
+                <div class="day-content">
+                    <div class="day-objective">
+                        <h4>🎯 Today's Objective</h4>
+                        <p>Build relationships that can lead to job opportunities and referrals.</p>
+                    </div>
+                    <ul class="action-list">
+                        <li><strong>Join 3 remote work communities</strong> like Remote Year, Nomad List, or Remote Work Association</li>
+                        <li><strong>Engage in discussions</strong> by commenting thoughtfully on 10 posts about remote work</li>
+                        <li><strong>Send 5 connection requests</strong> to people in your target roles with personalized messages</li>
+                        <li><strong>Share one post</strong> about your remote work journey or a helpful tip you've learned</li>
+                        <li><strong>Email your network</strong> (friends, family, former colleagues) letting them know you're seeking remote work</li>
+                    </ul>
+                    <div class="tip-box">
+                        <h5>Pro Tip</h5>
+                        <p>Use this networking message template: "Hi [Name], I noticed you work remotely at [Company]. I'm transitioning to remote work in [field] and would love any insights about [specific aspect]. No pressure - just seeking advice from someone who's made it work!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 7 -->
+            <div class="day-section">
+                <div class="day-header">
+                    <div class="day-number">7</div>
+                    <div class="day-title">Momentum Day: System Setup for Ongoing Success</div>
+                </div>
+                <div class="day-content">
+                    <div class="day-objective">
+                        <h4>🎯 Today's Objective</h4>
+                        <p>Create systems to maintain momentum and continue improving your remote job search.</p>
+                    </div>
+                    <ul class="action-list">
+                        <li><strong>Set up a daily job search schedule</strong> - 30 minutes each morning to check alerts and apply to 1-2 jobs</li>
+                        <li><strong>Create an application tracking spreadsheet</strong> with columns for company, position, date applied, contact person, follow-up date</li>
+                        <li><strong>Schedule weekly LinkedIn activity</strong> - 3 posts per week, engage with 10 posts daily</li>
+                        <li><strong>Plan your follow-ups</strong> - set calendar reminders to follow up on applications after 1 week</li>
+                        <li><strong>Celebrate your progress!</strong> You've completed the jumpstart and are ready for remote work success</li>
+                    </ul>
+                    <div class="tip-box">
+                        <h5>Pro Tip</h5>
+                        <p>Treat job searching like a part-time job. Consistency beats intensity - 30 minutes daily is better than 3 hours once a week. Set up your environment for success!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bonus Section -->
+            <div class="day-section">
+                <div class="day-header">
+                    <div class="day-number">🎁</div>
+                    <div class="day-title">Bonus: Red Flags to Avoid (Scam Prevention)</div>
+                </div>
+                <div class="day-content">
+                    <div class="day-objective">
+                        <h4>🎯 Stay Safe</h4>
+                        <p>Recognize and avoid common remote job scams.</p>
+                    </div>
+                    <ul class="action-list">
+                        <li><strong>Never pay upfront fees</strong> for training, equipment, or "guaranteed" job placement</li>
+                        <li><strong>Be wary of "too good to be true"</strong> offers - $30/hour for basic data entry is likely a scam</li>
+                        <li><strong>Verify company legitimacy</strong> by checking their website, LinkedIn company page, and Glassdoor reviews</li>
+                        <li><strong>Interview red flags:</strong> No video call, pressure to start immediately, asking for personal financial information</li>
+                        <li><strong>Trust your instincts</strong> - if something feels off, it probably is. Legitimate companies have professional processes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="pdf-footer">
+            <h3>🚀 Ready to Take the Next Step?</h3>
+            <p>This jumpstart kit is just the beginning. Visit our website for more resources:</p>
+            <p>• 1,400+ Remote Job Listings (Updated Daily)</p>
+            <p>• Cover Letter Templates That Get Responses</p>
+            <p>• Interview Preparation Guides</p>
+            <p>• Remote Work Tools and Resources</p>
+            <br>
+            <p class="website">
+                <a href="/" style="color: #4a90e2; text-decoration: none; font-weight: 700;">www.RemotelyYou.com</a>
+            </p>
+            <p>Work anywhere. Live everywhere.</p>
+        </div>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            // Create download filename with current date
+            const today = new Date().toISOString().split('T')[0];
+            const filename = `RemotelyYou-Jumpstart-Kit-${today}.pdf`;
+            
+            // Use browser's print to PDF functionality
+            window.print();
+        }
+        
+        // Add keyboard shortcut for easy navigation - works anywhere on the page
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                window.location.href = '/';
+            }
+        });
+        
+        // Ensure the event listener works even when page is scrolled
+        window.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                window.location.href = '/';
+            }
+        });
+        
+        // Add visual indicator for keyboard shortcut
+        document.addEventListener('DOMContentLoaded', function() {
+            const indicator = document.createElement('div');
+            indicator.innerHTML = '💡 Press ESC to return to RemotelyYou';
+            indicator.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                background: rgba(74, 144, 226, 0.95);
+                color: white;
+                padding: 12px 20px;
+                border-radius: 25px;
+                font-size: 14px;
+                font-weight: 600;
+                z-index: 1000;
+                box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+                border: 2px solid rgba(255, 255, 255, 0.2);
+                animation: slideInStay 1s ease-out;
+                cursor: pointer;
+            `;
+            
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes slideInStay {
+                    0% { 
+                        opacity: 0; 
+                        transform: translateY(50px); 
+                    }
+                    100% { 
+                        opacity: 1; 
+                        transform: translateY(0); 
+                    }
+                }
+                .shortcut-indicator:hover {
+                    background: rgba(74, 144, 226, 1) !important;
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 16px rgba(74, 144, 226, 0.4) !important;
+                }
+                @media print {
+                    .shortcut-indicator { display: none !important; }
+                }
+            `;
+            document.head.appendChild(style);
+            indicator.className = 'shortcut-indicator';
+            
+            // Make the indicator clickable too
+            indicator.addEventListener('click', function() {
+                window.location.href = '/';
+            });
+            
+            document.body.appendChild(indicator);
+            
+            // Keep indicator visible for 10 seconds, then fade out slowly
+            setTimeout(() => {
+                if (indicator.parentNode) {
+                    indicator.style.transition = 'opacity 2s ease-out';
+                    indicator.style.opacity = '0.7';
+                }
+            }, 10000);
+            
+            // Completely remove after 15 seconds
+            setTimeout(() => {
+                if (indicator.parentNode) {
+                    indicator.style.transition = 'opacity 1s ease-out';
+                    indicator.style.opacity = '0';
+                    setTimeout(() => {
+                        if (indicator.parentNode) {
+                            indicator.parentNode.removeChild(indicator);
+                        }
+                    }, 1000);
+                }
+            }, 15000);
+            
+            // Show indicator again when user scrolls (helpful reminder)
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                clearTimeout(scrollTimeout);
+                if (indicator.parentNode && indicator.style.opacity !== '1') {
+                    indicator.style.transition = 'opacity 0.3s ease-in';
+                    indicator.style.opacity = '0.8';
+                    
+                    scrollTimeout = setTimeout(() => {
+                        if (indicator.parentNode) {
+                            indicator.style.transition = 'opacity 1s ease-out';
+                            indicator.style.opacity = '0.5';
+                        }
+                    }, 3000);
+                }
+            });
+        });
+        
+        // Additional fallback for ESC key - attach to window and body
+        window.onkeydown = function(e) {
+            if (e.keyCode === 27) { // ESC key code
+                e.preventDefault();
+                window.location.href = '/';
+                return false;
+            }
+        };
+        
+        document.onkeydown = function(e) {
+            if (e.keyCode === 27) { // ESC key code
+                e.preventDefault();
+                window.location.href = '/';
+                return false;
+            }
+        };
+    </script>
