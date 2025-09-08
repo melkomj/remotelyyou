@@ -1,86 +1,356 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const title = "contact";
-const description = "questions, collaborations, or just say hi.";
+const title = "Get in Touch";
+const description = "Questions about remote work? Want to collaborate? Let's connect and help you on your remote work journey.";
 ---
 <BaseLayout {title} {description}>
-  <section class="card">
-    <h2>let's talk</h2>
-    <p class="muted">questions, partnerships, feedback, media — drop me a note below.</p>
-
-    <form action="https://formspree.io/f/xqadpvrk" method="POST" class="contact-form">
-      <div class="form-group">
-        <label for="name">name</label>
-        <input type="text" name="name" id="name" required />
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1>let's connect</h1>
+      <p class="hero-subtitle">questions, partnerships, feedback, or just want to say hi? i'd love to hear from you.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">24-48h</span>
+          <span class="stat-label">response time</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">emails answered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">human replies</span>
+        </div>
       </div>
-      
-      <div class="form-group">
-        <label for="email">email</label>
-        <input type="email" name="email" id="email" required />
-      </div>
-      
-      <div class="form-group">
-        <label for="subject">subject</label>
-        <select name="subject" id="subject" required>
-          <option value="">choose a topic...</option>
-          <option value="general">general question</option>
-          <option value="partnership">partnership opportunity</option>
-          <option value="feedback">website feedback</option>
-          <option value="media">media inquiry</option>
-          <option value="job-board">job board submission</option>
-          <option value="other">something else</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="message">message</label>
-        <textarea name="message" id="message" rows="6" required placeholder="tell me what's on your mind..."></textarea>
-      </div>
-      
-      <button type="submit" class="btn">send message</button>
-    </form>
-
-    <div class="contact-info">
-      <p class="muted">prefer email? <strong>hello@remotelyyou.co</strong></p>
-      <p class="muted">typical response time: 24-48 hours</p>
     </div>
   </section>
 
+  <div class="contact-container">
+    <!-- Contact Options -->
+    <section class="contact-options">
+      <h2>choose your preferred way to connect</h2>
+      <div class="options-grid">
+        <div class="option-card primary">
+          <div class="option-icon">📝</div>
+          <h3>send a message</h3>
+          <p>use the form below for detailed questions or collaborations</p>
+          <div class="option-badge">recommended</div>
+        </div>
+        
+        <div class="option-card">
+          <div class="option-icon">✉️</div>
+          <h3>direct email</h3>
+          <p>prefer email? shoot me a message directly</p>
+          <a href="mailto:hello@remotelyyou.co" class="option-link">hello@remotelyyou.co</a>
+        </div>
+        
+        <div class="option-card">
+          <div class="option-icon">🐦</div>
+          <h3>social media</h3>
+          <p>follow for remote work tips and quick updates</p>
+          <a href="https://twitter.com/remotelyyou" target="_blank" rel="noopener" class="option-link">@remotelyyou</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-section">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>send me a message</h2>
+          <p>tell me what's on your mind — i read and respond to every message personally</p>
+        </div>
+
+        <form action="https://formspree.io/f/xqadpvrk" method="POST" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">your name</label>
+              <input type="text" name="name" id="name" required placeholder="jane doe" />
+            </div>
+            
+            <div class="form-group">
+              <label for="email">email address</label>
+              <input type="email" name="email" id="email" required placeholder="jane@example.com" />
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">what's this about?</label>
+            <select name="subject" id="subject" required>
+              <option value="">choose a topic...</option>
+              <option value="general">general question</option>
+              <option value="partnership">partnership opportunity</option>
+              <option value="feedback">website feedback</option>
+              <option value="media">media inquiry</option>
+              <option value="job-board">job board submission</option>
+              <option value="coaching">career coaching</option>
+              <option value="other">something else</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">your message</label>
+            <textarea 
+              name="message" 
+              id="message" 
+              rows="6" 
+              required 
+              placeholder="tell me what's on your mind... the more detail, the better i can help!"
+            ></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <span class="btn-text">send message</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>frequently asked questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>🤔 what kind of questions do you answer?</h3>
+          <p>anything related to remote work! career transitions, job search strategies, tools recommendations, or just general advice about working remotely.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>⏱️ how quickly do you respond?</h3>
+          <p>i typically respond within 24-48 hours on weekdays. if it's urgent, mention it in your subject line.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>💼 do you offer career coaching?</h3>
+          <p>i offer limited coaching for complex career transitions. select "career coaching" in the form and tell me about your situation.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>🤝 interested in partnerships?</h3>
+          <p>always open to collaborations with other remote work advocates, tools that help job seekers, or content partnerships.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <style>
+    /* Contact Hero */
+    .contact-hero {
+      background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-coral-50) 100%);
+      padding: var(--space-12) 0 var(--space-10);
+      text-align: center;
+      border-radius: var(--radius-xl);
+      margin-bottom: var(--space-10);
+      border: 1px solid var(--color-teal-200);
+    }
+
+    .hero-content h1 {
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      margin-bottom: var(--space-4);
+      color: var(--color-black);
+    }
+
+    .hero-subtitle {
+      font-size: var(--font-size-lg);
+      color: var(--color-gray-600);
+      max-width: 600px;
+      margin: 0 auto var(--space-8);
+      line-height: 1.6;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-8);
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      display: block;
+      font-size: var(--font-size-2xl);
+      font-weight: 700;
+      color: var(--color-teal-700);
+      margin-bottom: var(--space-1);
+    }
+
+    .stat-label {
+      font-size: var(--font-size-sm);
+      color: var(--color-gray-600);
+      text-transform: lowercase;
+    }
+
+    /* Container */
+    .contact-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Contact Options */
+    .contact-options {
+      margin-bottom: var(--space-12);
+    }
+
+    .contact-options h2 {
+      text-align: center;
+      margin-bottom: var(--space-8);
+      font-size: var(--font-size-2xl);
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+
+    .option-card {
+      background: var(--color-white);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 2px solid var(--color-gray-200);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .option-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--color-teal-300);
+    }
+
+    .option-card.primary {
+      border-color: var(--color-teal-500);
+      background: linear-gradient(135deg, var(--color-white) 0%, var(--color-teal-50) 100%);
+    }
+
+    .option-card.primary:hover {
+      border-color: var(--color-teal-600);
+    }
+
+    .option-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--space-4);
+      display: block;
+    }
+
+    .option-card h3 {
+      color: var(--color-black);
+      margin-bottom: var(--space-2);
+      font-size: var(--font-size-lg);
+    }
+
+    .option-card p {
+      color: var(--color-gray-600);
+      margin-bottom: var(--space-4);
+      font-size: var(--font-size-sm);
+    }
+
+    .option-link {
+      color: var(--color-teal-600);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: var(--font-size-sm);
+    }
+
+    .option-link:hover {
+      color: var(--color-teal-700);
+    }
+
+    .option-badge {
+      position: absolute;
+      top: var(--space-4);
+      right: var(--space-4);
+      background: var(--color-teal-600);
+      color: var(--color-white);
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-xl);
+      font-size: var(--font-size-xs);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* Form Section */
+    .form-section {
+      background: var(--color-gray-50);
+      padding: var(--space-10);
+      border-radius: var(--radius-xl);
+      margin-bottom: var(--space-12);
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: var(--space-8);
+    }
+
+    .form-header h2 {
+      margin-bottom: var(--space-3);
+      font-size: var(--font-size-2xl);
+    }
+
+    .form-header p {
+      color: var(--color-gray-600);
+      font-size: var(--font-size-base);
+    }
+
     .contact-form {
-      max-width: 520px;
-      margin: 20px 0;
+      background: var(--color-white);
+      padding: var(--space-8);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
     }
 
     .form-group {
-      margin-bottom: 20px;
+      margin-bottom: var(--space-6);
     }
 
     .form-group label {
       display: block;
-      margin-bottom: 6px;
-      font-weight: 500;
-      color: #333;
+      margin-bottom: var(--space-2);
+      font-weight: 600;
+      color: var(--color-gray-800);
+      font-size: var(--font-size-sm);
+      text-transform: lowercase;
     }
 
     .form-group input,
     .form-group select,
     .form-group textarea {
       width: 100%;
-      padding: 12px 16px;
-      border: 2px solid #e8e8e8;
-      border-radius: 12px;
-      font-size: 16px;
-      transition: border-color 0.2s ease;
-      background: #fff;
+      padding: var(--space-4);
+      border: 2px solid var(--color-gray-200);
+      border-radius: var(--radius-md);
+      font-size: var(--font-size-base);
+      transition: all 0.2s ease;
+      background: var(--color-white);
+      font-family: inherit;
     }
 
     .form-group input:focus,
     .form-group select:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: #666;
-      box-shadow: 0 0 0 3px rgba(102, 102, 102, 0.1);
+      border-color: var(--color-teal-500);
+      box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
     }
 
     .form-group textarea {
@@ -88,44 +358,144 @@ const description = "questions, collaborations, or just say hi.";
       min-height: 120px;
     }
 
-    .contact-info {
-      margin-top: 30px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-      text-align: center;
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--color-gray-400);
     }
 
-    .contact-info p {
-      margin: 8px 0;
-    }
-
-    .btn {
+    .submit-btn {
       width: 100%;
-      padding: 14px;
-      font-size: 16px;
+      padding: var(--space-4) var(--space-6);
+      font-size: var(--font-size-base);
       font-weight: 600;
-      background: #000;
-      color: #fff;
+      background: var(--color-teal-600);
+      color: var(--color-white);
       border: none;
-      border-radius: 12px;
+      border-radius: var(--radius-md);
       cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      text-transform: lowercase;
+    }
+
+    .submit-btn:hover {
+      background: var(--color-teal-700);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .submit-btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-icon {
+      transition: transform 0.2s ease;
+    }
+
+    .submit-btn:hover .btn-icon {
+      transform: translateX(2px);
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      margin-bottom: var(--space-10);
+    }
+
+    .faq-section h2 {
+      text-align: center;
+      margin-bottom: var(--space-8);
+      font-size: var(--font-size-2xl);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-6);
+    }
+
+    .faq-item {
+      background: var(--color-white);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-coral-500);
       transition: all 0.2s ease;
     }
 
-    .btn:hover {
-      background: #333;
-      transform: translateY(-1px);
+    .faq-item:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
     }
 
-    @media (max-width: 600px) {
-      .contact-form {
-        max-width: 100%;
+    .faq-item h3 {
+      color: var(--color-gray-800);
+      margin-bottom: var(--space-3);
+      font-size: var(--font-size-base);
+      font-weight: 600;
+    }
+
+    .faq-item p {
+      color: var(--color-gray-600);
+      margin: 0;
+      font-size: var(--font-size-sm);
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-hero {
+        padding: var(--space-8) var(--space-4);
       }
-      
-      .form-group input,
-      .form-group select,
-      .form-group textarea {
-        padding: 12px 14px;
+
+      .hero-content h1 {
+        font-size: var(--font-size-3xl);
+      }
+
+      .hero-stats {
+        gap: var(--space-6);
+      }
+
+      .options-grid,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-section {
+        padding: var(--space-6);
+      }
+
+      .contact-form {
+        padding: var(--space-6);
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .stat-number {
+        font-size: var(--font-size-xl);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-stats {
+        flex-direction: column;
+        gap: var(--space-4);
+      }
+
+      .contact-hero {
+        padding: var(--space-6) var(--space-3);
+      }
+
+      .form-section {
+        padding: var(--space-4);
+      }
+
+      .contact-form {
+        padding: var(--space-4);
       }
     }
   </style>
