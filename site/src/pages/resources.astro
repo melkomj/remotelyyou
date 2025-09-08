@@ -83,17 +83,30 @@ const description = "free tools and guides to land your remote job";
           <a href="/resources/timezone-availability" class="card-btn">master timezones →</a>
         </div>
 
-        <!-- Job Search Tracker (Future) -->
-        <div class="resource-card card-blue coming-soon">
+        <!-- Job Search Tracker -->
+        <div class="resource-card card-blue">
           <div class="card-icon">📊</div>
-          <h3>job search tracker</h3>
-          <p>organized spreadsheet to track applications, follow-ups, and interview progress.</p>
+          <h3>job application tracker</h3>
+          <p>google sheets template to organize applications, track responses, and never miss a follow-up.</p>
           <div class="card-features">
-            <span>• application tracker</span>
+            <span>• application progress</span>
+            <span>• interview tracking</span>
             <span>• follow-up reminders</span>
-            <span>• interview notes</span>
           </div>
-          <div class="card-btn disabled">coming soon</div>
+          <a href="/resources/job-application-tracker" class="card-btn">get tracker →</a>
+        </div>
+
+        <!-- Resume Template -->
+        <div class="resource-card card-purple">
+          <div class="card-icon">📄</div>
+          <h3>ats-friendly resume template</h3>
+          <p>professional resume template designed to pass automated screening and impress hiring managers.</p>
+          <div class="card-features">
+            <span>• ats-optimized format</span>
+            <span>• remote work focused</span>
+            <span>• multiple versions</span>
+          </div>
+          <a href="/resources/resume-template" class="card-btn">get template →</a>
         </div>
       </div>
     </section>
@@ -312,6 +325,19 @@ const description = "free tools and guides to land your remote job";
   .card-blue {
     border-color: var(--color-primary-200);
     background: linear-gradient(135deg, var(--color-white) 0%, var(--color-primary-25) 100%);
+  }
+
+  .card-blue:hover {
+    box-shadow: 0 20px 40px rgba(20, 184, 166, 0.2);
+  }
+
+  .card-purple {
+    border-color: #e9d5ff;
+    background: linear-gradient(135deg, var(--color-white) 0%, #faf5ff 100%);
+  }
+
+  .card-purple:hover {
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
   }
 
   .coming-soon {
