@@ -1,0 +1,155 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Privacy Policy";
+const description = "Privacy policy for remotelyyou - how we collect, use, and protect your information";
+---
+
+<BaseLayout {title} {description} contentFocused={true}>
+  <article class="legal-document">
+    <header class="legal-header">
+      <h1>Privacy Policy</h1>
+      <p class="muted">Last updated: January 8, 2025</p>
+    </header>
+
+    <div class="legal-content">
+      <p class="lead">At remotelyyou, we are committed to protecting your privacy and being transparent about how we collect, use, and share your information.</p>
+
+      <h2>Information We Collect</h2>
+      
+      <h3>Information You Provide</h3>
+      <ul>
+        <li><strong>Newsletter Subscription:</strong> When you subscribe to our newsletter, we collect your email address</li>
+        <li><strong>Contact Forms:</strong> When you contact us, we collect your name, email address, and message content</li>
+        <li><strong>Voluntary Information:</strong> Any other information you choose to provide to us</li>
+      </ul>
+
+      <h3>Information We Collect Automatically</h3>
+      <ul>
+        <li><strong>Usage Data:</strong> How you interact with our website, including pages visited and time spent</li>
+        <li><strong>Device Information:</strong> Your device type, browser, operating system, and IP address</li>
+        <li><strong>Cookies:</strong> We use essential cookies for website functionality</li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      
+      <p>We use your information to:</p>
+      <ul>
+        <li>Send you our weekly newsletter with remote job opportunities and tips</li>
+        <li>Respond to your questions and provide customer support</li>
+        <li>Improve our website and services</li>
+        <li>Analyze website usage and trends</li>
+        <li>Comply with legal obligations</li>
+      </ul>
+
+      <h2>Information Sharing</h2>
+      
+      <p>We do not sell, trade, or rent your personal information. We may share your information only in these limited circumstances:</p>
+      <ul>
+        <li><strong>Service Providers:</strong> With trusted third-party services that help us operate our website (like Buttondown for newsletters)</li>
+        <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
+        <li><strong>Business Transfer:</strong> In the event of a merger or sale of our business</li>
+      </ul>
+
+      <h2>Third-Party Services</h2>
+      
+      <p>We use the following third-party services:</p>
+      <ul>
+        <li><strong>Buttondown:</strong> For newsletter management and delivery</li>
+        <li><strong>Vercel:</strong> For website hosting and analytics</li>
+        <li><strong>Google Fonts:</strong> For website typography</li>
+      </ul>
+
+      <p>Each service has its own privacy policy governing the use of your information.</p>
+
+      <h2>Data Security</h2>
+      
+      <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
+
+      <h2>Your Rights</h2>
+      
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access the personal information we have about you</li>
+        <li>Request correction of inaccurate information</li>
+        <li>Request deletion of your personal information</li>
+        <li>Unsubscribe from our newsletter at any time</li>
+        <li>Object to processing of your personal information</li>
+      </ul>
+
+      <h2>Data Retention</h2>
+      
+      <p>We retain your personal information only as long as necessary to provide our services and fulfill the purposes outlined in this policy, unless a longer retention period is required by law.</p>
+
+      <h2>Children's Privacy</h2>
+      
+      <p>Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+
+      <h2>International Users</h2>
+      
+      <p>If you are visiting our website from outside the United States, please note that your information may be transferred to, stored, and processed in the United States.</p>
+
+      <h2>Changes to This Policy</h2>
+      
+      <p>We may update this privacy policy from time to time. We will notify you of any material changes by posting the new policy on this page and updating the "Last updated" date.</p>
+
+      <h2>Contact Us</h2>
+      
+      <p>If you have any questions about this privacy policy or our practices, please contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:hello@remotelyyou.co">hello@remotelyyou.co</a></p>
+    </div>
+  </article>
+
+  <style>
+    .legal-document {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .legal-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .legal-header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+      font-size: 1.5rem;
+    }
+
+    .legal-content h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #374151;
+      font-size: 1.25rem;
+    }
+
+    .legal-content ul {
+      margin-bottom: 1.5rem;
+    }
+
+    .legal-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content p {
+      margin-bottom: 1.25rem;
+    }
+
+    .legal-content a {
+      color: #0d9488;
+      text-decoration: underline;
+    }
+
+    .legal-content a:hover {
+      color: #0f766e;
+    }
+  </style>
+</BaseLayout>

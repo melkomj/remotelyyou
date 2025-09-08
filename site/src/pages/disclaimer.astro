@@ -1,0 +1,204 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Disclaimer";
+const description = "Legal disclaimer for remotelyyou - important information about our services and limitations";
+---
+
+<BaseLayout {title} {description} contentFocused={true}>
+  <article class="legal-document">
+    <header class="legal-header">
+      <h1>Disclaimer</h1>
+      <p class="muted">Last updated: January 8, 2025</p>
+    </header>
+
+    <div class="legal-content">
+      <p class="lead">This disclaimer outlines important information about the use of remotelyyou and the limitations of our services.</p>
+
+      <h2>General Information</h2>
+      
+      <p>The information on this website is provided on an "as is" basis. To the fullest extent permitted by law, remotelyyou excludes all representations, warranties, obligations, and liabilities arising out of or in connection with our website and services.</p>
+
+      <h2>Job Listing Disclaimer</h2>
+      
+      <h3>Third-Party Content</h3>
+      <p>Job listings on remotelyyou are aggregated from various third-party sources including job boards, company websites, and RSS feeds. We do not:</p>
+      <ul>
+        <li>Create or post original job listings</li>
+        <li>Verify the accuracy or legitimacy of job postings</li>
+        <li>Screen employers or job opportunities</li>
+        <li>Guarantee the availability or current status of any job listing</li>
+      </ul>
+
+      <h3>User Responsibility</h3>
+      <p>Users are solely responsible for:</p>
+      <ul>
+        <li>Verifying the legitimacy of job opportunities and employers</li>
+        <li>Conducting due diligence before applying for any position</li>
+        <li>Protecting personal information during the application process</li>
+        <li>Being aware of potential job scams and fraudulent postings</li>
+      </ul>
+
+      <h2>No Employment Relationship</h2>
+      
+      <p>remotelyyou is not an employment agency, recruiter, or employer. We do not:</p>
+      <ul>
+        <li>Guarantee job placement or employment outcomes</li>
+        <li>Participate in hiring decisions</li>
+        <li>Act as an intermediary between job seekers and employers</li>
+        <li>Provide employment services beyond information sharing</li>
+      </ul>
+
+      <h2>Educational Content Disclaimer</h2>
+      
+      <p>The career advice, guides, and educational content on remotelyyou are for informational purposes only and should not be considered:</p>
+      <ul>
+        <li>Professional career counseling or coaching</li>
+        <li>Legal advice regarding employment matters</li>
+        <li>Financial advice</li>
+        <li>Guaranteed methods for securing employment</li>
+      </ul>
+
+      <p>Individual results may vary, and success in remote work depends on many personal and external factors.</p>
+
+      <h2>Third-Party Links</h2>
+      
+      <p>Our website contains links to external websites and services. We are not responsible for:</p>
+      <ul>
+        <li>The content, accuracy, or reliability of external sites</li>
+        <li>The privacy practices of third-party websites</li>
+        <li>Any transactions or interactions with third parties</li>
+        <li>The availability or performance of external services</li>
+      </ul>
+
+      <h2>Technical Limitations</h2>
+      
+      <p>While we strive to maintain our website, we cannot guarantee:</p>
+      <ul>
+        <li>Continuous availability or uptime</li>
+        <li>Error-free operation</li>
+        <li>Compatibility with all devices or browsers</li>
+        <li>Real-time accuracy of aggregated content</li>
+      </ul>
+
+      <h2>Limitation of Liability</h2>
+      
+      <p>To the maximum extent permitted by law, remotelyyou and its operators will not be liable for any:</p>
+      <ul>
+        <li>Direct, indirect, incidental, or consequential damages</li>
+        <li>Loss of income, profits, or opportunities</li>
+        <li>Damages resulting from use of job listings or career advice</li>
+        <li>Issues arising from interactions with third-party employers</li>
+        <li>Technical problems or website downtime</li>
+      </ul>
+
+      <h2>Scam Warning</h2>
+      
+      <div class="warning-box">
+        <h3>⚠️ Important Scam Warning</h3>
+        <p>Be aware that job scams are common in the remote work space. Red flags include:</p>
+        <ul>
+          <li>Requests for upfront payments or fees</li>
+          <li>Offers that seem too good to be true</li>
+          <li>Requests for personal financial information early in the process</li>
+          <li>Poor communication or unprofessional contact methods</li>
+          <li>Vague job descriptions or immediate hiring without interviews</li>
+        </ul>
+        <p>Always verify employers independently and never provide sensitive personal or financial information until you've confirmed the legitimacy of an opportunity.</p>
+      </div>
+
+      <h2>No Endorsement</h2>
+      
+      <p>The inclusion of any job listing, company, or third-party service on our website does not constitute an endorsement or recommendation. Users should conduct their own research and due diligence.</p>
+
+      <h2>Geographic Limitations</h2>
+      
+      <p>Job listings may include opportunities from various countries and jurisdictions. Users are responsible for understanding and complying with local employment laws and work authorization requirements.</p>
+
+      <h2>Changes to This Disclaimer</h2>
+      
+      <p>We reserve the right to modify this disclaimer at any time. Changes will be posted on this page with an updated revision date.</p>
+
+      <h2>Contact Information</h2>
+      
+      <p>If you have questions about this disclaimer, please contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:hello@remotelyyou.co">hello@remotelyyou.co</a></p>
+    </div>
+  </article>
+
+  <style>
+    .legal-document {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .legal-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .legal-header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+      font-size: 1.5rem;
+    }
+
+    .legal-content h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #374151;
+      font-size: 1.25rem;
+    }
+
+    .legal-content ul {
+      margin-bottom: 1.5rem;
+    }
+
+    .legal-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content p {
+      margin-bottom: 1.25rem;
+    }
+
+    .legal-content a {
+      color: #0d9488;
+      text-decoration: underline;
+    }
+
+    .legal-content a:hover {
+      color: #0f766e;
+    }
+
+    .warning-box {
+      background: #fef7f0;
+      border: 1px solid #fdba74;
+      border-left: 4px solid #f59e0b;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin: 2rem 0;
+    }
+
+    .warning-box h3 {
+      color: #92400e;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .warning-box p {
+      color: #92400e;
+    }
+
+    .warning-box ul {
+      color: #92400e;
+    }
+  </style>
+</BaseLayout>
