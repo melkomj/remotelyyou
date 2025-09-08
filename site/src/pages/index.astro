@@ -267,10 +267,12 @@ const title = "Land Your First Remote Job - RemotelyYou";
 
   /* Conversion Bar */
   .conversion-bar {
-    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+    background: var(--color-teal-600);
     color: white;
     padding: var(--space-3) 0;
     text-align: center;
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+    margin: 0 var(--space-4) var(--space-4) var(--space-4);
   }
 
   .conversion-bar .container {
@@ -319,7 +321,7 @@ const title = "Land Your First Remote Job - RemotelyYou";
     display: inline-flex;
     align-items: center;
     gap: var(--space-2);
-    background: linear-gradient(135deg, var(--color-teal-600), var(--color-coral-500));
+    background: var(--color-black);
     color: white;
     padding: var(--space-2) var(--space-4);
     border-radius: var(--radius-full);
@@ -327,7 +329,8 @@ const title = "Land Your First Remote Job - RemotelyYou";
     font-weight: 600;
     margin-bottom: var(--space-6);
     animation: float 3s ease-in-out infinite;
-    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-teal-200);
   }
 
   @keyframes float {
