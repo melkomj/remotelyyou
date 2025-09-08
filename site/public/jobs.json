@@ -1,44 +1,1345 @@
 {
-  "updated_at": "2025-09-08T06:53:24.372Z",
-  "total_jobs": 129,
+  "updated_at": "2025-09-08T18:48:55.158Z",
+  "total_jobs": 218,
   "sources": [
-    "Remote OK - All",
-    "Remote.co - All",
-    "Jobicy - All",
-    "Himalayas - Jobs",
+    "Remote OK",
     "We Work Remotely",
-    "AngelList Remote"
+    "Jobicy",
+    "Himalayas",
+    "Remote.co"
   ],
   "jobs": [
     {
-      "title": "USAA: Customer Service Advisor",
+      "title": "ClickGUARD Inc.: Product Manager with PPC Marketing Experience",
       "source": "We Work Remotely",
-      "source_url": "https://weworkremotely.com/remote-jobs/usaa-customer-service-advisor-15",
-      "posted_at": "2025-09-08T01:36:37.000Z",
+      "source_url": "https://weworkremotely.com/remote-jobs/clickguard-inc-product-manager-with-ppc-marketing-experience-2",
+      "posted_at": "2025-09-08T17:39:32.000Z",
       "tags": [
-        "entry-level",
-        "contract",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Phoenix, Arizona </p> <p><b>Why USAA?</b></p><p>At USAA, our mission is to empower our members to achieve financial security through highly competitive products, exc",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0074/4123/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
-      "title": "USAA: Information Management Analyst (mid level)",
+      "title": "EverAI: Mid/Senior AI Engineer (Remote - Worldwide)",
       "source": "We Work Remotely",
-      "source_url": "https://weworkremotely.com/remote-jobs/usaa-information-management-analyst-mid-level-1",
-      "posted_at": "2025-09-08T01:36:35.000Z",
+      "source_url": "https://weworkremotely.com/remote-jobs/everai-mid-senior-ai-engineer-remote-worldwide",
+      "posted_at": "2025-09-08T15:37:44.000Z",
+      "tags": [
+        "senior",
+        "contract",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1679/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Paymentology: Head of Platform Engineering",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/paymentology-head-of-platform-engineering",
+      "posted_at": "2025-09-08T15:08:37.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0170/9426/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "NoGigiddy: Remote Data Entry Clerk",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/nogigiddy-remote-data-entry-clerk-5",
+      "posted_at": "2025-09-08T14:33:35.000Z",
       "tags": [
         "entry-level",
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Phoenix, Arizona </p> <p><b>Why USAA?</b></p><p>At USAA, our mission is to empower our members to achieve financial security through highly competitive products, exc",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0146/9395/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "“Tell Me About Yourself” — The Funniest Wrong Answers Candidates Gave",
+      "source": "Jobicy",
+      "source_url": "https://jobicy.com/blog/131343-tell-me-about-yourself-the-funniest-wrong-answers-candidates-gave",
+      "posted_at": "2025-09-08T12:13:50.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "For most of us, we manage to cobble together a semi-coherent, pre-rehearsed spiel about our “journey” and how we’re “passionate about synergy.”"
+    },
+    {
+      "title": "43402479703- Amazon Brand Manager",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/activate-talent/jobs/43402479703-amazon-brand-manager",
+      "posted_at": "2025-09-08T10:29:57.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Amazon is seeking a passionate and experienced Amazon Brand Manager to own and optimize their Amazon storefront."
+    },
+    {
+      "title": "Drug Rebate Supervisor - Remote US",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/gainwell-technologies/jobs/drug-rebate-supervisor-remote-us",
+      "posted_at": "2025-09-08T09:58:41.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Gainwell Technologies is seeking a Drug Rebate Supervisor to manage the Medicaid Drug Rebate team."
+    },
+    {
+      "title": "Business Operation Trainee (Remote, AI Product)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/focuskpi/jobs/business-operation-trainee-remote-ai-product",
+      "posted_at": "2025-09-08T08:08:30.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "FocusKPI is seeking a Business Operation Trainee to assist in driving adoption of their AI tools."
+    },
+    {
+      "title": "OnTheGoSystems: Ruby on Rails Developer",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/onthegosystems-ruby-on-rails-developer-10",
+      "posted_at": "2025-09-08T06:56:39.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0076/2990/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Founding Talent Lead",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/omniscient/jobs/founding-talent-lead",
+      "posted_at": "2025-09-08T06:22:31.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Omniscient Digital is seeking a Founding Talent Lead to build and own their recruiting function from the ground up."
+    },
+    {
+      "title": "AI Search, SEO, and Content Specialist (backed by Y Combinator, $1M+ ARR, $6.3M+",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/legion-health/jobs/ai-search-seo-and-content-specialist-backed-by-y-combinator-1m-arr-6-3m-9414395857",
+      "posted_at": "2025-09-08T04:54:04.000Z",
+      "tags": [
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Part‑time Contractor -> Full‑time Employee • Remote / Hybrid 🧠 About Legion HealthLegion Health is on a mission to deliver the best psychiatric care ..."
+    },
+    {
+      "title": "Collaborating Psychiatrist (Supervising Physician) — Texas, USA, Remote, Part-Ti",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/legion-health/jobs/collaborating-psychiatrist-supervising-physician-texas-usa-remote-part-ti",
+      "posted_at": "2025-09-08T04:45:47.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "[We show compassion to heal minds. ]About Legion Health:Legion is a pioneering, tech-enabled psychiatry network focused on delivering world-class outp..."
+    },
+    {
+      "title": "Psychiatric Mental Health Nurse Practitioner (PMHNP) — Part-Time, Full-Time, Rem",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/legion-health/jobs/psychiatric-mental-health-nurse-practitioner-pmhnp-part-time-full-time-rem",
+      "posted_at": "2025-09-08T04:44:27.000Z",
+      "tags": [
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "[We show compassion to heal minds. ]About Legion Health:Legion is a pioneering, tech-enabled psychiatry network focused on delivering world-class outp..."
+    },
+    {
+      "title": "Data Scientist",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/data-scientist-5875905719",
+      "posted_at": "2025-09-08T04:38:20.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could be a data scientist anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded | 60X revenue growth in 5 yea..."
+    },
+    {
+      "title": "Talent Operations Lead",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/omniscient/jobs/talent-operations-lead",
+      "posted_at": "2025-09-08T04:34:57.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Omniscient Digital is seeking a Talent Operations Lead to build and own their recruiting function from the ground up."
+    },
+    {
+      "title": "B2C Experimentation Consultant — Audience & Channel (backed by Y Combinator, $1M",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/legion-health/jobs/b2c-experimentation-consultant-audience-channel-backed-by-y-combinator-1m-8040721763",
+      "posted_at": "2025-09-08T04:21:34.000Z",
+      "tags": [
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Part‑time (≈ 10-20 hrs/week) • X‑week project • Remote 🧠 About Legion HealthLegion Health is on a mission to deliver the best psychiatric care in the..."
+    },
+    {
+      "title": "Senior Data Analyst",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/ourritual/jobs/senior-data-analyst",
+      "posted_at": "2025-09-08T04:19:37.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "At OurRitual, we’re reshaping how people navigate love and connection."
+    },
+    {
+      "title": "Marketing Content Associate",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/marketing-content-associate-1903030600",
+      "posted_at": "2025-09-08T04:17:31.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We’re a fast-growing startup looking for someone who can thrive in a dynamic, fast-paced environment."
+    },
+    {
+      "title": "Staff Machine Learning Engineer (PhD)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/staff-machine-learning-engineer-phd-8133289533",
+      "posted_at": "2025-09-08T04:17:31.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "🚗 Why join Jerry. ai? • Innovation: Jerry. ai is disrupting the car industry."
+    },
+    {
+      "title": "AI Software Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/bjak/jobs/ai-software-engineer-4598579680",
+      "posted_at": "2025-09-08T04:16:06.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Build AI Systems That Make Finance Simpler, Smarter, and More InclusiveAt BJAK, we’re using AI to transform how millions of people across Southeast As..."
+    },
+    {
+      "title": "Phone Automation Engineer / 手机自动化工程师",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/phone-automation-engineer",
+      "posted_at": "2025-09-08T04:12:37.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We are seeking a Phone Automation Engineer to help transform marketing challenges into engineering solutions for sustainable, scalable growth of our a..."
+    },
+    {
+      "title": "Growth Lead 付费媒介购买专员",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/growth-lead",
+      "posted_at": "2025-09-08T04:09:27.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We’re looking for a Paid Media Buyer who’s data-driven, detail-oriented, and passionate about digital advertising."
+    },
+    {
+      "title": "Associate, People & Culture (entry)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/associate-people-culture-entry-6732707541",
+      "posted_at": "2025-09-08T04:09:20.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could start your People Operations career anywhere."
+    },
+    {
+      "title": "Legal Researcher (Mandarin/English)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/legal-researcher-mandarin-english-2728682925",
+      "posted_at": "2025-09-08T04:07:37.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why Jerry. ai? • Join a Forbes Top Startup Employer with $240M in funding and 60X revenue growth in 6 years."
+    },
+    {
+      "title": "Account Manager",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/iwoca/jobs/account-manager",
+      "posted_at": "2025-09-08T04:05:43.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We’re looking for an Account ManagerOur Account Managers are trusted advisors with the consultative sales skills to be able to explain complex product..."
+    },
+    {
+      "title": "Staff Applied Data Scientist (PhD)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/staff-applied-data-scientist-phd-8411224256",
+      "posted_at": "2025-09-08T04:03:37.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "🚗 Why us? Your car and your home are the two most expensive things you’ll ever own — and the hardest to manage."
+    },
+    {
+      "title": "Shipping Associate",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/shipping-associate-2205664943",
+      "posted_at": "2025-09-08T03:57:12.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We’re a fast-growing startup seeking a reliable and detail-oriented Shipping Associate to help manage our shipping operations."
+    },
+    {
+      "title": "Senior Quality Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/abridge/jobs/senior-quality-engineer",
+      "posted_at": "2025-09-08T03:52:22.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About AbridgeAbridge was founded in 2018 with the mission of powering deeper understanding in healthcare."
+    },
+    {
+      "title": "Full Stack Engineer AI",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/bjak/jobs/full-stack-engineer-ai-4660848357",
+      "posted_at": "2025-09-08T03:49:32.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Build Intelligent Systems from Model to UI – and Everything in Between At BJAK, we’re using AI to reinvent how financial services work across Southeas..."
+    },
+    {
+      "title": "Quantitative Trader / 量化加密货币与美股交易员",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/quantitative-trader-7056779544",
+      "posted_at": "2025-09-08T03:46:08.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "职位概览：我们正在寻找一位充满热情的量化工程师，希望转型成为专注于加密货币和美国股票市场的交易员。您将直接使用公司的资金进行交易，并与公司以50/50的比例分成利润。本职位提供高度自主权，且您将直接受益于您的交易策略。 岗位职责：- 开发、测试并实施针对美股和加密货币市场的量化交易策略。- 管理交易..."
+    },
+    {
+      "title": "Software Engineer (entry)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/software-engineer-entry-9426153542",
+      "posted_at": "2025-09-08T03:43:58.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "👋 Hi there! Just graduated with a computer science/engineering degree and looking for your next challenge?"
+    },
+    {
+      "title": "Researcher, HR (entry level)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/researcher-hr-entry-level-7270052987",
+      "posted_at": "2025-09-08T03:41:03.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could start your People Operations career anywhere."
+    },
+    {
+      "title": "AI Software Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/bjak/jobs/ai-software-engineer-2495175175",
+      "posted_at": "2025-09-08T03:38:41.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About UsAt Bjak, we are committed to making financial services more accessible, affordable, and sustainable across ASEAN."
+    },
+    {
+      "title": "Junior Legal Researcher (Mandarin/English)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/junior-legal-researcher-mandarin-english-4947864696",
+      "posted_at": "2025-09-08T03:34:31.000Z",
+      "tags": [
+        "entry-level",
+        "junior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why Jerry. ai? • Join a Forbes Top Startup Employer with $240M in funding and 60X revenue growth in 6 years."
+    },
+    {
+      "title": "Director of Creator, TikTok Shop",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/darkroom/jobs/director-of-creator-tiktok-shop-251887592",
+      "posted_at": "2025-09-08T03:34:07.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Director of Creator, TikTok ShopLocation: Remote | Team: TikTok Shop | Reports to: Director of TikTok Shop Type: Full-time About DarkroomWe're buildin..."
+    },
+    {
+      "title": "Staff Applied Scientist",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/staff-applied-scientist-8195865728",
+      "posted_at": "2025-09-08T03:33:14.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "🚗 Why us? Your car and your home are the two most expensive things you’ll ever own — and the hardest to manage."
+    },
+    {
+      "title": "AI Software Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/bjak/jobs/ai-software-engineer-8626502570",
+      "posted_at": "2025-09-08T03:23:29.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About UsAt Bjak, we are on a mission to provide affordable and sustainable financial services across ASEAN."
+    },
+    {
+      "title": "Software Engineer I (San Francisco)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/software-engineer-i-san-francisco",
+      "posted_at": "2025-09-08T03:22:15.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "👋 Hi there! Just graduated with a computer science/engineering degree and looking for your next challenge?"
+    },
+    {
+      "title": "AI Software Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/bjak/jobs/ai-software-engineer-9967773304",
+      "posted_at": "2025-09-08T03:19:25.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Build AI Systems That Make Finance Simpler, Smarter, and More InclusiveAt BJAK, we’re using AI to make insurance and financial services easier to acce..."
+    },
+    {
+      "title": "Shopify Management Assistant",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/shopify-management-assistant-8968262066",
+      "posted_at": "2025-09-08T03:14:45.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We’re a fast-growing startup looking for someone who thrives in a hands-on, fast-paced environment."
+    },
+    {
+      "title": "Staff Software Engineer - India",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/altimate-ai/jobs/staff-software-engineer-india",
+      "posted_at": "2025-09-08T03:11:24.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Who are we? MissionAltimate AI, founded in 2022 in San Francisco, is revolutionizing enterprise data operations through the power of AI."
+    },
+    {
+      "title": "Freelance Designer - Brand, Visual, Graphic / 自由设计师 - 品牌、视觉、平面",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/freelance-designer-brand-visual-graphic-5850050177",
+      "posted_at": "2025-09-08T03:11:05.000Z",
+      "tags": [
+        "contract",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We're seeking a Visual Designer to create engaging digital content for our client's marketing and social media needs."
+    },
+    {
+      "title": "Collaborating Psychiatrist (Supervising Physician) — Texas, USA, Hybrid, Part-Ti",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/legion-health/jobs/collaborating-psychiatrist-supervising-physician-texas-usa-hybrid-part-ti-1704877868",
+      "posted_at": "2025-09-08T03:08:07.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "[We show compassion to heal minds. ]About Legion Health:Legion is a pioneering, tech-enabled psychiatry network focused on delivering world-class outp..."
+    },
+    {
+      "title": "Software Engineer AI Pets / 软件工程师虚拟 AI 宠物教练",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/software-engineer-ai-pets-ai",
+      "posted_at": "2025-09-08T03:07:12.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Our studio is building a family of AI virtual pets—companions that grow, learn, and interact with users in real time."
+    },
+    {
+      "title": "Director, Business Operations & Strategy (Marketplace Growth)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/director-business-operations-strategy-marketplace-growth-1465599021",
+      "posted_at": "2025-09-08T03:05:40.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded | 60X revenue growth in 5 years | $2T market..."
+    },
+    {
+      "title": "AI Engineer Trainee (Remote, Experience with AI Coding)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/focuskpi/jobs/ai-engineer-trainee-remote-experience-with-ai-coding",
+      "posted_at": "2025-09-08T03:02:35.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "FocusKPI is seeking an AI Engineer Trainee to work on real product initiatives using advanced AI techniques."
+    },
+    {
+      "title": "AI Software Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/bjak/jobs/ai-software-engineer-9420480096",
+      "posted_at": "2025-09-08T02:55:28.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About UsAt Bjak, we are on a mission to provide affordable and sustainable financial services across ASEAN."
+    },
+    {
+      "title": "Senior Executive Assistant",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/sosafe/jobs/senior-executive-assistant",
+      "posted_at": "2025-09-08T02:49:21.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "SoSafe has the ambition to become the leading human risk management provider in Europe."
+    },
+    {
+      "title": "Senior Associate, Business Operations",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/senior-associate-business-operations-3880131549",
+      "posted_at": "2025-09-08T02:43:53.000Z",
+      "tags": [
+        "entry-level",
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded | 60X revenue growth in 5 years | $2T market..."
+    },
+    {
+      "title": "Business Value Analysis Director",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/abridge/jobs/business-value-analysis-director-287300347",
+      "posted_at": "2025-09-08T02:43:42.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About AbridgeAbridge was founded in 2018 with the mission of powering deeper understanding in healthcare."
+    },
+    {
+      "title": "Director, Business Operations & Strategy (Marketplace Growth)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/director-business-operations-strategy-marketplace-growth-5218790675",
+      "posted_at": "2025-09-08T02:40:15.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded | 60X revenue growth in 5 years | $2T market..."
+    },
+    {
+      "title": "Freelance Headhunter / 兼职自由猎头",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/freelance-headhunter-6537984947",
+      "posted_at": "2025-09-08T02:36:49.000Z",
+      "tags": [
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We are looking for a part-time recruiter to source, screen, and close talent for software, hardware, and AI roles for our China team."
+    },
+    {
+      "title": "Video Editor",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/video-editor-4747696607",
+      "posted_at": "2025-09-08T02:30:44.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Job Description• Edit short-form and long-form video content for Instagram • Collaborate with the team to translate brand vision into content • Cut, c..."
+    },
+    {
+      "title": "AI Software Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/bjak/jobs/ai-software-engineer-2284232084",
+      "posted_at": "2025-09-08T02:27:42.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Build AI Systems That Make Finance Simpler, Smarter, and More Inclusive At BJAK, we’re on a mission to make insurance and financial services easier to..."
+    },
+    {
+      "title": "Freelance UI/UX Designer / 自由职业 UI/UX 设计师",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/freelance-ui-ux-designer-ui-ux-3988067329",
+      "posted_at": "2025-09-08T02:26:27.000Z",
+      "tags": [
+        "contract",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We're seeking a talented UI Designer to join our client's growing product team."
+    },
+    {
+      "title": "Psychiatric Mental Health Nurse Practitioner (PMHNP) — Part-Time, Full-Time, Hyb",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/legion-health/jobs/psychiatric-mental-health-nurse-practitioner-pmhnp-part-time-full-time-hyb",
+      "posted_at": "2025-09-08T02:25:45.000Z",
+      "tags": [
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Job Overview[We show compassion to heal minds. ]About Legion Health:Legion is a pioneering, tech-enabled psychiatry network focused on delivering worl..."
+    },
+    {
+      "title": "Software Engineer I (Toronto)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/software-engineer-i-toronto",
+      "posted_at": "2025-09-08T02:25:23.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "👋 Hi there! Just graduated with a computer science/engineering degree and looking for your next challenge?"
+    },
+    {
+      "title": "SVP/VP, Supply Chain",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/voomi-supply/jobs/svp-vp-supply-chain",
+      "posted_at": "2025-09-08T02:11:38.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Who We Are: Voomi is a fast-growing eCommerce retailer in the HVAC and industrial supplies space, uniquely positioned as an early mover."
+    },
+    {
+      "title": "Associate, Business Operations",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/associate-business-operations-7665641813",
+      "posted_at": "2025-09-08T02:09:03.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded | 60X revenue growth in 5 years | $2T market..."
+    },
+    {
+      "title": "Senior Recruiter",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/senior-recruiter-5717112664",
+      "posted_at": "2025-09-08T02:07:01.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could be a recruiter anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded, $2T market size, and we are profi..."
+    },
+    {
+      "title": "高级软件工程师, JavaScript/TypeScript (Senior Software Engineer)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/bjak/jobs/javascript-typescript-senior-software-engineer-4661951482",
+      "posted_at": "2025-09-08T02:03:14.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Bjak 致力于为东南亚地区人民提供可负担且可持续的金融服务。总部位于马来西亚，Bjak 是东南亚最大的保险门户平台。我们的主平台 Bjak."
+    },
+    {
+      "title": "Executive Assistant (entry level)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/executive-assistant-entry-level-9074325384",
+      "posted_at": "2025-09-08T02:02:38.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could start your People Operations career anywhere."
+    },
+    {
+      "title": "More Time, More Money: Start Your Remote Insurance Sales Career Today",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/griffin-agency/jobs/more-time-more-money-start-your-remote-insurance-sales-career-today",
+      "posted_at": "2025-09-08T01:56:42.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Who We Are: We are an insurance technology and distribution platform that is transforming the industry."
+    },
+    {
+      "title": "Insurance Directory Optimization Specialist (backed by Y Combinator, $1M+ ARR, $",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/legion-health/jobs/insurance-directory-optimization-specialist-backed-by-y-combinator-1m-arr",
+      "posted_at": "2025-09-08T01:52:24.000Z",
+      "tags": [
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Part‑time or Full-time / Contract • Remote 🧠 About Legion HealthLegion Health is on a mission to deliver the best psychiatric care in the world—and t..."
+    },
+    {
+      "title": "Senior UX Designer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/microsoft/jobs/senior-ux-designer",
+      "posted_at": "2025-09-08T01:51:37.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Microsoft is seeking a Senior UX Designer to join the UX/UI/Tech Experience Design team."
+    },
+    {
+      "title": "Legal Researcher",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/legal-researcher-9692255585",
+      "posted_at": "2025-09-08T01:50:48.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why Jerry. ai? • Join a Forbes Top Startup Employer with $240M in funding and 60X revenue growth in 6 years."
+    },
+    {
+      "title": "Manager, Business Operations",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/manager-business-operations-8826508666",
+      "posted_at": "2025-09-08T01:45:30.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded | 60X revenue growth in 5 years | $2T market..."
+    },
+    {
+      "title": "Regional Channel Manager - Chicago Area",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/sangoma/jobs/regional-channel-manager-chicago-area-6599299649",
+      "posted_at": "2025-09-08T01:43:06.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Join Sangoma, a leader in business communications, as a Regional Channel Manager for the IL and WI!"
+    },
+    {
+      "title": "Data Scientist",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/talent-hero/jobs/data-scientist-7877081213",
+      "posted_at": "2025-09-08T01:41:50.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Data Scientist – Remote (UK Only | No Visa Sponsorship) Work on Real-World Data Projects with US Companies Talent Hero connects UK-based professionals..."
+    },
+    {
+      "title": "Head of Marketplace Automation & Growth",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/head-of-marketplace-automation-growth-1401240158",
+      "posted_at": "2025-09-08T01:41:12.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded | 60X revenue growth in 5 years | $2T market..."
+    },
+    {
+      "title": "People & Culture Intern",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/people-culture-intern-2513610694",
+      "posted_at": "2025-09-08T01:39:15.000Z",
+      "tags": [
+        "entry-level",
+        "internship",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could start your People Operations career anywhere."
+    },
+    {
+      "title": "Staff Accountant",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/a-la-c-a-r-t-e-solutions/jobs/staff-accountant",
+      "posted_at": "2025-09-08T01:36:29.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Do You Want a Entrepreneurial Environment Where You Can Grow?"
+    },
+    {
+      "title": "Power Platform + AI Developer (USC & GC only - No C2C)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/lenmar-consulting-inc/jobs/power-platform-ai-developer-usc-gc-only-no-c2c",
+      "posted_at": "2025-09-08T01:31:38.000Z",
+      "tags": [
+        "contract",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Power Platform + AI Developer - USC & GC only on W2 - No C2C Duration – 12 months + / Potential contract to Hire Location: Charlotte, NC preferred but..."
+    },
+    {
+      "title": "Architectural Manager Assistant",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/remote-va/jobs/architectural-manager-assistant",
+      "posted_at": "2025-09-08T01:30:56.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We are looking for a highly organized and proactive Architectural Manager Assistant to support an architecture manager with daily administrative and c..."
+    },
+    {
+      "title": "Analytics Data Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/happyrobot/jobs/analytics-data-engineer",
+      "posted_at": "2025-09-08T01:25:16.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Happyrobot is a platform for AI workers to automate communication, specifically focused on logistics where they operate with freight brokers."
+    },
+    {
+      "title": "Staff Data Scientist (Machine Learning)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/staff-data-scientist-machine-learning-9428921572",
+      "posted_at": "2025-09-08T01:24:36.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why us? • Innovation:Jerry."
+    },
+    {
+      "title": "Community Clinical Research Educator I",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/care-access/jobs/community-clinical-research-educator-i",
+      "posted_at": "2025-09-08T01:24:30.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "What We DoCare Access is a unique, multi-specialty network of research sites which operates as one connected team of physician investigators, nurse co..."
+    },
+    {
+      "title": "Community Engagement Operations Analyst",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/care-access/jobs/community-engagement-operations-analyst",
+      "posted_at": "2025-09-08T01:24:15.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "What We Do:Care Access is a unique, multi-specialty network of research sites which operates as one connected team of physician investigators, nurse c..."
+    },
+    {
+      "title": "Lead AI Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/bjak/jobs/lead-ai-engineer-8282355204",
+      "posted_at": "2025-09-08T01:21:00.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About UsAt Bjak, we are on a mission to provide access to affordable and sustainable financial services for people in ASEAN."
+    },
+    {
+      "title": "Vice President, Content",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/highwire/jobs/vice-president-content",
+      "posted_at": "2025-09-08T01:20:02.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About usHighwire is a modern strategic communications and digital marketing agency designed for disruptive companies."
+    },
+    {
+      "title": "[Job 24438] QA PL",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/ci-t/jobs/job-24438-qa-pl",
+      "posted_at": "2025-09-08T01:17:17.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Somos especialistas em transformação tecnológica, unindo expertise humana à IA para criar soluções tech escaláveis."
+    },
+    {
+      "title": "Public Relations Account Director (B2B Technology, Cybersecurity, Financial Serv",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/highwire/jobs/public-relations-account-director-b2b-technology-cybersecurity-financial-serv",
+      "posted_at": "2025-09-08T01:15:21.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About usHighwire is a modern strategic communications and digital marketing agency designed for disruptive companies."
+    },
+    {
+      "title": "Software Engineer AI Simulations / 模拟AI研究工程师",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/software-engineer-ai-simulations-ai",
+      "posted_at": "2025-09-08T01:14:31.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Simulate是一家处于早期阶段的AI平台，致力于实现人类行为和复杂系统的规模化模拟。我们计划运用多智能体系统、生成式AI、强化学习和蒙特卡罗方法，帮助企业快速测试各种情景，从而做出更精准决策并有效降低风险。 岗位概览我们正在寻找一位能力出色、积极主动且富有创业精神的模拟AI研究工程师加入我们的创..."
+    },
+    {
+      "title": "Account Executive (Bardy Diagnostics) - East Valley & N. Arizona",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/baxter-international-inc/jobs/account-executive-bardy-diagnostics-east-valley-n-arizona",
+      "posted_at": "2025-09-08T01:13:40.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "This is where your work makes a difference. At Baxter, we believe every person—regardless of who they are or where they are from—deserves a chance to ..."
+    },
+    {
+      "title": "TikTok / Social Media Content Marketer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/tiktok-social-media-content-marketer-814706843",
+      "posted_at": "2025-09-08T01:13:32.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We’re a fast-growing startup looking for someone who can thrive in a dynamic, fast-paced environment."
+    },
+    {
+      "title": "Italian Customer Client Support in Sunny Greece - Fully Paid Relocation",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/next-job-abroad/jobs/italian-customer-client-support-in-sunny-greece-fully-paid-relocation-9754472929",
+      "posted_at": "2025-09-08T01:12:15.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Are you ready for an exciting adventure while helping customers?"
+    },
+    {
+      "title": "Remote Data Scientist",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/online-river/jobs/remote-data-scientist-1341211723",
+      "posted_at": "2025-09-08T01:12:03.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We are seeking a skilled Data Scientist to join our team remotely."
+    },
+    {
+      "title": "Third Party Risk Manager",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/davies-north-america/jobs/third-party-risk-manager",
+      "posted_at": "2025-09-08T01:07:26.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Our Story Imagine being part of a team that’s not just shaping the future but actively driving it."
+    },
+    {
+      "title": "Project Lead, Italian (Contract)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/alignerr/jobs/project-lead-italian-contract-6364824340",
+      "posted_at": "2025-09-08T01:07:15.000Z",
+      "tags": [
+        "senior",
+        "contract",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Alignerr. com is a community of subject matter experts from several disciplines who align AI models by creating high-quality data in their field of ex..."
+    },
+    {
+      "title": "VP, Global Corporate Controller",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/tala/jobs/vp-global-corporate-controller",
+      "posted_at": "2025-09-08T01:05:53.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About TalaTala is on a mission to unleash the economic power of the Global Majority – the 4 billion people overlooked by existing financial systems."
+    },
+    {
+      "title": "Product Innovation & Strategy Manager – Launch & Scale Breakthrough CPG Brands",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/pearl-west/jobs/product-innovation-strategy-manager-launch-scale-breakthrough-cpg-brands-2065562597",
+      "posted_at": "2025-09-08T01:04:52.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Company OverviewPearl West is redefining what it means to build consumer brands."
+    },
+    {
+      "title": "Associate Director, Medical Writing",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/argenx/jobs/associate-director-medical-writing",
+      "posted_at": "2025-09-08T01:04:09.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Join us as we transform immunology and deliver medicines that help autoimmune patients get their lives back."
+    },
+    {
+      "title": "Influencer Marketing Associate for Muslim Duolingo App",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/kirin/jobs/influencer-marketing-associate-for-muslim-duolingo-app",
+      "posted_at": "2025-09-08T01:01:48.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We're hiring a virtual assistant to run high-volume influencer outreach."
+    },
+    {
+      "title": "Middle Full-Stack Developer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/inbybob/jobs/middle-full-stack-developer",
+      "posted_at": "2025-09-08T01:01:38.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "As a Cloud Full-Stack Developer, you will play a key role in designing, building, and running cloud-native banking services on OCI, AWS, Azure, or GCP..."
+    },
+    {
+      "title": "Manager, Talent Acquisition",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/wealthsimple/jobs/manager-talent-acquisition-2674958716",
+      "posted_at": "2025-09-08T01:01:18.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Your career is an investment that grows over time!"
+    },
+    {
+      "title": "Kimberly-Clark: Solution Engineer -Finished Goods WMS (Blue Yonder) - Remote (Remote)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/kimberly-clark-solution-engineer-finished-goods-wms-blue-yonder-remote-remote-2",
+      "posted_at": "2025-09-08T01:00:39.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> Karnataka </p> <p>You were made to do this work: designing new technologies, diving into data, optimizing digital e..."
+    },
+    {
+      "title": "Senior Recruiter (contract to hire)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/senior-recruiter-contract-to-hire-9300238051",
+      "posted_at": "2025-09-08T01:00:27.000Z",
+      "tags": [
+        "senior",
+        "contract",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could be a recruiter anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded | 60X revenue growth in 5 years | ..."
+    },
+    {
+      "title": "Senior Associate, Business Operations",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jerry/jobs/senior-associate-business-operations-3272853603",
+      "posted_at": "2025-09-08T00:59:59.000Z",
+      "tags": [
+        "entry-level",
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "You could work anywhere. Why us? • Join a pre-IPO startup with capital, traction and runway ($240M funded | 60X revenue growth in 5 years | $2T market..."
+    },
+    {
+      "title": "AI Tools Expert Livestream Online Instructor - Work from Home, $100/hr",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/nerdy/jobs/ai-tools-expert-livestream-online-instructor-work-from-home-100-hr-9696628781",
+      "posted_at": "2025-09-08T00:59:06.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Artificial Intelligence Livestream Instructors – Earn $100/hour!"
+    },
+    {
+      "title": "Traffic Manager (Creative Production)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/gravity-global/jobs/traffic-manager-creative-production",
+      "posted_at": "2025-09-08T00:58:14.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About Us Gravity Global is the world’s most awarded marketing consultancy specialising in brands operating in complex markets."
+    },
+    {
+      "title": "Senior Fullstack (Frontend Focused) Engineer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/agile-six/jobs/senior-fullstack-frontend-focused-engineer",
+      "posted_at": "2025-09-08T00:57:29.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Agile Six is a people-first, remote-work company that serves shoulder-to-shoulder with federal agencies to find innovative, human-centered solutions."
+    },
+    {
+      "title": "[Job - 24232] Senior Kotlin/Java Developer",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/ci-t/jobs/job-24232-senior-kotlin-java-developer",
+      "posted_at": "2025-09-08T00:56:30.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Somos especialistas em transformação tecnológica, unindo expertise humana à IA para criar soluções tech escaláveis."
+    },
+    {
+      "title": "Data Scientist (Remote - New York)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/jobgether/jobs/data-scientist-remote-new-york",
+      "posted_at": "2025-09-08T00:55:55.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "This position is posted by Jobgether on behalf of Boosted."
+    },
+    {
+      "title": "Associate, Derivatives",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/wealthsimple/jobs/associate-derivatives",
+      "posted_at": "2025-09-08T00:53:08.000Z",
+      "tags": [
+        "entry-level",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Your career is an investment that grows over time!"
+    },
+    {
+      "title": "Strategy & Operations Intern - Ops Focus (FT Potential)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/finmid/jobs/strategy-operations-intern-ops-focus-ft-potential",
+      "posted_at": "2025-09-08T00:52:30.000Z",
+      "tags": [
+        "entry-level",
+        "internship",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "About finmidfinmid is a platform enabling software businesses to grow their revenue by embedding financial services in their product through a single ..."
+    },
+    {
+      "title": "Project Manager (CRO Team)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/ejam/jobs/project-manager-cro-team",
+      "posted_at": "2025-09-08T00:51:59.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "Type: Independent Contractor Schedule: Monday-Friday 9am-6pm ARG Salary: $2,500 - $3,500 per month About eJam At eJam, we scale innovative consumer br..."
+    },
+    {
+      "title": "Virtual Educational ASL Interpreter (Missouri Certified)",
+      "source": "Himalayas",
+      "source_url": "https://himalayas.app/companies/parallellearning/jobs/virtual-educational-asl-interpreter-missouri-certified-3400994704",
+      "posted_at": "2025-09-08T00:48:05.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "We’re looking for an experienced ASL Interpreter who can bring clarity, equity, and connection into every virtual classroom."
     },
     {
       "title": "Innova: Product Strategist, Revenue Cycle Management (Remote)",
@@ -46,14 +1347,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/innova-product-strategist-revenue-cycle-management-remote",
       "posted_at": "2025-09-08T00:36:38.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> New York </p> An Innova Solutions Client is immediately hiring for a Healthcare Product Manager Position type: Full-time/Direct Hire Location: REMOTE JOB DESCRIPTION",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> New York </p> An Innova Solutions Client is immediately hiring for a Healthcare Product Manager Position type: Full..."
     },
     {
       "title": "Metro Public Adjustment: Remote Sales Closer",
@@ -62,12 +1361,10 @@
       "posted_at": "2025-09-08T00:36:38.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "marketing"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Indiana </p> Remote Sales Closer - No Cap Flexible Hours $100,000 Potential Looking for a high-income sales role with complete flexibility? We're seeking driven, coa",
-      "category": "marketing"
+      "excerpt": "<p> <strong>Headquarters:</strong> Indiana </p> Remote Sales Closer - No Cap Flexible Hours $100,000 Potential Looking for a high-income sales role wi..."
     },
     {
       "title": "A-Line Staffing Solutions: Remote Benefits Customer Service Representative (Must live in Buffalo)",
@@ -76,12 +1373,10 @@
       "posted_at": "2025-09-08T00:36:38.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> New York </p> Job Title: Remote Benefits Customer Service Representative Pay: $16.50 an hr Bi-weekly $17.25 an hr for Bilingual Candidates (English and Spanish) Job ",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> New York </p> Job Title: Remote Benefits Customer Service Representative Pay: $16.50 an hr Bi-weekly $17.25 an hr f..."
     },
     {
       "title": "A-Line Staffing Solutions: Remote Benefits Customer Service Representative (Must live in Pitt)",
@@ -90,583 +1385,35 @@
       "posted_at": "2025-09-08T00:36:38.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Pennsylvania </p> Job Title: Remote Benefits Customer Service Representative Pay: $16.50 - $17.25 an hr Bi-weekly Job Type: Remote in Pittsburgh, PA (MUST BE LOCAL T",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Pennsylvania </p> Job Title: Remote Benefits Customer Service Representative Pay: $16.50 - $17.25 an hr Bi-weekly J..."
+    },
+    {
+      "title": "RapidSeedbox Ltd: General Manager",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/rapidseedbox-ltd-general-manager",
+      "posted_at": "2025-09-07T20:32:49.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0132/4168/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "The Art of Saying “No” at Work Without Guilt",
-      "company": "Work Without Guilt",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/131277-the-art-of-saying-no-at-work-without-guilt",
       "posted_at": "2025-09-07T13:20:18.000Z",
       "tags": [
         "full-time",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "Tired of being a professional people-pleaser? Here's a funny, chaotic guide to saying 'no' at work, ditching the guilt, and reclaiming your sanity.",
-      "category": "design"
-    },
-    {
-      "title": "AI Trainer - Freelance Data Annotator",
-      "company": "Freelance Data Annotator",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/toloka-ai/jobs/ai-trainer-freelance-data-annotator-142742588",
-      "posted_at": "2025-09-07T10:50:40.000Z",
-      "tags": [
-        "contract",
-        "data"
-      ],
-      "location": "Remote",
-      "excerpt": "At Toloka, we connect smart, curious people from around the world with freelance online tasks that train and improve artificial intelligence.",
-      "category": "data"
-    },
-    {
-      "title": "Werkstudent Fotografie - Belegbilder (gn) in Stuttgart",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/hygh/jobs/werkstudent-fotografie-belegbilder-gn-in-stuttgart",
-      "posted_at": "2025-09-07T10:49:15.000Z",
-      "tags": [
-        "full-time",
-        "data"
-      ],
-      "location": "Remote",
-      "excerpt": "über unsWeg mit langen Vorlaufzeiten, hohen Einstiegskosten und statischen Bildern!",
-      "category": "data"
-    },
-    {
-      "title": "Dutch Speaking - Content Moderation/Customer Service Agent in Malta",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/next-job-abroad/jobs/dutch-speaking-content-moderation-customer-service-agent-in-malta-5449594419",
-      "posted_at": "2025-09-07T10:48:16.000Z",
-      "tags": [
-        "full-time",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "Next Job Abroad is looking for a Dutch Speaking Content Moderation/Customer Service Agent to join our team in vibrant Malta!",
-      "category": "customer-service"
-    },
-    {
-      "title": "E-Commerce Marketing Assistant",
-      "company": "Commerce Marketing Assistant",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/e-commerce-marketing-assistant",
-      "posted_at": "2025-09-07T10:47:34.000Z",
-      "tags": [
-        "entry-level",
-        "full-time",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "Are you a tech-savvy, creative, and organized individual looking for an exciting opportunity in digital marketing?",
-      "category": "customer-service"
-    },
-    {
-      "title": "Service Manager (w/m/d) - intern",
-      "company": "intern",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/spirit-21/jobs/service-manager-w-m-d-intern",
-      "posted_at": "2025-09-07T10:47:31.000Z",
-      "tags": [
-        "entry-level",
-        "internship",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "deine aufgaben • Gemeinsam mit Deinem Team arbeitest Du täglich an der Erbringung vertraglich zugesicherter Leistungen im Rahmen der vereinbarten IT-Services • Als zentrale Ansprechpartner stehst Du i",
-      "category": "customer-service"
-    },
-    {
-      "title": "Data Researcher (English and French Bilingual)",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/data-researcher-english-and-french-bilingual",
-      "posted_at": "2025-09-07T10:47:02.000Z",
-      "tags": [
-        "full-time",
-        "remote",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "🧠 Job Title: Data ResearcherLocation: Remote Employment Type: Full-Time Industry: Fundraising / Nonprofit Support 🏢 About UsWe are a dynamic fundraising firm dedicated to supporting charitable organ",
-      "category": "customer-service"
-    },
-    {
-      "title": "Montana: Nurse Practitioner",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/skin-clique/jobs/montana-nurse-practitioner",
-      "posted_at": "2025-09-07T10:45:41.000Z",
-      "tags": [
-        "full-time"
-      ],
-      "location": "Remote",
-      "excerpt": "Join Our Team as a PRN-1099 NP/PA for Concierge Aesthetics!",
-      "category": "other"
-    },
-    {
-      "title": "People Operations Specialist",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/ping-identity/jobs/people-operations-specialist",
-      "posted_at": "2025-09-07T10:44:05.000Z",
-      "tags": [
-        "full-time"
-      ],
-      "location": "Remote",
-      "excerpt": "About Ping Identity: At Ping Identity, we believe in making digital experiences both secure and seamless for all users, without compromise.",
-      "category": "other"
-    },
-    {
-      "title": "Senior Software Engineer",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/margo/jobs/senior-software-engineer",
-      "posted_at": "2025-09-07T10:43:53.000Z",
-      "tags": [
-        "entry-level",
-        "internship",
-        "development"
-      ],
-      "location": "Remote",
-      "excerpt": "Our client is an international technology company that develops a large-scale platform for supply chain transparency and product provenance.",
-      "category": "development"
-    },
-    {
-      "title": "Licensed Mental Health Therapist, LCSW, LMHC",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/jobgether/jobs/licensed-mental-health-therapist-lcsw-lmhc",
-      "posted_at": "2025-09-07T10:43:45.000Z",
-      "tags": [
-        "full-time"
-      ],
-      "location": "Remote",
-      "excerpt": "This position is posted by Jobgether on behalf of aptihealth.",
-      "category": "other"
-    },
-    {
-      "title": "Consultor Junior Atlassian | Processos e Governança",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/e-core/jobs/consultor-junior-atlassian-processos-e-governanca",
-      "posted_at": "2025-09-07T10:43:40.000Z",
-      "tags": [
-        "entry-level",
-        "junior",
-        "full-time",
-        "remote",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "Be yourself, be your best! Combinamos nossa experiência global em indústrias-chave e as últimas tecnologias para ajudar empresas em rápido crescimento e estabelecidas a transformar e acelerar seus mod",
-      "category": "customer-service"
-    },
-    {
-      "title": "Personal Financial Counselor, Assignment Ready Counselor, PFC, Arkansas",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/magellan-health/jobs/personal-financial-counselor-assignment-ready-counselor-pfc-arkansas",
-      "posted_at": "2025-09-07T10:42:31.000Z",
-      "tags": [
-        "full-time"
-      ],
-      "location": "Remote",
-      "excerpt": "This position will provide coverage in short-term, surge and on demand situations resulting from the Military needs such as a post-deployment event or to cover an existing assignment for counselors wh",
-      "category": "other"
-    },
-    {
-      "title": "Italian Speaking - Customer Service in Sunny Greece - Fully Paid Relocation",
-      "company": "Customer Service in Sunny Greece",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/next-job-abroad/jobs/italian-speaking-customer-service-in-sunny-greece-fully-paid-relocation",
-      "posted_at": "2025-09-07T10:42:06.000Z",
-      "tags": [
-        "full-time",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "Next Job Abroad is thrilled to offer an exceptional opportunity for an Italian Speaking Customer Service Representative to join our team in the beautiful landscape of Greece.",
-      "category": "customer-service"
-    },
-    {
-      "title": "Sales Manager Northern Europe (m/f/d)",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/ja-solar-gmbh/jobs/sales-manager-northern-europe-m-f-d",
-      "posted_at": "2025-09-07T10:41:20.000Z",
-      "tags": [
-        "full-time",
-        "marketing"
-      ],
-      "location": "Remote",
-      "excerpt": "your mission • Participate in marketing plans and strategies development for Northern European market • Actively maintain existing customers and expand the market in Northern Europe to achieve corresp",
-      "category": "marketing"
-    },
-    {
-      "title": "Proofreader/ Editing",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/online-river/jobs/proofreader-editing-2197930327",
-      "posted_at": "2025-09-07T10:41:15.000Z",
-      "tags": [
-        "full-time",
-        "writing"
-      ],
-      "location": "Remote",
-      "excerpt": "We are seeking a meticulous and detail-oriented Proofreader to join our team.",
-      "category": "writing"
-    },
-    {
-      "title": "Archaeology Field Technician - Arizona",
-      "company": "Arizona",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/true-environmental/jobs/archaeology-field-technician-arizona",
-      "posted_at": "2025-09-07T10:39:27.000Z",
-      "tags": [
-        "full-time",
-        "development"
-      ],
-      "location": "Remote",
-      "excerpt": "Sundance Consultants, a part of True Environmental and its partner firms, have united their strengths to establish the nation's premier environmental and engineering services consulting firm.",
-      "category": "development"
-    },
-    {
-      "title": "Director of Manufacturer Partnerships",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/acelab/jobs/director-of-manufacturer-partnerships",
-      "posted_at": "2025-09-07T10:39:14.000Z",
-      "tags": [
-        "full-time",
-        "sales"
-      ],
-      "location": "Remote",
-      "excerpt": "Acelab is the all-in-one building materials hub for the Architecture, Construction, and Engineering industry.",
-      "category": "sales"
-    },
-    {
-      "title": "Oklahoma: Nurse Practitioner",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/skin-clique/jobs/oklahoma-nurse-practitioner-6188297643",
-      "posted_at": "2025-09-07T10:38:58.000Z",
-      "tags": [
-        "full-time"
-      ],
-      "location": "Remote",
-      "excerpt": "Join Our Team as a PRN-1099 NP/PA for Concierge Aesthetics!",
-      "category": "other"
-    },
-    {
-      "title": "QA Engineer I (Remote - US)",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/jobgether/jobs/qa-engineer-i-remote-us",
-      "posted_at": "2025-09-07T10:38:26.000Z",
-      "tags": [
-        "full-time",
-        "remote",
-        "development"
-      ],
-      "location": "Remote",
-      "excerpt": "This position is posted by Jobgether on behalf of dv01.",
-      "category": "development"
-    },
-    {
-      "title": "Sales Representative",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/sales-representative-8119693770",
-      "posted_at": "2025-09-07T10:37:04.000Z",
-      "tags": [
-        "part-time",
-        "marketing"
-      ],
-      "location": "Remote",
-      "excerpt": "Employment Type: Full-Time or Part-TimeCompensation: Base + CommissionSchedule: Monday–Friday | 8AM–3PMAbout UsClient is a digital marketing agency headquartered in Costa Mesa, California.",
-      "category": "marketing"
-    },
-    {
-      "title": "Trainee Integrated Rating",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/dof/jobs/trainee-integrated-rating",
-      "posted_at": "2025-09-07T10:36:54.000Z",
-      "tags": [
-        "entry-level",
-        "full-time",
-        "design"
-      ],
-      "location": "Remote",
-      "excerpt": "It’s in our DNA to moveCuriosity and drive to change quickly is in our DNA.",
-      "category": "design"
-    },
-    {
-      "title": "Spanish B2B Cloud Sales in Greece - Fully Paid Relocation B2B Sales Exp Required",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/next-job-abroad/jobs/spanish-b2b-cloud-sales-in-greece-fully-paid-relocation-b2b-sales-exp-required",
-      "posted_at": "2025-09-07T10:36:47.000Z",
-      "tags": [
-        "full-time",
-        "sales"
-      ],
-      "location": "Remote",
-      "excerpt": "Next Job Abroad is excited to offer an incredible opportunity for talented individuals to join our team as Spanish B2B Cloud Sales Representatives, based in the picturesque country of Greece!",
-      "category": "sales"
-    },
-    {
-      "title": "Accounts Payable Specialist - Freelance, Remote",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/getmagic/jobs/accounts-payable-specialist-freelance-remote-4727485290",
-      "posted_at": "2025-09-07T10:36:37.000Z",
-      "tags": [
-        "contract",
-        "remote",
-        "design"
-      ],
-      "location": "Remote",
-      "excerpt": "About the ClientA leading luxury e-commerce platform revolutionizing designer fashion retail since 2010.",
-      "category": "design"
-    },
-    {
-      "title": "Software Business Analyst II",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/jobgether/jobs/software-business-analyst-ii-2276167174",
-      "posted_at": "2025-09-07T10:36:37.000Z",
-      "tags": [
-        "full-time",
-        "development"
-      ],
-      "location": "Remote",
-      "excerpt": "This position is posted by Jobgether on behalf of Input 1.",
-      "category": "development"
-    },
-    {
-      "title": "Fahrer für Metallentsorgung (m/w/d) in Mannheim",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/schrottbienen/jobs/fahrer-fur-metallentsorgung-m-w-d-in-mannheim",
-      "posted_at": "2025-09-07T10:35:00.000Z",
-      "tags": [
-        "full-time",
-        "design"
-      ],
-      "location": "Remote",
-      "excerpt": "das machst du bei uns: • Durchführung von Schrottabholungen bei Kunden • Sicherer und pünktlicher Transport von Metallen zum Entsorgungsort • Fachgerechte Sortierung und Beladung der Metalle vor Ort •",
-      "category": "design"
-    },
-    {
-      "title": "UX / UI Development Intern",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/splash-music/jobs/ux-ui-development-intern",
-      "posted_at": "2025-09-07T10:33:52.000Z",
-      "tags": [
-        "entry-level",
-        "internship",
-        "design"
-      ],
-      "location": "Remote",
-      "excerpt": "About UsAt Splash, our mission is to make music creation accessible for everyone.",
-      "category": "design"
-    },
-    {
-      "title": "Specialist II, Contracts",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/nstxl/jobs/specialist-ii-contracts",
-      "posted_at": "2025-09-07T10:33:45.000Z",
-      "tags": [
-        "contract",
-        "virtual-assistant"
-      ],
-      "location": "Remote",
-      "excerpt": "About NSTXL: NSTXL is not your traditional government partner — we move fast, think boldly, and empower the innovation community shaping the future of national defense.",
-      "category": "virtual-assistant"
-    },
-    {
-      "title": "Recruiter",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/recruiter",
-      "posted_at": "2025-09-07T10:31:56.000Z",
-      "tags": [
-        "full-time",
-        "remote",
-        "sales"
-      ],
-      "location": "Remote",
-      "excerpt": "Remote VA is on the lookout for a talented and dynamic Recruiter to join our growing team.",
-      "category": "sales"
-    },
-    {
-      "title": "Call Center Representative Spanish Bilingual",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/online-river/jobs/call-center-representative-spanish-bilingual-3270293918",
-      "posted_at": "2025-09-07T10:31:13.000Z",
-      "tags": [
-        "full-time",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "We are seeking a dedicated and enthusiastic Bilingual Call Center Representative to join our team.",
-      "category": "customer-service"
-    },
-    {
-      "title": "Bookkeeper - Construction (with Estimating Knowledge)",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/bookkeeper-construction-with-estimating-knowledge",
-      "posted_at": "2025-09-07T10:30:42.000Z",
-      "tags": [
-        "full-time",
-        "data"
-      ],
-      "location": "Remote",
-      "excerpt": "We are looking for Bookkeeper who will be responsible for managing day-to-day accounting, job costing, accounts payable/receivable, and payroll.",
-      "category": "data"
-    },
-    {
-      "title": "Construction Documentation & Data Entry Specialist",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/construction-documentation-data-entry-specialist",
-      "posted_at": "2025-09-07T10:30:15.000Z",
-      "tags": [
-        "entry-level",
-        "full-time",
-        "remote",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "RemoteVA PH is seeking a detail-oriented Construction Documentation & Data Entry Specialist to support our clients in the construction and architecture industry.",
-      "category": "customer-service"
-    },
-    {
-      "title": "Real Estate Bookkeeper (Appfolio)",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/real-estate-bookkeeper-appfolio",
-      "posted_at": "2025-09-07T10:30:09.000Z",
-      "tags": [
-        "full-time",
-        "remote",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "🏢 Job Title: Real Estate Bookkeeper (AppFolio)📍 Location: Remote | 📅 Employment Type: Full-Time | 💼 Department: Finance & Accounting📝 Job SummaryWe are seeking a highly organized and detail-orien",
-      "category": "customer-service"
-    },
-    {
-      "title": "Associate, Digital (Remote - US)",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/jobgether/jobs/associate-digital-remote-us",
-      "posted_at": "2025-09-07T10:30:05.000Z",
-      "tags": [
-        "entry-level",
-        "full-time",
-        "remote",
-        "marketing"
-      ],
-      "location": "Remote",
-      "excerpt": "This position is posted by Jobgether on behalf of Precision.",
-      "category": "marketing"
-    },
-    {
-      "title": "Property Management Assistant (Bilingual - English/Spanish)",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/property-management-assistant-bilingual-english-spanish",
-      "posted_at": "2025-09-07T10:29:59.000Z",
-      "tags": [
-        "entry-level",
-        "full-time",
-        "remote",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "Location: Remote Job Type: Full-time (9:00 AM - 5:00 PM EST) Job Description: We are seeking a highly organized and bilingual Property Management Assistant to join our team.",
-      "category": "customer-service"
-    },
-    {
-      "title": "Graphic Designer & Marketing Assistant",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/virtualstaff36/jobs/graphic-designer-marketing-assistant",
-      "posted_at": "2025-09-07T10:29:44.000Z",
-      "tags": [
-        "entry-level",
-        "full-time",
-        "marketing"
-      ],
-      "location": "Remote",
-      "excerpt": "Our client is a marketing-focused company operating in the beauty and wellness sector.",
-      "category": "marketing"
-    },
-    {
-      "title": "Dutch Gaming Support Agent",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/jobgether/jobs/dutch-gaming-support-agent",
-      "posted_at": "2025-09-07T10:29:03.000Z",
-      "tags": [
-        "full-time",
-        "remote",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "Jobgether has ALL remote jobs globally. We match you to roles where you're most likely to succeed, and provide feedback on every application to help you learn.",
-      "category": "customer-service"
-    },
-    {
-      "title": "Junior QA Engineer",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/veeam-software/jobs/junior-qa-engineer-5800111205",
-      "posted_at": "2025-09-07T10:28:42.000Z",
-      "tags": [
-        "entry-level",
-        "junior",
-        "full-time",
-        "remote",
-        "development"
-      ],
-      "location": "Remote",
-      "excerpt": "Veeam, the #1 global market leader in data resilience, believes businesses should control all their data whenever and wherever they need it.",
-      "category": "development"
-    },
-    {
-      "title": "Personal Executive Assistant (with short-term rental experience)",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/personal-executive-assistant-with-short-term-rental-experience",
-      "posted_at": "2025-09-07T10:28:00.000Z",
-      "tags": [
-        "entry-level",
-        "full-time",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "We are looking for a highly organized and proactive Personal Executive Assistant with hands-on experience managing or supporting short-term rental properties (Airbnb, VRBO, etc.",
-      "category": "customer-service"
-    },
-    {
-      "title": "Cold Calling Specialist",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/remote-va/jobs/cold-calling-specialist",
-      "posted_at": "2025-09-07T10:27:49.000Z",
-      "tags": [
-        "full-time",
-        "marketing"
-      ],
-      "location": "Remote",
-      "excerpt": "Are you a self-motivated individual with a knack for effective communication and a passion for driving sales?",
-      "category": "marketing"
-    },
-    {
-      "title": "Business Banking Relationship Manager",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/freelancerprox/jobs/business-banking-relationship-manager",
-      "posted_at": "2025-09-07T10:27:05.000Z",
-      "tags": [
-        "full-time"
-      ],
-      "location": "Remote",
-      "excerpt": "We are seeking a dynamic and results-oriented Business Banking Relationship Manager to manage and grow relationships with small to mid-sized business clients.",
-      "category": "other"
-    },
-    {
-      "title": "Game Engineer, Infrastructure and DevOps",
-      "source": "Himalayas - Jobs",
-      "source_url": "https://himalayas.app/companies/rushdown-studios/jobs/game-engineer-infrastructure-and-devops",
-      "posted_at": "2025-09-07T10:26:36.000Z",
-      "tags": [
-        "full-time",
-        "development"
-      ],
-      "location": "Remote",
-      "excerpt": "About the StudioFounded by games industry veterans, Rushdown was created with a simple philosophy in mind: We believe that when talented developers are consistently challenged and given clear ownershi",
-      "category": "development"
+      "excerpt": "Tired of being a professional people-pleaser? Here's a funny, chaotic guide to saying 'no' at work, ditching the guilt, and reclaiming your sanity."
     },
     {
       "title": "Broadcast Music, Inc.: CRM Developer Remote",
@@ -674,30 +1421,25 @@
       "source_url": "https://weworkremotely.com/remote-jobs/broadcast-music-inc-crm-developer-remote",
       "posted_at": "2025-09-07T00:36:34.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Tennessee </p> POSITION SUMMARY Build, test and maintain applications on the Salesforce platform. Work closely with the Director and Senior Director of Enterprise CR",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Tennessee </p> POSITION SUMMARY Build, test and maintain applications on the Salesforce platform. Work closely with..."
     },
     {
       "title": "INSPYR Solutions: Sr Data and Reporting Analyst - REMOTE",
-      "company": "REMOTE",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/inspyr-solutions-sr-data-and-reporting-analyst-remote",
       "posted_at": "2025-09-07T00:36:34.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "full-time",
-        "remote",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Oregon </p> Title: Sr Data and Reporting Analyst Location: REMOTE Duration: 12+ months Compensation: $65.00 - 75.00/hr Work Requirements: US Citizen, GC Holders or A",
-      "category": "design"
+      "excerpt": "<p> <strong>Headquarters:</strong> Oregon </p> Title: Sr Data and Reporting Analyst Location: REMOTE Duration: 12+ months Compensation: $65.00 - 75.00..."
     },
     {
       "title": "Reed Smith LLP: IP Docketing Specialist - (Remote)",
@@ -705,14 +1447,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/reed-smith-llp-ip-docketing-specialist-remote",
       "posted_at": "2025-09-07T00:36:33.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Pennsylvania </p> US Job Description Firm Information Reed Smith is a dynamic international law firm dedicated to helping clients move their businesses forward. With",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Pennsylvania </p> US Job Description Firm Information Reed Smith is a dynamic international law firm dedicated to h..."
     },
     {
       "title": "Wesourcehit, LLC: Remote Bilingual Call Center Agent - Entry Level (English/Spanish)(English/Cantonese))(Eng/Mandarin",
@@ -722,13 +1462,22 @@
       "tags": [
         "entry-level",
         "contract",
-        "remote",
-        "customer-service",
-        "no-experience"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Pennsylvania </p> Remote Call Center Agent positions - multiple positions and no experience needed. Will train. Must be bilingual in English and Spanish. Join our gr",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Pennsylvania </p> Remote Call Center Agent positions - multiple positions and no experience needed. Will train. Mus..."
+    },
+    {
+      "title": "Helix Recruit: Software Engineer - Code Review (Rust) [$85/hr]",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/helix-recruit-software-engineer-code-review-rust-85-hr",
+      "posted_at": "2025-09-06T17:42:51.000Z",
+      "tags": [
+        "contract",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1640/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "NoGigiddy: Remote Customer Service Rep Up to 19hour No Degree Needed",
@@ -736,27 +1485,23 @@
       "source_url": "https://weworkremotely.com/remote-jobs/nogigiddy-remote-customer-service-rep-up-to-19hour-no-degree-needed-1",
       "posted_at": "2025-09-06T17:39:40.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0144/3476/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Atlanta, Georgia <br /><strong>URL",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0144/3476/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "The 4-Day Workweek: My Honest Take as a Founder",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/131180-the-4-day-workweek-my-honest-take-as-a-founder",
       "posted_at": "2025-09-06T10:54:50.000Z",
       "tags": [
         "full-time",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "As a founder, I am not interested in implementing the latest trend. I am interested in building a resilient, innovative, and humane organization.",
-      "category": "design"
+      "excerpt": "As a founder, I am not interested in implementing the latest trend. I am interested in building a resilient, innovative, and humane organization."
     },
     {
       "title": "Kadoa: Frontend Developer with UX Design skills, 7+ years of experience",
@@ -765,12 +1510,10 @@
       "posted_at": "2025-09-06T07:18:24.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1664/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Zurich, Switzerland <br /><strong>",
-      "category": "design"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1664/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Remote Travel Careers: Travel Customer Representative",
@@ -780,13 +1523,10 @@
       "tags": [
         "entry-level",
         "full-time",
-        "remote",
-        "customer-service",
-        "no-experience"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1641/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> United States <br /><strong>URL:</",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1641/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "OMW Consulting: Senior DevSecOps Engineer - 90% remote with Security Clearance",
@@ -796,13 +1536,24 @@
       "tags": [
         "entry-level",
         "junior",
+        "senior",
         "full-time",
-        "remote",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Washington DC </p> Senior DevSecOps Engineer - Cleared We are seeking an experienced Senior DevSecOps Engineer to help drive the integration of security into modern ",
-      "category": "design"
+      "excerpt": "<p> <strong>Headquarters:</strong> Washington DC </p> Senior DevSecOps Engineer - Cleared We are seeking an experienced Senior DevSecOps Engineer to h..."
+    },
+    {
+      "title": "Moore Agencies: NYS residents ONLY - Union Benefits Sales Rep - Remote Position",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/moore-agencies-nys-residents-only-union-benefits-sales-rep-remote-position-3",
+      "posted_at": "2025-09-06T00:36:49.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> New York </p> <p><strong>INTRODUCTION</strong></p><p> Our mission is to develop and support people to enhance the l..."
     },
     {
       "title": "Pace Analytical Services: Corporate Accounts Manager Environmental Testing (Remote)",
@@ -810,14 +1561,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/pace-analytical-services-corporate-accounts-manager-environmental-testing-remote-3",
       "posted_at": "2025-09-06T00:36:49.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "contract",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Minnesota </p> About Us<p><strong>Pace Analytical Services</strong></p> <p>Pace makes the world a safer, healthier place. Committed to advancing the science of busin",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Minnesota </p> About Us<p><strong>Pace Analytical Services</strong></p> <p>Pace makes the world a safer, healthier ..."
     },
     {
       "title": "NoGigiddy: Chat Support Agent (Remote) - Entry Level, No Degree Required - 15 - 18 per Hour",
@@ -826,30 +1575,23 @@
       "posted_at": "2025-09-05T18:51:39.000Z",
       "tags": [
         "entry-level",
-        "internship",
-        "remote",
-        "customer-service",
-        "no-experience"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Atlanta, Georgia <br /><strong>URL:</strong> <a href=\"https://www.nogigiddy.com/\">https://www.nogigiddy.com/</a> </p> <p><strong>About NoGigiddy:</strong></p> <p>&nb",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Atlanta, Georgia <br /><strong>URL:</strong> <a href=\"https://www.nogigiddy.com/\">https://www.nogigiddy.com/</a> </..."
     },
     {
       "title": "JLS Trading Co.: Social Media Manager/Shitposter @ Fun Ecom Co | Great People & Flexible Hours",
-      "company": "People & Flexible Hours",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/jls-trading-co-social-media-manager-shitposter-fun-ecom-co-great-people-flexible",
       "posted_at": "2025-09-05T18:23:14.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0074/7704/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Charlotte, NC <br /><strong>URL:</",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0074/7704/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Revaya: Intake Processor Paralegal (Bilingual)",
@@ -858,12 +1600,10 @@
       "posted_at": "2025-09-05T16:46:21.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1659/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> United States of America <br /><st",
-      "category": "design"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1659/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "HB Travels: Work From Home Travel Booking Agent",
@@ -872,14 +1612,12 @@
       "posted_at": "2025-09-05T16:34:40.000Z",
       "tags": [
         "entry-level",
-        "internship",
-        "remote",
-        "customer-service",
-        "no-experience"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/0005/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Massachusetts <br /><strong>URL:</",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/0005/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Pronto Pilates Pty Ltd: Full Stack Engineer (NestJS, Next.js, PostgreSQL) – Data Pipelines & Reporting - 6 month contract",
@@ -887,42 +1625,61 @@
       "source_url": "https://weworkremotely.com/remote-jobs/pronto-pilates-pty-ltd-full-stack-engineer-nestjs-next-js-postgresql-data-pipelines-reporting",
       "posted_at": "2025-09-05T15:16:11.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "contract",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0170/9778/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Western Australia <br /><strong>UR",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0170/9778/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "The Jobs No One Wants — But Pay $100k+",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/131054-the-jobs-no-one-wants-but-pay-100k",
       "posted_at": "2025-09-05T13:08:10.000Z",
       "tags": [
-        "full-time"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "Every one of these jobs offers a kind of deal with the devil. A Faustian bargain. Give me your peace of mind, and I’ll give you financial security.",
-      "category": "other"
+      "excerpt": "Every one of these jobs offers a kind of deal with the devil. A Faustian bargain. Give me your peace of mind, and I’ll give you financial security."
+    },
+    {
+      "title": "Vidrush: AI Engineer (Agentic AI & Video Processing)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/vidrush-ai-engineer-agentic-ai-video-processing",
+      "posted_at": "2025-09-05T10:40:02.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1652/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "VidRush: Full-Stack Developer (TypeScript/Next.js • Cloud)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/vidrush-full-stack-developer-typescript-next-js-cloud",
+      "posted_at": "2025-09-05T10:28:49.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1651/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "MelodyIQ: Mid-level Backend Dev for SaaS in the music industry",
-      "company": "level Backend Dev for SaaS in the music industry",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/melodyiq-mid-level-backend-dev-for-saas-in-the-music-industry",
       "posted_at": "2025-09-05T07:36:13.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "contract",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1648/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Lisbon <br /><strong>URL:</strong>",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1648/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "PropellerHeads AG: Rust Engineer – Remote",
@@ -931,16 +1688,38 @@
       "posted_at": "2025-09-04T21:36:21.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1642/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Remote <br /><strong>URL:</strong>",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1642/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Helix Recruit: AI Trainer (Multiple Roles) - [$50-$200/hr]",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/helix-recruit-ai-trainer-multiple-roles-50-200-hr",
+      "posted_at": "2025-09-04T20:20:26.000Z",
+      "tags": [
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> USA <br /><strong>URL:</strong> <a href=\"https://work.mercor.com/?referralCode=d0c79eb7-5f48-11ef-8a84-4201ac164110..."
+    },
+    {
+      "title": "What It’s Like to Work for a Micromanager Boss",
+      "source": "Jobicy",
+      "source_url": "https://jobicy.com/blog/130995-what-its-like-to-work-for-a-micromanager-boss",
+      "posted_at": "2025-09-04T16:00:57.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "What is it like to work for a micromanager? Your own professional world, once a sprawling continent of possibilities, begins to shrink."
     },
     {
       "title": "What I Learned Talking to Hundreds of Remote Job Seekers",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130990-what-i-learned-talking-to-hundreds-of-remote-job-seekers",
       "posted_at": "2025-09-04T15:37:51.000Z",
       "tags": [
@@ -948,37 +1727,19 @@
         "remote"
       ],
       "location": "Remote",
-      "excerpt": "The search for a remote job is not a search for a different way of working. It is a search for a different way of being.",
-      "category": "other"
-    },
-    {
-      "title": "TrainBrain: English AI Tutor - Writer (Freelance, Remote)",
-      "source": "We Work Remotely",
-      "source_url": "https://weworkremotely.com/remote-jobs/trainbrain-english-ai-tutor-writer-freelance-remote",
-      "posted_at": "2025-09-03T17:32:37.000Z",
-      "tags": [
-        "entry-level",
-        "part-time",
-        "remote",
-        "writing"
-      ],
-      "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1598/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Seattle <br /><strong>URL:</strong",
-      "category": "writing"
+      "excerpt": "The search for a remote job is not a search for a different way of working. It is a search for a different way of being."
     },
     {
       "title": "The Future of Remote Work: Where We’re Heading by 2030",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130852-the-future-of-remote-work-where-were-heading-by-2030",
       "posted_at": "2025-09-03T17:03:05.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "We have to build the technology that connects us, not just isolates us behind more screens. The next decade is going to be a wild ride.",
-      "category": "design"
+      "excerpt": "We have to build the technology that connects us, not just isolates us behind more screens. The next decade is going to be a wild ride."
     },
     {
       "title": "Blue Bison Software Ltd: HR/Payroll Implementation Specialist",
@@ -986,166 +1747,169 @@
       "source_url": "https://weworkremotely.com/remote-jobs/blue-bison-software-ltd-hr-payroll-implementation-specialist",
       "posted_at": "2025-09-03T16:54:43.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Cayman Islands <br /><strong>URL:</strong> <a href=\"http://www.bluebisonsoftware.com\">http://www.bluebisonsoftware.com</a> </p> <h1>HR/Payroll Software Customer Supp",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Cayman Islands <br /><strong>URL:</strong> <a href=\"http://www.bluebisonsoftware.com\">http://www.bluebisonsoftware...."
+    },
+    {
+      "title": "Structure: iOS UI/UX Designer",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/structure-ios-ui-ux-designer",
+      "posted_at": "2025-09-02T21:00:09.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0154/8957/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "What 5 Years of Building Jobicy Taught Me About Hiring and Careers",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130770-what-5-years-of-building-jobicy-taught-me-about-hiring-and-careers",
       "posted_at": "2025-09-02T19:01:12.000Z",
       "tags": [
         "full-time",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "Question the platitudes. Interrogate the assumptions. Be wary of anyone offering a simple, seven-step solution to a complex human problem.",
-      "category": "design"
+      "excerpt": "Question the platitudes. Interrogate the assumptions. Be wary of anyone offering a simple, seven-step solution to a complex human problem."
     },
     {
       "title": "Equipment Finance Canada: Administrative Assistant - Equipment Finance",
-      "company": "Equipment Finance",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/equipment-finance-canada-administrative-assistant-equipment-finance",
       "posted_at": "2025-09-02T17:46:24.000Z",
       "tags": [
-        "entry-level",
         "part-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1198/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Langley, BC Canada <br /><strong>U",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1198/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "The Most “AI-Proof” Careers in the Next 10 Years",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130765-the-most-ai-proof-careers-in-the-next-10-years",
       "posted_at": "2025-09-02T16:51:54.000Z",
       "tags": [
         "full-time",
-        "virtual-assistant"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "The survival strategy isn’t to learn to code faster than an AI (you won’t) or to write better than a machine (it’s debatable). The survival strategy is to become more human.",
-      "category": "virtual-assistant"
+      "excerpt": "The survival strategy isn’t to learn to code faster than an AI (you won’t) or to write better than a machine (it’s debatable). The survival strategy i..."
     },
     {
       "title": "Will Web3 Really Create New Jobs or Is It a Scam?",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130760-will-web3-really-create-new-jobs-or-is-it-a-scam",
       "posted_at": "2025-09-02T16:39:44.000Z",
       "tags": [
-        "entry-level",
-        "internship"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "Are we on the cusp of a job creation boom not seen since the dawn of the internet itself, or is this just the most elaborate, technically sophisticated game?",
-      "category": "other"
+      "excerpt": "Are we on the cusp of a job creation boom not seen since the dawn of the internet itself, or is this just the most elaborate, technically sophisticate..."
+    },
+    {
+      "title": "hey contact heroes GmbH: Freelancer (m/w/d) Inbound Kundenservice - in der EU! - Home-Office",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/hey-contact-heroes-gmbh-freelancer-m-w-d-inbound-kundenservice-in-der-eu-home-office",
+      "posted_at": "2025-09-02T09:02:10.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> Germany Hamburg </p> <p>Die hey contact heroes stehen für echte Innovationen im Kundenservice! Wir haben uns auf di..."
     },
     {
       "title": "COBRA Benefits: What Happens to Your Health Insurance After Leaving a Job",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130748-cobra-benefits-what-happens-to-your-health-insurance-after-leaving-a-job",
       "posted_at": "2025-09-02T06:13:13.000Z",
       "tags": [
-        "full-time"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "If your income is low because you just lost your job, your subsidy could be large. You might find a plan for a fraction of the COBRA cost. You must explore this.",
-      "category": "other"
+      "excerpt": "If your income is low because you just lost your job, your subsidy could be large. You might find a plan for a fraction of the COBRA cost. You must ex..."
     },
     {
       "title": "If Job Ads Were Honest: A Translation Guide",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130685-if-job-ads-were-honest-a-translation-guide",
       "posted_at": "2025-09-01T18:49:11.000Z",
       "tags": [
         "full-time",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "We learn to read between the lines. We treat job ads not as statements of fact, but as the opening move in a very long, very strategic game of chess.",
-      "category": "design"
+      "excerpt": "We learn to read between the lines. We treat job ads not as statements of fact, but as the opening move in a very long, very strategic game of chess."
     },
     {
       "title": "Maverick Trading: Stock & Option Trader at Maverick Trading",
-      "company": "Maverick Trading",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/maverick-trading-stock-option-trader-at-maverick-trading-2",
       "posted_at": "2025-09-01T17:40:47.000Z",
       "tags": [
         "entry-level",
         "part-time",
-        "remote",
-        "customer-service",
-        "no-experience"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1537/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Salt Lake City, UT, USA <br /><str",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1537/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "5 Small Things That Can Ruin Your Job Application",
-      "company": "Can Ruin Your Job Application",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130680-5-small-things-that-can-ruin-your-job-application",
       "posted_at": "2025-09-01T16:33:41.000Z",
       "tags": [
         "full-time",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "These little things, they’re not really about the things themselves. They are clues that tell a story about your professionalism, your attention to detail.",
-      "category": "design"
+      "excerpt": "These little things, they’re not really about the things themselves. They are clues that tell a story about your professionalism, your attention to de..."
     },
     {
       "title": "The One Question You Should Always Ask at the End of an Interview",
-      "company": "the End of an Interview",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130677-the-one-question-you-should-always-ask-at-the-end-of-an-interview",
       "posted_at": "2025-09-01T16:07:59.000Z",
       "tags": [
         "contract",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "The interview is the only time you hold any real power. You are a valuable asset they are considering acquiring. Once you sign the contract, that power dynamic flips.",
-      "category": "design"
+      "excerpt": "The interview is the only time you hold any real power. You are a valuable asset they are considering acquiring. Once you sign the contract, that powe..."
     },
     {
       "title": "How to Stay Motivated When You’re Job Hunting for Months",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130582-how-to-stay-motivated-when-youre-job-hunting-for-months",
       "posted_at": "2025-08-31T18:03:47.000Z",
       "tags": [
         "full-time",
-        "data"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "Long-shot jobs? Ambitious titles? Companies I’d never heard of? Apply, apply, apply. It was a way to turn that helpless, angry energy into action, even if it was chaotic.",
-      "category": "data"
+      "excerpt": "Long-shot jobs? Ambitious titles? Companies I’d never heard of? Apply, apply, apply. It was a way to turn that helpless, angry energy into action, eve..."
     },
     {
       "title": "The Loneliest Part of Remote Work Nobody Talks About",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130501-the-loneliest-part-of-remote-work-nobody-talks-about",
       "posted_at": "2025-08-30T10:46:29.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "data"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "One of the biggest lies we tell ourselves is that remote work is all about productivity. And yeah, I guess it can be. You can get a lot done when there’s no one there to interrupt you.",
-      "category": "data"
+      "excerpt": "One of the biggest lies we tell ourselves is that remote work is all about productivity. And yeah, I guess it can be. You can get a lot done when ther..."
     },
     {
       "title": "Maverick Trading: Stock & Options Trader – Remote",
@@ -1154,14 +1918,12 @@
       "posted_at": "2025-08-27T17:42:25.000Z",
       "tags": [
         "entry-level",
+        "senior",
         "part-time",
-        "remote",
-        "customer-service",
-        "no-experience"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Salt Lake City, UT, USA <br /><strong>URL:</strong> <a href=\"http://mavericktrading.com\">http://mavericktrading.com</a> </p> <p><strong>Trade with a firm that succee",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Salt Lake City, UT, USA <br /><strong>URL:</strong> <a href=\"http://mavericktrading.com\">http://mavericktrading.com..."
     },
     {
       "title": "Maverick Trading: Forex & Crypto Trader – Remote",
@@ -1170,14 +1932,12 @@
       "posted_at": "2025-08-27T17:17:09.000Z",
       "tags": [
         "entry-level",
+        "senior",
         "part-time",
-        "remote",
-        "customer-service",
-        "no-experience"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Salt Lake City, UT, USA <br /><strong>URL:</strong> <a href=\"http://maverickcurrencies.com\">http://maverickcurrencies.com</a> </p> <p><strong>Trade with a firm that ",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Salt Lake City, UT, USA <br /><strong>URL:</strong> <a href=\"http://maverickcurrencies.com\">http://maverickcurrenci..."
     },
     {
       "title": "CYBERSPHERELIMITED: Junior Crypto Analyst & Trader (Remote, Training Included)",
@@ -1187,27 +1947,37 @@
       "tags": [
         "entry-level",
         "junior",
+        "senior",
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1533/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> CYBERSPHERELIMITED <br /><strong>U",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1533/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Remote Jobs Are Not Always Remote — Here’s the Truth",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130225-remote-jobs-are-not-always-remote-heres-the-truth",
       "posted_at": "2025-08-27T09:39:31.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "data"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "The truth is hard. Most remote jobs are not fully remote. They are a new model of work. A model of controlled flexibility. It has its benefits. It has its costs.",
-      "category": "data"
+      "excerpt": "The truth is hard. Most remote jobs are not fully remote. They are a new model of work. A model of controlled flexibility. It has its benefits. It has..."
+    },
+    {
+      "title": "EasyRx: Senior Ruby on Rails Engineer",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/easyrx-senior-ruby-on-rails-engineer",
+      "posted_at": "2025-08-27T08:52:20.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1527/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Walter: Product Manager",
@@ -1215,14 +1985,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/walter-product-manager",
       "posted_at": "2025-08-27T04:24:09.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1521/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Remote <br /><strong>URL:</strong>",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1521/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Walter: Frontend Architect",
@@ -1230,72 +1998,65 @@
       "source_url": "https://weworkremotely.com/remote-jobs/walter-frontend-architect",
       "posted_at": "2025-08-27T04:02:23.000Z",
       "tags": [
-        "entry-level",
-        "contract",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Remote <br /><strong>URL:</strong> <a href=\"https://www.gowalter.co/\">https://www.gowalter.co/</a> </p> <p></p> <p>HappyFunCorp&nbsp;is looking for experienced <stro",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Remote <br /><strong>URL:</strong> <a href=\"https://www.gowalter.co/\">https://www.gowalter.co/</a> </p> <p></p> <p>..."
     },
     {
       "title": "The Ultimate Checklist Before Submitting Your Resume",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130149-the-ultimate-checklist-before-submitting-your-resume",
       "posted_at": "2025-08-26T13:57:43.000Z",
       "tags": [
         "full-time",
-        "marketing"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "Your resume isn’t a history of your life. It’s a marketing document. And the product is you—your skills, your accomplishments, your potential.",
-      "category": "marketing"
+      "excerpt": "Your resume isn’t a history of your life. It’s a marketing document. And the product is you—your skills, your accomplishments, your potential."
     },
     {
       "title": "Close: Lead Product Designer - Automations & Integrations",
-      "company": "Automations & Integrations",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/close-lead-product-designer-automations-integrations",
       "posted_at": "2025-08-26T13:17:40.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0162/4522/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> USA <br /><strong>URL:</strong> <a",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0162/4522/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Do Cover Letters Still Matter in 2025?",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/130066-do-cover-letters-still-matter-in-2025",
       "posted_at": "2025-08-25T16:47:19.000Z",
       "tags": [
-        "full-time"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "It’s your chance to prove you’re not a robot, especially now that—let’s be honest—many people are probably using AI to write their first drafts.",
-      "category": "other"
+      "excerpt": "It’s your chance to prove you’re not a robot, especially now that—let’s be honest—many people are probably using AI to write their first drafts."
     },
     {
       "title": "Weird but True Job Interview Stories From Real Candidates",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/129911-weird-but-true-interview-stories-from-real-candidates",
       "posted_at": "2025-08-24T19:12:33.000Z",
       "tags": [
         "full-time",
-        "data"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "The inbox filled up. Not with stories of professional hurdles, but with scenes of pure, uncut strangeness. A collection of moments so bizarre they had to be true.",
-      "category": "data"
+      "excerpt": "The inbox filled up. Not with stories of professional hurdles, but with scenes of pure, uncut strangeness. A collection of moments so bizarre they had..."
     },
     {
       "title": "10 Things Only Remote Workers Will Understand",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/129882-10-things-only-remote-workers-will-understand",
       "posted_at": "2025-08-24T12:00:32.000Z",
       "tags": [
@@ -1303,58 +2064,55 @@
         "remote"
       ],
       "location": "Remote",
-      "excerpt": "It’s a strange new world, this work-from-home life. A glorious, chaotic, pajama-clad frontier. And if you’re living it, you know some truths to be self-evident.",
-      "category": "other"
+      "excerpt": "It’s a strange new world, this work-from-home life. A glorious, chaotic, pajama-clad frontier. And if you’re living it, you know some truths to be sel..."
     },
     {
       "title": "How to Negotiate Salary Without Feeling Awkward",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/129833-how-to-negotiate-salary-without-feeling-awkward",
       "posted_at": "2025-08-23T12:10:37.000Z",
       "tags": [
-        "full-time"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "Your goal isn’t to squeeze every last penny out of them until they’re weeping into their spreadsheets. Your goal is to find a number that makes you both happy.",
-      "category": "other"
+      "excerpt": "Your goal isn’t to squeeze every last penny out of them until they’re weeping into their spreadsheets. Your goal is to find a number that makes you bo..."
     },
     {
       "title": "Why AI Won’t Steal Your Job (But It Might Change It)",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/129784-why-ai-wont-steal-your-job-but-it-might-change-it",
       "posted_at": "2025-08-23T06:26:27.000Z",
       "tags": [
-        "full-time"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "We’re being given a chance to offload the most boring, robotic parts of our jobs to actual robots, freeing up our very human and very brilliant brains.",
-      "category": "other"
+      "excerpt": "We’re being given a chance to offload the most boring, robotic parts of our jobs to actual robots, freeing up our very human and very brilliant brains..."
     },
     {
       "title": "Apply Even if You’re Not 100% Qualified",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/129743-apply-even-if-youre-not-100-qualified",
       "posted_at": "2025-08-22T18:40:33.000Z",
       "tags": [
-        "full-time"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "To apply for something when you are not “100% qualified” is an act of profound courage. It is an act of faith in the unseen parts of yourself.",
-      "category": "other"
+      "excerpt": "To apply for something when you are not “100% qualified” is an act of profound courage. It is an act of faith in the unseen parts of yourself."
     },
     {
       "title": "My Honest Work From Home Routine",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/129697-my-honest-work-from-home-routine",
       "posted_at": "2025-08-22T16:49:14.000Z",
       "tags": [
         "full-time",
-        "remote",
-        "virtual-assistant"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "Productivity isn’t linear. It’s a series of peaks and valleys. The real challenge of remote work is learning to ride those waves instead of fighting them.",
-      "category": "virtual-assistant"
+      "excerpt": "Productivity isn’t linear. It’s a series of peaks and valleys. The real challenge of remote work is learning to ride those waves instead of fighting t..."
     },
     {
       "title": "Baymard Institute: UX Engineer",
@@ -1362,18 +2120,16 @@
       "source_url": "https://weworkremotely.com/remote-jobs/baymard-institute-ux-engineer",
       "posted_at": "2025-08-22T13:42:20.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "marketing"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0001/6931/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Denmark <br /><strong>URL:</strong",
-      "category": "marketing"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0001/6931/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Failing My First Remote Job Interview",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/129510-failing-my-first-remote-job-interview",
       "posted_at": "2025-08-21T18:00:25.000Z",
       "tags": [
@@ -1381,36 +2137,32 @@
         "remote"
       ],
       "location": "Remote",
-      "excerpt": "My first remote job interview was a slow, agonizing 47-minute bleed-out in unforgiving HD from my spare bedroom.",
-      "category": "other"
+      "excerpt": "My first remote job interview was a slow, agonizing 47-minute bleed-out in unforgiving HD from my spare bedroom."
     },
     {
       "title": "The Future of Freelancing: Platforms That Will Dominate in 2026",
-      "source": "Jobicy - All",
+      "source": "Jobicy",
       "source_url": "https://jobicy.com/blog/129500-the-future-of-freelancing-platforms-that-will-dominate-in-2026",
       "posted_at": "2025-08-21T16:01:24.000Z",
       "tags": [
-        "full-time"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "The platforms of the future won’t just be matching skills to tasks. They’ll be facilitating relationships.",
-      "category": "other"
+      "excerpt": "The platforms of the future won’t just be matching skills to tasks. They’ll be facilitating relationships."
     },
     {
       "title": "Bright!Tax Expat Tax Services: Expat Tax Sales Manager",
-      "company": "Tax Sales Manager",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/bright-tax-expat-tax-services-expat-tax-sales-manager",
       "posted_at": "2025-08-19T16:14:31.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1388/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> New York, NY <br /><strong>URL:</s",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1388/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Livepeer: Lead Site Reliability Engineer (Remote)",
@@ -1418,14 +2170,25 @@
       "source_url": "https://weworkremotely.com/remote-jobs/livepeer-lead-site-reliability-engineer-remote",
       "posted_at": "2025-08-18T11:33:23.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1350/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Fully Remote <br /><strong>URL:</s",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1350/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Popcorn Labs, Inc: Mobile Engineer",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/popcorn-labs-inc-mobile-engineer",
+      "posted_at": "2025-08-18T06:16:51.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1343/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "MailerLite: QA Engineer",
@@ -1433,14 +2196,11 @@
       "source_url": "https://weworkremotely.com/remote-jobs/mailerlite-qa-engineer-1",
       "posted_at": "2025-08-15T10:07:22.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "marketing"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> USA <br /><strong>URL:</strong> <a href=\"https://www.mailerlite.com/company-values\">https://www.mailerlite.com/company-values</a> </p> <div class=\"container\"> <div c",
-      "category": "marketing"
+      "excerpt": "<p> <strong>Headquarters:</strong> USA <br /><strong>URL:</strong> <a href=\"https://www.mailerlite.com/company-values\">https://www.mailerlite.com/comp..."
     },
     {
       "title": "Search Atlas - Advanced SEO Software: Data Scientist",
@@ -1448,14 +2208,11 @@
       "source_url": "https://weworkremotely.com/remote-jobs/search-atlas-advanced-seo-software-data-scientist",
       "posted_at": "2025-08-13T16:43:20.000Z",
       "tags": [
-        "entry-level",
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1278/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> New York, NY <br /><strong>URL:</s",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1278/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Stack Influence: Account Manager - Client Success (Canada, Remote)",
@@ -1463,30 +2220,63 @@
       "source_url": "https://weworkremotely.com/remote-jobs/stack-influence-account-manager-client-success-canada-remote",
       "posted_at": "2025-08-13T16:24:56.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1277/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Miami, FL <br /><strong>URL:</stro",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1277/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Centrum-AI: Senior Svelte Engineer - Full-Time, High-Impact Role",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/centrum-ai-senior-svelte-engineer-full-time-high-impact-role",
+      "posted_at": "2025-08-12T17:45:09.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1236/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Ksense Technology Group: Technical Project Manager - Software Development Agency",
-      "company": "Software Development Agency",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/ksense-technology-group-technical-project-manager-software-development-agency",
       "posted_at": "2025-08-12T15:38:37.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "sales"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1248/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Salt Lake City <br /><strong>URL:<",
-      "category": "sales"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1248/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Proxify AB: Senior DevOps Engineer (AWS)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-devops-engineer-aws-1",
+      "posted_at": "2025-08-12T11:40:51.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> Sweden <br /><strong>URL:</strong> <a href=\"http://career.proxify.io\">http://career.proxify.io</a> </p> <div> <h3><..."
+    },
+    {
+      "title": "Proxify AB: Senior Magento Developer",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-magento-developer-3",
+      "posted_at": "2025-08-12T11:26:35.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> Sweden <br /><strong>URL:</strong> <a href=\"http://career.proxify.io\">http://career.proxify.io</a> </p> <div> <h3><..."
     },
     {
       "title": "Zencastr: Senior Fullstack Developer",
@@ -1494,14 +2284,25 @@
       "source_url": "https://weworkremotely.com/remote-jobs/zencastr-senior-fullstack-developer",
       "posted_at": "2025-08-08T22:55:31.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1199/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Zencastr <br /><strong>URL:</stron",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1199/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Close: QA Engineer (USA Only - 100% Remote)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/close-qa-engineer-usa-only-100-remote",
+      "posted_at": "2025-08-08T17:24:55.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> USA <br /><strong>URL:</strong> <a href=\"http://www.close.com\">http://www.close.com</a> </p> <h2><strong>About Us</..."
     },
     {
       "title": "Zencastr: Senior Machine Learning Engineer",
@@ -1509,14 +2310,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/zencastr-senior-machine-learning-engineer",
       "posted_at": "2025-08-08T00:39:04.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "full-time",
-        "remote",
-        "writing"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1183/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Remote <br /><strong>URL:</strong>",
-      "category": "writing"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1183/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Porkbun: Live Technical Support Representative — full time, requires weekend (Sat + Sun) — $40,000 / year + benefits (Locations: California, Idaho, Oregon, Texas, or Washington)",
@@ -1524,14 +2323,11 @@
       "source_url": "https://weworkremotely.com/remote-jobs/porkbun-live-technical-support-representative-full-time-requires-weekend-sat-sun-40-000",
       "posted_at": "2025-08-07T18:43:21.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0064/5136/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Oregon USA <br /><strong>URL:</str",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0064/5136/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Vidalytics: [REMOTE – LATAM/EU ONLY] Executive Assistant to the CEO at Growing MarTech SaaS 🚀",
@@ -1539,14 +2335,37 @@
       "source_url": "https://weworkremotely.com/remote-jobs/vidalytics-remote-latam-eu-only-executive-assistant-to-the-ceo-at-growing-martech-saas-1",
       "posted_at": "2025-08-07T15:14:36.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0123/5841/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Austin, TX <br /><strong>URL:</str",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0123/5841/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "SocialHub: Product Manager (m/f/d) (Remote – CET ±4h)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/socialhub-product-manager-m-f-d-remote-cet-4h",
+      "posted_at": "2025-08-07T14:20:31.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0099/5705/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "SocialHub: Senior Product Designer UX (m/f/d) (Remote – CET ±4h)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/socialhub-senior-product-designer-ux-m-f-d-remote-cet-4h",
+      "posted_at": "2025-08-07T14:12:14.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> Schütterlettenweg 4, 85053 Ingolstadt, Deutschland <br /><strong>URL:</strong> <a href=\"https://socialhub.io/en/\">h..."
     },
     {
       "title": "Gravity Wiz: Video Content Creator",
@@ -1556,29 +2375,35 @@
       "tags": [
         "entry-level",
         "full-time",
-        "remote",
-        "customer-service",
-        "no-experience"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0140/0368/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Virginia Beach, Virginia <br /><st",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0140/0368/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Zencastr: Senior Backend Engineer - Full Remote",
-      "company": "Full Remote",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/zencastr-senior-backend-engineer-full-remote",
       "posted_at": "2025-08-06T20:01:29.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1155/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> worldwide <br /><strong>URL:</stro",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1155/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "CrewVision: UI/UX Product Designer",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/crewvision-ui-ux-product-designer",
+      "posted_at": "2025-08-06T17:36:33.000Z",
+      "tags": [
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1153/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Payara Services: Product Manager",
@@ -1586,14 +2411,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/payara-services-product-manager",
       "posted_at": "2025-08-06T09:16:12.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/0019/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Malvern, UK <br /><strong>URL:</st",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/0019/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Payara Services: Technical Sales Engineer",
@@ -1601,14 +2424,11 @@
       "source_url": "https://weworkremotely.com/remote-jobs/payara-services-technical-sales-engineer",
       "posted_at": "2025-08-06T09:14:21.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Malvern, UK <br /><strong>URL:</strong> <a href=\"https://www.payara.fish/\">https://www.payara.fish/</a> </p> <p><strong>Shape The Future. Own Your Impact. Evolve wit",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Malvern, UK <br /><strong>URL:</strong> <a href=\"https://www.payara.fish/\">https://www.payara.fish/</a> </p> <p><st..."
     },
     {
       "title": "MetaLab: Senior Product Designer",
@@ -1616,14 +2436,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/metalab-senior-product-designer-2",
       "posted_at": "2025-08-04T17:40:31.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1096/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Remote <br /><strong>URL:</strong>",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1096/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "TimeZest: Senior Software Engineer (Rails/LLMs)",
@@ -1633,13 +2451,12 @@
       "tags": [
         "entry-level",
         "junior",
+        "senior",
         "full-time",
-        "remote",
-        "writing"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1012/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Remote <br /><strong>URL:</strong>",
-      "category": "writing"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/1012/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Bananasoft Media Ltd: CEO Assistant / Accounting / Online Project Management (Remote/Homeoffice) 20h/week",
@@ -1647,29 +2464,11 @@
       "source_url": "https://weworkremotely.com/remote-jobs/bananasoft-media-ltd-ceo-assistant-accounting-online-project-management-remote-homeoffice-20h-week",
       "posted_at": "2025-07-28T16:29:25.000Z",
       "tags": [
-        "entry-level",
         "part-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/0912/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Bananasoft Media Ltd <br /><strong",
-      "category": "customer-service"
-    },
-    {
-      "title": "Close: Senior Software Engineer - Backend/Python - USA Only (100% Remote)",
-      "source": "We Work Remotely",
-      "source_url": "https://weworkremotely.com/remote-jobs/close-senior-software-engineer-backend-python-usa-only-100-remote-1",
-      "posted_at": "2025-07-23T14:31:54.000Z",
-      "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
-      ],
-      "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> USA <br /><strong>URL:</strong> <a href=\"http://www.close.com\">http://www.close.com</a> </p> <div><strong>About Us</strong></div> <div><a href=\"https://close.com/\">C",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/0912/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "A+ Insurance Designers: Senior Digital Marketing Specialist",
@@ -1677,14 +2476,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/a-insurance-designers-senior-digital-marketing-specialist",
       "posted_at": "2025-07-16T19:22:29.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "marketing"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Dallas, TX <br /><strong>URL:</strong> <a href=\"https://apidesigners.com\">https://apidesigners.com</a> </p> <p>We’re looking for a highly skilled <strong>Digital Mar",
-      "category": "marketing"
+      "excerpt": "<p> <strong>Headquarters:</strong> Dallas, TX <br /><strong>URL:</strong> <a href=\"https://apidesigners.com\">https://apidesigners.com</a> </p> <p>We’r..."
     },
     {
       "title": "Howie AI: Remote Scheduling/Calendar Assistant",
@@ -1694,12 +2491,48 @@
       "tags": [
         "entry-level",
         "contract",
-        "remote",
-        "design"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Seattle, WA <br /><strong>URL:</strong> <a href=\"https://howie.ai/\">https://howie.ai/</a> </p> <div> <h2 class=\"css-3jtm58 e1tiznh50\">Full job description</h2> </div",
-      "category": "design"
+      "excerpt": "<p> <strong>Headquarters:</strong> Seattle, WA <br /><strong>URL:</strong> <a href=\"https://howie.ai/\">https://howie.ai/</a> </p> <div> <h2 class=\"css..."
+    },
+    {
+      "title": "Unload My Home: Remote Sales Representative - Work from home",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/unload-my-home-remote-sales-representative-work-from-home",
+      "posted_at": "2025-07-10T17:53:58.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> Jacksonville, FL <br /><strong>URL:</strong> <a href=\"https://www.unloadmyhome.com/hiring/\">https://www.unloadmyhom..."
+    },
+    {
+      "title": "Speechify Inc: Tech Lead, Web Core Product & Chrome Extension",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/speechify-inc-tech-lead-web-core-product-chrome-extension",
+      "posted_at": "2025-07-09T15:45:23.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0127/7517/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Speechify Inc: Senior Software Engineer, AI Model serving",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/speechify-inc-senior-software-engineer-ai-model-serving",
+      "posted_at": "2025-07-09T15:39:57.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> Florida <br /><strong>URL:</strong> <a href=\"http://www.speechify.com\">http://www.speechify.com</a> </p> <p><strong..."
     },
     {
       "title": "Speechify Inc: Software Engineer, iOS Core Product",
@@ -1707,14 +2540,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/speechify-inc-software-engineer-ios-core-product",
       "posted_at": "2025-07-09T15:35:11.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Florida <br /><strong>URL:</strong> <a href=\"http://www.speechify.com\">http://www.speechify.com</a> </p> <p><strong>Overview</strong></p> <p>With the growth of our i",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Florida <br /><strong>URL:</strong> <a href=\"http://www.speechify.com\">http://www.speechify.com</a> </p> <p><strong..."
     },
     {
       "title": "Speechify Inc: Software Engineer, Platform",
@@ -1722,14 +2553,36 @@
       "source_url": "https://weworkremotely.com/remote-jobs/speechify-inc-software-engineer-platform",
       "posted_at": "2025-07-09T15:30:19.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "design"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Florida <br /><strong>URL:</strong> <a href=\"http://www.speechify.com\">http://www.speechify.com</a> </p> <div> <p><strong>Overview</strong></p> <p>The responsibiliti",
-      "category": "design"
+      "excerpt": "<p> <strong>Headquarters:</strong> Florida <br /><strong>URL:</strong> <a href=\"http://www.speechify.com\">http://www.speechify.com</a> </p> <div> <p><..."
+    },
+    {
+      "title": "BaxEnergy: Senior Site Reliability Engineer",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/baxenergy-senior-site-reliability-engineer-2",
+      "posted_at": "2025-06-24T09:41:04.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0144/3188/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Starvox Entertainment: UX/UI Designer (remote)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/starvox-entertainment-ux-ui-designer-remote",
+      "posted_at": "2025-06-16T23:00:43.000Z",
+      "tags": [
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0170/2590/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Mobena: Frontend Engineer",
@@ -1739,29 +2592,23 @@
       "tags": [
         "entry-level",
         "full-time",
-        "remote",
-        "design",
-        "no-experience"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0170/9402/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> New York, NY <br /><strong>URL:</s",
-      "category": "design"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0170/9402/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Lumenalta: Javascript Fullstack Engineer - Senior",
-      "company": "Senior",
       "source": "We Work Remotely",
       "source_url": "https://weworkremotely.com/remote-jobs/lumenalta-javascript-fullstack-engineer-senior",
       "posted_at": "2025-04-09T20:25:16.000Z",
       "tags": [
-        "entry-level",
+        "senior",
         "full-time",
-        "remote",
-        "customer-service"
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0170/5076/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> New York <br /><strong>URL:</stron",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0170/5076/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Sana Vita Operations LLC: Project coordinator",
@@ -1769,14 +2616,11 @@
       "source_url": "https://weworkremotely.com/remote-jobs/sana-vita-operations-llc-project-coordinator",
       "posted_at": "2025-03-26T22:05:29.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0169/4512/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Austin Texas </p> <div><strong><br",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0169/4512/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Native Camp: Online English Teacher",
@@ -1784,14 +2628,11 @@
       "source_url": "https://weworkremotely.com/remote-jobs/native-camp-online-english-teacher-30",
       "posted_at": "2025-03-10T07:41:44.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0077/5564/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Japan <br /><strong>URL:</strong> ",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0077/5564/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "Toggl: Senior Growth Product Manager",
@@ -1799,14 +2640,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/toggl-senior-growth-product-manager",
       "posted_at": "2025-01-31T13:43:16.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Tallinn, Estonia <br /><strong>URL:</strong> <a href=\"https://toggl.com/jobs/\">https://toggl.com/jobs/</a> </p> <div> <p>We are looking for a dedicated and passionat",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Tallinn, Estonia <br /><strong>URL:</strong> <a href=\"https://toggl.com/jobs/\">https://toggl.com/jobs/</a> </p> <di..."
     },
     {
       "title": "Toggl: Chief Product Officer",
@@ -1814,29 +2653,75 @@
       "source_url": "https://weworkremotely.com/remote-jobs/toggl-chief-product-officer-1",
       "posted_at": "2025-01-23T12:21:42.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<p> <strong>Headquarters:</strong> Tallinn, Estonia <br /><strong>URL:</strong> <a href=\"https://toggl.com/jobs/\">https://toggl.com/jobs/</a> </p> <div><br>We are looking for an experienced, forward-t",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Tallinn, Estonia <br /><strong>URL:</strong> <a href=\"https://toggl.com/jobs/\">https://toggl.com/jobs/</a> </p> <di..."
     },
     {
-      "title": "Proton.ai: Senior Backend Engineer",
+      "title": "Wealthbox CRM: QA Analyst",
       "source": "We Work Remotely",
-      "source_url": "https://weworkremotely.com/remote-jobs/proton-ai-senior-backend-engineer",
-      "posted_at": "2025-01-22T23:59:57.000Z",
+      "source_url": "https://weworkremotely.com/remote-jobs/wealthbox-crm-qa-analyst",
+      "posted_at": "2024-10-17T20:43:52.000Z",
       "tags": [
-        "entry-level",
-        "contract",
-        "remote",
-        "customer-service"
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0161/8011/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Cambridge, MA <br /><strong>URL:</",
-      "category": "customer-service"
+      "excerpt": "<p> <strong>Headquarters:</strong> Remote <br /><strong>URL:</strong> <a href=\"https://www.wealthbox.com\">https://www.wealthbox.com</a> </p> <div>We a..."
+    },
+    {
+      "title": "Spiralyze: UI/UX Designer",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/spiralyze-ui-ux-designer",
+      "posted_at": "2024-09-03T14:20:55.000Z",
+      "tags": [
+        "senior",
+        "full-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<p> <strong>Headquarters:</strong> Atlanta, Georgia <br /><strong>URL:</strong> <a href=\"https://www.spiralyze.com/\">https://www.spiralyze.com/</a> </..."
+    },
+    {
+      "title": "A.Team: Senior Independent Product Manager/Product Designer ($90-$170/hr)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-product-manager-product-designer-90-170-hr",
+      "posted_at": "2024-06-16T18:08:52.000Z",
+      "tags": [
+        "senior",
+        "contract",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0071/4151/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "Storetasker: Senior Shopify Developer (Remote + Flexible)",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/storetasker-senior-shopify-developer-remote-flexible-3",
+      "posted_at": "2024-05-13T03:14:30.000Z",
+      "tags": [
+        "senior",
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0074/8032/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
+    },
+    {
+      "title": "DataAnnotation.tech: FT/PT Remote AI Prompt Engineering & Evaluation - Will Train",
+      "source": "We Work Remotely",
+      "source_url": "https://weworkremotely.com/remote-jobs/dataannotation-tech-ft-pt-remote-ai-prompt-engineering-evaluation-will-train",
+      "posted_at": "2023-06-21T14:22:59.000Z",
+      "tags": [
+        "part-time",
+        "remote"
+      ],
+      "location": "Remote",
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0094/0338/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     },
     {
       "title": "New Law Business Model: Marketing Automation SaaS + Services Line of Business Owner",
@@ -1844,14 +2729,12 @@
       "source_url": "https://weworkremotely.com/remote-jobs/new-law-business-model-marketing-automation-saas-services-line-of-business-owner",
       "posted_at": "2023-02-07T20:07:41.000Z",
       "tags": [
-        "entry-level",
-        "internship",
-        "remote",
-        "customer-service"
+        "senior",
+        "full-time",
+        "remote"
       ],
       "location": "Remote",
-      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0083/6659/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headquarters:</strong> Boulder, CO <br /><strong>URL:</st",
-      "category": "customer-service"
+      "excerpt": "<img src=\"https://we-work-remotely.imgix.net/logos/0083/6659/logo.gif?ixlib=rails-4.0.0&w=50&h=50&dpr=2&fit=fill&auto=compress\" /> <p> <strong>Headqua..."
     }
   ]
 }
