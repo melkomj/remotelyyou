@@ -6,9 +6,10 @@ import "../styles/global.css";
 export interface Props {
   title: string;
   description?: string;
+  contentFocused?: boolean;
 }
 
-const { title, description = "find beginner-friendly remote jobs and build your location-independent career." } = Astro.props;
+const { title, description = "find beginner-friendly remote jobs and build your location-independent career.", contentFocused = false } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +49,7 @@ const { title, description = "find beginner-friendly remote jobs and build your 
       </div>
     </nav>
 
-    <main>
+    <main class={contentFocused ? 'content-focused' : ''}>
       <slot />
     </main>
 

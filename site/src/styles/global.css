@@ -112,10 +112,15 @@ body {
 
 main {
   flex: 1;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: var(--space-5);
   width: 100%;
+}
+
+/* Constrain content width for reading-focused pages */
+main.content-focused {
+  max-width: 800px;
 }
 
 /* Typography */
