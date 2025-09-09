@@ -53,7 +53,7 @@ const description = "Complete 7-day action plan to land your first remote job - 
               <h3>Day 2: Draft Your Starter Resume</h3>
               <ul class="checklist">
                 <li>Use the "skills-first" template (see section 2)</li>
-                <li>Don't wait for it to be perfect â€” aim for <em>done in 1 hour</em></li>
+                <li>Don't wait for it to be perfect — aim for <em>done in 1 hour</em></li>
               </ul>
             </div>
 
@@ -122,7 +122,7 @@ const description = "Complete 7-day action plan to land your first remote job - 
                 </div>
                 <div class="template-section">
                   <h4>CORE SKILLS</h4>
-                  <p>â€¢ 6-8 keywords from job postings<br>â€¢ Mix of technical and soft skills<br>â€¢ Include "Remote work," "Virtual collaboration"</p>
+                  <p>• 6-8 keywords from job postings<br>• Mix of technical and soft skills<br>• Include "Remote work," "Virtual collaboration"</p>
                 </div>
                 <div class="template-section">
                   <h4>RELEVANT EXPERIENCE</h4>
@@ -226,7 +226,7 @@ const description = "Complete 7-day action plan to land your first remote job - 
               <div class="template-example">
                 <p><em>"I noticed [Company] recently expanded to new markets. Having helped coordinate logistics across time zones in my previous role, I understand the communication challenges this creates..."</em></p>
               </div>
-              <p><strong>Structure:</strong> Problem identification â†’ Your relevant experience â†’ Specific value you'll add</p>
+              <p><strong>Structure:</strong> Problem identification → Your relevant experience → Specific value you'll add</p>
             </div>
 
             <div class="angle-card">
@@ -235,16 +235,16 @@ const description = "Complete 7-day action plan to land your first remote job - 
               <div class="template-example">
                 <p><em>"Your commitment to work-life balance resonates with me. As someone who thrived during remote learning while managing family responsibilities, I bring both empathy and efficiency to customer interactions..."</em></p>
               </div>
-              <p><strong>Structure:</strong> Shared values â†’ Personal story â†’ How this translates to work performance</p>
+              <p><strong>Structure:</strong> Shared values → Personal story → How this translates to work performance</p>
             </div>
 
             <div class="angle-card">
               <h3>The Growth Story</h3>
               <p><strong>When to use:</strong> When transitioning careers or entering remote work</p>
               <div class="template-example">
-                <p><em>"While my background is in retail, the customer service principles remain the sameâ€”except now I'm excited to apply them in a digital environment where I can focus entirely on solving problems..."</em></p>
+                <p><em>"While my background is in retail, the customer service principles remain the same—except now I'm excited to apply them in a digital environment where I can focus entirely on solving problems..."</em></p>
               </div>
-              <p><strong>Structure:</strong> Acknowledge transition â†’ Highlight transferable skills â†’ Express enthusiasm for growth</p>
+              <p><strong>Structure:</strong> Acknowledge transition → Highlight transferable skills → Express enthusiasm for growth</p>
             </div>
           </div>
         </section>
@@ -260,7 +260,7 @@ const description = "Complete 7-day action plan to land your first remote job - 
               <div class="script-example">
                 <p><strong>Subject:</strong> Quick question about remote work at [Company]</p>
                 <p><strong>Message:</strong></p>
-                <p><em>"Hi [Name], I hope you're doing well. I'm exploring opportunities in customer support and really admire [Company's] approach to remote work culture. Would you be open to a brief 10-minute call to share your experience? I'm particularly curious about [specific aspect]. No agenda hereâ€”just genuine interest in learning from someone who's walked this path. Thanks for considering!"</em></p>
+                <p><em>"Hi [Name], I hope you're doing well. I'm exploring opportunities in customer support and really admire [Company's] approach to remote work culture. Would you be open to a brief 10-minute call to share your experience? I'm particularly curious about [specific aspect]. No agenda here—just genuine interest in learning from someone who's walked this path. Thanks for considering!"</em></p>
               </div>
               <p><strong>Response rate:</strong> ~15-20%</p>
             </div>
@@ -344,7 +344,7 @@ const description = "Complete 7-day action plan to land your first remote job - 
 
           <div class="scam-prevention">
             <div class="red-flags">
-              <h3>ðŸš¨ Immediate Red Flags (Run Away!)</h3>
+              <h3>🚨 Immediate Red Flags (Run Away!)</h3>
               <ul class="checklist danger">
                 <li>Upfront fees for any reason (training, equipment, background checks)</li>
                 <li>Salary too good to be true ($50+/hour for basic data entry)</li>
@@ -357,7 +357,7 @@ const description = "Complete 7-day action plan to land your first remote job - 
             </div>
 
             <div class="verification-steps">
-              <h3>âœ… Verification Checklist</h3>
+              <h3>✅ Verification Checklist</h3>
               <ul class="checklist">
                 <li><strong>Company research:</strong> Official website, business registration, real address</li>
                 <li><strong>Employee verification:</strong> Find real employees on LinkedIn</li>
@@ -374,7 +374,7 @@ const description = "Complete 7-day action plan to land your first remote job - 
                 <li>Use a dedicated job search email address</li>
                 <li>Never provide SSN or bank details before a formal offer</li>
                 <li>Research salary ranges for the role and location</li>
-                <li>Trust your gutâ€”if something feels off, investigate further</li>
+                <li>Trust your gut—if something feels off, investigate further</li>
                 <li>Apply through reputable job boards and company websites</li>
                 <li>Keep records of all applications and communications</li>
               </ul>
@@ -1103,10 +1103,15 @@ const description = "Complete 7-day action plan to land your first remote job - 
         return;
       }
       
-      // Here you would normally send to your backend
-      alert(`Thanks! We've sent the download link to ${email}`);
+      // Show success message and open PDF
+      alert(`Thanks! Opening your PDF download now.`);
       closeDownloadModal();
       document.getElementById('emailInput').value = '';
+      
+      // Open PDF in new tab
+      setTimeout(() => {
+        window.open('/pdf/remote-job-jumpstart-kit?pdf=true', '_blank');
+      }, 500);
     }
 
     // Close modal when clicking outside
