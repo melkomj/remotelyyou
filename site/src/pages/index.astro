@@ -4,7 +4,7 @@ const title = "Land Your First Remote Job - RemotelyYou";
 ---
 
 <BaseLayout title="RemotelyYou - Land Your First Remote Job">
-  <main>
+  <main style="margin-top: 0 !important; padding-top: 0 !important;">
     <!-- Newsletter Conversion Bar -->
     <div class="conversion-bar">
       <div class="container">
@@ -324,7 +324,7 @@ const title = "Land Your First Remote Job - RemotelyYou";
     background: var(--color-teal-600);
     color: white;
     padding: var(--space-3) var(--space-6);
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-full) !important;
     font-size: var(--font-size-sm);
     font-weight: 600;
     margin-bottom: var(--space-6);
@@ -415,20 +415,23 @@ const title = "Land Your First Remote Job - RemotelyYou";
   }
 
   .hero-actions .btn--secondary {
-    padding: var(--space-3) var(--space-5);
-    font-size: var(--font-size-sm);
-    max-width: 200px;
+    padding: var(--space-3) var(--space-5) !important;
+    font-size: var(--font-size-sm) !important;
+    max-width: 200px !important;
+    border-radius: var(--radius-lg) !important;
   }
 
   .btn-hero {
     position: relative;
-    padding: var(--space-3) var(--space-6);
+    padding: var(--space-3) var(--space-5) !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
     transition: all 0.3s ease;
-    max-width: 260px;
+    max-width: 240px !important;
+    font-size: var(--font-size-sm) !important;
+    border-radius: var(--radius-lg) !important;
   }
 
   .btn-hero:hover {
