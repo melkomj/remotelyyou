@@ -1,12 +1,8 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "cd site && npm run build",
   "outputDirectory": "site/dist",
+  "installCommand": "cd site && npm install",
   "framework": "astro",
-  "functions": {
-    "app/api/**/*.js": {
-      "maxDuration": 10
-    }
-  },
   "rewrites": [
     {
       "source": "/pdf/remote-job-jumpstart-kit",
