@@ -29,7 +29,9 @@ const description = "Complete 7-day action plan to land your first remote job - 
           <li><a href="#skill-sprint" class="nav-link">8. Skill Sprint</a></li>
         </ul>
         <div class="progress-indicator">
-          <div class="progress-bar"></div>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
         </div>
       </nav>
 
@@ -266,6 +268,105 @@ const description = "Complete 7-day action plan to land your first remote job - 
       margin-top: var(--space-3);
     }
 
+    /* Kit Layout */
+    .kit-layout {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+
+    .kit-sidebar {
+      position: sticky;
+      top: 80px;
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      height: fit-content;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .kit-sidebar h3 {
+      color: var(--color-black);
+      margin-bottom: var(--space-4);
+      font-size: var(--font-size-lg);
+    }
+
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--space-5) 0;
+    }
+
+    .nav-list li {
+      margin-bottom: var(--space-2);
+    }
+
+    .nav-link {
+      display: block;
+      padding: var(--space-2) var(--space-3);
+      color: var(--color-gray-600);
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-size: var(--font-size-sm);
+      transition: all 0.2s ease;
+      border-left: 3px solid transparent;
+    }
+
+    .nav-link:hover {
+      background: var(--color-teal-50);
+      color: var(--color-teal-700);
+      border-left-color: var(--color-teal-500);
+    }
+
+    .nav-link.active {
+      background: var(--color-teal-100);
+      color: var(--color-teal-800);
+      border-left-color: var(--color-teal-600);
+      font-weight: 500;
+    }
+
+    .progress-indicator {
+      margin-top: var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--color-gray-200);
+    }
+
+    .progress-indicator::before {
+      content: "Reading Progress";
+      display: block;
+      font-size: var(--font-size-xs);
+      color: var(--color-gray-500);
+      margin-bottom: var(--space-2);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .progress-bar {
+      height: 4px;
+      background: var(--color-gray-200);
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--color-teal-500), var(--color-coral-500));
+      width: 0%;
+      transition: width 0.2s ease;
+      border-radius: 2px;
+    }
+
+    .kit-content {
+      min-height: 100vh;
+    }
+
+    .content-section {
+      scroll-margin-top: 100px;
+    }
+
     /* Basic grid for day cards */
     .day-grid {
       display: grid;
@@ -356,7 +457,30 @@ const description = "Complete 7-day action plan to land your first remote job - 
       margin-bottom: var(--space-4);
     }
 
+    @media (max-width: 1024px) {
+      .kit-layout {
+        grid-template-columns: 200px 1fr;
+        gap: var(--space-5);
+      }
+      
+      .kit-sidebar {
+        top: 70px;
+        padding: var(--space-4);
+      }
+    }
+
     @media (max-width: 768px) {
+      .kit-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
+      
+      .kit-sidebar {
+        position: static;
+        margin-bottom: var(--space-6);
+        top: auto;
+      }
+      
       .kit-header h1 {
         font-size: var(--font-size-3xl);
       }
@@ -406,5 +530,62 @@ const description = "Complete 7-day action plan to land your first remote job - 
         closeDownloadModal();
       }
     }
+
+    // Scroll spy and navigation functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('.content-section');
+      const progressBar = document.querySelector('.progress-bar');
+
+      function updateActiveNav() {
+        let current = '';
+        const scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.offsetHeight;
+          
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+
+        // Update progress bar
+        const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (window.pageYOffset / documentHeight) * 100;
+        const progressFill = document.querySelector('.progress-fill');
+        if (progressFill) {
+          progressFill.style.width = `${Math.min(progress, 100)}%`;
+        }
+      }
+
+      // Smooth scroll for nav links
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+          
+          if (targetSection) {
+            const offsetTop = targetSection.offsetTop - 20;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Listen for scroll events
+      window.addEventListener('scroll', updateActiveNav);
+      updateActiveNav(); // Initial call
+    });
   </script>
 </BaseLayout>
