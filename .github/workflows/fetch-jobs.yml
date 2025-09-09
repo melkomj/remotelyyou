@@ -8,7 +8,7 @@ on:
 
 concurrency:
   group: fetch-jobs
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -57,6 +57,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
+          # Pull latest changes to avoid conflicts
+          git pull origin main --rebase || true
+          
           # Add only the jobs.json file
           git add site/public/jobs.json
           
@@ -79,7 +82,8 @@ jobs:
           
           [skip ci]"
           
-          git push origin main
+          # Push with retry logic
+          git push origin main || (git pull --rebase origin main && git push origin main)
           
           echo "Successfully pushed updated jobs.json with ${JOB_COUNT} jobs"
 
