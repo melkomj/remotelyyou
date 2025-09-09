@@ -43,10 +43,12 @@ const title = "Land Your First Remote Job - RemotelyYou";
           </div>
 
           <div class="hero-actions">
-            <a href="/resources/jumpstart-kit" class="btn btn-primary btn-hero">
-              <span class="btn-text">Get Free 7-Day System</span>
+            <div class="hero-cta-group">
+              <a href="/resources/jumpstart-kit" class="btn btn-primary btn-hero">
+                <span class="btn-text">Get Free 7-Day System</span>
+              </a>
               <span class="btn-subtext">No email required</span>
-            </a>
+            </div>
             <a href="/jobs" class="btn btn--secondary">Browse 1,400+ Jobs</a>
           </div>
 
@@ -272,7 +274,7 @@ const title = "Land Your First Remote Job - RemotelyYou";
     padding: var(--space-3) 0;
     text-align: center;
     margin: 0 !important;
-    margin-top: -5px !important; /* More aggressive gap elimination */
+    margin-top: -10px !important; /* Even more aggressive gap elimination */
     position: relative;
     z-index: 10;
   }
@@ -326,7 +328,7 @@ const title = "Land Your First Remote Job - RemotelyYou";
     background: var(--color-teal-600);
     color: white;
     padding: var(--space-3) var(--space-6);
-    border-radius: var(--radius-full) !important;
+    border-radius: var(--radius-lg) !important;
     font-size: var(--font-size-sm);
     font-weight: 600;
     margin-bottom: var(--space-6);
@@ -399,7 +401,7 @@ const title = "Land Your First Remote Job - RemotelyYou";
     font-weight: 600;
     background: white;
     padding: var(--space-2) var(--space-4);
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-lg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--color-gray-200);
   }
@@ -416,6 +418,13 @@ const title = "Land Your First Remote Job - RemotelyYou";
     margin-bottom: var(--space-12);
   }
 
+  .hero-cta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
   .hero-actions .btn--secondary {
     padding: var(--space-3) var(--space-5) !important;
     font-size: var(--font-size-sm) !important;
@@ -426,14 +435,12 @@ const title = "Land Your First Remote Job - RemotelyYou";
   .btn-hero {
     position: relative;
     padding: var(--space-3) var(--space-5) !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
     transition: all 0.3s ease;
-    max-width: 240px !important;
+    max-width: 220px !important;
     font-size: var(--font-size-sm) !important;
     border-radius: var(--radius-lg) !important;
+    text-align: center;
   }
 
   .btn-hero:hover {
@@ -447,10 +454,12 @@ const title = "Land Your First Remote Job - RemotelyYou";
   }
 
   .btn-subtext {
+    display: block;
     font-size: var(--font-size-xs);
-    opacity: 0.8;
+    color: var(--color-gray-500);
     font-weight: 400;
-    margin-top: 2px;
+    margin-top: var(--space-2);
+    text-align: center;
   }
 
   .hero-proof {
@@ -588,12 +597,13 @@ const title = "Land Your First Remote Job - RemotelyYou";
   .testimonial-card::before {
     content: '"';
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: var(--space-6);
     font-size: 4rem;
     color: var(--color-teal-200);
     font-weight: bold;
     line-height: 1;
+    z-index: 1;
   }
 
   .testimonial-card:hover {
