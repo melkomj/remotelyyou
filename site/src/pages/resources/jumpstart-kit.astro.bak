@@ -2,7 +2,6 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "Remote Job Jumpstart Kit";
 const description = "Complete 7-day action plan to land your first remote job - from resume to interviews to avoiding scams.";
-// Force deployment refresh
 ---
 
 <BaseLayout {title} {description}>
