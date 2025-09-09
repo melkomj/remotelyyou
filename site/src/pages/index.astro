@@ -271,8 +271,10 @@ const title = "Land Your First Remote Job - RemotelyYou";
     color: white;
     padding: var(--space-3) 0;
     text-align: center;
-    margin: 0;
-    margin-top: -2px; /* Eliminate any gap with header - force update */
+    margin: 0 !important;
+    margin-top: -5px !important; /* More aggressive gap elimination */
+    position: relative;
+    z-index: 10;
   }
 
   .conversion-bar .container {
