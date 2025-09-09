@@ -2,6 +2,11 @@
   "buildCommand": "npm run build",
   "outputDirectory": "site/dist",
   "framework": "astro",
+  "functions": {
+    "app/api/**/*.js": {
+      "maxDuration": 10
+    }
+  },
   "rewrites": [
     {
       "source": "/pdf/remote-job-jumpstart-kit",
