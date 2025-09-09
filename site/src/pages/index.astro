@@ -272,6 +272,7 @@ const title = "Land Your First Remote Job - RemotelyYou";
     padding: var(--space-3) 0;
     text-align: center;
     margin: 0;
+    margin-top: -1px; /* Eliminate any gap with header */
   }
 
   .conversion-bar .container {
@@ -413,14 +414,21 @@ const title = "Land Your First Remote Job - RemotelyYou";
     margin-bottom: var(--space-12);
   }
 
+  .hero-actions .btn--secondary {
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--font-size-sm);
+    max-width: 200px;
+  }
+
   .btn-hero {
     position: relative;
-    padding: var(--space-4) var(--space-8);
+    padding: var(--space-3) var(--space-6);
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 8px 25px rgba(20, 184, 166, 0.3);
+    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
     transition: all 0.3s ease;
+    max-width: 260px;
   }
 
   .btn-hero:hover {
@@ -429,14 +437,14 @@ const title = "Land Your First Remote Job - RemotelyYou";
   }
 
   .btn-text {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
     font-weight: 700;
   }
 
   .btn-subtext {
     font-size: var(--font-size-xs);
-    opacity: 0.9;
-    font-weight: 500;
+    opacity: 0.8;
+    font-weight: 400;
     margin-top: 2px;
   }
 
