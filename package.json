@@ -7,9 +7,15 @@
     "dev": "cd site && npm run dev",
     "build": "cd site && npm run build", 
     "preview": "cd site && npm run preview",
-    "start": "cd site && npm run start"
+    "start": "cd site && npm run start",
+    "install:site": "cd site && npm install"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^5.13.5",
+    "typescript": "^5.9.2"
   }
 }
