@@ -1,9 +1,9 @@
-name: Fetch Remote Jobs
+name: Fetch Remote Jobs (DISABLED)
 
 on:
-  schedule:
-    # Run at 06:00 and 18:00 UTC daily (adjust for your timezone)
-    - cron: "0 6,18 * * *"
+  # schedule:
+  #   # Run at 06:00 and 18:00 UTC daily (adjust for your timezone)
+  #   - cron: "0 6,18 * * *"
   workflow_dispatch: {}   # Allow manual triggering
 
 concurrency:
